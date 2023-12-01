@@ -1,6 +1,8 @@
-[gd_scene load_steps=3 format=3 uid="uid://dekyhx6dt2vf"]
+[gd_scene load_steps=5 format=3 uid="uid://dekyhx6dt2vf"]
 
-[ext_resource type="Texture2D" uid="uid://sdqqjh6khuvu" path="res://temp.jpg" id="1_guc3o"]
+[ext_resource type="Script" path="res://startScreenManager.gd" id="1_t5kxh"]
+[ext_resource type="Texture2D" uid="uid://bkhnqpc12x0gm" path="res://ekranstartowy1.png" id="2_cyd3u"]
+[ext_resource type="Texture2D" uid="uid://cj7h63jrxqtxv" path="res://buttonstartowy.png" id="3_3yyha"]
 
 [sub_resource type="LabelSettings" id="LabelSettings_den0i"]
 font_size = 30
@@ -8,11 +10,12 @@ font_size = 30
 [node name="StartScene" type="Node2D"]
 
 [node name="StartingScreen" type="Node2D" parent="."]
+script = ExtResource("1_t5kxh")
 
 [node name="BackgroundStartingScreen" type="Sprite2D" parent="StartingScreen"]
-position = Vector2(640, 358.5)
-scale = Vector2(3.83234, 3.585)
-texture = ExtResource("1_guc3o")
+position = Vector2(640, 360)
+scale = Vector2(1, 1)
+texture = ExtResource("2_cyd3u")
 
 [node name="TitleStartingScreen" type="Label" parent="StartingScreen"]
 offset_top = 64.0
@@ -25,30 +28,87 @@ horizontal_alignment = 1
 vertical_alignment = 1
 uppercase = true
 
-[node name="StartGameButton" type="Button" parent="StartingScreen"]
+[node name="StartGameButton" type="TextureButton" parent="StartingScreen"]
 offset_left = 544.0
 offset_top = 192.0
 offset_right = 744.0
 offset_bottom = 247.0
-text = "Start"
+texture_normal = ExtResource("3_3yyha")
+ignore_texture_size = true
+stretch_mode = 0
 
-[node name="ScoreButton" type="Button" parent="StartingScreen"]
+[node name="StartButtonText" type="Label" parent="StartingScreen/StartGameButton"]
+layout_mode = 0
+offset_left = 30.0
+offset_top = 12.0
+offset_right = 174.0
+offset_bottom = 46.0
+theme_override_colors/font_color = Color(0.282353, 0, 0, 1)
+theme_override_font_sizes/font_size = 24
+text = "Start"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="ScoreButton" type="TextureButton" parent="StartingScreen"]
 offset_left = 544.0
 offset_top = 320.0
 offset_right = 744.0
 offset_bottom = 375.0
-text = "Wyniki"
+texture_normal = ExtResource("3_3yyha")
+ignore_texture_size = true
+stretch_mode = 0
 
-[node name="OptionButton" type="Button" parent="StartingScreen"]
+[node name="ScoreButtonText" type="Label" parent="StartingScreen"]
+offset_left = 574.0
+offset_top = 332.0
+offset_right = 718.0
+offset_bottom = 366.0
+theme_override_colors/font_color = Color(0.282353, 0, 0, 1)
+theme_override_font_sizes/font_size = 24
+text = "Wyniki"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="OptionsButton" type="TextureButton" parent="StartingScreen"]
 offset_left = 544.0
 offset_top = 448.0
 offset_right = 744.0
 offset_bottom = 503.0
-text = "Opcje"
+texture_normal = ExtResource("3_3yyha")
+ignore_texture_size = true
+stretch_mode = 0
 
-[node name="ExitButton" type="Button" parent="StartingScreen"]
+[node name="OptionsButtonText" type="Label" parent="StartingScreen/OptionsButton"]
+offset_left = 30.0
+offset_top = 11.0
+offset_right = 174.0
+offset_bottom = 45.0
+theme_override_colors/font_color = Color(0.282353, 0, 0, 1)
+theme_override_font_sizes/font_size = 24
+text = "Ustawienia"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="ExitButton" type="TextureButton" parent="StartingScreen"]
 offset_left = 544.0
 offset_top = 576.0
 offset_right = 744.0
 offset_bottom = 631.0
-text = "Wyjdź"
+texture_normal = ExtResource("3_3yyha")
+ignore_texture_size = true
+stretch_mode = 0
+
+[node name="ExitButtonText" type="Label" parent="StartingScreen/ExitButton"]
+offset_left = 32.0
+offset_top = 12.0
+offset_right = 176.0
+offset_bottom = 46.0
+theme_override_colors/font_color = Color(0.282353, 0, 0, 1)
+theme_override_font_sizes/font_size = 24
+text = "Wyjście"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[connection signal="button_down" from="StartingScreen/StartGameButton" to="StartingScreen" method="_on_start_game_button_down"]
+[connection signal="button_down" from="StartingScreen/ScoreButton" to="StartingScreen" method="_on_score_button_down"]
+[connection signal="button_down" from="StartingScreen/ExitButton" to="StartingScreen" method="_on_exit_button_down"]
