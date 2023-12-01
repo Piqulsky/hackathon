@@ -1,9 +1,54 @@
-[gd_scene load_steps=2 format=3 uid="uid://dekyhx6dt2vf"]
+[gd_scene load_steps=3 format=3 uid="uid://dekyhx6dt2vf"]
 
-[ext_resource type="Texture2D" uid="uid://bfag0kfclhf06" path="res://icon.svg" id="1_rxvb4"]
+[ext_resource type="Texture2D" uid="uid://sdqqjh6khuvu" path="res://temp.jpg" id="1_guc3o"]
+
+[sub_resource type="LabelSettings" id="LabelSettings_den0i"]
+font_size = 30
 
 [node name="StartScene" type="Node2D"]
 
-[node name="Icon" type="Sprite2D" parent="."]
-position = Vector2(640, 360)
-texture = ExtResource("1_rxvb4")
+[node name="StartingScreen" type="Node2D" parent="."]
+
+[node name="BackgroundStartingScreen" type="Sprite2D" parent="StartingScreen"]
+position = Vector2(640, 358.5)
+scale = Vector2(3.83234, 3.585)
+texture = ExtResource("1_guc3o")
+
+[node name="TitleStartingScreen" type="Label" parent="StartingScreen"]
+offset_top = 64.0
+offset_right = 779.0
+offset_bottom = 122.0
+scale = Vector2(1.64458, 1.66507)
+text = "Ostatni Zachód"
+label_settings = SubResource("LabelSettings_den0i")
+horizontal_alignment = 1
+vertical_alignment = 1
+uppercase = true
+
+[node name="StartGameButton" type="Button" parent="StartingScreen"]
+offset_left = 544.0
+offset_top = 192.0
+offset_right = 744.0
+offset_bottom = 247.0
+text = "Start"
+
+[node name="ScoreButton" type="Button" parent="StartingScreen"]
+offset_left = 544.0
+offset_top = 320.0
+offset_right = 744.0
+offset_bottom = 375.0
+text = "Wyniki"
+
+[node name="OptionButton" type="Button" parent="StartingScreen"]
+offset_left = 544.0
+offset_top = 448.0
+offset_right = 744.0
+offset_bottom = 503.0
+text = "Opcje"
+
+[node name="ExitButton" type="Button" parent="StartingScreen"]
+offset_left = 544.0
+offset_top = 576.0
+offset_right = 744.0
+offset_bottom = 631.0
+text = "Wyjdź"
