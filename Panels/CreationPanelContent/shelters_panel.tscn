@@ -83,6 +83,7 @@ offset_bottom = 544.0
 script = ExtResource("4_l2jqh")
 
 [node name="ProgressBar" type="ProgressBar" parent="ExpandShelters"]
+layout_mode = 0
 offset_left = 64.0
 offset_top = 160.0
 offset_right = 608.0
@@ -92,6 +93,7 @@ step = 1.0
 show_percentage = false
 
 [node name="BeginTextureButton" type="TextureButton" parent="ExpandShelters"]
+layout_mode = 0
 offset_left = 128.0
 offset_top = 32.0
 offset_right = 224.0

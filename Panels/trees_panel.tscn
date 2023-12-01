@@ -1,7 +1,7 @@
 [gd_scene load_steps=3 format=3 uid="uid://cvgdm66px55mr"]
 
-[ext_resource type="PackedScene" uid="uid://b8kxcigghsv1c" path="res://research_panel.tscn" id="1_hsh33"]
-[ext_resource type="PackedScene" uid="uid://b73tnsfaykl15" path="res://economy_panel.tscn" id="2_lgbi1"]
+[ext_resource type="PackedScene" uid="uid://b8kxcigghsv1c" path="res://Panels/TreePanelContent/research_panel.tscn" id="1_hsh33"]
+[ext_resource type="PackedScene" uid="uid://b73tnsfaykl15" path="res://Panels/TreePanelContent/economy_panel.tscn" id="2_lgbi1"]
 
 [node name="TreesPanel" type="Node2D"]
 
