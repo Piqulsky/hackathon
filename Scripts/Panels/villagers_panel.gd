@@ -21,7 +21,7 @@ func _physics_process(delta):
 		genBar.value += genBar.step
 		if genBar.value >= 100:
 			genBar.value = 0
-			#ADD RESOURCES * VILLAGERS
+			Global.food += villagers
 
 
 func _on_buy_texture_button_button_down():

@@ -12,8 +12,9 @@ var plantsCost := 2
 const GRAIN_INCREASE = 2
 const MEAT_INCREASE = 3
 const PLANTS_INCREASE = 4
-
-var valueLabel :Label
+const GRAIN_VALUE = 1
+const MEAT_VALUE = 2
+const PLANTS_VALUE = 3
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
@@ -36,18 +37,18 @@ func _on_grain_texture_button_button_down():
 	if Global.resources.gold >= grainCost:
 		Global.resources.gold -= grainCost
 		grainCost = pow(grainCost, GRAIN_INCREASE)
-		#ADD RESOURCES
+		Global.food += GRAIN_VALUE
 
 
 func _on_meat_texture_button_button_down():
 	if Global.resources.gold >= meatCost:
 		Global.resources.gold -= meatCost
 		meatCost = pow(meatCost, MEAT_INCREASE)
-		#ADD RESOURCES
+		Global.food += MEAT_VALUE
 
 
 func _on_plants_texture_button_button_down():
 	if Global.resources.gold >= plantsCost:
 		Global.resources.gold -= plantsCost
 		plantsCost = pow(plantsCost, PLANTS_INCREASE)
-		#ADD RESOURCES
+		Global.food += PLANTS_VALUE

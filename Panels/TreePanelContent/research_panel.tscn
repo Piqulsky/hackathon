@@ -18,7 +18,6 @@ color = Color(1, 0.607843, 0.713726, 0.392157)
 polygon = PackedVector2Array(640, 0, 640, 576, 0, 576, 0, 0)
 
 [node name="ResearchPanelTitle" type="Label" parent="."]
-layout_mode = 0
 offset_right = 640.0
 offset_bottom = 91.0
 text = "Rozwój"
@@ -36,7 +35,6 @@ ignore_texture_size = true
 stretch_mode = 0
 
 [node name="TechnologyButton2" type="TextureButton" parent="."]
-layout_mode = 0
 offset_left = 304.0
 offset_top = 224.0
 offset_right = 352.0
@@ -46,7 +44,6 @@ ignore_texture_size = true
 stretch_mode = 0
 
 [node name="TechnologyButton3" type="TextureButton" parent="."]
-layout_mode = 0
 offset_left = 304.0
 offset_top = 336.0
 offset_right = 352.0
@@ -56,7 +53,6 @@ ignore_texture_size = true
 stretch_mode = 0
 
 [node name="TechnologyButton4" type="TextureButton" parent="."]
-layout_mode = 0
 offset_left = 304.0
 offset_top = 480.0
 offset_right = 352.0
@@ -66,7 +62,6 @@ ignore_texture_size = true
 stretch_mode = 0
 
 [node name="TechnologyButton11" type="TextureButton" parent="."]
-layout_mode = 0
 offset_left = 208.0
 offset_top = 176.0
 offset_right = 256.0
@@ -76,7 +71,6 @@ ignore_texture_size = true
 stretch_mode = 0
 
 [node name="TechnologyButton12" type="TextureButton" parent="."]
-layout_mode = 0
 offset_left = 400.0
 offset_top = 176.0
 offset_right = 448.0
@@ -86,7 +80,6 @@ ignore_texture_size = true
 stretch_mode = 0
 
 [node name="TechnologyButton21" type="TextureButton" parent="."]
-layout_mode = 0
 offset_left = 208.0
 offset_top = 288.0
 offset_right = 256.0
@@ -96,7 +89,6 @@ ignore_texture_size = true
 stretch_mode = 0
 
 [node name="TechnologyButton22" type="TextureButton" parent="."]
-layout_mode = 0
 offset_left = 400.0
 offset_top = 288.0
 offset_right = 448.0
@@ -106,7 +98,6 @@ ignore_texture_size = true
 stretch_mode = 0
 
 [node name="TechnologyButton31" type="TextureButton" parent="."]
-layout_mode = 0
 offset_left = 208.0
 offset_top = 400.0
 offset_right = 256.0
@@ -116,7 +107,6 @@ ignore_texture_size = true
 stretch_mode = 0
 
 [node name="TechnologyButton32" type="TextureButton" parent="."]
-layout_mode = 0
 offset_left = 400.0
 offset_top = 400.0
 offset_right = 448.0

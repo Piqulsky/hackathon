@@ -1,14 +1,22 @@
-[gd_scene load_steps=7 format=3 uid="uid://4vkh4uhwbe4j"]
+[gd_scene load_steps=11 format=3 uid="uid://4vkh4uhwbe4j"]
 
 [ext_resource type="Script" path="res://Scripts/Panels/new_shelters.gd" id="1_81scs"]
 [ext_resource type="Texture2D" uid="uid://bsp6dudeb6v7o" path="res://TMPTextures/0.png" id="1_ipdh4"]
 [ext_resource type="Texture2D" uid="uid://boeui5psfp4ua" path="res://TMPTextures/0d.png" id="2_0wuj3"]
 [ext_resource type="Script" path="res://Scripts/Panels/expand_shelters.gd" id="4_l2jqh"]
+[ext_resource type="Texture2D" uid="uid://bp0am78v1hvvv" path="res://Textures/hammer_icon.png" id="4_wwqx8"]
+[ext_resource type="Texture2D" uid="uid://f7vkhw3hy8tw" path="res://Textures/wrench.png" id="6_4ejqc"]
 
 [sub_resource type="LabelSettings" id="LabelSettings_ppex6"]
 font_size = 64
 
 [sub_resource type="LabelSettings" id="LabelSettings_m20j4"]
+
+[sub_resource type="LabelSettings" id="LabelSettings_8axdp"]
+font_size = 32
+
+[sub_resource type="LabelSettings" id="LabelSettings_7f1a0"]
+font_size = 32
 
 [node name="SheltersPanel" type="Control"]
 layout_mode = 3
@@ -72,8 +80,19 @@ offset_top = 32.0
 offset_right = 544.0
 offset_bottom = 128.0
 disabled = true
-texture_normal = ExtResource("1_ipdh4")
-texture_disabled = ExtResource("2_0wuj3")
+texture_normal = ExtResource("4_wwqx8")
+texture_disabled = ExtResource("4_wwqx8")
+
+[node name="SheltersLabel" type="Label" parent="NewShelters"]
+layout_mode = 0
+offset_left = 256.0
+offset_top = 32.0
+offset_right = 416.0
+offset_bottom = 128.0
+text = "0"
+label_settings = SubResource("LabelSettings_8axdp")
+horizontal_alignment = 1
+vertical_alignment = 1
 
 [node name="ExpandShelters" type="Control" parent="."]
 anchors_preset = 0
@@ -117,8 +136,19 @@ offset_top = 32.0
 offset_right = 544.0
 offset_bottom = 128.0
 disabled = true
-texture_normal = ExtResource("1_ipdh4")
-texture_disabled = ExtResource("2_0wuj3")
+texture_normal = ExtResource("6_4ejqc")
+texture_disabled = ExtResource("6_4ejqc")
+
+[node name="ExpansionsLabel" type="Label" parent="ExpandShelters"]
+layout_mode = 0
+offset_left = 256.0
+offset_top = 32.0
+offset_right = 416.0
+offset_bottom = 128.0
+text = "0"
+label_settings = SubResource("LabelSettings_7f1a0")
+horizontal_alignment = 1
+vertical_alignment = 1
 
 [connection signal="button_down" from="NewShelters/BeginTextureButton" to="NewShelters" method="_on_begin_texture_button_button_down"]
 [connection signal="button_down" from="NewShelters/ProgressTextureButton" to="NewShelters" method="_on_progress_texture_button_button_down"]

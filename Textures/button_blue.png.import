@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://bkhnqpc12x0gm"
-path="res://.godot/imported/ekranstartowy1.png-5ee8a1c95b93bee246d4ed14e13fec3f.ctex"
+uid="uid://dgrhwgxc1yuhr"
+path="res://.godot/imported/button_blue.png-13e29da779cc278ee7e6f7804c6f3226.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://ekranstartowy1.png"
-dest_files=["res://.godot/imported/ekranstartowy1.png-5ee8a1c95b93bee246d4ed14e13fec3f.ctex"]
+source_file="res://Textures/button_blue.png"
+dest_files=["res://.godot/imported/button_blue.png-13e29da779cc278ee7e6f7804c6f3226.ctex"]
 
 [params]
 

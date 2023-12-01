@@ -1,9 +1,14 @@
-[gd_scene format=3 uid="uid://cljctta8stwik"]
+[gd_scene load_steps=2 format=3 uid="uid://cljctta8stwik"]
+
+[ext_resource type="Texture2D" uid="uid://dwoc2hh6otb8w" path="res://Textures/main_land.png" id="1_yy50o"]
 
 [node name="GeneralPanel" type="Node2D"]
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(640, 360)
+texture = ExtResource("1_yy50o")
 
 [node name="Polygon2D" type="Polygon2D" parent="."]
+visible = false
 color = Color(0.741176, 0.741176, 0.741176, 1)
 polygon = PackedVector2Array(1280, 0, 1280, 736, 0, 736, 0, 0)

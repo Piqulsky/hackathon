@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://cj7h63jrxqtxv"
-path="res://.godot/imported/buttonstartowy.png-f712494bfbcfe4d1476b5253def750be.ctex"
+uid="uid://df6vgo1sso3p2"
+path="res://.godot/imported/economybg.png-65d177d54f5451d3dd9b2cc4dffb54d7.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://buttonstartowy.png"
-dest_files=["res://.godot/imported/buttonstartowy.png-f712494bfbcfe4d1476b5253def750be.ctex"]
+source_file="res://Textures/economybg.png"
+dest_files=["res://.godot/imported/economybg.png-65d177d54f5451d3dd9b2cc4dffb54d7.ctex"]
 
 [params]
 

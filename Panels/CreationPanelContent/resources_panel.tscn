@@ -1,8 +1,9 @@
-[gd_scene load_steps=7 format=3 uid="uid://bteq0awn0kcj2"]
+[gd_scene load_steps=8 format=3 uid="uid://76g1h08gih8a"]
 
 [ext_resource type="Script" path="res://Scripts/Panels/buy_panel.gd" id="1_yuer2"]
 [ext_resource type="Texture2D" uid="uid://k45lnqhehp0f" path="res://TMPTextures/11.png" id="2_lru4v"]
 [ext_resource type="Script" path="res://Scripts/Panels/villagers_panel.gd" id="3_7tm6c"]
+[ext_resource type="Script" path="res://Scripts/Panels/food_value_label.gd" id="3_hopb7"]
 
 [sub_resource type="LabelSettings" id="LabelSettings_40d3g"]
 font_size = 64
@@ -97,6 +98,7 @@ text = "0"
 label_settings = SubResource("LabelSettings_40d3g")
 horizontal_alignment = 1
 vertical_alignment = 1
+script = ExtResource("3_hopb7")
 
 [node name="VillagersPanel" type="Control" parent="."]
 anchors_preset = 0

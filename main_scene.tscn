@@ -1,4 +1,4 @@
-[gd_scene load_steps=11 format=3 uid="uid://bin16ivvd78ph"]
+[gd_scene load_steps=10 format=3 uid="uid://bin16ivvd78ph"]
 
 [ext_resource type="Script" path="res://Scripts/game_manager.gd" id="1_gsqg8"]
 [ext_resource type="PackedScene" uid="uid://cljctta8stwik" path="res://Panels/general_panel.tscn" id="1_m6mal"]
@@ -8,8 +8,7 @@
 [ext_resource type="PackedScene" uid="uid://dykxdwd8sv2wa" path="res://Panels/creation_panel.tscn" id="4_g8ts0"]
 [ext_resource type="PackedScene" uid="uid://dag0y1sdg6m76" path="res://Panels/people_panel.tscn" id="5_ctdjd"]
 [ext_resource type="PackedScene" uid="uid://pjcbs2uotd2y" path="res://Panels/saving_panel.tscn" id="6_81lbp"]
-[ext_resource type="Texture2D" uid="uid://diwhctx81rgik" path="res://TMPTextures/3.png" id="7_jeuba"]
-[ext_resource type="Texture2D" uid="uid://bfgtcq67jpe28" path="res://TMPTextures/9.png" id="8_yii3k"]
+[ext_resource type="Texture2D" uid="uid://cveskudhloqtg" path="res://Textures/arrow.png" id="9_s2pts"]
 
 [node name="MainScene" type="Node2D"]
 script = ExtResource("1_gsqg8")
@@ -44,13 +43,16 @@ layout_mode = 1
 anchors_preset = 4
 anchor_top = 0.5
 anchor_bottom = 0.5
-offset_left = 32.0
+offset_left = -32.0
 offset_top = -32.0
-offset_right = 96.0
+offset_right = 32.0
 offset_bottom = 32.0
 grow_vertical = 2
-pivot_offset = Vector2(0, 32)
-texture_normal = ExtResource("7_jeuba")
+rotation = 3.14159
+pivot_offset = Vector2(64, 32)
+texture_normal = ExtResource("9_s2pts")
+ignore_texture_size = true
+stretch_mode = 0
 
 [node name="RightArrow" type="TextureButton" parent="ArrowsButtons"]
 layout_mode = 1
@@ -60,13 +62,15 @@ anchor_top = 0.5
 anchor_right = 1.0
 anchor_bottom = 0.5
 offset_left = 1184.0
-offset_top = -32.0
+offset_top = -40.0
 offset_right = 1248.0
-offset_bottom = 32.0
+offset_bottom = 24.0
 grow_horizontal = 0
 grow_vertical = 2
 pivot_offset = Vector2(64, 32)
-texture_normal = ExtResource("8_yii3k")
+texture_normal = ExtResource("9_s2pts")
+ignore_texture_size = true
+stretch_mode = 0
 
 [connection signal="button_down" from="ArrowsButtons/LeftArrow" to="Panels" method="_on_left_arrow_button_down"]
 [connection signal="button_down" from="ArrowsButtons/RightArrow" to="Panels" method="_on_right_arrow_button_down"]

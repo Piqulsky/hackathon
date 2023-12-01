@@ -6,6 +6,7 @@ var beginButton :TextureButton
 var pgBar :ProgressBar
 var pgButton :TextureButton
 var costLabel :Label
+var expansionsLabel :Label
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
@@ -13,6 +14,7 @@ func _ready():
 	pgBar = $ProgressBar
 	pgButton = $ProgressTextureButton
 	costLabel = $BeginTextureButton/Label
+	expansionsLabel = $ExpansionsLabel
 
 
 func _physics_process(delta):
@@ -33,4 +35,5 @@ func _on_progress_texture_button_button_down():
 		pgBar.value = 0
 		pgButton.disabled = true
 		beginButton.disabled = false
-		#ADD EXPANSION
+		Global.shelterExpansions += 1
+		expansionsLabel.text = str(Global.shelterExpansions)
