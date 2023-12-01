@@ -34,7 +34,7 @@ func _on_materials_upgrade_button_down():
 
 func _on_gold_upgrade_button_down():
 	if Global.resources.gold >= castOfGoldUpgrade and amountOfGoldUpgrades < 5:
-		Global.resourcesMultiplier.materials += (castOfGoldUpgrade/100)
+		Global.resourcesMultiplier.gold += (castOfGoldUpgrade/100)
 		Global.resources.gold -= castOfGoldUpgrade
 		castOfGoldUpgrade *= 2
 		amountOfGoldUpgrades += 1

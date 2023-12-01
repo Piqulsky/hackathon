@@ -17,11 +17,6 @@ grow_horizontal = 2
 grow_vertical = 2
 script = ExtResource("1_f3k2y")
 
-[node name="EconomyPanelBackground" type="Polygon2D" parent="."]
-position = Vector2(640, 0)
-color = Color(1, 0.607843, 0.713726, 0.392157)
-polygon = PackedVector2Array(640, 0, 640, 576, 0, 576, 0, 0)
-
 [node name="EconomyPanelTitle" type="Label" parent="."]
 layout_mode = 0
 offset_left = 640.0
