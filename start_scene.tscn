@@ -1,8 +1,8 @@
 [gd_scene load_steps=5 format=3 uid="uid://dekyhx6dt2vf"]
 
 [ext_resource type="Script" path="res://startScreenManager.gd" id="1_t5kxh"]
-[ext_resource type="Texture2D" uid="uid://bkhnqpc12x0gm" path="res://ekranstartowy1.png" id="2_cyd3u"]
-[ext_resource type="Texture2D" uid="uid://cj7h63jrxqtxv" path="res://buttonstartowy.png" id="3_3yyha"]
+[ext_resource type="Texture2D" uid="uid://bkhnqpc12x0gm" path="res://Textures/ekranstartowy1.png" id="2_cyd3u"]
+[ext_resource type="Texture2D" uid="uid://cj7h63jrxqtxv" path="res://Textures/buttonstartowy.png" id="3_3yyha"]
 
 [sub_resource type="LabelSettings" id="LabelSettings_den0i"]
 font_size = 30
@@ -14,7 +14,6 @@ script = ExtResource("1_t5kxh")
 
 [node name="BackgroundStartingScreen" type="Sprite2D" parent="StartingScreen"]
 position = Vector2(640, 360)
-scale = Vector2(1, 1)
 texture = ExtResource("2_cyd3u")
 
 [node name="TitleStartingScreen" type="Label" parent="StartingScreen"]
@@ -79,6 +78,7 @@ ignore_texture_size = true
 stretch_mode = 0
 
 [node name="OptionsButtonText" type="Label" parent="StartingScreen/OptionsButton"]
+layout_mode = 0
 offset_left = 30.0
 offset_top = 11.0
 offset_right = 174.0
@@ -99,6 +99,7 @@ ignore_texture_size = true
 stretch_mode = 0
 
 [node name="ExitButtonText" type="Label" parent="StartingScreen/ExitButton"]
+layout_mode = 0
 offset_left = 32.0
 offset_top = 12.0
 offset_right = 176.0
