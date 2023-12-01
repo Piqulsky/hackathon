@@ -3,10 +3,10 @@
 [ext_resource type="Texture2D" uid="uid://ds7wnuyi7kkda" path="res://TMPTextures/1.png" id="1_fod3n"]
 [ext_resource type="Texture2D" uid="uid://lcjhjxwbef5t" path="res://Textures/button_panel.png" id="1_xcymm"]
 [ext_resource type="Texture2D" uid="uid://cwclw3njmwnbj" path="res://TMPTextures/5.png" id="2_o5orp"]
-[ext_resource type="Script" path="res://Scripts/MainClickers/MaterialsTextureButton.gd" id="2_qh5u3"]
 [ext_resource type="Texture2D" uid="uid://bug7xvf1l1n6h" path="res://TMPTextures/6.png" id="3_tvfke"]
-[ext_resource type="Script" path="res://Scripts/MainClickers/GoldTextureButton.gd" id="4_javdr"]
-[ext_resource type="Script" path="res://Scripts/MainClickers/ScienceTextureButton.gd" id="6_8ocoj"]
+[ext_resource type="Script" path="res://Scripts/MainClickers/materials_texture_button.gd" id="3_vbfhy"]
+[ext_resource type="Script" path="res://Scripts/MainClickers/gold_texture_button.gd" id="5_ceo82"]
+[ext_resource type="Script" path="res://Scripts/MainClickers/science_texture_button.gd" id="7_otopk"]
 
 [sub_resource type="LabelSettings" id="LabelSettings_r8j10"]
 font_color = Color(0, 0, 0, 1)
@@ -44,7 +44,7 @@ offset_bottom = 128.0
 grow_horizontal = 2
 grow_vertical = 2
 texture_normal = ExtResource("1_fod3n")
-script = ExtResource("2_qh5u3")
+script = ExtResource("3_vbfhy")
 
 [node name="MaterialsValue" type="Label" parent="Clickers/MaterialsTextureButton"]
 layout_mode = 1
@@ -76,7 +76,7 @@ offset_bottom = 128.0
 grow_horizontal = 2
 grow_vertical = 2
 texture_normal = ExtResource("2_o5orp")
-script = ExtResource("4_javdr")
+script = ExtResource("5_ceo82")
 
 [node name="GoldValue" type="Label" parent="Clickers/GoldTextureButton"]
 layout_mode = 1
@@ -108,7 +108,7 @@ offset_bottom = 128.0
 grow_horizontal = 2
 grow_vertical = 2
 texture_normal = ExtResource("3_tvfke")
-script = ExtResource("6_8ocoj")
+script = ExtResource("7_otopk")
 
 [node name="ScienceValue" type="Label" parent="Clickers/ScienceTextureButton"]
 layout_mode = 1

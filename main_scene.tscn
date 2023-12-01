@@ -24,3 +24,9 @@ position = Vector2(-2560, 0)
 position = Vector2(2560, 0)
 
 [node name="MainClickers" parent="." instance=ExtResource("1_wo2dw")]
+
+[node name="Control" type="Control" parent="."]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
