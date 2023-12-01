@@ -1,8 +1,9 @@
-[gd_scene load_steps=10 format=3 uid="uid://bin16ivvd78ph"]
+[gd_scene load_steps=11 format=3 uid="uid://bin16ivvd78ph"]
 
-[ext_resource type="Script" path="res://panels_manager.gd" id="1_daqfh"]
+[ext_resource type="Script" path="res://Scripts/game_manager.gd" id="1_gsqg8"]
 [ext_resource type="PackedScene" uid="uid://cljctta8stwik" path="res://Panels/general_panel.tscn" id="1_m6mal"]
 [ext_resource type="PackedScene" uid="uid://ocjtlcfvg40s" path="res://GUI/main_clickers.tscn" id="1_wo2dw"]
+[ext_resource type="Script" path="res://Scripts/panels_manager.gd" id="2_bmqve"]
 [ext_resource type="PackedScene" uid="uid://cvgdm66px55mr" path="res://Panels/trees_panel.tscn" id="3_b0sv3"]
 [ext_resource type="PackedScene" uid="uid://dykxdwd8sv2wa" path="res://Panels/creation_panel.tscn" id="4_g8ts0"]
 [ext_resource type="PackedScene" uid="uid://dag0y1sdg6m76" path="res://Panels/people_panel.tscn" id="5_ctdjd"]
@@ -11,9 +12,10 @@
 [ext_resource type="Texture2D" uid="uid://bfgtcq67jpe28" path="res://TMPTextures/9.png" id="8_yii3k"]
 
 [node name="MainScene" type="Node2D"]
+script = ExtResource("1_gsqg8")
 
 [node name="Panels" type="Node2D" parent="."]
-script = ExtResource("1_daqfh")
+script = ExtResource("2_bmqve")
 
 [node name="GeneralPanel" parent="Panels" instance=ExtResource("1_m6mal")]
 

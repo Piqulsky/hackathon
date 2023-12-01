@@ -1,7 +1,7 @@
 extends TextureButton
 
 var value := 0
-var valueLabel :Label;
+var valueLabel :Label
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
@@ -18,3 +18,4 @@ func _on_button_down():
 	if(value<=100):
 		value += 1
 		valueLabel.text = str(value) + "/100"
+		Global.resources.science = value
