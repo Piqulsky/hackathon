@@ -1,21 +1,14 @@
 extends TextureButton
 
-var value := 0
 var valueLabel :Label
 
-# Called when the node enters the scene tree for the first time.
 func _ready():
 	valueLabel = $GoldValue
-	valueLabel.text = "0/100"
+	valueLabel.text = "0"
 
-
-# Called every frame. 'delta' is the elapsed time since the previous frame.
-func _process(delta):
-	pass
+func _physics_process(delta):
+	valueLabel.text = str(Global.resources.gold)
 
 
 func _on_button_down():
-	if(value<=100):
-		value += 1
-		valueLabel.text = str(value) + "/100"
-		Global.resources.gold = value
+	Global.resources.gold += Global.resourcesMultiplier.gold
