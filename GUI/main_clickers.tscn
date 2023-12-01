@@ -1,4 +1,14 @@
-[gd_scene format=3 uid="uid://ocjtlcfvg40s"]
+[gd_scene load_steps=8 format=3 uid="uid://ocjtlcfvg40s"]
+
+[ext_resource type="Texture2D" uid="uid://ds7wnuyi7kkda" path="res://TMPTextures/1.png" id="1_fod3n"]
+[ext_resource type="Texture2D" uid="uid://cwclw3njmwnbj" path="res://TMPTextures/5.png" id="2_o5orp"]
+[ext_resource type="Script" path="res://Scripts/MainClickers/MaterialsTextureButton.gd" id="2_qh5u3"]
+[ext_resource type="Texture2D" uid="uid://bug7xvf1l1n6h" path="res://TMPTextures/6.png" id="3_tvfke"]
+[ext_resource type="Script" path="res://Scripts/MainClickers/GoldTextureButton.gd" id="4_javdr"]
+[ext_resource type="Script" path="res://Scripts/MainClickers/ScienceTextureButton.gd" id="6_8ocoj"]
+
+[sub_resource type="LabelSettings" id="LabelSettings_r8j10"]
+font_color = Color(0, 0, 0, 1)
 
 [node name="MainClickers" type="Control"]
 layout_mode = 3
@@ -7,3 +17,116 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
+
+[node name="TMPBar" type="Polygon2D" parent="."]
+position = Vector2(640, 720)
+polygon = PackedVector2Array(-640, -176, -640, 0, 640, 0, 640, -176)
+
+[node name="ClickerBar" type="Sprite2D" parent="."]
+
+[node name="Clickers" type="Control" parent="."]
+anchors_preset = 0
+offset_left = 640.0
+offset_top = 544.0
+offset_right = 640.0
+offset_bottom = 544.0
+
+[node name="MaterialsTextureButton" type="TextureButton" parent="Clickers"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -384.0
+offset_top = 64.0
+offset_right = -320.0
+offset_bottom = 128.0
+grow_horizontal = 2
+grow_vertical = 2
+texture_normal = ExtResource("1_fod3n")
+script = ExtResource("2_qh5u3")
+
+[node name="MaterialsValue" type="Label" parent="Clickers/MaterialsTextureButton"]
+layout_mode = 1
+anchors_preset = 6
+anchor_left = 1.0
+anchor_top = 0.5
+anchor_right = 1.0
+anchor_bottom = 0.5
+offset_left = -160.0
+offset_right = -88.0
+offset_bottom = 26.0
+grow_horizontal = 0
+grow_vertical = 2
+text = "0/100"
+label_settings = SubResource("LabelSettings_r8j10")
+horizontal_alignment = 2
+
+[node name="GoldTextureButton" type="TextureButton" parent="Clickers"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -32.0
+offset_top = 64.0
+offset_right = 32.0
+offset_bottom = 128.0
+grow_horizontal = 2
+grow_vertical = 2
+texture_normal = ExtResource("2_o5orp")
+script = ExtResource("4_javdr")
+
+[node name="GoldValue" type="Label" parent="Clickers/GoldTextureButton"]
+layout_mode = 1
+anchors_preset = 6
+anchor_left = 1.0
+anchor_top = 0.5
+anchor_right = 1.0
+anchor_bottom = 0.5
+offset_left = -160.0
+offset_right = -88.0
+offset_bottom = 26.0
+grow_horizontal = 0
+grow_vertical = 2
+text = "0/100"
+label_settings = SubResource("LabelSettings_r8j10")
+horizontal_alignment = 2
+
+[node name="ScienceTextureButton" type="TextureButton" parent="Clickers"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = 384.0
+offset_top = 64.0
+offset_right = 448.0
+offset_bottom = 128.0
+grow_horizontal = 2
+grow_vertical = 2
+texture_normal = ExtResource("3_tvfke")
+script = ExtResource("6_8ocoj")
+
+[node name="ScienceValue" type="Label" parent="Clickers/ScienceTextureButton"]
+layout_mode = 1
+anchors_preset = 6
+anchor_left = 1.0
+anchor_top = 0.5
+anchor_right = 1.0
+anchor_bottom = 0.5
+offset_left = -160.0
+offset_right = -88.0
+offset_bottom = 26.0
+grow_horizontal = 0
+grow_vertical = 2
+text = "0/100"
+label_settings = SubResource("LabelSettings_r8j10")
+horizontal_alignment = 2
+
+[connection signal="button_down" from="Clickers/MaterialsTextureButton" to="Clickers/MaterialsTextureButton" method="_on_button_down"]
+[connection signal="button_down" from="Clickers/GoldTextureButton" to="Clickers/GoldTextureButton" method="_on_button_down"]
+[connection signal="button_down" from="Clickers/ScienceTextureButton" to="Clickers/ScienceTextureButton" method="_on_button_down"]

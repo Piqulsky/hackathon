@@ -1,3 +1,7 @@
-[gd_scene format=3 uid="uid://bin16ivvd78ph"]
+[gd_scene load_steps=2 format=3 uid="uid://bin16ivvd78ph"]
+
+[ext_resource type="PackedScene" uid="uid://ocjtlcfvg40s" path="res://GUI/main_clickers.tscn" id="1_wo2dw"]
 
 [node name="MainScene" type="Node2D"]
+
+[node name="MainClickers" parent="." instance=ExtResource("1_wo2dw")]
