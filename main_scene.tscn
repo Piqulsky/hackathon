@@ -1,32 +1,71 @@
-[gd_scene load_steps=7 format=3 uid="uid://bin16ivvd78ph"]
+[gd_scene load_steps=10 format=3 uid="uid://bin16ivvd78ph"]
 
+[ext_resource type="Script" path="res://panels_manager.gd" id="1_daqfh"]
 [ext_resource type="PackedScene" uid="uid://cljctta8stwik" path="res://Panels/general_panel.tscn" id="1_m6mal"]
 [ext_resource type="PackedScene" uid="uid://ocjtlcfvg40s" path="res://GUI/main_clickers.tscn" id="1_wo2dw"]
 [ext_resource type="PackedScene" uid="uid://cvgdm66px55mr" path="res://Panels/trees_panel.tscn" id="3_b0sv3"]
 [ext_resource type="PackedScene" uid="uid://dykxdwd8sv2wa" path="res://Panels/creation_panel.tscn" id="4_g8ts0"]
 [ext_resource type="PackedScene" uid="uid://dag0y1sdg6m76" path="res://Panels/people_panel.tscn" id="5_ctdjd"]
 [ext_resource type="PackedScene" uid="uid://pjcbs2uotd2y" path="res://Panels/saving_panel.tscn" id="6_81lbp"]
+[ext_resource type="Texture2D" uid="uid://diwhctx81rgik" path="res://TMPTextures/3.png" id="7_jeuba"]
+[ext_resource type="Texture2D" uid="uid://bfgtcq67jpe28" path="res://TMPTextures/9.png" id="8_yii3k"]
 
 [node name="MainScene" type="Node2D"]
 
-[node name="GeneralPanel" parent="." instance=ExtResource("1_m6mal")]
+[node name="Panels" type="Node2D" parent="."]
+script = ExtResource("1_daqfh")
 
-[node name="TreesPanel" parent="." instance=ExtResource("3_b0sv3")]
+[node name="GeneralPanel" parent="Panels" instance=ExtResource("1_m6mal")]
+
+[node name="TreesPanel" parent="Panels" instance=ExtResource("3_b0sv3")]
 position = Vector2(-1280, 0)
 
-[node name="CreationPanel" parent="." instance=ExtResource("4_g8ts0")]
+[node name="CreationPanel" parent="Panels" instance=ExtResource("4_g8ts0")]
 position = Vector2(1280, 0)
 
-[node name="PeoplePanel" parent="." instance=ExtResource("5_ctdjd")]
+[node name="PeoplePanel" parent="Panels" instance=ExtResource("5_ctdjd")]
 position = Vector2(-2560, 0)
 
-[node name="SavingPanel" parent="." instance=ExtResource("6_81lbp")]
+[node name="SavingPanel" parent="Panels" instance=ExtResource("6_81lbp")]
 position = Vector2(2560, 0)
 
 [node name="MainClickers" parent="." instance=ExtResource("1_wo2dw")]
 
-[node name="Control" type="Control" parent="."]
+[node name="ArrowsButtons" type="Control" parent="."]
 layout_mode = 3
 anchors_preset = 0
-offset_right = 40.0
-offset_bottom = 40.0
+offset_top = 360.0
+offset_right = 1280.0
+offset_bottom = 424.0
+
+[node name="LeftArrow" type="TextureButton" parent="ArrowsButtons"]
+layout_mode = 1
+anchors_preset = 4
+anchor_top = 0.5
+anchor_bottom = 0.5
+offset_left = 16.0
+offset_top = -32.0
+offset_right = 80.0
+offset_bottom = 32.0
+grow_vertical = 2
+pivot_offset = Vector2(0, 32)
+texture_normal = ExtResource("7_jeuba")
+
+[node name="RightArrow" type="TextureButton" parent="ArrowsButtons"]
+layout_mode = 1
+anchors_preset = 6
+anchor_left = 1.0
+anchor_top = 0.5
+anchor_right = 1.0
+anchor_bottom = 0.5
+offset_left = -80.0
+offset_top = -32.0
+offset_right = -16.0
+offset_bottom = 32.0
+grow_horizontal = 0
+grow_vertical = 2
+pivot_offset = Vector2(64, 32)
+texture_normal = ExtResource("8_yii3k")
+
+[connection signal="button_down" from="ArrowsButtons/LeftArrow" to="Panels" method="_on_left_arrow_button_down"]
+[connection signal="button_down" from="ArrowsButtons/RightArrow" to="Panels" method="_on_right_arrow_button_down"]
