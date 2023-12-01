@@ -11,4 +11,4 @@ func _physics_process(delta):
 
 
 func _on_button_down():
-	Global.resources.materials += Global.resourcesMultiplier.science
+	Global.resources.science += Global.resourcesMultiplier.science

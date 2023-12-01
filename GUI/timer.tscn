@@ -1,0 +1,27 @@
+[gd_scene load_steps=3 format=3 uid="uid://cvbalrdracx47"]
+
+[ext_resource type="Script" path="res://Scripts/timer.gd" id="1_yofb1"]
+
+[sub_resource type="LabelSettings" id="LabelSettings_shvlp"]
+font_size = 40
+
+[node name="Timer" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_right = -1120.0
+offset_bottom = -656.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_yofb1")
+
+[node name="Timer" type="Timer" parent="."]
+
+[node name="TimeLabel" type="Label" parent="."]
+layout_mode = 0
+offset_right = 160.0
+offset_bottom = 64.0
+text = "15:00"
+label_settings = SubResource("LabelSettings_shvlp")
+horizontal_alignment = 1

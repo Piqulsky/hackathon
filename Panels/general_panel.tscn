@@ -1,10 +1,15 @@
-[gd_scene load_steps=2 format=3 uid="uid://cljctta8stwik"]
+[gd_scene load_steps=3 format=3 uid="uid://cljctta8stwik"]
 
+[ext_resource type="Texture2D" uid="uid://ctbwfteanjiei" path="res://Textures/background_1.png" id="1_se1ur"]
 [ext_resource type="Texture2D" uid="uid://dwoc2hh6otb8w" path="res://Textures/main_land.png" id="1_yy50o"]
 
 [node name="GeneralPanel" type="Node2D"]
 
-[node name="Sprite2D" type="Sprite2D" parent="."]
+[node name="SkySprite" type="Sprite2D" parent="."]
+position = Vector2(640, 360)
+texture = ExtResource("1_se1ur")
+
+[node name="LandSprite" type="Sprite2D" parent="."]
 position = Vector2(640, 360)
 texture = ExtResource("1_yy50o")
 
