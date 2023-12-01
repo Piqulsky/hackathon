@@ -1,3 +1,9 @@
 [gd_scene format=3 uid="uid://cvgdm66px55mr"]
 
 [node name="TreesPanel" type="Node2D"]
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+
+[node name="Polygon2D" type="Polygon2D" parent="."]
+color = Color(0.388235, 0.870588, 0, 1)
+polygon = PackedVector2Array(1280, 0, 1280, 736, 0, 736, 0, 0)

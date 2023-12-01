@@ -1,7 +1,26 @@
-[gd_scene load_steps=2 format=3 uid="uid://bin16ivvd78ph"]
+[gd_scene load_steps=7 format=3 uid="uid://bin16ivvd78ph"]
 
+[ext_resource type="PackedScene" uid="uid://cljctta8stwik" path="res://Panels/general_panel.tscn" id="1_m6mal"]
 [ext_resource type="PackedScene" uid="uid://ocjtlcfvg40s" path="res://GUI/main_clickers.tscn" id="1_wo2dw"]
+[ext_resource type="PackedScene" uid="uid://cvgdm66px55mr" path="res://Panels/trees_panel.tscn" id="3_b0sv3"]
+[ext_resource type="PackedScene" uid="uid://dykxdwd8sv2wa" path="res://Panels/creation_panel.tscn" id="4_g8ts0"]
+[ext_resource type="PackedScene" uid="uid://dag0y1sdg6m76" path="res://Panels/people_panel.tscn" id="5_ctdjd"]
+[ext_resource type="PackedScene" uid="uid://pjcbs2uotd2y" path="res://Panels/saving_panel.tscn" id="6_81lbp"]
 
 [node name="MainScene" type="Node2D"]
+
+[node name="GeneralPanel" parent="." instance=ExtResource("1_m6mal")]
+
+[node name="TreesPanel" parent="." instance=ExtResource("3_b0sv3")]
+position = Vector2(-1280, 0)
+
+[node name="CreationPanel" parent="." instance=ExtResource("4_g8ts0")]
+position = Vector2(1280, 0)
+
+[node name="PeoplePanel" parent="." instance=ExtResource("5_ctdjd")]
+position = Vector2(-2560, 0)
+
+[node name="SavingPanel" parent="." instance=ExtResource("6_81lbp")]
+position = Vector2(2560, 0)
 
 [node name="MainClickers" parent="." instance=ExtResource("1_wo2dw")]

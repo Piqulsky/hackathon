@@ -1,6 +1,7 @@
-[gd_scene load_steps=8 format=3 uid="uid://ocjtlcfvg40s"]
+[gd_scene load_steps=9 format=3 uid="uid://ocjtlcfvg40s"]
 
 [ext_resource type="Texture2D" uid="uid://ds7wnuyi7kkda" path="res://TMPTextures/1.png" id="1_fod3n"]
+[ext_resource type="Texture2D" uid="uid://lcjhjxwbef5t" path="res://Textures/button_panel.png" id="1_xcymm"]
 [ext_resource type="Texture2D" uid="uid://cwclw3njmwnbj" path="res://TMPTextures/5.png" id="2_o5orp"]
 [ext_resource type="Script" path="res://Scripts/MainClickers/MaterialsTextureButton.gd" id="2_qh5u3"]
 [ext_resource type="Texture2D" uid="uid://bug7xvf1l1n6h" path="res://TMPTextures/6.png" id="3_tvfke"]
@@ -18,11 +19,9 @@ anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
 
-[node name="TMPBar" type="Polygon2D" parent="."]
-position = Vector2(640, 720)
-polygon = PackedVector2Array(-640, -176, -640, 0, 640, 0, 640, -176)
-
 [node name="ClickerBar" type="Sprite2D" parent="."]
+position = Vector2(640, 640)
+texture = ExtResource("1_xcymm")
 
 [node name="Clickers" type="Control" parent="."]
 anchors_preset = 0
