@@ -33,3 +33,4 @@ func _on_progress_texture_button_button_down():
 		pgBar.value = 0
 		pgButton.disabled = true
 		beginButton.disabled = false
+		#ADD SHELTER

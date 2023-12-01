@@ -1,6 +1,7 @@
-[gd_scene load_steps=2 format=3 uid="uid://dykxdwd8sv2wa"]
+[gd_scene load_steps=3 format=3 uid="uid://dykxdwd8sv2wa"]
 
 [ext_resource type="PackedScene" uid="uid://4vkh4uhwbe4j" path="res://Panels/CreationPanelContent/shelters_panel.tscn" id="1_jq1o6"]
+[ext_resource type="PackedScene" uid="uid://bteq0awn0kcj2" path="res://Scripts/Panels/resources_panel.tscn" id="2_qnlyd"]
 
 [node name="CreationPanel" type="Node2D"]
 
@@ -11,3 +12,7 @@ color = Color(1, 0.654902, 0.243137, 1)
 polygon = PackedVector2Array(1280, 0, 1280, 736, 0, 736, 0, 0)
 
 [node name="SheltersPanel" parent="." instance=ExtResource("1_jq1o6")]
+
+[node name="resources_panel" parent="." instance=ExtResource("2_qnlyd")]
+offset_left = 640.0
+offset_right = 640.0
