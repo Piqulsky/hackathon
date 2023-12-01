@@ -25,6 +25,12 @@ var researchProgress = {
 	"res32" = false,
 }
 
+var food := 0
+var shelters := 0
+var shelterExpansions := 0
+var savedRelics := 0
+var savedTech = 0
+
 func _ready():
 	pass 
 
