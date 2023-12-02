@@ -1,8 +1,4 @@
-<<<<<<< HEAD
-[gd_scene load_steps=16 format=3 uid="uid://76g1h08gih8a"]
-=======
-[gd_scene load_steps=15 format=3 uid="uid://76g1h08gih8a"]
->>>>>>> 0cec018eebb84a307ebc69512699252affacbc17
+[gd_scene load_steps=17 format=3 uid="uid://fku6u6do3edr"]
 
 [ext_resource type="Script" path="res://Scripts/Panels/buy_panel.gd" id="1_yuer2"]
 [ext_resource type="Texture2D" uid="uid://cs2dk0kwxjnqa" path="res://Textures/button_wheat.png" id="2_utma5"]
@@ -13,11 +9,10 @@
 [ext_resource type="Texture2D" uid="uid://clitxabdnrkse" path="res://Textures/button_apple.png" id="4_c6rqg"]
 [ext_resource type="Texture2D" uid="uid://61gwdfeyqy4v" path="res://Textures/button_meat_clicked.png" id="5_5otom"]
 [ext_resource type="Texture2D" uid="uid://486j3jx552vb" path="res://Textures/button_apple_clicked.png" id="7_5l503"]
-[ext_resource type="Texture2D" uid="uid://buny6t4f5ojei" path="res://Textures/worker.png" id="7_37oal"]
-[ext_resource type="Texture2D" uid="uid://bq5i2g4qtfthf" path="res://Textures/czingcziong_progressbar.png" id="11_0w2yn"]
-[ext_resource type="Texture2D" uid="uid://c38i737bvh3ha" path="res://Textures/czingcziong_progressbar_kurwa.png" id="12_3o3q4"]
 [ext_resource type="Texture2D" uid="uid://bnvqewjkc3nmg" path="res://Textures/chinese_worker.png" id="10_ak6qu"]
+[ext_resource type="Texture2D" uid="uid://bq5i2g4qtfthf" path="res://Textures/czingcziong_progressbar.png" id="11_0w2yn"]
 [ext_resource type="Texture2D" uid="uid://yxo5urdk2gn3" path="res://Textures/chinese_worker_clicked.png" id="11_io4l4"]
+[ext_resource type="Texture2D" uid="uid://c38i737bvh3ha" path="res://Textures/czingcziong_progressbar_kurwa.png" id="12_3o3q4"]
 
 [sub_resource type="LabelSettings" id="LabelSettings_40d3g"]
 font_size = 64
@@ -145,12 +140,7 @@ horizontal_alignment = 1
 [node name="MultiplierLabel" type="Label" parent="VillagersPanel"]
 layout_mode = 0
 offset_left = 192.0
-<<<<<<< HEAD
 offset_right = 353.0
-=======
-offset_top = 32.0
-offset_right = 352.0
->>>>>>> 0cec018eebb84a307ebc69512699252affacbc17
 offset_bottom = 128.0
 text = "0x"
 label_settings = SubResource("LabelSettings_iq8qq")
@@ -159,22 +149,13 @@ vertical_alignment = 1
 
 [node name="GenerationBar" type="TextureProgressBar" parent="VillagersPanel"]
 layout_mode = 0
-<<<<<<< HEAD
 offset_left = 361.0
 offset_top = 24.0
 offset_right = 585.0
 offset_bottom = 120.0
-step = 0.25
+step = 0.1
 texture_under = ExtResource("11_0w2yn")
 texture_progress = ExtResource("12_3o3q4")
-=======
-offset_left = 352.0
-offset_top = 32.0
-offset_right = 608.0
-offset_bottom = 128.0
-step = 0.1
-show_percentage = false
->>>>>>> 0cec018eebb84a307ebc69512699252affacbc17
 
 [node name="Timer" type="Timer" parent="."]
 autostart = true
