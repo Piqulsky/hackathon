@@ -34,6 +34,28 @@ texture_normal = ExtResource("2_yjofi")
 ignore_texture_size = true
 stretch_mode = 0
 
+[node name="Label1" type="Label" parent="TechnologyButton1"]
+visible = false
+layout_mode = 0
+offset_left = 61.0
+offset_top = -6.0
+offset_right = 221.0
+offset_bottom = 43.0
+theme_override_colors/font_color = Color(0.941176, 0, 0.215686, 1)
+text = "Zwiększa Prędkość
+Pracy chłopów"
+vertical_alignment = 1
+
+[node name="MoneyCost1" type="Label" parent="TechnologyButton1"]
+layout_mode = 0
+offset_left = -7.0
+offset_top = -21.0
+offset_right = 66.0
+offset_bottom = 2.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+horizontal_alignment = 1
+vertical_alignment = 1
+
 [node name="TechnologyButton2" type="TextureButton" parent="."]
 layout_mode = 0
 offset_left = 297.0
@@ -44,6 +66,27 @@ disabled = true
 texture_normal = ExtResource("2_yjofi")
 ignore_texture_size = true
 stretch_mode = 0
+
+[node name="Label2" type="Label" parent="TechnologyButton2"]
+visible = false
+layout_mode = 0
+offset_left = 61.0
+offset_top = 4.0
+offset_right = 206.0
+offset_bottom = 53.0
+theme_override_colors/font_color = Color(0.941176, 0, 0.215686, 1)
+text = "Zwiększa Prędkość
+Pracy chłopów"
+vertical_alignment = 1
+
+[node name="MoneyCost2" type="Label" parent="TechnologyButton2"]
+offset_left = -14.0
+offset_top = 55.0
+offset_right = 75.0
+offset_bottom = 78.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+horizontal_alignment = 1
+vertical_alignment = 1
 
 [node name="TechnologyButton3" type="TextureButton" parent="."]
 layout_mode = 0
@@ -56,6 +99,27 @@ texture_normal = ExtResource("2_yjofi")
 ignore_texture_size = true
 stretch_mode = 0
 
+[node name="MoneyCost3" type="Label" parent="TechnologyButton3"]
+offset_left = -10.0
+offset_top = 54.0
+offset_right = 71.0
+offset_bottom = 77.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Label3" type="Label" parent="TechnologyButton3"]
+visible = false
+layout_mode = 0
+offset_left = 61.0
+offset_top = 21.0
+offset_right = 206.0
+offset_bottom = 70.0
+theme_override_colors/font_color = Color(0.941176, 0, 0.215686, 1)
+text = "Zwiększa Prędkość
+Pracy chłopów"
+vertical_alignment = 1
+
 [node name="TechnologyButton4" type="TextureButton" parent="."]
 layout_mode = 0
 offset_left = 297.0
@@ -66,6 +130,27 @@ disabled = true
 texture_normal = ExtResource("2_yjofi")
 ignore_texture_size = true
 stretch_mode = 0
+
+[node name="Label4" type="Label" parent="TechnologyButton4"]
+visible = false
+layout_mode = 0
+offset_left = 63.0
+offset_top = 7.0
+offset_right = 208.0
+offset_bottom = 56.0
+theme_override_colors/font_color = Color(0.941176, 0, 0.215686, 1)
+text = "Zwiększa Prędkość
+Pracy chłopów"
+vertical_alignment = 1
+
+[node name="MoneyCost4" type="Label" parent="TechnologyButton4"]
+offset_left = -7.0
+offset_top = 56.0
+offset_right = 66.0
+offset_bottom = 79.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+horizontal_alignment = 1
+vertical_alignment = 1
 
 [node name="TechnologyButton11" type="TextureButton" parent="."]
 layout_mode = 0
@@ -78,6 +163,26 @@ texture_normal = ExtResource("2_yjofi")
 ignore_texture_size = true
 stretch_mode = 0
 
+[node name="Label5" type="Label" parent="TechnologyButton11"]
+visible = false
+layout_mode = 0
+offset_left = -189.0
+offset_top = 8.0
+offset_right = -4.0
+offset_bottom = 47.0
+theme_override_colors/font_color = Color(0.941176, 0, 0.215686, 1)
+text = "Pasywny przychód złota"
+vertical_alignment = 1
+
+[node name="MoneyCost1" type="Label" parent="TechnologyButton11"]
+offset_left = 166.0
+offset_top = -25.0
+offset_right = 246.0
+offset_bottom = -2.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+horizontal_alignment = 1
+vertical_alignment = 1
+
 [node name="TechnologyButton12" type="TextureButton" parent="."]
 layout_mode = 0
 offset_left = 384.0
@@ -88,6 +193,27 @@ disabled = true
 texture_normal = ExtResource("2_yjofi")
 ignore_texture_size = true
 stretch_mode = 0
+
+[node name="Label6" type="Label" parent="TechnologyButton12"]
+visible = false
+layout_mode = 0
+offset_left = 58.0
+offset_top = 5.0
+offset_right = 218.0
+offset_bottom = 54.0
+theme_override_colors/font_color = Color(0.941176, 0, 0.215686, 1)
+text = "Pasywny przychód 
+materiałów"
+vertical_alignment = 1
+
+[node name="MoneyCost1" type="Label" parent="TechnologyButton12"]
+offset_left = -187.0
+offset_top = -24.0
+offset_right = -107.0
+offset_bottom = -1.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+horizontal_alignment = 1
+vertical_alignment = 1
 
 [node name="TechnologyButton21" type="TextureButton" parent="."]
 layout_mode = 0
@@ -100,6 +226,27 @@ texture_normal = ExtResource("2_yjofi")
 ignore_texture_size = true
 stretch_mode = 0
 
+[node name="MoneyCost2" type="Label" parent="TechnologyButton21"]
+offset_left = 160.0
+offset_top = 55.0
+offset_right = 256.0
+offset_bottom = 78.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Label7" type="Label" parent="TechnologyButton21"]
+visible = false
+layout_mode = 0
+offset_left = -204.0
+offset_top = 2.0
+offset_right = -5.0
+offset_bottom = 51.0
+theme_override_colors/font_color = Color(0.941176, 0, 0.215686, 1)
+text = "Zwiększa twój zdobywany
+Wynik za relikty"
+vertical_alignment = 1
+
 [node name="TechnologyButton22" type="TextureButton" parent="."]
 layout_mode = 0
 offset_left = 384.0
@@ -110,6 +257,27 @@ disabled = true
 texture_normal = ExtResource("2_yjofi")
 ignore_texture_size = true
 stretch_mode = 0
+
+[node name="Label8" type="Label" parent="TechnologyButton22"]
+visible = false
+layout_mode = 0
+offset_left = 63.0
+offset_top = 7.0
+offset_right = 207.0
+offset_bottom = 56.0
+theme_override_colors/font_color = Color(0.941176, 0, 0.215686, 1)
+text = "Dodaje ci pasywny
+dochód nauki"
+vertical_alignment = 1
+
+[node name="MoneyCost2" type="Label" parent="TechnologyButton22"]
+offset_left = -189.0
+offset_top = 53.0
+offset_right = -101.0
+offset_bottom = 76.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+horizontal_alignment = 1
+vertical_alignment = 1
 
 [node name="TechnologyButton31" type="TextureButton" parent="."]
 layout_mode = 0
@@ -122,6 +290,27 @@ texture_normal = ExtResource("2_yjofi")
 ignore_texture_size = true
 stretch_mode = 0
 
+[node name="Label9" type="Label" parent="TechnologyButton31"]
+visible = false
+layout_mode = 0
+offset_left = -159.0
+offset_top = 1.0
+offset_right = -2.0
+offset_bottom = 50.0
+theme_override_colors/font_color = Color(0.941176, 0, 0.215686, 1)
+text = "            Automatyzuje
+tworzenie schronów"
+vertical_alignment = 1
+
+[node name="MoneyCost3" type="Label" parent="TechnologyButton31"]
+offset_left = -12.0
+offset_top = 52.0
+offset_right = 71.0
+offset_bottom = 75.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+horizontal_alignment = 1
+vertical_alignment = 1
+
 [node name="TechnologyButton32" type="TextureButton" parent="."]
 layout_mode = 0
 offset_left = 384.0
@@ -133,13 +322,54 @@ texture_normal = ExtResource("2_yjofi")
 ignore_texture_size = true
 stretch_mode = 0
 
+[node name="Label10" type="Label" parent="TechnologyButton32"]
+visible = false
+layout_mode = 0
+offset_left = 63.0
+offset_top = 11.0
+offset_right = 227.0
+offset_bottom = 60.0
+theme_override_colors/font_color = Color(0.941176, 0, 0.215686, 1)
+text = "Automatyzuje
+Ulepszanie schronów"
+vertical_alignment = 1
+
+[node name="MoneyCost3" type="Label" parent="TechnologyButton32"]
+offset_left = -8.0
+offset_top = 50.0
+offset_right = 74.0
+offset_bottom = 73.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+horizontal_alignment = 1
+vertical_alignment = 1
+
 [connection signal="button_down" from="TechnologyButton1" to="." method="_on_technology_button_1_down"]
+[connection signal="mouse_entered" from="TechnologyButton1" to="." method="_on_technology_button_1_mouse_entered"]
+[connection signal="mouse_exited" from="TechnologyButton1" to="." method="_on_technology_button_1_mouse_exited"]
 [connection signal="button_down" from="TechnologyButton2" to="." method="_on_technology_button_2_down"]
+[connection signal="mouse_entered" from="TechnologyButton2" to="." method="_on_technology_button_2_mouse_entered"]
+[connection signal="mouse_exited" from="TechnologyButton2" to="." method="_on_technology_button_2_mouse_exited"]
 [connection signal="button_down" from="TechnologyButton3" to="." method="_on_technology_button_3_down"]
+[connection signal="mouse_entered" from="TechnologyButton3" to="." method="_on_technology_button_3_mouse_entered"]
+[connection signal="mouse_exited" from="TechnologyButton3" to="." method="_on_technology_button_3_mouse_exited"]
 [connection signal="button_down" from="TechnologyButton4" to="." method="_on_technology_button_4_down"]
+[connection signal="mouse_entered" from="TechnologyButton4" to="." method="_on_technology_button_4_mouse_entered"]
+[connection signal="mouse_exited" from="TechnologyButton4" to="." method="_on_technology_button_4_mouse_exited"]
 [connection signal="button_down" from="TechnologyButton11" to="." method="_on_technology_button_11_down"]
+[connection signal="mouse_entered" from="TechnologyButton11" to="." method="_on_technology_button_11_mouse_entered"]
+[connection signal="mouse_exited" from="TechnologyButton11" to="." method="_on_technology_button_11_mouse_exited"]
 [connection signal="button_down" from="TechnologyButton12" to="." method="_on_technology_button_12_down"]
+[connection signal="mouse_entered" from="TechnologyButton12" to="." method="_on_technology_button_12_mouse_entered"]
+[connection signal="mouse_exited" from="TechnologyButton12" to="." method="_on_technology_button_12_mouse_exited"]
 [connection signal="button_down" from="TechnologyButton21" to="." method="_on_technology_button_21_down"]
+[connection signal="mouse_entered" from="TechnologyButton21" to="." method="_on_technology_button_21_mouse_entered"]
+[connection signal="mouse_exited" from="TechnologyButton21" to="." method="_on_technology_button_21_mouse_exited"]
 [connection signal="button_down" from="TechnologyButton22" to="." method="_on_technology_button_22_down"]
+[connection signal="mouse_entered" from="TechnologyButton22" to="." method="_on_technology_button_22_mouse_entered"]
+[connection signal="mouse_exited" from="TechnologyButton22" to="." method="_on_technology_button_22_mouse_exited"]
 [connection signal="button_down" from="TechnologyButton31" to="." method="_on_technology_button_31_down"]
+[connection signal="mouse_entered" from="TechnologyButton31" to="." method="_on_technology_button_31_mouse_entered"]
+[connection signal="mouse_exited" from="TechnologyButton31" to="." method="_on_technology_button_31_mouse_exited"]
 [connection signal="button_down" from="TechnologyButton32" to="." method="_on_technology_button_32_down"]
+[connection signal="mouse_entered" from="TechnologyButton32" to="." method="_on_technology_button_32_mouse_entered"]
+[connection signal="mouse_exited" from="TechnologyButton32" to="." method="_on_technology_button_32_mouse_exited"]

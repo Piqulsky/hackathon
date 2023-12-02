@@ -52,9 +52,8 @@ stretch_mode = 0
 
 [node name="MaterialsPriceLabel" type="Label" parent="MaterialsUpgradeButton"]
 layout_mode = 0
-offset_left = 16.0
 offset_top = 80.0
-offset_right = 64.0
+offset_right = 80.0
 offset_bottom = 112.0
 text = "0/100"
 label_settings = SubResource("LabelSettings_au30e")
@@ -75,9 +74,8 @@ stretch_mode = 0
 
 [node name="GoldPriceLabel" type="Label" parent="GoldUpgradeButton"]
 layout_mode = 0
-offset_left = 16.0
 offset_top = 80.0
-offset_right = 64.0
+offset_right = 80.0
 offset_bottom = 112.0
 text = "0/100"
 label_settings = SubResource("LabelSettings_au30e")
@@ -98,9 +96,9 @@ stretch_mode = 0
 
 [node name="ResearchPriceLabel" type="Label" parent="ResearchUpgradeButton"]
 layout_mode = 0
-offset_left = 16.0
+offset_left = 8.0
 offset_top = 80.0
-offset_right = 64.0
+offset_right = 80.0
 offset_bottom = 112.0
 text = "0/100"
 label_settings = SubResource("LabelSettings_au30e")
