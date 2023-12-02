@@ -1,0 +1,292 @@
+[gd_scene load_steps=21 format=3 uid="uid://b8a3j6stlx8dm"]
+
+[ext_resource type="Texture2D" uid="uid://dvn88xdk4fek4" path="res://Textures/bgbigppl.png" id="1_mq580"]
+[ext_resource type="Texture2D" uid="uid://diauljsp3droo" path="res://Textures/termometr/termometr5.png" id="2_artfx"]
+[ext_resource type="Texture2D" uid="uid://orljve75opgy" path="res://Textures/herbert.png" id="3_sviyh"]
+[ext_resource type="Texture2D" uid="uid://ds67yr3bd16oh" path="res://Textures/buttonstartowy.png" id="4_satc1"]
+[ext_resource type="Texture2D" uid="uid://3pj30lbjhf37" path="res://Textures/buttonstartowy_clicked.png" id="5_5aboe"]
+[ext_resource type="Texture2D" uid="uid://cpy86nqe1ffds" path="res://Textures/termometr/termometr4.png" id="6_d75qy"]
+[ext_resource type="Texture2D" uid="uid://c822gnlxwynqv" path="res://Textures/lem.png" id="7_40t14"]
+[ext_resource type="Texture2D" uid="uid://c0welng44gqer" path="res://Textures/thatcher.png" id="8_5rnoy"]
+[ext_resource type="Texture2D" uid="uid://bofdai358ikwm" path="res://Textures/karski.png" id="9_m8e3u"]
+[ext_resource type="Texture2D" uid="uid://voj86ivxlujo" path="res://Textures/roland_regan.png" id="10_ny8qc"]
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_ko533"]
+load_path = "res://.godot/imported/bartermometr.png-ae2c5fa377b4133afc7ffc3e5681a472.ctex"
+
+[sub_resource type="LabelSettings" id="LabelSettings_rnj20"]
+font_size = 11
+
+[sub_resource type="LabelSettings" id="LabelSettings_u86au"]
+font_size = 11
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_4p4di"]
+load_path = "res://.godot/imported/termometr3.png-fc5b614bbd73a78cb147881d8d3a264a.ctex"
+
+[sub_resource type="LabelSettings" id="LabelSettings_uctdx"]
+font_size = 14
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_r7gc0"]
+load_path = "res://.godot/imported/termometr2.png-7bead92cc92ef4789c77659aaba24bce.ctex"
+
+[sub_resource type="LabelSettings" id="LabelSettings_xag5i"]
+font_size = 14
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_buuaj"]
+load_path = "res://.godot/imported/termometr1.png-298d13a4eae26b89de3f7f0b6994dd05.ctex"
+
+[sub_resource type="LabelSettings" id="LabelSettings_4tqce"]
+font_size = 14
+
+[sub_resource type="LabelSettings" id="LabelSettings_x777l"]
+font_size = 24
+
+[node name="Tutorial6" type="Node2D"]
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(640, 360)
+texture = ExtResource("1_mq580")
+
+[node name="Control" type="Control" parent="."]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="Group5" type="Control" parent="Control"]
+layout_mode = 3
+anchors_preset = 0
+offset_left = 1024.0
+offset_top = 64.0
+offset_right = 1154.0
+offset_bottom = 512.0
+
+[node name="GreatPersonProgressBar5" type="TextureProgressBar" parent="Control/Group5"]
+layout_mode = 0
+offset_top = 128.0
+offset_right = 127.0
+offset_bottom = 384.0
+max_value = 99.0
+step = 3.0
+fill_mode = 2
+texture_over = ExtResource("2_artfx")
+texture_progress = SubResource("CompressedTexture2D_ko533")
+
+[node name="Zbigniew Herbert" type="Sprite2D" parent="Control/Group5"]
+position = Vector2(65, 64)
+texture = ExtResource("3_sviyh")
+
+[node name="GreatPersonProgressButton5" type="TextureButton" parent="Control/Group5"]
+layout_mode = 0
+offset_left = -24.0
+offset_top = 392.0
+offset_right = 144.0
+offset_bottom = 440.0
+texture_normal = ExtResource("4_satc1")
+texture_pressed = ExtResource("5_5aboe")
+ignore_texture_size = true
+stretch_mode = 0
+
+[node name="Label5" type="Label" parent="Control/Group5/GreatPersonProgressButton5"]
+layout_mode = 0
+offset_left = 8.0
+offset_top = 15.0
+offset_right = 160.0
+offset_bottom = 38.0
+text = "0/50 0/50 0/50"
+label_settings = SubResource("LabelSettings_rnj20")
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Group4" type="Control" parent="Control"]
+layout_mode = 3
+anchors_preset = 0
+offset_left = 800.0
+offset_top = 64.0
+offset_right = 930.0
+offset_bottom = 512.0
+
+[node name="GreatPersonProgressBar4" type="TextureProgressBar" parent="Control/Group4"]
+layout_mode = 0
+offset_top = 128.0
+offset_right = 127.0
+offset_bottom = 384.0
+max_value = 99.0
+step = 3.0
+fill_mode = 2
+texture_over = ExtResource("6_d75qy")
+texture_progress = SubResource("CompressedTexture2D_ko533")
+
+[node name="Stanisław Lem" type="Sprite2D" parent="Control/Group4"]
+position = Vector2(65, 64)
+texture = ExtResource("7_40t14")
+
+[node name="GreatPersonProgressButton4" type="TextureButton" parent="Control/Group4"]
+layout_mode = 0
+offset_left = -16.0
+offset_top = 392.0
+offset_right = 152.0
+offset_bottom = 440.0
+texture_normal = ExtResource("4_satc1")
+texture_pressed = ExtResource("5_5aboe")
+ignore_texture_size = true
+stretch_mode = 0
+
+[node name="Label4" type="Label" parent="Control/Group4/GreatPersonProgressButton4"]
+layout_mode = 0
+offset_left = 8.0
+offset_top = 14.0
+offset_right = 160.0
+offset_bottom = 39.0
+text = "0/50 0/50 0/50"
+label_settings = SubResource("LabelSettings_u86au")
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Group3" type="Control" parent="Control"]
+layout_mode = 3
+anchors_preset = 0
+offset_left = 576.0
+offset_top = 64.0
+offset_right = 703.0
+offset_bottom = 512.0
+
+[node name="GreatPersonProgressBar3" type="TextureProgressBar" parent="Control/Group3"]
+layout_mode = 0
+offset_top = 128.0
+offset_right = 127.0
+offset_bottom = 384.0
+max_value = 99.0
+step = 3.0
+fill_mode = 2
+texture_over = SubResource("CompressedTexture2D_4p4di")
+texture_progress = SubResource("CompressedTexture2D_ko533")
+
+[node name="Margaret Thatcher" type="Sprite2D" parent="Control/Group3"]
+position = Vector2(64, 64)
+texture = ExtResource("8_5rnoy")
+
+[node name="GreatPersonProgressButton3" type="TextureButton" parent="Control/Group3"]
+layout_mode = 0
+offset_left = 16.0
+offset_top = 392.0
+offset_right = 112.0
+offset_bottom = 440.0
+texture_normal = ExtResource("4_satc1")
+texture_pressed = ExtResource("5_5aboe")
+ignore_texture_size = true
+stretch_mode = 0
+
+[node name="Label3" type="Label" parent="Control/Group3/GreatPersonProgressButton3"]
+layout_mode = 0
+offset_left = 13.0
+offset_top = 15.0
+offset_right = 85.0
+offset_bottom = 38.0
+text = "0/50"
+label_settings = SubResource("LabelSettings_uctdx")
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Group2" type="Control" parent="Control"]
+layout_mode = 3
+anchors_preset = 0
+offset_left = 352.0
+offset_top = 64.0
+offset_right = 480.0
+offset_bottom = 512.0
+
+[node name="Jan Karski" type="Sprite2D" parent="Control/Group2"]
+position = Vector2(64, 64)
+texture = ExtResource("9_m8e3u")
+
+[node name="GreatPersonProgressBar2" type="TextureProgressBar" parent="Control/Group2"]
+layout_mode = 0
+offset_top = 128.0
+offset_right = 127.0
+offset_bottom = 384.0
+max_value = 99.0
+step = 3.0
+fill_mode = 2
+texture_over = SubResource("CompressedTexture2D_r7gc0")
+texture_progress = SubResource("CompressedTexture2D_ko533")
+
+[node name="GreatPersonProgressButton2" type="TextureButton" parent="Control/Group2"]
+layout_mode = 0
+offset_left = 16.0
+offset_top = 392.0
+offset_right = 112.0
+offset_bottom = 440.0
+texture_normal = ExtResource("4_satc1")
+texture_pressed = ExtResource("5_5aboe")
+ignore_texture_size = true
+stretch_mode = 0
+
+[node name="Label2" type="Label" parent="Control/Group2/GreatPersonProgressButton2"]
+layout_mode = 0
+offset_left = 13.0
+offset_top = 15.0
+offset_right = 85.0
+offset_bottom = 38.0
+text = "0/50"
+label_settings = SubResource("LabelSettings_xag5i")
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Group1" type="Control" parent="Control"]
+layout_mode = 3
+anchors_preset = 0
+offset_left = 129.0
+offset_top = 64.0
+offset_right = 257.0
+offset_bottom = 512.0
+
+[node name="GreatPersonProgressBar1" type="TextureProgressBar" parent="Control/Group1"]
+layout_mode = 0
+offset_top = 128.0
+offset_right = 127.0
+offset_bottom = 384.0
+max_value = 99.0
+step = 3.0
+fill_mode = 2
+texture_over = SubResource("CompressedTexture2D_buuaj")
+texture_progress = SubResource("CompressedTexture2D_ko533")
+
+[node name="RolandRegan" type="Sprite2D" parent="Control/Group1"]
+position = Vector2(65, 64)
+texture = ExtResource("10_ny8qc")
+
+[node name="GreatPersonProgressButton1" type="TextureButton" parent="Control/Group1"]
+layout_mode = 0
+offset_left = 16.0
+offset_top = 392.0
+offset_right = 112.0
+offset_bottom = 440.0
+texture_normal = ExtResource("4_satc1")
+texture_pressed = ExtResource("5_5aboe")
+ignore_texture_size = true
+stretch_mode = 0
+
+[node name="Label1" type="Label" parent="Control/Group1/GreatPersonProgressButton1"]
+layout_mode = 0
+offset_left = 13.0
+offset_top = 15.0
+offset_right = 85.0
+offset_bottom = 38.0
+text = "0/50"
+label_settings = SubResource("LabelSettings_4tqce")
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Label" type="Label" parent="."]
+offset_left = 40.0
+offset_top = 512.0
+offset_right = 1248.0
+offset_bottom = 704.0
+text = "To jest ekran wielkich ludzi. Osób ze współczesności, które mają wielki wpływ na świat. Są cenni dla
+społeczeństwa i dlatego należy ich ochronić w bunkrach. Jednak zanim do tego dojdzie ci wielcy ludzie
+wspomagają twoje starania o bezpieczeństwo dla ludzkości, oferując swoje umiejętności i dostarczając
+konieczne zasoby. Kiedy wielki człowiek zostanie schroniony w podziemiach, jego lampka zaświeci się,
+a jego pozostałe wpływy na powierzchni  wspomogą dalsze starania."
+label_settings = SubResource("LabelSettings_x777l")
+horizontal_alignment = 1
