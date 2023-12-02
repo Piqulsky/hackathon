@@ -19,6 +19,14 @@ func _ready():
 
 func _physics_process(delta):
 	costLabel.text = str(Global.resources.materials) + "/" + str(cost)
+	if Global.automaticShelterImprover and pgButton.disabled == false:
+		pgBar.value += pgBar.step
+		if pgBar.value >= pgBar.max_value:
+			pgBar.value = 0
+			pgButton.disabled = true
+			beginButton.disabled = false
+			Global.shelterExpansions += 1
+			expansionsLabel.text = str(Global.shelterExpansions)
 
 
 func _on_begin_texture_button_button_down():
@@ -30,7 +38,7 @@ func _on_begin_texture_button_button_down():
 
 
 func _on_progress_texture_button_button_down():
-	pgBar.value += pgBar.step
+	pgBar.value += pgBar.step * 4
 	if pgBar.value >= pgBar.max_value:
 		pgBar.value = 0
 		pgButton.disabled = true

@@ -2,7 +2,7 @@
 
 [ext_resource type="Texture2D" uid="uid://ctbwfteanjiei" path="res://Textures/background_1.png" id="1_se1ur"]
 [ext_resource type="Texture2D" uid="uid://dwoc2hh6otb8w" path="res://Textures/main_land.png" id="1_yy50o"]
-[ext_resource type="PackedScene" uid="uid://cvbalrdracx47" path="res://GUI/timer.tscn" id="3_siqsp"]
+[ext_resource type="PackedScene" path="res://GUI/end_timer.tscn" id="3_siqsp"]
 
 [node name="GeneralPanel" type="Node2D"]
 
