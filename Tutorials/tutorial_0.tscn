@@ -10,17 +10,19 @@ color = Color(0, 0, 0, 1)
 polygon = PackedVector2Array(0, 0, 1280, 0, 1280, 736, 0, 736)
 
 [node name="Label" type="Label" parent="."]
-offset_left = 256.0
-offset_top = 160.0
-offset_right = 1024.0
+offset_left = 128.0
+offset_top = 96.0
+offset_right = 1152.0
 offset_bottom = 608.0
 text = "Jest rok 2000.
-Witaj w świecie na którym zaraz zajdzie ostatni 
-zachód słońca. To właśnie Tobie powierzono
-zadanie ocalenia jak największej liczbie osób oraz
-uratowania dziedzictwa kulturowego które 
-utworzyła ludzkość. Czas jest ograniczony, bo
-gorące słońce zbliża się ku swojemu ostatniemu
-zachodowi."
+Naukowcy zapowiedzieli, że następny zachód słońca będzie
+ostatnim. Zmiana klimatu zmieniła orbitę ziemską i skierowała
+Ziemię w kierunku oddalonym od Słońca. Ludzkość przygotowuje
+się na zagładę, rządy zjednoczyły się i wyznaczyły Komisję Ostatni
+Zachód, którego rolą stało się uratowanie ludzkości w obliczu
+apokalipsy. To właśnie Tobie powierzono to zadanie. Musisz
+uratować jak największą liczbę osób w schronach i zabezpieczyć
+dziedzictwo ludzkości. Czas jest ograniczony. Ktokolwiek
+pozostanie na powierzchni zamarźnie z całą resztą życia na Ziemi."
 label_settings = SubResource("LabelSettings_ilkq4")
 horizontal_alignment = 1
