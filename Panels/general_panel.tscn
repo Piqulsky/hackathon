@@ -1,4 +1,4 @@
-[gd_scene load_steps=10 format=3 uid="uid://cljctta8stwik"]
+[gd_scene load_steps=13 format=3 uid="uid://cljctta8stwik"]
 
 [ext_resource type="Script" path="res://Scripts/Panels/general_panel.gd" id="1_8l4px"]
 [ext_resource type="Texture2D" uid="uid://ctbwfteanjiei" path="res://Textures/background_1.png" id="1_se1ur"]
@@ -9,6 +9,9 @@
 [ext_resource type="Texture2D" uid="uid://duml7svkedug" path="res://Textures/sun.png" id="5_3d0t7"]
 [ext_resource type="Texture2D" uid="uid://c8l510n7aln63" path="res://Textures/background_4.png" id="5_aqv2t"]
 [ext_resource type="PackedScene" uid="uid://cocw1dfe5hbr" path="res://Panels/GeneralPanelContent/game_results.tscn" id="6_x6q12"]
+[ext_resource type="Texture2D" uid="uid://c7rdhycccclq4" path="res://Textures/bank.png" id="8_u4pog"]
+[ext_resource type="Texture2D" uid="uid://bu6rqiuoscqie" path="res://Textures/hospital.png" id="9_jboj4"]
+[ext_resource type="Texture2D" uid="uid://ojtckpnjhwnh" path="res://Textures/fabryka.png" id="10_gmi5a"]
 
 [node name="GeneralPanel" type="Node2D"]
 script = ExtResource("1_8l4px")
@@ -33,9 +36,24 @@ texture = ExtResource("1_se1ur")
 position = Vector2(640, 96)
 texture = ExtResource("5_3d0t7")
 
-[node name="LandSprite" type="Sprite2D" parent="."]
+[node name="Background" type="Sprite2D" parent="."]
 position = Vector2(640, 360)
 texture = ExtResource("1_yy50o")
+
+[node name="Bank" type="Sprite2D" parent="."]
+visible = false
+position = Vector2(640, 360)
+texture = ExtResource("8_u4pog")
+
+[node name="Hospital" type="Sprite2D" parent="."]
+visible = false
+position = Vector2(640, 360)
+texture = ExtResource("9_jboj4")
+
+[node name="Factory" type="Sprite2D" parent="."]
+visible = false
+position = Vector2(643, 362)
+texture = ExtResource("10_gmi5a")
 
 [node name="Polygon2D" type="Polygon2D" parent="."]
 visible = false

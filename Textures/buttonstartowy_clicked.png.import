@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://ds67yr3bd16oh"
-path="res://.godot/imported/buttonstartowy.png-077f5998f22f2fc93d6e3875d20c382b.ctex"
+uid="uid://3pj30lbjhf37"
+path="res://.godot/imported/buttonstartowy_clicked.png-9afbda0190770581775996f6c101a727.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Textures/buttonstartowy.png"
-dest_files=["res://.godot/imported/buttonstartowy.png-077f5998f22f2fc93d6e3875d20c382b.ctex"]
+source_file="res://Textures/buttonstartowy_clicked.png"
+dest_files=["res://.godot/imported/buttonstartowy_clicked.png-9afbda0190770581775996f6c101a727.ctex"]
 
 [params]
 

@@ -1,13 +1,34 @@
-[gd_scene load_steps=6 format=3 uid="uid://dekyhx6dt2vf"]
+[gd_scene load_steps=11 format=3 uid="uid://dekyhx6dt2vf"]
 
 [ext_resource type="Script" path="res://Scripts/startScreenManager.gd" id="1_t5kxh"]
 [ext_resource type="Texture2D" uid="uid://bkhnqpc12x0gm" path="res://Textures/ekranstartowy1.png" id="2_cyd3u"]
-[ext_resource type="Texture2D" uid="uid://cj7h63jrxqtxv" path="res://Textures/buttonstartowy.png" id="3_3yyha"]
+[ext_resource type="Texture2D" uid="uid://ds67yr3bd16oh" path="res://Textures/buttonstartowy.png" id="3_3yyha"]
 [ext_resource type="FontFile" uid="uid://kc4j5ea027jm" path="res://TIMESBD.TTF" id="3_v3luv"]
+[ext_resource type="Texture2D" uid="uid://3pj30lbjhf37" path="res://Textures/buttonstartowy_clicked.png" id="5_d1fqy"]
 
 [sub_resource type="LabelSettings" id="LabelSettings_den0i"]
 font = ExtResource("3_v3luv")
 font_size = 30
+
+[sub_resource type="LabelSettings" id="LabelSettings_5qyfk"]
+font = ExtResource("3_v3luv")
+font_size = 32
+font_color = Color(0.282353, 0, 0, 1)
+
+[sub_resource type="LabelSettings" id="LabelSettings_4x8dd"]
+font = ExtResource("3_v3luv")
+font_size = 32
+font_color = Color(0.282353, 0, 0, 1)
+
+[sub_resource type="LabelSettings" id="LabelSettings_j67xt"]
+font = ExtResource("3_v3luv")
+font_size = 32
+font_color = Color(0.282353, 0, 0, 1)
+
+[sub_resource type="LabelSettings" id="LabelSettings_nwd16"]
+font = ExtResource("3_v3luv")
+font_size = 32
+font_color = Color(0.282353, 0, 0, 1)
 
 [node name="StartScene" type="Node2D"]
 
@@ -35,6 +56,7 @@ offset_top = 192.0
 offset_right = 744.0
 offset_bottom = 247.0
 texture_normal = ExtResource("3_3yyha")
+texture_pressed = ExtResource("5_d1fqy")
 ignore_texture_size = true
 stretch_mode = 0
 
@@ -43,10 +65,10 @@ layout_mode = 0
 offset_left = 30.0
 offset_top = 12.0
 offset_right = 174.0
-offset_bottom = 46.0
-theme_override_colors/font_color = Color(0.282353, 0, 0, 1)
+offset_bottom = 48.0
 theme_override_font_sizes/font_size = 24
 text = "Start"
+label_settings = SubResource("LabelSettings_5qyfk")
 horizontal_alignment = 1
 vertical_alignment = 1
 
@@ -56,6 +78,7 @@ offset_top = 320.0
 offset_right = 744.0
 offset_bottom = 375.0
 texture_normal = ExtResource("3_3yyha")
+texture_pressed = ExtResource("5_d1fqy")
 ignore_texture_size = true
 stretch_mode = 0
 
@@ -64,9 +87,9 @@ offset_left = 574.0
 offset_top = 332.0
 offset_right = 718.0
 offset_bottom = 366.0
-theme_override_colors/font_color = Color(0.282353, 0, 0, 1)
 theme_override_font_sizes/font_size = 24
 text = "Wyniki"
+label_settings = SubResource("LabelSettings_4x8dd")
 horizontal_alignment = 1
 vertical_alignment = 1
 
@@ -76,18 +99,19 @@ offset_top = 448.0
 offset_right = 744.0
 offset_bottom = 503.0
 texture_normal = ExtResource("3_3yyha")
+texture_pressed = ExtResource("5_d1fqy")
 ignore_texture_size = true
 stretch_mode = 0
 
 [node name="OptionsButtonText" type="Label" parent="StartingScreen/OptionsButton"]
 layout_mode = 0
-offset_left = 30.0
+offset_left = 26.0
 offset_top = 11.0
-offset_right = 174.0
-offset_bottom = 45.0
-theme_override_colors/font_color = Color(0.282353, 0, 0, 1)
+offset_right = 177.0
+offset_bottom = 47.0
 theme_override_font_sizes/font_size = 24
 text = "Ustawienia"
+label_settings = SubResource("LabelSettings_j67xt")
 horizontal_alignment = 1
 vertical_alignment = 1
 
@@ -97,18 +121,19 @@ offset_top = 576.0
 offset_right = 744.0
 offset_bottom = 631.0
 texture_normal = ExtResource("3_3yyha")
+texture_pressed = ExtResource("5_d1fqy")
 ignore_texture_size = true
 stretch_mode = 0
 
 [node name="ExitButtonText" type="Label" parent="StartingScreen/ExitButton"]
 layout_mode = 0
-offset_left = 32.0
+offset_left = 29.0
 offset_top = 12.0
-offset_right = 176.0
-offset_bottom = 46.0
-theme_override_colors/font_color = Color(0.282353, 0, 0, 1)
+offset_right = 173.0
+offset_bottom = 48.0
 theme_override_font_sizes/font_size = 24
 text = "Wyjście"
+label_settings = SubResource("LabelSettings_nwd16")
 horizontal_alignment = 1
 vertical_alignment = 1
 
