@@ -1,12 +1,32 @@
-[gd_scene load_steps=8 format=3 uid="uid://c77e2dymkxoks"]
+[gd_scene load_steps=16 format=3 uid="uid://c77e2dymkxoks"]
 
-[ext_resource type="Texture2D" uid="uid://boeui5psfp4ua" path="res://TMPTextures/0d.png" id="1_a6rs6"]
 [ext_resource type="Script" path="res://Scripts/Panels/people_panel_manager.gd" id="1_jhj0a"]
 [ext_resource type="Texture2D" uid="uid://cj7h63jrxqtxv" path="res://Textures/buttonstartowy.png" id="3_3h0uy"]
 [ext_resource type="Texture2D" uid="uid://voj86ivxlujo" path="res://Textures/roland_regan.png" id="3_5v28j"]
 [ext_resource type="Texture2D" uid="uid://bofdai358ikwm" path="res://Textures/karski.png" id="4_8cd3x"]
 [ext_resource type="Texture2D" uid="uid://c0welng44gqer" path="res://Textures/thatcher.png" id="5_s1pcn"]
 [ext_resource type="Texture2D" uid="uid://c822gnlxwynqv" path="res://Textures/lem.png" id="7_0lrq8"]
+[ext_resource type="Texture2D" uid="uid://cpy86nqe1ffds" path="res://Textures/termometr/termometr4.png" id="8_m5c1y"]
+[ext_resource type="Texture2D" uid="uid://orljve75opgy" path="res://Textures/herbert.png" id="8_oa50p"]
+[ext_resource type="Texture2D" uid="uid://diauljsp3droo" path="res://Textures/termometr/termometr5.png" id="9_bel0c"]
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_2ohs1"]
+load_path = "res://.godot/imported/bartermometr.png-ae2c5fa377b4133afc7ffc3e5681a472.ctex"
+
+[sub_resource type="LabelSettings" id="LabelSettings_1vreb"]
+font_size = 13
+
+[sub_resource type="LabelSettings" id="LabelSettings_3wnmt"]
+font_size = 13
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_cmvan"]
+load_path = "res://.godot/imported/termometr3.png-fc5b614bbd73a78cb147881d8d3a264a.ctex"
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_efbjw"]
+load_path = "res://.godot/imported/termometr2.png-7bead92cc92ef4789c77659aaba24bce.ctex"
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_iglvv"]
+load_path = "res://.godot/imported/termometr1.png-298d13a4eae26b89de3f7f0b6994dd05.ctex"
 
 [node name="PeoplePanel" type="Control"]
 layout_mode = 3
@@ -17,149 +37,210 @@ grow_horizontal = 2
 grow_vertical = 2
 script = ExtResource("1_jhj0a")
 
-[node name="GreatPerson1" type="Sprite2D" parent="."]
-position = Vector2(192, 256)
-scale = Vector2(1.34896, 4)
-texture = ExtResource("1_a6rs6")
+[node name="Group5" type="Control" parent="."]
+anchors_preset = 0
+offset_left = 1024.0
+offset_top = 64.0
+offset_right = 1154.0
+offset_bottom = 512.0
 
-[node name="GreatPerson2" type="Sprite2D" parent="."]
-position = Vector2(416, 256)
-scale = Vector2(1.33333, 4)
-texture = ExtResource("1_a6rs6")
-
-[node name="GreatPerson3" type="Sprite2D" parent="."]
-position = Vector2(640, 256.479)
-scale = Vector2(1.29948, 3.99002)
-texture = ExtResource("1_a6rs6")
-
-[node name="GreatPerson4" type="Sprite2D" parent="."]
-position = Vector2(864, 256.729)
-scale = Vector2(1.34896, 3.98481)
-texture = ExtResource("1_a6rs6")
-
-[node name="GreatPerson5" type="Sprite2D" parent="."]
-position = Vector2(1088, 256.479)
-scale = Vector2(1.34896, 3.99002)
-texture = ExtResource("1_a6rs6")
-
-[node name="GreatPersonProgressButton1" type="TextureButton" parent="."]
+[node name="GreatPersonProgressBar5" type="TextureProgressBar" parent="Group5"]
 layout_mode = 0
-offset_left = 144.0
-offset_top = 456.0
-offset_right = 240.0
-offset_bottom = 504.0
+offset_top = 128.0
+offset_right = 127.0
+offset_bottom = 384.0
+max_value = 99.0
+step = 3.0
+fill_mode = 2
+texture_over = ExtResource("9_bel0c")
+texture_progress = SubResource("CompressedTexture2D_2ohs1")
+
+[node name="Zbigniew Herbert" type="Sprite2D" parent="Group5"]
+position = Vector2(65, 64)
+texture = ExtResource("8_oa50p")
+
+[node name="GreatPersonProgressButton5" type="TextureButton" parent="Group5"]
+offset_left = 1.0
+offset_top = 392.0
+offset_right = 128.0
+offset_bottom = 440.0
 texture_normal = ExtResource("3_3h0uy")
 ignore_texture_size = true
 stretch_mode = 0
 
-[node name="GreatPersonProgressButton2" type="TextureButton" parent="."]
-offset_left = 368.0
-offset_top = 456.0
-offset_right = 464.0
-offset_bottom = 504.0
-texture_normal = ExtResource("3_3h0uy")
-ignore_texture_size = true
-stretch_mode = 0
+[node name="Label5" type="Label" parent="Group5/GreatPersonProgressButton5"]
+offset_left = 11.0
+offset_top = 15.0
+offset_right = 123.0
+offset_bottom = 38.0
+text = "0/50 0/50 0/50"
+label_settings = SubResource("LabelSettings_1vreb")
+horizontal_alignment = 1
+vertical_alignment = 1
 
-[node name="GreatPersonProgressButton3" type="TextureButton" parent="."]
-offset_left = 592.0
-offset_top = 456.0
-offset_right = 688.0
-offset_bottom = 504.0
-texture_normal = ExtResource("3_3h0uy")
-ignore_texture_size = true
-stretch_mode = 0
+[node name="Group4" type="Control" parent="."]
+anchors_preset = 0
+offset_left = 800.0
+offset_top = 64.0
+offset_right = 930.0
+offset_bottom = 512.0
 
-[node name="GreatPersonProgressButton4" type="TextureButton" parent="."]
-offset_left = 816.0
-offset_top = 456.0
-offset_right = 912.0
-offset_bottom = 504.0
-texture_normal = ExtResource("3_3h0uy")
-ignore_texture_size = true
-stretch_mode = 0
+[node name="GreatPersonProgressBar4" type="TextureProgressBar" parent="Group4"]
+layout_mode = 0
+offset_top = 128.0
+offset_right = 127.0
+offset_bottom = 384.0
+max_value = 99.0
+step = 3.0
+fill_mode = 2
+texture_over = ExtResource("8_m5c1y")
+texture_progress = SubResource("CompressedTexture2D_2ohs1")
 
-[node name="GreatPersonProgressButton5" type="TextureButton" parent="."]
-offset_left = 1040.0
-offset_top = 456.0
-offset_right = 1136.0
-offset_bottom = 504.0
-texture_normal = ExtResource("3_3h0uy")
-ignore_texture_size = true
-stretch_mode = 0
-
-[node name="RolandRegan" type="Sprite2D" parent="."]
-position = Vector2(193, 128)
-texture = ExtResource("3_5v28j")
-
-[node name="Jan Karski" type="Sprite2D" parent="."]
-position = Vector2(416, 128)
-texture = ExtResource("4_8cd3x")
-
-[node name="Margaret Thatcher" type="Sprite2D" parent="."]
-position = Vector2(640, 128)
-texture = ExtResource("5_s1pcn")
-
-[node name="Stanisław Lem" type="Sprite2D" parent="."]
-position = Vector2(864, 128)
+[node name="Stanisław Lem" type="Sprite2D" parent="Group4"]
+position = Vector2(65, 64)
 texture = ExtResource("7_0lrq8")
 
-[node name="Zbigniew Herbert" type="Sprite2D" parent="."]
-position = Vector2(1088, 128)
+[node name="GreatPersonProgressButton4" type="TextureButton" parent="Group4"]
+offset_left = 1.0
+offset_top = 392.0
+offset_right = 130.0
+offset_bottom = 440.0
+texture_normal = ExtResource("3_3h0uy")
+ignore_texture_size = true
+stretch_mode = 0
+
+[node name="Label4" type="Label" parent="Group4/GreatPersonProgressButton4"]
+offset_left = 10.0
+offset_top = 14.0
+offset_right = 122.0
+offset_bottom = 39.0
+text = "0/50 0/50 0/50"
+label_settings = SubResource("LabelSettings_3wnmt")
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Group3" type="Control" parent="."]
+anchors_preset = 0
+offset_left = 576.0
+offset_top = 64.0
+offset_right = 703.0
+offset_bottom = 512.0
+
+[node name="GreatPersonProgressBar3" type="TextureProgressBar" parent="Group3"]
+layout_mode = 0
+offset_top = 128.0
+offset_right = 127.0
+offset_bottom = 384.0
+max_value = 99.0
+step = 3.0
+fill_mode = 2
+texture_over = SubResource("CompressedTexture2D_cmvan")
+texture_progress = SubResource("CompressedTexture2D_2ohs1")
+
+[node name="Margaret Thatcher" type="Sprite2D" parent="Group3"]
+position = Vector2(64, 64)
+texture = ExtResource("5_s1pcn")
+
+[node name="GreatPersonProgressButton3" type="TextureButton" parent="Group3"]
+offset_left = 16.0
+offset_top = 392.0
+offset_right = 112.0
+offset_bottom = 440.0
+texture_normal = ExtResource("3_3h0uy")
+ignore_texture_size = true
+stretch_mode = 0
+
+[node name="Label3" type="Label" parent="Group3/GreatPersonProgressButton3"]
+offset_left = 13.0
+offset_top = 15.0
+offset_right = 85.0
+offset_bottom = 38.0
+text = "0/50"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Group2" type="Control" parent="."]
+anchors_preset = 0
+offset_left = 352.0
+offset_top = 64.0
+offset_right = 480.0
+offset_bottom = 512.0
+
+[node name="Jan Karski" type="Sprite2D" parent="Group2"]
+position = Vector2(64, 64)
+texture = ExtResource("4_8cd3x")
+
+[node name="GreatPersonProgressBar2" type="TextureProgressBar" parent="Group2"]
+layout_mode = 0
+offset_top = 128.0
+offset_right = 127.0
+offset_bottom = 384.0
+max_value = 99.0
+step = 3.0
+fill_mode = 2
+texture_over = SubResource("CompressedTexture2D_efbjw")
+texture_progress = SubResource("CompressedTexture2D_2ohs1")
+
+[node name="GreatPersonProgressButton2" type="TextureButton" parent="Group2"]
+offset_left = 16.0
+offset_top = 392.0
+offset_right = 112.0
+offset_bottom = 440.0
+texture_normal = ExtResource("3_3h0uy")
+ignore_texture_size = true
+stretch_mode = 0
+
+[node name="Label2" type="Label" parent="Group2/GreatPersonProgressButton2"]
+offset_left = 13.0
+offset_top = 15.0
+offset_right = 85.0
+offset_bottom = 38.0
+text = "0/50"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Group1" type="Control" parent="."]
+anchors_preset = 0
+offset_left = 129.0
+offset_top = 64.0
+offset_right = 257.0
+offset_bottom = 512.0
+
+[node name="GreatPersonProgressBar1" type="TextureProgressBar" parent="Group1"]
+offset_top = 128.0
+offset_right = 127.0
+offset_bottom = 384.0
+max_value = 99.0
+step = 3.0
+fill_mode = 2
+texture_over = SubResource("CompressedTexture2D_iglvv")
+texture_progress = SubResource("CompressedTexture2D_2ohs1")
+
+[node name="RolandRegan" type="Sprite2D" parent="Group1"]
+position = Vector2(65, 64)
 texture = ExtResource("3_5v28j")
 
-[node name="GreatPersonProgressBar1" type="TextureProgressBar" parent="."]
-layout_mode = 0
-offset_left = 129.0
-offset_top = 192.0
-offset_right = 256.0
-offset_bottom = 448.0
-max_value = 99.0
-step = 3.0
-fill_mode = 2
+[node name="GreatPersonProgressButton1" type="TextureButton" parent="Group1"]
+offset_left = 16.0
+offset_top = 392.0
+offset_right = 112.0
+offset_bottom = 440.0
+texture_normal = ExtResource("3_3h0uy")
+ignore_texture_size = true
+stretch_mode = 0
 
-[node name="GreatPersonProgressBar2" type="TextureProgressBar" parent="."]
+[node name="Label1" type="Label" parent="Group1/GreatPersonProgressButton1"]
 layout_mode = 0
-offset_left = 352.0
-offset_top = 192.0
-offset_right = 479.0
-offset_bottom = 448.0
-max_value = 99.0
-step = 3.0
-fill_mode = 2
+offset_left = 13.0
+offset_top = 15.0
+offset_right = 85.0
+offset_bottom = 38.0
+text = "0/50"
+horizontal_alignment = 1
+vertical_alignment = 1
 
-[node name="GreatPersonProgressBar3" type="TextureProgressBar" parent="."]
-layout_mode = 0
-offset_left = 578.0
-offset_top = 192.0
-offset_right = 705.0
-offset_bottom = 448.0
-max_value = 99.0
-step = 3.0
-fill_mode = 2
-
-[node name="GreatPersonProgressBar4" type="TextureProgressBar" parent="."]
-layout_mode = 0
-offset_left = 800.0
-offset_top = 192.0
-offset_right = 927.0
-offset_bottom = 448.0
-max_value = 99.0
-step = 3.0
-fill_mode = 2
-
-[node name="GreatPersonProgressBar5" type="TextureProgressBar" parent="."]
-layout_mode = 0
-offset_left = 1024.0
-offset_top = 192.0
-offset_right = 1151.0
-offset_bottom = 448.0
-max_value = 99.0
-step = 3.0
-fill_mode = 2
-
-[connection signal="button_down" from="GreatPersonProgressButton1" to="." method="_on_great_person_progress_button_1_down"]
-[connection signal="button_down" from="GreatPersonProgressButton2" to="." method="_on_great_person_progress_button_2_down"]
-[connection signal="button_down" from="GreatPersonProgressButton3" to="." method="_on_great_person_progress_button_3_down"]
-[connection signal="button_down" from="GreatPersonProgressButton4" to="." method="_on_great_person_progress_button_4_down"]
-[connection signal="button_down" from="GreatPersonProgressButton5" to="." method="_on_great_person_progress_button_5_down"]
+[connection signal="button_down" from="Group5/GreatPersonProgressButton5" to="." method="_on_great_person_progress_button_5_down"]
+[connection signal="button_down" from="Group4/GreatPersonProgressButton4" to="." method="_on_great_person_progress_button_4_down"]
+[connection signal="button_down" from="Group3/GreatPersonProgressButton3" to="." method="_on_great_person_progress_button_3_down"]
+[connection signal="button_down" from="Group2/GreatPersonProgressButton2" to="." method="_on_great_person_progress_button_2_down"]
+[connection signal="button_down" from="Group1/GreatPersonProgressButton1" to="." method="_on_great_person_progress_button_1_down"]

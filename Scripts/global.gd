@@ -1,9 +1,9 @@
 extends Node
 
 var resources = {
-	"materials": 0,
-	"gold": 0,
-	"science": 0
+	"materials": 2000,
+	"gold": 2000,
+	"science": 2000
 }
 
 var resourcesMultiplier = {
