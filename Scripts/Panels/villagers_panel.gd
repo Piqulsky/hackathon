@@ -3,7 +3,7 @@ extends Control
 var cost := 16
 var multiplierLabel :Label
 var villagerCost :Label
-var genBar :ProgressBar
+var genBar
 var villagers := 0
 
 # Called when the node enters the scene tree for the first time.

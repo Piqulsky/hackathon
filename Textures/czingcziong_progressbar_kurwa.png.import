@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://c4iaejg8b7r01"
-path="res://.godot/imported/bookactive.png-ce45bb2843f05474c84b35b9ba92a917.ctex"
+uid="uid://c38i737bvh3ha"
+path="res://.godot/imported/czingcziong_progressbar_kurwa.png-201da0b0649bff78cc0de293cbf689c1.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Textures/bookactive.png"
-dest_files=["res://.godot/imported/bookactive.png-ce45bb2843f05474c84b35b9ba92a917.ctex"]
+source_file="res://Textures/czingcziong_progressbar_kurwa.png"
+dest_files=["res://.godot/imported/czingcziong_progressbar_kurwa.png-201da0b0649bff78cc0de293cbf689c1.ctex"]
 
 [params]
 
