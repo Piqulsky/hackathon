@@ -1,11 +1,12 @@
-[gd_scene load_steps=16 format=3 uid="uid://4vkh4uhwbe4j"]
+[gd_scene load_steps=19 format=3 uid="uid://4vkh4uhwbe4j"]
 
 [ext_resource type="Script" path="res://Scripts/Panels/new_shelters.gd" id="1_81scs"]
-[ext_resource type="Texture2D" uid="uid://bsp6dudeb6v7o" path="res://TMPTextures/0.png" id="1_ipdh4"]
-[ext_resource type="Texture2D" uid="uid://boeui5psfp4ua" path="res://TMPTextures/0d.png" id="2_0wuj3"]
 [ext_resource type="Texture2D" uid="uid://ig6ky02qmc7o" path="res://Textures/progress_bar_outline.png" id="2_cnyb7"]
+[ext_resource type="Texture2D" uid="uid://ww8mpdq8lnjq" path="res://Textures/button_yellow.png" id="2_jfyob"]
 [ext_resource type="Texture2D" uid="uid://dfdqkpsyras0l" path="res://Textures/progredd_bar_green.png" id="3_mrj2i"]
 [ext_resource type="Script" path="res://Scripts/Panels/expand_shelters.gd" id="4_l2jqh"]
+[ext_resource type="Texture2D" uid="uid://4o1gpv1d472t" path="res://Textures/button_square.png" id="5_dcjke"]
+[ext_resource type="Texture2D" uid="uid://crcekug4lod3t" path="res://Textures/button_square_clicked.png" id="6_d7b78"]
 [ext_resource type="Texture2D" uid="uid://chsq7hq5o4qy7" path="res://Textures/button_hammer.png" id="6_yed1e"]
 [ext_resource type="Texture2D" uid="uid://kxgprkw4br8p" path="res://Textures/button_hammer_clicked.png" id="7_3vy8g"]
 [ext_resource type="Texture2D" uid="uid://reiggpbnpty4" path="res://Textures/progress_bar_blue.png" id="9_0oxny"]
@@ -15,13 +16,19 @@
 [sub_resource type="LabelSettings" id="LabelSettings_ppex6"]
 font_size = 64
 
-[sub_resource type="LabelSettings" id="LabelSettings_m20j4"]
-
 [sub_resource type="LabelSettings" id="LabelSettings_8axdp"]
 font_size = 32
 
+[sub_resource type="LabelSettings" id="LabelSettings_shurc"]
+font_size = 28
+
+[sub_resource type="LabelSettings" id="LabelSettings_m20j4"]
+
 [sub_resource type="LabelSettings" id="LabelSettings_7f1a0"]
 font_size = 32
+
+[sub_resource type="LabelSettings" id="LabelSettings_qhyvw"]
+font_size = 28
 
 [node name="SheltersPanel" type="Control"]
 layout_mode = 3
@@ -30,6 +37,7 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
+metadata/_edit_vertical_guides_ = [1024.0]
 
 [node name="Polygon2D" type="Polygon2D" parent="."]
 visible = false
@@ -50,6 +58,7 @@ offset_top = 96.0
 offset_right = 640.0
 offset_bottom = 320.0
 script = ExtResource("1_81scs")
+icon = ExtResource("2_jfyob")
 
 [node name="ProgressBar" type="TextureProgressBar" parent="NewShelters"]
 layout_mode = 0
@@ -63,22 +72,22 @@ texture_progress = ExtResource("3_mrj2i")
 
 [node name="BeginTextureButton" type="TextureButton" parent="NewShelters"]
 layout_mode = 0
-offset_left = 128.0
-offset_top = 32.0
+offset_left = 96.0
+offset_top = 16.0
 offset_right = 224.0
-offset_bottom = 128.0
-texture_normal = ExtResource("1_ipdh4")
-texture_disabled = ExtResource("2_0wuj3")
+offset_bottom = 144.0
+texture_normal = ExtResource("5_dcjke")
+texture_pressed = ExtResource("6_d7b78")
+texture_disabled = ExtResource("6_d7b78")
 
 [node name="Label" type="Label" parent="NewShelters/BeginTextureButton"]
 layout_mode = 0
-offset_top = 96.0
-offset_right = 96.0
-offset_bottom = 128.0
+offset_top = 112.0
+offset_right = 128.0
+offset_bottom = 144.0
 text = "0/0"
-label_settings = SubResource("LabelSettings_m20j4")
 horizontal_alignment = 1
-vertical_alignment = 1
+vertical_alignment = 2
 
 [node name="ProgressTextureButton" type="TextureButton" parent="NewShelters"]
 layout_mode = 0
@@ -96,11 +105,21 @@ layout_mode = 0
 offset_left = 256.0
 offset_top = 32.0
 offset_right = 416.0
-offset_bottom = 128.0
+offset_bottom = 80.0
 text = "0"
 label_settings = SubResource("LabelSettings_8axdp")
 horizontal_alignment = 1
 vertical_alignment = 1
+
+[node name="SheltersLabel2" type="Label" parent="NewShelters"]
+layout_mode = 0
+offset_left = 256.0
+offset_top = 80.0
+offset_right = 416.0
+offset_bottom = 128.0
+text = "schronisk"
+label_settings = SubResource("LabelSettings_shurc")
+horizontal_alignment = 1
 
 [node name="ExpandShelters" type="Control" parent="."]
 anchors_preset = 0
@@ -121,22 +140,23 @@ texture_progress = ExtResource("9_0oxny")
 
 [node name="BeginTextureButton" type="TextureButton" parent="ExpandShelters"]
 layout_mode = 0
-offset_left = 128.0
-offset_top = 32.0
+offset_left = 96.0
+offset_top = 16.0
 offset_right = 224.0
-offset_bottom = 128.0
-texture_normal = ExtResource("1_ipdh4")
-texture_disabled = ExtResource("2_0wuj3")
+offset_bottom = 144.0
+texture_normal = ExtResource("5_dcjke")
+texture_pressed = ExtResource("6_d7b78")
+texture_disabled = ExtResource("6_d7b78")
 
 [node name="Label" type="Label" parent="ExpandShelters/BeginTextureButton"]
 layout_mode = 0
-offset_top = 96.0
-offset_right = 96.0
-offset_bottom = 128.0
+offset_top = 112.0
+offset_right = 128.0
+offset_bottom = 144.0
 text = "0/0"
 label_settings = SubResource("LabelSettings_m20j4")
 horizontal_alignment = 1
-vertical_alignment = 1
+vertical_alignment = 2
 
 [node name="ProgressTextureButton" type="TextureButton" parent="ExpandShelters"]
 layout_mode = 0
@@ -154,11 +174,21 @@ layout_mode = 0
 offset_left = 256.0
 offset_top = 32.0
 offset_right = 416.0
-offset_bottom = 128.0
+offset_bottom = 80.0
 text = "0"
 label_settings = SubResource("LabelSettings_7f1a0")
 horizontal_alignment = 1
 vertical_alignment = 1
+
+[node name="ExpansionsLabel2" type="Label" parent="ExpandShelters"]
+layout_mode = 0
+offset_left = 256.0
+offset_top = 80.0
+offset_right = 416.0
+offset_bottom = 128.0
+text = "powiększeń"
+label_settings = SubResource("LabelSettings_qhyvw")
+horizontal_alignment = 1
 
 [connection signal="button_down" from="NewShelters/BeginTextureButton" to="NewShelters" method="_on_begin_texture_button_button_down"]
 [connection signal="button_down" from="NewShelters/ProgressTextureButton" to="NewShelters" method="_on_progress_texture_button_button_down"]

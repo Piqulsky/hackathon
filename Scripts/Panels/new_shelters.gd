@@ -6,6 +6,7 @@ var pgBar :TextureProgressBar
 var pgButton :TextureButton
 var costLabel :Label
 var sheltersLabel :Label
+@export var icon :Texture2D
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
@@ -18,6 +19,7 @@ func _ready():
 
 func _physics_process(delta):
 	costLabel.text = str(Global.resources.materials) + "/" + str(cost)
+	
 	if Global.automaticShelterBuilder and pgButton.disabled == false:
 		pgBar.value += pgBar.step
 		if pgBar.value >= pgBar.max_value:

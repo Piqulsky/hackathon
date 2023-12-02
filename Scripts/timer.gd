@@ -15,7 +15,7 @@ func _process(delta):
 
 func _on_timer_timeout():
 	get_parent().change_sun(time)
-	time -= 1
+	time -= 20
 	var minutes = int(time/60)
 	var seconds = time - minutes * 60
 	timerLabel.text = str(minutes).lpad(2, "0") + ":" + str(seconds).lpad(2, "0")
