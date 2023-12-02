@@ -1,0 +1,349 @@
+[gd_scene load_steps=12 format=3 uid="uid://dl0pbhjjpq7i5"]
+
+[ext_resource type="Texture2D" uid="uid://bgcrod7j3lsb5" path="res://Textures/bgmagnusopum.png" id="1_qt6hr"]
+[ext_resource type="Texture2D" uid="uid://k45lnqhehp0f" path="res://TMPTextures/11.png" id="2_51yt4"]
+[ext_resource type="Texture2D" uid="uid://ds7wnuyi7kkda" path="res://TMPTextures/1.png" id="3_cqla0"]
+[ext_resource type="Texture2D" uid="uid://cwclw3njmwnbj" path="res://TMPTextures/5.png" id="4_18fr1"]
+[ext_resource type="Texture2D" uid="uid://bfgtcq67jpe28" path="res://TMPTextures/9.png" id="5_gwjkq"]
+
+[sub_resource type="LabelSettings" id="LabelSettings_38gpq"]
+font_size = 64
+outline_size = 8
+outline_color = Color(0, 0, 0, 1)
+
+[sub_resource type="LabelSettings" id="LabelSettings_o5xd2"]
+
+[sub_resource type="LabelSettings" id="LabelSettings_2r3st"]
+font_size = 64
+
+[sub_resource type="LabelSettings" id="LabelSettings_her0g"]
+font_size = 64
+outline_size = 8
+outline_color = Color(0, 0, 0, 1)
+
+[sub_resource type="LabelSettings" id="LabelSettings_hdg77"]
+outline_size = 4
+outline_color = Color(0, 0, 0, 1)
+
+[sub_resource type="LabelSettings" id="LabelSettings_ok1rx"]
+outline_size = 4
+outline_color = Color(0, 0, 0, 1)
+
+[node name="Tutorial4" type="Node2D"]
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(640, 360)
+texture = ExtResource("1_qt6hr")
+
+[node name="Control" type="Control" parent="."]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="RelicsLabel" type="Label" parent="Control"]
+offset_right = 640.0
+offset_bottom = 96.0
+text = "Zabytki"
+label_settings = SubResource("LabelSettings_38gpq")
+horizontal_alignment = 1
+
+[node name="LiteratureTextureButton" type="TextureButton" parent="Control"]
+offset_left = 96.0
+offset_top = 128.0
+offset_right = 224.0
+offset_bottom = 256.0
+texture_normal = ExtResource("2_51yt4")
+
+[node name="CostLabel" type="Label" parent="Control/LiteratureTextureButton"]
+layout_mode = 0
+offset_right = 128.0
+offset_bottom = 32.0
+text = "10"
+label_settings = SubResource("LabelSettings_o5xd2")
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="RequirmentLabel" type="Label" parent="Control/LiteratureTextureButton"]
+layout_mode = 0
+offset_top = 96.0
+offset_right = 128.0
+offset_bottom = 128.0
+text = "1 rozwój"
+label_settings = SubResource("LabelSettings_o5xd2")
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="ArtTextureButton" type="TextureButton" parent="Control"]
+offset_left = 416.0
+offset_top = 128.0
+offset_right = 544.0
+offset_bottom = 256.0
+texture_normal = ExtResource("2_51yt4")
+
+[node name="CostLabel" type="Label" parent="Control/ArtTextureButton"]
+layout_mode = 0
+offset_right = 128.0
+offset_bottom = 32.0
+text = "20"
+label_settings = SubResource("LabelSettings_o5xd2")
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="RequirmentLabel" type="Label" parent="Control/ArtTextureButton"]
+layout_mode = 0
+offset_top = 96.0
+offset_right = 128.0
+offset_bottom = 128.0
+text = "2 rozwoje"
+label_settings = SubResource("LabelSettings_o5xd2")
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="SculptureTextureButton" type="TextureButton" parent="Control"]
+offset_left = 256.0
+offset_top = 352.0
+offset_right = 384.0
+offset_bottom = 480.0
+texture_normal = ExtResource("2_51yt4")
+
+[node name="CostLabel" type="Label" parent="Control/SculptureTextureButton"]
+layout_mode = 0
+offset_right = 128.0
+offset_bottom = 32.0
+text = "30"
+label_settings = SubResource("LabelSettings_o5xd2")
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="RequirmentLabel" type="Label" parent="Control/SculptureTextureButton"]
+layout_mode = 0
+offset_top = 96.0
+offset_right = 128.0
+offset_bottom = 128.0
+text = "3 rozwoje"
+label_settings = SubResource("LabelSettings_o5xd2")
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="ValueLabel" type="Label" parent="Control"]
+offset_top = 256.0
+offset_right = 640.0
+offset_bottom = 352.0
+text = "0"
+label_settings = SubResource("LabelSettings_2r3st")
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Control2" type="Control" parent="."]
+layout_mode = 3
+anchors_preset = 0
+offset_left = 640.0
+offset_right = 680.0
+offset_bottom = 40.0
+
+[node name="TechLabel" type="Label" parent="Control2"]
+offset_right = 640.0
+offset_bottom = 96.0
+text = "Technologia"
+label_settings = SubResource("LabelSettings_her0g")
+horizontal_alignment = 1
+
+[node name="BasicTech" type="Control" parent="Control2"]
+layout_mode = 3
+anchors_preset = 0
+offset_top = 416.0
+offset_right = 640.0
+offset_bottom = 544.0
+
+[node name="MaterialsTechButton" type="TextureButton" parent="Control2/BasicTech"]
+layout_mode = 0
+offset_left = 96.0
+offset_top = 32.0
+offset_right = 160.0
+offset_bottom = 96.0
+texture_normal = ExtResource("3_cqla0")
+
+[node name="TechBar" type="ProgressBar" parent="Control2/BasicTech/MaterialsTechButton"]
+layout_mode = 0
+offset_top = -32.0
+offset_right = 64.0
+max_value = 10.0
+step = 1.0
+show_percentage = false
+
+[node name="CostLabel" type="Label" parent="Control2/BasicTech/MaterialsTechButton"]
+layout_mode = 0
+offset_left = -32.0
+offset_top = 64.0
+offset_right = 96.0
+offset_bottom = 96.0
+text = "0/0"
+horizontal_alignment = 1
+
+[node name="GoldTechButton" type="TextureButton" parent="Control2/BasicTech"]
+layout_mode = 0
+offset_left = 288.0
+offset_top = 32.0
+offset_right = 352.0
+offset_bottom = 96.0
+texture_normal = ExtResource("3_cqla0")
+
+[node name="TechBar" type="ProgressBar" parent="Control2/BasicTech/GoldTechButton"]
+layout_mode = 0
+offset_top = -32.0
+offset_right = 64.0
+max_value = 10.0
+step = 1.0
+show_percentage = false
+
+[node name="CostLabel" type="Label" parent="Control2/BasicTech/GoldTechButton"]
+layout_mode = 0
+offset_left = -32.0
+offset_top = 64.0
+offset_right = 96.0
+offset_bottom = 96.0
+text = "0/0"
+horizontal_alignment = 1
+
+[node name="ScienceTechButton" type="TextureButton" parent="Control2/BasicTech"]
+layout_mode = 0
+offset_left = 480.0
+offset_top = 32.0
+offset_right = 544.0
+offset_bottom = 96.0
+texture_normal = ExtResource("3_cqla0")
+
+[node name="TechBar" type="ProgressBar" parent="Control2/BasicTech/ScienceTechButton"]
+layout_mode = 0
+offset_top = -32.0
+offset_right = 64.0
+max_value = 10.0
+step = 1.0
+show_percentage = false
+
+[node name="CostLabel" type="Label" parent="Control2/BasicTech/ScienceTechButton"]
+layout_mode = 0
+offset_left = -32.0
+offset_top = 64.0
+offset_right = 96.0
+offset_bottom = 96.0
+text = "0/0"
+horizontal_alignment = 1
+
+[node name="AdvancedTech" type="Control" parent="Control2"]
+layout_mode = 3
+anchors_preset = 0
+offset_top = 256.0
+offset_right = 640.0
+offset_bottom = 384.0
+
+[node name="MaterialsGoldTechButton" type="TextureButton" parent="Control2/AdvancedTech"]
+layout_mode = 0
+offset_left = 192.0
+offset_top = 32.0
+offset_right = 256.0
+offset_bottom = 96.0
+texture_normal = ExtResource("4_18fr1")
+
+[node name="TechBar" type="ProgressBar" parent="Control2/AdvancedTech/MaterialsGoldTechButton"]
+layout_mode = 0
+offset_top = -32.0
+offset_right = 64.0
+max_value = 10.0
+step = 1.0
+show_percentage = false
+
+[node name="CostLabel" type="Label" parent="Control2/AdvancedTech/MaterialsGoldTechButton"]
+layout_mode = 0
+offset_left = -32.0
+offset_top = 64.0
+offset_right = 96.0
+offset_bottom = 96.0
+text = "0/0"
+horizontal_alignment = 1
+
+[node name="GoldScienceTechButton" type="TextureButton" parent="Control2/AdvancedTech"]
+layout_mode = 0
+offset_left = 384.0
+offset_top = 32.0
+offset_right = 448.0
+offset_bottom = 96.0
+texture_normal = ExtResource("4_18fr1")
+
+[node name="TechBar" type="ProgressBar" parent="Control2/AdvancedTech/GoldScienceTechButton"]
+layout_mode = 0
+offset_top = -32.0
+offset_right = 64.0
+max_value = 10.0
+step = 1.0
+show_percentage = false
+
+[node name="CostLabel" type="Label" parent="Control2/AdvancedTech/GoldScienceTechButton"]
+layout_mode = 0
+offset_left = -32.0
+offset_top = 64.0
+offset_right = 96.0
+offset_bottom = 96.0
+text = "0/0"
+horizontal_alignment = 1
+
+[node name="MasterTech" type="Control" parent="Control2"]
+layout_mode = 3
+anchors_preset = 0
+offset_top = 96.0
+offset_right = 640.0
+offset_bottom = 224.0
+
+[node name="MasterButton" type="TextureButton" parent="Control2/MasterTech"]
+layout_mode = 0
+offset_left = 288.0
+offset_top = 64.0
+offset_right = 352.0
+offset_bottom = 128.0
+texture_normal = ExtResource("5_gwjkq")
+
+[node name="TechBar" type="ProgressBar" parent="Control2/MasterTech/MasterButton"]
+layout_mode = 0
+offset_top = -32.0
+offset_right = 64.0
+max_value = 10.0
+step = 1.0
+show_percentage = false
+
+[node name="CostLabel" type="Label" parent="Control2/MasterTech/MasterButton"]
+layout_mode = 0
+offset_left = -96.0
+offset_top = 64.0
+offset_right = 160.0
+offset_bottom = 96.0
+text = "0/0"
+horizontal_alignment = 1
+
+[node name="Label" type="Label" parent="."]
+offset_top = 512.0
+offset_right = 640.0
+offset_bottom = 704.0
+text = "To jest ekran zabytków. Ocalenie zabytków gwarantuje zwiększony procent
+ocalałego dziedzictwa kulturowego. Każdy z przycisków odpowiada za inny 
+element kultury: literaturę, sztukę i rzeźby. Można je ratować za pomocą
+surowców odpowiednio: Złota, Nauki i Materiałów. Zabytki są ograniczone ilością
+posiadanego rozwoju. Co każde 5 zakupionych zabytków ich cena zostaje
+powiększona tak jak ograniczenie ilością rozwoju. Każdy zabytek oferuje inną
+wartość ocalenia dziedzictwa ludzkości."
+label_settings = SubResource("LabelSettings_hdg77")
+horizontal_alignment = 1
+
+[node name="Label2" type="Label" parent="."]
+offset_left = 640.0
+offset_top = 544.0
+offset_right = 1280.0
+offset_bottom = 704.0
+text = "To jest ekran technologii. Zachowanie technologii pozwala zwiększyć ocalałe
+dziedzictwo kulturowe ludzkości. Każdy element technologii można wytwarzać
+etapami za związany z nią surowiec, bądź surowce. Etap wytworzenia
+uwidoczniony jest na pasku postępu nad każdym etapem technologii. Po 
+wytworzeniu całego elementu, odpowiadający/-e surowce zaczynają być 
+dostarczane automatycznie."
+label_settings = SubResource("LabelSettings_ok1rx")
+horizontal_alignment = 1

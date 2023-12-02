@@ -1,11 +1,196 @@
-[gd_scene load_steps=3 format=3 uid="uid://dwtbfk1qlf5ay"]
+[gd_scene load_steps=15 format=3 uid="uid://dwtbfk1qlf5ay"]
 
 [ext_resource type="PackedScene" uid="uid://bdlc2tnny2o8w" path="res://Tutorials/tutorial_0.tscn" id="1_3ko0d"]
 [ext_resource type="PackedScene" uid="uid://cupbpxgbvqw20" path="res://Tutorials/tutorial_1.tscn" id="1_a7l42"]
+[ext_resource type="PackedScene" uid="uid://du272bar33vm3" path="res://Tutorials/tutorial_2.tscn" id="3_u7bey"]
+[ext_resource type="PackedScene" uid="uid://u58q1xgp76tw" path="res://Tutorials/tutorial_3.tscn" id="4_4kgtd"]
+[ext_resource type="PackedScene" uid="uid://dl0pbhjjpq7i5" path="res://Tutorials/tutorial_4.tscn" id="5_0wc6c"]
+[ext_resource type="PackedScene" uid="uid://y3aitw062hal" path="res://Tutorials/tutorial_5.tscn" id="6_uyv0q"]
+[ext_resource type="Script" path="res://Scripts/tutorial_next.gd" id="7_hqrmj"]
+
+[sub_resource type="Animation" id="Animation_iem4d"]
+resource_name = "0"
+length = 0.5
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Tutorials/Tutorial1:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.5),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector2(1280, 0), Vector2(0, 0)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("Tutorials/Tutorial2:position")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0, 0.5),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector2(1280, 0), Vector2(0, 0)]
+}
+
+[sub_resource type="Animation" id="Animation_86jrb"]
+resource_name = "1"
+length = 0.25
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Tutorials/Tutorial2:z_index")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.2),
+"transitions": PackedFloat32Array(1, 1),
+"update": 1,
+"values": [-1, 0]
+}
+
+[sub_resource type="Animation" id="Animation_hboq0"]
+resource_name = "2"
+length = 0.5
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Tutorials/Tutorial3:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.5),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector2(0, 720), Vector2(0, 0)]
+}
+
+[sub_resource type="Animation" id="Animation_jp1s6"]
+resource_name = "3"
+length = 0.5
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Tutorials/Tutorial4:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.5),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector2(-1280, 0), Vector2(0, 0)]
+}
+
+[sub_resource type="Animation" id="Animation_1g5ct"]
+resource_name = "4"
+length = 0.5
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Tutorials/Tutorial5:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.5),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector2(0, -720), Vector2(0, 0)]
+}
+
+[sub_resource type="Animation" id="Animation_b0ujw"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Tutorials/Tutorial1:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(1280, 0)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("Tutorials/Tutorial2:position")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(1280, 0)]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("Tutorials/Tutorial2:z_index")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [-1]
+}
+tracks/3/type = "value"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath("Tutorials/Tutorial3:position")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(0, 720)]
+}
+tracks/4/type = "value"
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/path = NodePath("Tutorials/Tutorial4:position")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(-1280, 0)]
+}
+tracks/5/type = "value"
+tracks/5/imported = false
+tracks/5/enabled = true
+tracks/5/path = NodePath("Tutorials/Tutorial5:position")
+tracks/5/interp = 1
+tracks/5/loop_wrap = true
+tracks/5/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(0, -720)]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_l8f66"]
+_data = {
+"0": SubResource("Animation_iem4d"),
+"1": SubResource("Animation_86jrb"),
+"2": SubResource("Animation_hboq0"),
+"3": SubResource("Animation_jp1s6"),
+"4": SubResource("Animation_1g5ct"),
+"RESET": SubResource("Animation_b0ujw")
+}
 
 [node name="TutorialScene" type="Node2D"]
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="."]
+libraries = {
+"": SubResource("AnimationLibrary_l8f66")
+}
 
 [node name="Tutorials" type="Node2D" parent="."]
 
@@ -14,16 +199,34 @@
 [node name="Tutorial1" parent="Tutorials" instance=ExtResource("1_a7l42")]
 position = Vector2(1280, 0)
 
+[node name="Tutorial2" parent="Tutorials" instance=ExtResource("3_u7bey")]
+z_index = -1
+position = Vector2(1280, 0)
+
+[node name="Tutorial3" parent="Tutorials" instance=ExtResource("4_4kgtd")]
+position = Vector2(0, 720)
+
+[node name="Tutorial4" parent="Tutorials" instance=ExtResource("5_0wc6c")]
+position = Vector2(-1280, 0)
+
+[node name="Tutorial5" parent="Tutorials" instance=ExtResource("6_uyv0q")]
+position = Vector2(0, -720)
+
 [node name="SkipButton" type="Button" parent="."]
 offset_left = 32.0
-offset_top = 640.0
-offset_right = 192.0
-offset_bottom = 704.0
-text = "Skip Tutorial"
+offset_top = 32.0
+offset_right = 128.0
+offset_bottom = 96.0
+text = "Skip"
 
-[node name="NextButton" type="Button" parent="."]
+[node name="NextButton" type="Button" parent="." node_paths=PackedStringArray("animPlay")]
 offset_left = 1152.0
-offset_top = 640.0
+offset_top = 32.0
 offset_right = 1248.0
-offset_bottom = 704.0
+offset_bottom = 96.0
 text = "Next"
+script = ExtResource("7_hqrmj")
+animPlay = NodePath("../AnimationPlayer")
+
+[connection signal="button_down" from="SkipButton" to="NextButton" method="_on_skip_button_button_down"]
+[connection signal="button_down" from="NextButton" to="NextButton" method="_on_button_down"]
