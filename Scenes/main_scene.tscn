@@ -13,8 +13,10 @@
 [node name="MainScene" type="Node2D"]
 script = ExtResource("1_gsqg8")
 
-[node name="Panels" type="Node2D" parent="."]
+[node name="Panels" type="Node2D" parent="." node_paths=PackedStringArray("leftArrow", "rightArrow")]
 script = ExtResource("2_bmqve")
+leftArrow = NodePath("../ArrowsButtons/LeftArrow")
+rightArrow = NodePath("../ArrowsButtons/RightArrow")
 
 [node name="GeneralPanel" parent="Panels" instance=ExtResource("1_m6mal")]
 
