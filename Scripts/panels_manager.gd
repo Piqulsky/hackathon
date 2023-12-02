@@ -1,6 +1,7 @@
 extends Node2D
 
 var target :Vector2
+var corrected = false
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
@@ -14,13 +15,18 @@ func _process(delta):
 func _physics_process(delta):
 	if position <= (target - Vector2(1, 0)) or position >= (target + Vector2(1, 0)):
 		position = position.lerp(target, delta*4)
+	elif not corrected:
+		position = target
+		corrected = true
 
 
 func _on_left_arrow_button_down():
-	if position < Vector2(1280, 0):
+	if position <= Vector2(1280, 0):
 		target = target + Vector2(1280, 0)
+		corrected = false
 
 
 func _on_right_arrow_button_down():
-	if position > Vector2(-1280, 0):
+	if position >= Vector2(-1280, 0):
 		target = target - Vector2(1280, 0)
+		corrected = false

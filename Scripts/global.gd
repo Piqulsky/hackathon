@@ -28,8 +28,8 @@ var researchProgress = {
 var passiveScienceIncome := 0
 var passiveGoldIncome := 0
 var passiveMaterialsIncome := 0
-var automaticShelterBuilder := false
-var automaticShelterImprover := false
+var automaticShelterBuilder := true
+var automaticShelterImprover := true
 var villagerWorkMultiplier := 1.0
 var amountOfResearchDone := 0
 
