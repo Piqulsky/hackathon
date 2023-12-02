@@ -34,7 +34,7 @@ func _physics_process(delta):
 		MaterialsPriceLabel.text = str(Global.resources.materials)+"/"+str(costOfMaterialsUpgrade)
 	elif amountOfMaterialUpgrades == 5:
 		MaterialsPriceLabel.text = ""
-	if amountOfGoldUpgrades < 5:		
+	if amountOfGoldUpgrades < 5:
 		GoldPriceLabel.text = str(Global.resources.gold)+"/"+str(castOfGoldUpgrade)
 	elif amountOfGoldUpgrades == 5:
 		GoldPriceLabel.text = ""
@@ -43,14 +43,14 @@ func _physics_process(delta):
 	elif amountOfResearchUpgrades == 5:
 		ResearchPriceLabel.text = ""
 
-
 func _on_materials_upgrade_button_down():
 	if Global.resources.materials >= costOfMaterialsUpgrade and amountOfMaterialUpgrades < 5:
 		Global.resourcesMultiplier.materials += (costOfMaterialsUpgrade/100)
 		Global.resources.materials -= costOfMaterialsUpgrade
 		costOfMaterialsUpgrade *= 2
 		amountOfMaterialUpgrades += 1
-		
+	if amountOfMaterialUpgrades == 3:
+		Global.factoryVisible = true
 	if amountOfMaterialUpgrades == 5:
 		MaterialUpgradeButton.disabled = true
 
@@ -61,7 +61,8 @@ func _on_gold_upgrade_button_down():
 		Global.resources.gold -= castOfGoldUpgrade
 		castOfGoldUpgrade *= 2
 		amountOfGoldUpgrades += 1
-		
+	if amountOfGoldUpgrades == 3:
+		Global.bankVisibile = true
 	if amountOfGoldUpgrades == 5:
 		GoldUpgradeButton.disabled = true
 
@@ -72,6 +73,7 @@ func _on_research_upgrade_button_down():
 		Global.resources.science -= costOfResearchUpgrade
 		costOfResearchUpgrade *= 2
 		amountOfResearchUpgrades += 1
-		
+	if amountOfResearchUpgrades == 3:
+		Global.hospitalVisible = true
 	if amountOfResearchUpgrades == 5:
 		ResearchUpgradeButton.disabled = true
