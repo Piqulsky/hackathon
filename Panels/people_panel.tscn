@@ -4,9 +4,4 @@
 
 [node name="PeoplePanel" type="Node2D"]
 
-[node name="Polygon2D" type="Polygon2D" parent="."]
-scale = Vector2(1, 0.978261)
-color = Color(0.823529, 0.654902, 1, 1)
-polygon = PackedVector2Array(1280, 0, 1280, 368.536, 1280, 736, 648.579, 736, 0, 736, 0, 0, 640, 0)
-
 [node name="PeoplePanelElements" parent="." instance=ExtResource("1_phmmk")]

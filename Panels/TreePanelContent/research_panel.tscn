@@ -1,7 +1,25 @@
-[gd_scene load_steps=4 format=3 uid="uid://b8kxcigghsv1c"]
+[gd_scene load_steps=22 format=3 uid="uid://b8kxcigghsv1c"]
 
 [ext_resource type="Script" path="res://Panels/TreePanelContent/research_panel_manager.gd" id="1_aj253"]
-[ext_resource type="Texture2D" uid="uid://bto8manpwsg6r" path="res://Textures/progresbutton.png" id="2_yjofi"]
+[ext_resource type="Texture2D" uid="uid://sqf4hmbuum1k" path="res://Textures/ballson/ballwork1on.png" id="2_powhb"]
+[ext_resource type="Texture2D" uid="uid://ckhicfa87a1kq" path="res://Textures/ballsoff/ballwork1off.png" id="2_t6xqm"]
+[ext_resource type="Texture2D" uid="uid://dw7djlei4yecy" path="res://Textures/ballsoff/ballwork2off.png" id="3_kn268"]
+[ext_resource type="Texture2D" uid="uid://ct7k1o5whe2s2" path="res://Textures/ballsoff/ballwork3off.png" id="4_4b5vn"]
+[ext_resource type="Texture2D" uid="uid://8pmx5xtiedjq" path="res://Textures/ballson/ballschron2on.png" id="4_cxp53"]
+[ext_resource type="Texture2D" uid="uid://b0rg3e3c0umgd" path="res://Textures/ballsoff/ballwork4off.png" id="5_2kitq"]
+[ext_resource type="Texture2D" uid="uid://bcjnjtj0sxdgh" path="res://Textures/ballson/ballwork3on.png" id="6_2vkdn"]
+[ext_resource type="Texture2D" uid="uid://ctd3triw61ues" path="res://Textures/ballsoff/balltaxoff.png" id="6_hmjfw"]
+[ext_resource type="Texture2D" uid="uid://crpr4fe7ywvgw" path="res://Textures/ballsoff/ballslaveoff.png" id="7_epr84"]
+[ext_resource type="Texture2D" uid="uid://bavkpe41ee7mm" path="res://Textures/ballson/ballwork4on.png" id="8_hvir2"]
+[ext_resource type="Texture2D" uid="uid://bufufle80sukv" path="res://Textures/ballsoff/ballartoff.png" id="8_i0nk6"]
+[ext_resource type="Texture2D" uid="uid://cy85vsydqb2qm" path="res://Textures/ballsoff/ballscienceoff.png" id="9_r8l20"]
+[ext_resource type="Texture2D" uid="uid://c1lknymd3qslv" path="res://Textures/ballson/balltaxon.png" id="10_2k4up"]
+[ext_resource type="Texture2D" uid="uid://cujsdalhk0y0l" path="res://Textures/ballsoff/ballschron1off.png" id="10_hj7cq"]
+[ext_resource type="Texture2D" uid="uid://dwci6vx8d0krh" path="res://Textures/ballsoff/ballschron2off.png" id="11_yrp20"]
+[ext_resource type="Texture2D" uid="uid://beaq2gv4rpvlm" path="res://Textures/ballson/ballslaveon.png" id="12_3gwiu"]
+[ext_resource type="Texture2D" uid="uid://bqela8b4fq78e" path="res://Textures/ballson/ballarton.png" id="14_moyaf"]
+[ext_resource type="Texture2D" uid="uid://gtngbmpjyavj" path="res://Textures/ballson/ballscienceon.png" id="16_e1p55"]
+[ext_resource type="Texture2D" uid="uid://b66imfimsb6qu" path="res://Textures/ballson/ballschron1on.png" id="18_10x6x"]
 
 [sub_resource type="LabelSettings" id="LabelSettings_xyq06"]
 font_size = 64
@@ -30,7 +48,8 @@ offset_left = 297.0
 offset_top = 112.0
 offset_right = 361.0
 offset_bottom = 176.0
-texture_normal = ExtResource("2_yjofi")
+texture_normal = ExtResource("2_powhb")
+texture_disabled = ExtResource("2_t6xqm")
 ignore_texture_size = true
 stretch_mode = 0
 
@@ -63,7 +82,8 @@ offset_top = 224.0
 offset_right = 361.0
 offset_bottom = 288.0
 disabled = true
-texture_normal = ExtResource("2_yjofi")
+texture_normal = ExtResource("4_cxp53")
+texture_disabled = ExtResource("3_kn268")
 ignore_texture_size = true
 stretch_mode = 0
 
@@ -80,6 +100,7 @@ Pracy chłopów"
 vertical_alignment = 1
 
 [node name="MoneyCost2" type="Label" parent="TechnologyButton2"]
+layout_mode = 0
 offset_left = -14.0
 offset_top = 55.0
 offset_right = 75.0
@@ -95,11 +116,13 @@ offset_top = 336.0
 offset_right = 362.0
 offset_bottom = 400.0
 disabled = true
-texture_normal = ExtResource("2_yjofi")
+texture_normal = ExtResource("6_2vkdn")
+texture_disabled = ExtResource("4_4b5vn")
 ignore_texture_size = true
 stretch_mode = 0
 
 [node name="MoneyCost3" type="Label" parent="TechnologyButton3"]
+layout_mode = 0
 offset_left = -10.0
 offset_top = 54.0
 offset_right = 71.0
@@ -127,7 +150,8 @@ offset_top = 464.0
 offset_right = 361.0
 offset_bottom = 528.0
 disabled = true
-texture_normal = ExtResource("2_yjofi")
+texture_normal = ExtResource("8_hvir2")
+texture_disabled = ExtResource("5_2kitq")
 ignore_texture_size = true
 stretch_mode = 0
 
@@ -144,6 +168,7 @@ Pracy chłopów"
 vertical_alignment = 1
 
 [node name="MoneyCost4" type="Label" parent="TechnologyButton4"]
+layout_mode = 0
 offset_left = -7.0
 offset_top = 56.0
 offset_right = 66.0
@@ -159,7 +184,8 @@ offset_top = 176.0
 offset_right = 272.0
 offset_bottom = 240.0
 disabled = true
-texture_normal = ExtResource("2_yjofi")
+texture_normal = ExtResource("10_2k4up")
+texture_disabled = ExtResource("6_hmjfw")
 ignore_texture_size = true
 stretch_mode = 0
 
@@ -175,6 +201,7 @@ text = "Pasywny przychód złota"
 vertical_alignment = 1
 
 [node name="MoneyCost1" type="Label" parent="TechnologyButton11"]
+layout_mode = 0
 offset_left = 166.0
 offset_top = -25.0
 offset_right = 246.0
@@ -190,7 +217,8 @@ offset_top = 176.0
 offset_right = 448.0
 offset_bottom = 240.0
 disabled = true
-texture_normal = ExtResource("2_yjofi")
+texture_normal = ExtResource("12_3gwiu")
+texture_disabled = ExtResource("7_epr84")
 ignore_texture_size = true
 stretch_mode = 0
 
@@ -207,6 +235,7 @@ materiałów"
 vertical_alignment = 1
 
 [node name="MoneyCost1" type="Label" parent="TechnologyButton12"]
+layout_mode = 0
 offset_left = -187.0
 offset_top = -24.0
 offset_right = -107.0
@@ -222,11 +251,13 @@ offset_top = 288.0
 offset_right = 272.0
 offset_bottom = 352.0
 disabled = true
-texture_normal = ExtResource("2_yjofi")
+texture_normal = ExtResource("14_moyaf")
+texture_disabled = ExtResource("8_i0nk6")
 ignore_texture_size = true
 stretch_mode = 0
 
 [node name="MoneyCost2" type="Label" parent="TechnologyButton21"]
+layout_mode = 0
 offset_left = 160.0
 offset_top = 55.0
 offset_right = 256.0
@@ -254,7 +285,8 @@ offset_top = 288.0
 offset_right = 448.0
 offset_bottom = 352.0
 disabled = true
-texture_normal = ExtResource("2_yjofi")
+texture_normal = ExtResource("16_e1p55")
+texture_disabled = ExtResource("9_r8l20")
 ignore_texture_size = true
 stretch_mode = 0
 
@@ -271,6 +303,7 @@ dochód nauki"
 vertical_alignment = 1
 
 [node name="MoneyCost2" type="Label" parent="TechnologyButton22"]
+layout_mode = 0
 offset_left = -189.0
 offset_top = 53.0
 offset_right = -101.0
@@ -286,7 +319,8 @@ offset_top = 400.0
 offset_right = 272.0
 offset_bottom = 464.0
 disabled = true
-texture_normal = ExtResource("2_yjofi")
+texture_normal = ExtResource("18_10x6x")
+texture_disabled = ExtResource("10_hj7cq")
 ignore_texture_size = true
 stretch_mode = 0
 
@@ -303,6 +337,7 @@ tworzenie schronów"
 vertical_alignment = 1
 
 [node name="MoneyCost3" type="Label" parent="TechnologyButton31"]
+layout_mode = 0
 offset_left = -12.0
 offset_top = 52.0
 offset_right = 71.0
@@ -318,7 +353,8 @@ offset_top = 400.0
 offset_right = 448.0
 offset_bottom = 464.0
 disabled = true
-texture_normal = ExtResource("2_yjofi")
+texture_normal = ExtResource("4_cxp53")
+texture_disabled = ExtResource("11_yrp20")
 ignore_texture_size = true
 stretch_mode = 0
 
@@ -335,6 +371,7 @@ Ulepszanie schronów"
 vertical_alignment = 1
 
 [node name="MoneyCost3" type="Label" parent="TechnologyButton32"]
+layout_mode = 0
 offset_left = -8.0
 offset_top = 50.0
 offset_right = 74.0
