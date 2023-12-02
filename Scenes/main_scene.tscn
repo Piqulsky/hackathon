@@ -21,9 +21,6 @@ rightArrow = NodePath("../ArrowsButtons/RightArrow")
 
 [node name="GeneralPanel" parent="Panels" instance=ExtResource("1_m6mal")]
 
-[node name="TreesPanel" parent="Panels" instance=ExtResource("3_b0sv3")]
-position = Vector2(-1280, 0)
-
 [node name="CreationPanel" parent="Panels" instance=ExtResource("4_g8ts0")]
 position = Vector2(1280, 0)
 
@@ -32,6 +29,9 @@ position = Vector2(-2560, 0)
 
 [node name="SavingPanel" parent="Panels" instance=ExtResource("6_81lbp")]
 position = Vector2(2560, 0)
+
+[node name="TreesPanel" parent="Panels" instance=ExtResource("3_b0sv3")]
+position = Vector2(-1280, 0)
 
 [node name="MainClickers" parent="." instance=ExtResource("1_wo2dw")]
 
