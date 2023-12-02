@@ -1,9 +1,10 @@
-[gd_scene load_steps=10 format=3 uid="uid://dekyhx6dt2vf"]
+[gd_scene load_steps=11 format=3 uid="uid://dekyhx6dt2vf"]
 
 [ext_resource type="Script" path="res://Scripts/startScreenManager.gd" id="1_t5kxh"]
 [ext_resource type="Texture2D" uid="uid://bkhnqpc12x0gm" path="res://Textures/ekranstartowy1.png" id="2_cyd3u"]
-[ext_resource type="Texture2D" uid="uid://cj7h63jrxqtxv" path="res://Textures/buttonstartowy.png" id="3_3yyha"]
+[ext_resource type="Texture2D" uid="uid://ds67yr3bd16oh" path="res://Textures/buttonstartowy.png" id="3_3yyha"]
 [ext_resource type="FontFile" uid="uid://kc4j5ea027jm" path="res://TIMESBD.TTF" id="3_v3luv"]
+[ext_resource type="Texture2D" uid="uid://3pj30lbjhf37" path="res://Textures/buttonstartowy_clicked.png" id="5_d1fqy"]
 
 [sub_resource type="LabelSettings" id="LabelSettings_den0i"]
 font = ExtResource("3_v3luv")
@@ -55,6 +56,7 @@ offset_top = 192.0
 offset_right = 744.0
 offset_bottom = 247.0
 texture_normal = ExtResource("3_3yyha")
+texture_pressed = ExtResource("5_d1fqy")
 ignore_texture_size = true
 stretch_mode = 0
 
@@ -76,6 +78,7 @@ offset_top = 320.0
 offset_right = 744.0
 offset_bottom = 375.0
 texture_normal = ExtResource("3_3yyha")
+texture_pressed = ExtResource("5_d1fqy")
 ignore_texture_size = true
 stretch_mode = 0
 
@@ -96,6 +99,7 @@ offset_top = 448.0
 offset_right = 744.0
 offset_bottom = 503.0
 texture_normal = ExtResource("3_3yyha")
+texture_pressed = ExtResource("5_d1fqy")
 ignore_texture_size = true
 stretch_mode = 0
 
@@ -117,6 +121,7 @@ offset_top = 576.0
 offset_right = 744.0
 offset_bottom = 631.0
 texture_normal = ExtResource("3_3yyha")
+texture_pressed = ExtResource("5_d1fqy")
 ignore_texture_size = true
 stretch_mode = 0
 

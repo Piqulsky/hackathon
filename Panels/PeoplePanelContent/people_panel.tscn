@@ -1,9 +1,10 @@
-[gd_scene load_steps=19 format=3 uid="uid://c77e2dymkxoks"]
+[gd_scene load_steps=20 format=3 uid="uid://c77e2dymkxoks"]
 
 [ext_resource type="Script" path="res://Scripts/Panels/people_panel_manager.gd" id="1_jhj0a"]
-[ext_resource type="Texture2D" uid="uid://cj7h63jrxqtxv" path="res://Textures/buttonstartowy.png" id="3_3h0uy"]
+[ext_resource type="Texture2D" uid="uid://ds67yr3bd16oh" path="res://Textures/buttonstartowy.png" id="3_3h0uy"]
 [ext_resource type="Texture2D" uid="uid://voj86ivxlujo" path="res://Textures/roland_regan.png" id="3_5v28j"]
 [ext_resource type="Texture2D" uid="uid://bofdai358ikwm" path="res://Textures/karski.png" id="4_8cd3x"]
+[ext_resource type="Texture2D" uid="uid://3pj30lbjhf37" path="res://Textures/buttonstartowy_clicked.png" id="5_5c005"]
 [ext_resource type="Texture2D" uid="uid://c0welng44gqer" path="res://Textures/thatcher.png" id="5_s1pcn"]
 [ext_resource type="Texture2D" uid="uid://c822gnlxwynqv" path="res://Textures/lem.png" id="7_0lrq8"]
 [ext_resource type="Texture2D" uid="uid://cpy86nqe1ffds" path="res://Textures/termometr/termometr4.png" id="8_m5c1y"]
@@ -75,6 +76,7 @@ offset_top = 392.0
 offset_right = 144.0
 offset_bottom = 440.0
 texture_normal = ExtResource("3_3h0uy")
+texture_pressed = ExtResource("5_5c005")
 ignore_texture_size = true
 stretch_mode = 0
 
@@ -118,6 +120,7 @@ offset_top = 392.0
 offset_right = 152.0
 offset_bottom = 440.0
 texture_normal = ExtResource("3_3h0uy")
+texture_pressed = ExtResource("5_5c005")
 ignore_texture_size = true
 stretch_mode = 0
 
@@ -161,6 +164,7 @@ offset_top = 392.0
 offset_right = 112.0
 offset_bottom = 440.0
 texture_normal = ExtResource("3_3h0uy")
+texture_pressed = ExtResource("5_5c005")
 ignore_texture_size = true
 stretch_mode = 0
 
@@ -204,6 +208,7 @@ offset_top = 392.0
 offset_right = 112.0
 offset_bottom = 440.0
 texture_normal = ExtResource("3_3h0uy")
+texture_pressed = ExtResource("5_5c005")
 ignore_texture_size = true
 stretch_mode = 0
 
@@ -247,6 +252,7 @@ offset_top = 392.0
 offset_right = 112.0
 offset_bottom = 440.0
 texture_normal = ExtResource("3_3h0uy")
+texture_pressed = ExtResource("5_5c005")
 ignore_texture_size = true
 stretch_mode = 0
 
