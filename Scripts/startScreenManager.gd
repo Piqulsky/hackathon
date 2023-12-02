@@ -8,11 +8,11 @@ func _process(delta):
 
 
 func _on_start_game_button_down():
-	get_tree().change_scene_to_file("res://main_scene.tscn")
+	get_tree().change_scene_to_file("res://Scenes/main_scene.tscn")
 
 
 func _on_score_button_down():
-	get_tree().change_scene_to_file("res://highest_score_screen.tscn")
+	get_tree().change_scene_to_file("res://Scenes/highest_score_screen.tscn")
 
 
 func _on_exit_button_down():
