@@ -36,7 +36,7 @@ var amountOfResearchDone := 0
 var food := 0
 var shelters := 0
 var shelterExpansions := 0
-var savedRelics := 0
+var savedRelics := 0.0
 var savedRelictsMultiplier := 1.0
 var savedTech = 0
 

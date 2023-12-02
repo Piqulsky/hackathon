@@ -48,7 +48,7 @@ func _on_literature_texture_button_button_down():
 	if Global.amountOfResearchDone >= literatureReq and Global.resources.gold >= literatureCost:
 		Global.resources.gold -= literatureCost
 		literatureCount += 1
-		Global.savedRelics += LITERATURE_INCREASE
+		Global.savedRelics += LITERATURE_INCREASE*Global.savedRelictsMultiplier
 		valueLabel.text = str(Global.savedRelics)
 		if literatureCount == 5:
 			if literatureCost == 100:
@@ -70,7 +70,7 @@ func _on_art_texture_button_button_down():
 	if Global.amountOfResearchDone >= artReq and Global.resources.gold >= artCost:
 		Global.resources.gold -= artCost
 		artCount += 1
-		Global.savedRelics += ART_INCREASE
+		Global.savedRelics += ART_INCREASE*Global.savedRelictsMultiplier
 		valueLabel.text = str(Global.savedRelics)
 		if artCount == 5:
 			if artCost == 100:
@@ -92,7 +92,7 @@ func _on_sculpture_texture_button_button_down():
 	if Global.amountOfResearchDone >= sculptureReq and Global.resources.gold >= sculptureCost:
 		Global.resources.gold -= sculptureCost
 		sculptureCount += 1
-		Global.savedRelics += SCULPTURE_INCREASE
+		Global.savedRelics += SCULPTURE_INCREASE*Global.savedRelictsMultiplier
 		valueLabel.text = str(Global.savedRelics)
 		if sculptureCount == 5:
 			if sculptureCost >= 100:

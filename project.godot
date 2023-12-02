@@ -11,8 +11,8 @@ config_version=5
 [application]
 
 config/name="Hackathon"
-run/main_scene="res://Panels/start_scene.tscn"
-config/features=PackedStringArray("4.1", "Forward Plus")
+run/main_scene="res://Scenes/start_scene.tscn"
+config/features=PackedStringArray("4.2", "Forward Plus")
 config/icon="res://TMPTextures/icon.svg"
 
 [autoload]

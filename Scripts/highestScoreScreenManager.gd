@@ -8,4 +8,4 @@ func _process(delta):
 
 
 func _on_exit_score_screen_button_down():
-	get_tree().change_scene_to_file("res://start_scene.tscn")
+	get_tree().change_scene_to_file("res://Scenes/start_scene.tscn")
