@@ -38,20 +38,7 @@ func _ready():
 	Label5 = $GreatPersonProgressButton5/Label5
 
 func _physics_process(delta):
-	if ProgressBar1.value == 99:
-		Label1.text = "MAKS."
-		
-	if ProgressBar2.value == 99:
-		Label2.text = "MAKS."
-	
-	if ProgressBar3.value == 99:
-		Label3.text = "MAKS."
-	
-	if ProgressBar4.value == 99:
-		Label4.text = "MAKS."
-		
-	if ProgressBar5.value == 99:
-		Label5.text = "MAKS."
+	pass
 
 func _on_great_person_progress_button_1_down():
 	if ProgressBar1.value < 99 and ProgressBar1.value >= 60 and Global.resources.science >= 50:
