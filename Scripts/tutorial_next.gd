@@ -19,7 +19,7 @@ func _on_button_down():
 	animPlay.play(str(animIndex))
 	animIndex += 1
 	if animIndex == 4:
-		text = "Start Game"
+		text = "Zacznij grę"
 
 
 func _on_skip_button_button_down():

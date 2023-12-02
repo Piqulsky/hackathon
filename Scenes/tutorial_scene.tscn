@@ -217,14 +217,14 @@ offset_left = 32.0
 offset_top = 32.0
 offset_right = 128.0
 offset_bottom = 96.0
-text = "Skip"
+text = "Pomiń"
 
 [node name="NextButton" type="Button" parent="." node_paths=PackedStringArray("animPlay")]
 offset_left = 1152.0
 offset_top = 32.0
 offset_right = 1248.0
 offset_bottom = 96.0
-text = "Next"
+text = "Dalej"
 script = ExtResource("7_hqrmj")
 animPlay = NodePath("../AnimationPlayer")
 
