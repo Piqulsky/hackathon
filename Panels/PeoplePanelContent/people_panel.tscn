@@ -108,7 +108,7 @@ texture = ExtResource("7_0lrq8")
 position = Vector2(1088, 128)
 texture = ExtResource("3_5v28j")
 
-[node name="GreatPersonProgressBar1" type="ProgressBar" parent="."]
+[node name="GreatPersonProgressBar1" type="TextureProgressBar" parent="."]
 layout_mode = 0
 offset_left = 129.0
 offset_top = 192.0
@@ -118,7 +118,8 @@ max_value = 99.0
 step = 3.0
 fill_mode = 2
 
-[node name="GreatPersonProgressBar2" type="ProgressBar" parent="."]
+[node name="GreatPersonProgressBar2" type="TextureProgressBar" parent="."]
+layout_mode = 0
 offset_left = 352.0
 offset_top = 192.0
 offset_right = 479.0
@@ -127,7 +128,8 @@ max_value = 99.0
 step = 3.0
 fill_mode = 2
 
-[node name="GreatPersonProgressBar3" type="ProgressBar" parent="."]
+[node name="GreatPersonProgressBar3" type="TextureProgressBar" parent="."]
+layout_mode = 0
 offset_left = 578.0
 offset_top = 192.0
 offset_right = 705.0
@@ -136,7 +138,8 @@ max_value = 99.0
 step = 3.0
 fill_mode = 2
 
-[node name="GreatPersonProgressBar4" type="ProgressBar" parent="."]
+[node name="GreatPersonProgressBar4" type="TextureProgressBar" parent="."]
+layout_mode = 0
 offset_left = 800.0
 offset_top = 192.0
 offset_right = 927.0
@@ -145,7 +148,8 @@ max_value = 99.0
 step = 3.0
 fill_mode = 2
 
-[node name="GreatPersonProgressBar5" type="ProgressBar" parent="."]
+[node name="GreatPersonProgressBar5" type="TextureProgressBar" parent="."]
+layout_mode = 0
 offset_left = 1024.0
 offset_top = 192.0
 offset_right = 1151.0

@@ -1,10 +1,10 @@
 extends Control
 
-var ProgressBar1 :ProgressBar
-var ProgressBar2 :ProgressBar
-var ProgressBar3 :ProgressBar
-var ProgressBar4 :ProgressBar
-var ProgressBar5 :ProgressBar
+var ProgressBar1 :TextureProgressBar
+var ProgressBar2 :TextureProgressBar
+var ProgressBar3 :TextureProgressBar
+var ProgressBar4 :TextureProgressBar
+var ProgressBar5 :TextureProgressBar
 
 var Button1 :TextureButton
 var Button2 :TextureButton
@@ -28,15 +28,65 @@ func _process(delta):
 	pass
 
 func _on_great_person_progress_button_1_down():
-	ProgressBar1.value += ProgressBar1.step
-
+	if ProgressBar2.value < 33 and Global.resources.gold >= 50:
+		ProgressBar2.value += ProgressBar2.step
+		Global.resources.gold -= 50
+		if ProgressBar2.value == 33:
+			Global.passiveGoldIncome += 3
+	elif ProgressBar2.value < 66 and Global.resources.materials >= 50:
+		ProgressBar2.value += ProgressBar2.step
+		Global.resources.materials -= 50
+		if ProgressBar2.value == 66:
+			Global.passiveGoldIncome -= 3
+			Global.passiveMaterialsIncome += 3
+	elif ProgressBar2.value < 99 and Global.resources.science >= 50:
+		ProgressBar2.value += ProgressBar2.step
+		Global.resources.science -= 50
+		if ProgressBar2.value == 99:
+			Global.passiveMaterialsIncome -= 3
+			Global.passiveScienceIncome += 3
+			Button1.disabled = true
 
 func _on_great_person_progress_button_2_down():
-	ProgressBar2.value += ProgressBar2.step
+	if ProgressBar2.value < 33 and Global.resources.gold >= 50:
+		ProgressBar2.value += ProgressBar2.step
+		Global.resources.gold -= 50
+		if ProgressBar2.value == 33:
+			Global.passiveGoldIncome += 3
+	elif ProgressBar2.value < 66 and Global.resources.materials >= 50:
+		ProgressBar2.value += ProgressBar2.step
+		Global.resources.materials -= 50
+		if ProgressBar2.value == 66:
+			Global.passiveGoldIncome -= 3
+			Global.passiveMaterialsIncome += 3
+	elif ProgressBar2.value < 99 and Global.resources.science >= 50:
+		ProgressBar2.value += ProgressBar2.step
+		Global.resources.science -= 50
+		if ProgressBar2.value == 99:
+			Global.passiveMaterialsIncome -= 3
+			Global.passiveScienceIncome += 3
+			Button2.disabled = true
 
 
 func _on_great_person_progress_button_3_down():
-	ProgressBar3.value += ProgressBar3.step
+	if ProgressBar3.value < 33 and Global.resources.materials >= 50:
+		ProgressBar3.value += ProgressBar3.step
+		Global.resources.materials -= 50
+		if ProgressBar3.value == 33:
+			Global.passiveMaterialsIncome += 3
+	elif ProgressBar3.value < 66 and Global.resources.science >= 50:
+		ProgressBar3.value += ProgressBar3.step
+		Global.resources.science -= 50
+		if ProgressBar3.value == 66:
+			Global.passiveMaterialsIncome -= 3
+			Global.passiveScienceIncome += 3
+	elif ProgressBar3.value < 99 and Global.resources.gold >= 50:
+		ProgressBar3.value += ProgressBar3.step
+		Global.resources.gold -= 50
+		if ProgressBar3.value == 99:
+			Global.passiveScienceIncome -= 3
+			Global.passiveGoldIncome += 3
+			Button3.disabled = true
 
 
 func _on_great_person_progress_button_4_down():

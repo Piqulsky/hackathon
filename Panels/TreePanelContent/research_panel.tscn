@@ -1,10 +1,11 @@
-[gd_scene load_steps=22 format=3 uid="uid://b8kxcigghsv1c"]
+[gd_scene load_steps=23 format=3 uid="uid://b8kxcigghsv1c"]
 
-[ext_resource type="Script" path="res://Panels/TreePanelContent/research_panel_manager.gd" id="1_aj253"]
+[ext_resource type="Script" path="res://Scripts/Panels/research_panel_manager.gd" id="1_aj253"]
 [ext_resource type="Texture2D" uid="uid://sqf4hmbuum1k" path="res://Textures/ballson/ballwork1on.png" id="2_powhb"]
 [ext_resource type="Texture2D" uid="uid://ckhicfa87a1kq" path="res://Textures/ballsoff/ballwork1off.png" id="2_t6xqm"]
 [ext_resource type="Texture2D" uid="uid://dw7djlei4yecy" path="res://Textures/ballsoff/ballwork2off.png" id="3_kn268"]
 [ext_resource type="Texture2D" uid="uid://ct7k1o5whe2s2" path="res://Textures/ballsoff/ballwork3off.png" id="4_4b5vn"]
+[ext_resource type="Texture2D" uid="uid://b6l5ayfr2k3c8" path="res://Textures/ballson/ballwork2on.png" id="4_6o8b7"]
 [ext_resource type="Texture2D" uid="uid://8pmx5xtiedjq" path="res://Textures/ballson/ballschron2on.png" id="4_cxp53"]
 [ext_resource type="Texture2D" uid="uid://b0rg3e3c0umgd" path="res://Textures/ballsoff/ballwork4off.png" id="5_2kitq"]
 [ext_resource type="Texture2D" uid="uid://bcjnjtj0sxdgh" path="res://Textures/ballson/ballwork3on.png" id="6_2vkdn"]
@@ -30,13 +31,16 @@ layout_mode = 3
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
+offset_left = -32.0
+offset_right = -32.0
 grow_horizontal = 2
 grow_vertical = 2
 script = ExtResource("1_aj253")
 
 [node name="ResearchPanelTitle" type="Label" parent="."]
 layout_mode = 0
-offset_right = 640.0
+offset_left = 38.0
+offset_right = 678.0
 offset_bottom = 91.0
 text = "Rozwój"
 label_settings = SubResource("LabelSettings_xyq06")
@@ -44,9 +48,9 @@ horizontal_alignment = 1
 
 [node name="TechnologyButton1" type="TextureButton" parent="."]
 layout_mode = 0
-offset_left = 297.0
+offset_left = 335.0
 offset_top = 112.0
-offset_right = 361.0
+offset_right = 399.0
 offset_bottom = 176.0
 texture_normal = ExtResource("2_powhb")
 texture_disabled = ExtResource("2_t6xqm")
@@ -77,12 +81,12 @@ vertical_alignment = 1
 
 [node name="TechnologyButton2" type="TextureButton" parent="."]
 layout_mode = 0
-offset_left = 297.0
+offset_left = 335.0
 offset_top = 224.0
-offset_right = 361.0
+offset_right = 399.0
 offset_bottom = 288.0
 disabled = true
-texture_normal = ExtResource("4_cxp53")
+texture_normal = ExtResource("4_6o8b7")
 texture_disabled = ExtResource("3_kn268")
 ignore_texture_size = true
 stretch_mode = 0
@@ -111,9 +115,9 @@ vertical_alignment = 1
 
 [node name="TechnologyButton3" type="TextureButton" parent="."]
 layout_mode = 0
-offset_left = 298.0
+offset_left = 336.0
 offset_top = 336.0
-offset_right = 362.0
+offset_right = 400.0
 offset_bottom = 400.0
 disabled = true
 texture_normal = ExtResource("6_2vkdn")
@@ -145,9 +149,9 @@ vertical_alignment = 1
 
 [node name="TechnologyButton4" type="TextureButton" parent="."]
 layout_mode = 0
-offset_left = 297.0
+offset_left = 335.0
 offset_top = 464.0
-offset_right = 361.0
+offset_right = 399.0
 offset_bottom = 528.0
 disabled = true
 texture_normal = ExtResource("8_hvir2")
@@ -179,9 +183,9 @@ vertical_alignment = 1
 
 [node name="TechnologyButton11" type="TextureButton" parent="."]
 layout_mode = 0
-offset_left = 208.0
+offset_left = 246.0
 offset_top = 176.0
-offset_right = 272.0
+offset_right = 310.0
 offset_bottom = 240.0
 disabled = true
 texture_normal = ExtResource("10_2k4up")
@@ -212,9 +216,9 @@ vertical_alignment = 1
 
 [node name="TechnologyButton12" type="TextureButton" parent="."]
 layout_mode = 0
-offset_left = 384.0
+offset_left = 422.0
 offset_top = 176.0
-offset_right = 448.0
+offset_right = 486.0
 offset_bottom = 240.0
 disabled = true
 texture_normal = ExtResource("12_3gwiu")
@@ -246,9 +250,9 @@ vertical_alignment = 1
 
 [node name="TechnologyButton21" type="TextureButton" parent="."]
 layout_mode = 0
-offset_left = 208.0
+offset_left = 246.0
 offset_top = 288.0
-offset_right = 272.0
+offset_right = 310.0
 offset_bottom = 352.0
 disabled = true
 texture_normal = ExtResource("14_moyaf")
@@ -280,9 +284,9 @@ vertical_alignment = 1
 
 [node name="TechnologyButton22" type="TextureButton" parent="."]
 layout_mode = 0
-offset_left = 384.0
+offset_left = 422.0
 offset_top = 288.0
-offset_right = 448.0
+offset_right = 486.0
 offset_bottom = 352.0
 disabled = true
 texture_normal = ExtResource("16_e1p55")
@@ -314,9 +318,9 @@ vertical_alignment = 1
 
 [node name="TechnologyButton31" type="TextureButton" parent="."]
 layout_mode = 0
-offset_left = 208.0
+offset_left = 246.0
 offset_top = 400.0
-offset_right = 272.0
+offset_right = 310.0
 offset_bottom = 464.0
 disabled = true
 texture_normal = ExtResource("18_10x6x")
@@ -348,9 +352,9 @@ vertical_alignment = 1
 
 [node name="TechnologyButton32" type="TextureButton" parent="."]
 layout_mode = 0
-offset_left = 384.0
+offset_left = 422.0
 offset_top = 400.0
-offset_right = 448.0
+offset_right = 486.0
 offset_bottom = 464.0
 disabled = true
 texture_normal = ExtResource("4_cxp53")

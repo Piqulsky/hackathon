@@ -1,9 +1,9 @@
 extends Control
 
-const costOfLevel1Tech := 100
-const costOfLevel2Tech := 200
-const costOfLevel3Tech := 400
-const costOflevel4Tech := 800
+const costOfLevel1Tech := 500
+const costOfLevel2Tech := 1000
+const costOfLevel3Tech := 2000
+const costOflevel4Tech := 4000
 
 var unlockingTech4 = 0;
 
