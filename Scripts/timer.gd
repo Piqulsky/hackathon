@@ -14,12 +14,12 @@ func _process(delta):
 
 
 func _on_timer_timeout():
-	time -= 30
+	get_parent().change_sun(time)
+	time -= 1
 	var minutes = int(time/60)
 	var seconds = time - minutes * 60
 	timerLabel.text = str(minutes) + ":" + str(seconds)
 	if time == 898:
 		visible = true
 	if time == 0:
-		#END GAME
-		pass
+		$EndTimer.stop()
