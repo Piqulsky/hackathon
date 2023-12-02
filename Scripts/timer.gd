@@ -18,7 +18,7 @@ func _on_timer_timeout():
 	time -= 1
 	var minutes = int(time/60)
 	var seconds = time - minutes * 60
-	timerLabel.text = str(minutes) + ":" + str(seconds)
+	timerLabel.text = str(minutes).lpad(2, "0") + ":" + str(seconds).lpad(2, "0")
 	if time == 898:
 		visible = true
 	if time == 0:

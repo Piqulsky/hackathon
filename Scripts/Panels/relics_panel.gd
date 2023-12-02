@@ -18,9 +18,6 @@ var sculptureCost := 30
 var literatureReq := 1
 var artReq := 2
 var sculptureReq := 3
-const LITERATURE_INCREASE := 1
-const ART_INCREASE := 2
-const SCULPTURE_INCREASE := 3
 var literatureCount := 0
 var artCount := 0
 var sculptureCount := 0
@@ -64,14 +61,14 @@ func _on_literature_texture_button_button_down():
 	if Global.amountOfResearchDone >= literatureReq and Global.resources.gold >= literatureCost:
 		Global.resources.gold -= literatureCost
 		literatureCount += 1
-		Global.savedRelics += LITERATURE_INCREASE*Global.savedRelictsMultiplier
+		Global.savedRelics += Global.LITERATURE_INCREASE*Global.savedRelictsMultiplier
 		if literatureCount == 5:
 			if literatureCost == 100:
 				literatureButton.disabled = true
 				return
 			literatureCount = 0
-			literatureCost += LITERATURE_INCREASE*10
-			literatureReq += LITERATURE_INCREASE
+			literatureCost += Global.LITERATURE_INCREASE*10
+			literatureReq += Global.LITERATURE_INCREASE
 			var tmpText = ""
 			if literatureReq < 5:
 				tmpText = " poziomy rozwoju"
@@ -81,17 +78,17 @@ func _on_literature_texture_button_button_down():
 
 
 func _on_art_texture_button_button_down():
-	if Global.amountOfResearchDone >= artReq and Global.resources.gold >= artCost:
-		Global.resources.gold -= artCost
+	if Global.amountOfResearchDone >= artReq and Global.resources.science >= artCost:
+		Global.resources.science -= artCost
 		artCount += 1
-		Global.savedRelics += ART_INCREASE*Global.savedRelictsMultiplier
+		Global.savedRelics += Global.ART_INCREASE*Global.savedRelictsMultiplier
 		if artCount == 5:
 			if artCost == 100:
 				artButton.disabled = true
 				return
 			artCount = 0
-			artCost += ART_INCREASE*10
-			artReq += ART_INCREASE
+			artCost += Global.ART_INCREASE*10
+			artReq += Global.ART_INCREASE
 			var tmpText = ""
 			if artReq < 5:
 				tmpText = " poziomy rozwoju"
@@ -101,17 +98,17 @@ func _on_art_texture_button_button_down():
 
 
 func _on_sculpture_texture_button_button_down():
-	if Global.amountOfResearchDone >= sculptureReq and Global.resources.gold >= sculptureCost:
-		Global.resources.gold -= sculptureCost
+	if Global.amountOfResearchDone >= sculptureReq and Global.resources.materials >= sculptureCost:
+		Global.resources.materials -= sculptureCost
 		sculptureCount += 1
-		Global.savedRelics += SCULPTURE_INCREASE*Global.savedRelictsMultiplier
+		Global.savedRelics += Global.SCULPTURE_INCREASE*Global.savedRelictsMultiplier
 		if sculptureCount == 5:
 			if sculptureCost >= 100:
 				sculptureButton.disabled = true
 				return
 			sculptureCount = 0
-			sculptureCost += SCULPTURE_INCREASE*10
-			sculptureReq += SCULPTURE_INCREASE
+			sculptureCost += Global.SCULPTURE_INCREASE*10
+			sculptureReq += Global.SCULPTURE_INCREASE
 			if sculptureReq == 12:
 				sculptureReq = 10
 			var tmpText = ""

@@ -50,7 +50,6 @@ texture_normal = ExtResource("1_p0xdy")
 layout_mode = 0
 offset_top = -32.0
 offset_right = 64.0
-max_value = 10.0
 step = 1.0
 show_percentage = false
 
@@ -75,7 +74,6 @@ texture_normal = ExtResource("1_p0xdy")
 layout_mode = 0
 offset_top = -32.0
 offset_right = 64.0
-max_value = 10.0
 step = 1.0
 show_percentage = false
 
@@ -100,7 +98,6 @@ texture_normal = ExtResource("1_p0xdy")
 layout_mode = 0
 offset_top = -32.0
 offset_right = 64.0
-max_value = 10.0
 step = 1.0
 show_percentage = false
 
@@ -131,7 +128,6 @@ texture_normal = ExtResource("2_2g3gn")
 layout_mode = 0
 offset_top = -32.0
 offset_right = 64.0
-max_value = 10.0
 step = 1.0
 show_percentage = false
 
@@ -156,7 +152,6 @@ texture_normal = ExtResource("2_2g3gn")
 layout_mode = 0
 offset_top = -32.0
 offset_right = 64.0
-max_value = 10.0
 step = 1.0
 show_percentage = false
 
@@ -188,7 +183,6 @@ texture_normal = ExtResource("3_8j85c")
 layout_mode = 0
 offset_top = -32.0
 offset_right = 64.0
-max_value = 10.0
 step = 1.0
 show_percentage = false
 

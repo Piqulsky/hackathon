@@ -35,14 +35,14 @@ func _physics_process(delta):
 	expansionsLabel.text = str(Global.shelterExpansions)
 	peopleLabel.text = str(people)
 	foodLabel.text = str(Global.food)
+	var hungry = people - Global.food * 0.2
+	if hungry < 0:
+		hungry = 0
+	hungryLabel.text = str(hungry)
 	researchLabel.text = str(Global.amountOfResearchDone)
 	idolsLabel.text = str(Global.completedIdols)
 	cultureLabel.text = str(Global.savedRelics)
 	techLabel.text = str(Global.savedTech)
-	var hungry = people - Global.food * 0.2
-	savedLabel.text = str(people - hungry) + " tysięcy uratowanych ludzi"
-	if hungry < 0:
-		hungry = 0
-	hungryLabel.text = str(hungry)
+	savedLabel.text = str(people - hungry) + " milionów uratowanych ludzi"
 	var heritage = int((Global.completedIdols/5 + Global.savedRelics/150 + Global.savedTech/6)/3 * 100)
 	heritageLabel.text = str(heritage) + "% ocalonego dziedzictwa"

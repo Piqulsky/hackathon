@@ -80,7 +80,7 @@ offset_top = 128.0
 offset_right = 1208.0
 offset_bottom = 176.0
 grow_horizontal = 0
-text = "tysięcy ludzi"
+text = "milionów ludzi"
 label_settings = SubResource("LabelSettings_vkqtd")
 horizontal_alignment = 2
 
@@ -106,9 +106,9 @@ horizontal_alignment = 2
 
 [node name="PeopleCountLabel" type="Label" parent="ShelterStats"]
 layout_mode = 0
-offset_left = 928.0
+offset_left = 896.0
 offset_top = 128.0
-offset_right = 1056.0
+offset_right = 1024.0
 offset_bottom = 176.0
 text = "0"
 label_settings = SubResource("LabelSettings_13np4")
@@ -129,7 +129,7 @@ offset_top = 192.0
 offset_right = 1208.0
 offset_bottom = 240.0
 grow_horizontal = 0
-text = "tysięcy racji"
+text = "milionów racji"
 label_settings = SubResource("LabelSettings_vkqtd")
 horizontal_alignment = 2
 
@@ -143,23 +143,25 @@ offset_top = 240.0
 offset_right = 1208.0
 offset_bottom = 288.0
 grow_horizontal = 0
-text = "tysięcy ludzi głodnych"
+text = "milionów ludzi głodnych"
 label_settings = SubResource("LabelSettings_vkqtd")
 horizontal_alignment = 2
 
 [node name="RationsCountLabel" type="Label" parent="FoodStats"]
-offset_left = 960.0
+layout_mode = 0
+offset_left = 928.0
 offset_top = 192.0
-offset_right = 1056.0
+offset_right = 1024.0
 offset_bottom = 240.0
 text = "0"
 label_settings = SubResource("LabelSettings_13np4")
 horizontal_alignment = 2
 
 [node name="PeopleCountLabel" type="Label" parent="FoodStats"]
-offset_left = 768.0
+layout_mode = 0
+offset_left = 736.0
 offset_top = 240.0
-offset_right = 896.0
+offset_right = 864.0
 offset_bottom = 288.0
 text = "0"
 label_settings = SubResource("LabelSettings_13np4")
@@ -199,6 +201,7 @@ label_settings = SubResource("LabelSettings_vkqtd")
 horizontal_alignment = 2
 
 [node name="CultureCountLabel" type="Label" parent="HeritageStats"]
+layout_mode = 0
 offset_left = 352.0
 offset_top = 240.0
 offset_right = 448.0
@@ -207,6 +210,7 @@ text = "0"
 label_settings = SubResource("LabelSettings_13np4")
 
 [node name="PeopleCountLabel" type="Label" parent="HeritageStats"]
+layout_mode = 0
 offset_left = 416.0
 offset_top = 192.0
 offset_right = 544.0
@@ -220,6 +224,7 @@ offset_right = 40.0
 offset_bottom = 40.0
 
 [node name="IdolsLabel" type="Label" parent="ResearchStats"]
+layout_mode = 0
 offset_left = 32.0
 offset_top = 112.0
 offset_right = 239.0
@@ -228,6 +233,7 @@ text = "Wielcy ludzie:"
 label_settings = SubResource("LabelSettings_j1hc6")
 
 [node name="IdolsLevels" type="Label" parent="ResearchStats"]
+layout_mode = 0
 offset_left = 256.0
 offset_top = 112.0
 offset_right = 296.0

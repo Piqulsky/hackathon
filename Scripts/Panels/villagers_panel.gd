@@ -1,7 +1,6 @@
 extends Control
 
 var cost := 16
-const INCREASE := 2
 var multiplierLabel :Label
 var villagerCost :Label
 var genBar :ProgressBar
@@ -27,7 +26,7 @@ func _physics_process(delta):
 func _on_buy_texture_button_button_down():
 	if Global.resources.gold >= cost:
 		Global.resources.gold -= cost
-		cost = pow(cost, INCREASE)
+		cost *= Global.VILLAGERS_INCREASE
 		
 		villagers += 1
 		multiplierLabel.text = str(villagers) + "x"

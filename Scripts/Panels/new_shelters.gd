@@ -1,7 +1,6 @@
 extends Control
 
 var cost := 2
-const INCREASE = 2
 var beginButton :TextureButton
 var pgBar :TextureProgressBar
 var pgButton :TextureButton
@@ -34,7 +33,7 @@ func _on_begin_texture_button_button_down():
 		Global.resources.materials -= cost
 		pgButton.disabled = false
 		beginButton.disabled = true
-		cost = pow(cost, INCREASE)
+		cost *= Global.SHELTER_INCREASE
 
 
 func _on_progress_texture_button_button_down():

@@ -1,9 +1,9 @@
 extends Node
 
 var resources = {
-	"materials": 200,
-	"gold": 200,
-	"science": 200
+	"materials": 0,
+	"gold": 0,
+	"science": 0
 }
 
 var resourcesMultiplier = {
@@ -43,3 +43,18 @@ var savedRelictsMultiplier := 1.0
 var savedTech := 0.0
 var completedIdols := 0.0
 
+const GRAIN_INCREASE = 2
+const MEAT_INCREASE = 3
+const PLANTS_INCREASE = 4
+const GRAIN_VALUE = 1
+const MEAT_VALUE = 2
+const PLANTS_VALUE = 3
+
+const EXPANSION_INCREASE = 3
+const SHELTER_INCREASE = 2
+
+const LITERATURE_INCREASE := 1
+const ART_INCREASE := 2
+const SCULPTURE_INCREASE := 3
+
+const VILLAGERS_INCREASE := 8
