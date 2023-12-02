@@ -71,7 +71,7 @@ func _on_technology_button_3_down():
 		TechnologyButton3.disabled = true
 		Global.villagerWorkMultiplier += 1
 		if unlockingTech4 == 3:
-			TechnologyButton4.disabled = true
+			TechnologyButton4.disabled = false
 
 #village workforce enrollment 4
 func _on_technology_button_4_down():
@@ -126,6 +126,18 @@ func _on_technology_button_31_down():
 		Global.resources.science -= costOfLevel3Tech
 		TechnologyButton31.disabled = true
 		unlockingTech4 += 1
-		
+		Global.automaticShelterBuilder = true
 		if unlockingTech4 == 3:
-			TechnologyButton4.disabled = true
+			TechnologyButton4.disabled = false
+
+#Automatic Shelter Upgrade Builder
+func _on_technology_button_32_down():
+	if Global.resources.science >= costOfLevel3Tech and Global.researchProgress.res32 == false:
+		Global.researchProgress.res32 = true
+		Global.amountOfResearchDone += 1
+		Global.resources.science -= costOfLevel3Tech
+		TechnologyButton32.disabled = true
+		unlockingTech4 += 1
+		Global.automaticShelterImprover = true
+		if unlockingTech4 == 3:
+			TechnologyButton4.disabled = false

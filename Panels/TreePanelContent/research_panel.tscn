@@ -1,7 +1,7 @@
 [gd_scene load_steps=4 format=3 uid="uid://b8kxcigghsv1c"]
 
 [ext_resource type="Script" path="res://Panels/TreePanelContent/research_panel_manager.gd" id="1_aj253"]
-[ext_resource type="Texture2D" uid="uid://ds7wnuyi7kkda" path="res://TMPTextures/1.png" id="1_gpgkd"]
+[ext_resource type="Texture2D" uid="uid://bto8manpwsg6r" path="res://Textures/progresbutton.png" id="2_yjofi"]
 
 [sub_resource type="LabelSettings" id="LabelSettings_xyq06"]
 font_size = 64
@@ -26,110 +26,110 @@ horizontal_alignment = 1
 
 [node name="TechnologyButton1" type="TextureButton" parent="."]
 layout_mode = 0
-offset_left = 304.0
-offset_top = 128.0
-offset_right = 352.0
+offset_left = 297.0
+offset_top = 112.0
+offset_right = 361.0
 offset_bottom = 176.0
-texture_normal = ExtResource("1_gpgkd")
+texture_normal = ExtResource("2_yjofi")
 ignore_texture_size = true
 stretch_mode = 0
 
 [node name="TechnologyButton2" type="TextureButton" parent="."]
 layout_mode = 0
-offset_left = 304.0
-offset_top = 240.0
-offset_right = 352.0
+offset_left = 297.0
+offset_top = 224.0
+offset_right = 361.0
 offset_bottom = 288.0
 disabled = true
-texture_normal = ExtResource("1_gpgkd")
+texture_normal = ExtResource("2_yjofi")
 ignore_texture_size = true
 stretch_mode = 0
 
 [node name="TechnologyButton3" type="TextureButton" parent="."]
 layout_mode = 0
-offset_left = 304.0
-offset_top = 352.0
-offset_right = 352.0
+offset_left = 298.0
+offset_top = 336.0
+offset_right = 362.0
 offset_bottom = 400.0
 disabled = true
-texture_normal = ExtResource("1_gpgkd")
+texture_normal = ExtResource("2_yjofi")
 ignore_texture_size = true
 stretch_mode = 0
 
 [node name="TechnologyButton4" type="TextureButton" parent="."]
 layout_mode = 0
-offset_left = 304.0
-offset_top = 496.0
-offset_right = 352.0
-offset_bottom = 544.0
+offset_left = 297.0
+offset_top = 464.0
+offset_right = 361.0
+offset_bottom = 528.0
 disabled = true
-texture_normal = ExtResource("1_gpgkd")
+texture_normal = ExtResource("2_yjofi")
 ignore_texture_size = true
 stretch_mode = 0
 
 [node name="TechnologyButton11" type="TextureButton" parent="."]
 layout_mode = 0
 offset_left = 208.0
-offset_top = 192.0
-offset_right = 256.0
+offset_top = 176.0
+offset_right = 272.0
 offset_bottom = 240.0
 disabled = true
-texture_normal = ExtResource("1_gpgkd")
+texture_normal = ExtResource("2_yjofi")
 ignore_texture_size = true
 stretch_mode = 0
 
 [node name="TechnologyButton12" type="TextureButton" parent="."]
 layout_mode = 0
-offset_left = 400.0
-offset_top = 192.0
+offset_left = 384.0
+offset_top = 176.0
 offset_right = 448.0
 offset_bottom = 240.0
 disabled = true
-texture_normal = ExtResource("1_gpgkd")
+texture_normal = ExtResource("2_yjofi")
 ignore_texture_size = true
 stretch_mode = 0
 
 [node name="TechnologyButton21" type="TextureButton" parent="."]
 layout_mode = 0
 offset_left = 208.0
-offset_top = 304.0
-offset_right = 256.0
+offset_top = 288.0
+offset_right = 272.0
 offset_bottom = 352.0
 disabled = true
-texture_normal = ExtResource("1_gpgkd")
+texture_normal = ExtResource("2_yjofi")
 ignore_texture_size = true
 stretch_mode = 0
 
 [node name="TechnologyButton22" type="TextureButton" parent="."]
 layout_mode = 0
-offset_left = 400.0
-offset_top = 304.0
+offset_left = 384.0
+offset_top = 288.0
 offset_right = 448.0
 offset_bottom = 352.0
 disabled = true
-texture_normal = ExtResource("1_gpgkd")
+texture_normal = ExtResource("2_yjofi")
 ignore_texture_size = true
 stretch_mode = 0
 
 [node name="TechnologyButton31" type="TextureButton" parent="."]
 layout_mode = 0
 offset_left = 208.0
-offset_top = 416.0
-offset_right = 256.0
+offset_top = 400.0
+offset_right = 272.0
 offset_bottom = 464.0
 disabled = true
-texture_normal = ExtResource("1_gpgkd")
+texture_normal = ExtResource("2_yjofi")
 ignore_texture_size = true
 stretch_mode = 0
 
 [node name="TechnologyButton32" type="TextureButton" parent="."]
 layout_mode = 0
-offset_left = 400.0
-offset_top = 416.0
+offset_left = 384.0
+offset_top = 400.0
 offset_right = 448.0
 offset_bottom = 464.0
 disabled = true
-texture_normal = ExtResource("1_gpgkd")
+texture_normal = ExtResource("2_yjofi")
 ignore_texture_size = true
 stretch_mode = 0
 
@@ -142,3 +142,4 @@ stretch_mode = 0
 [connection signal="button_down" from="TechnologyButton21" to="." method="_on_technology_button_21_down"]
 [connection signal="button_down" from="TechnologyButton22" to="." method="_on_technology_button_22_down"]
 [connection signal="button_down" from="TechnologyButton31" to="." method="_on_technology_button_31_down"]
+[connection signal="button_down" from="TechnologyButton32" to="." method="_on_technology_button_32_down"]
