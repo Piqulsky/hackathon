@@ -1,0 +1,159 @@
+[gd_scene load_steps=5 format=3 uid="uid://cd211bmsufwj4"]
+
+[ext_resource type="Script" path="res://Scripts/end_game.gd" id="1_jh3ax"]
+[ext_resource type="FontFile" uid="uid://kc4j5ea027jm" path="res://TIMESBD.TTF" id="1_ymdd5"]
+
+[sub_resource type="LabelSettings" id="LabelSettings_2sfk0"]
+font = ExtResource("1_ymdd5")
+font_size = 64
+outline_size = 8
+outline_color = Color(0, 0, 0, 1)
+
+[sub_resource type="LabelSettings" id="LabelSettings_axqxw"]
+
+[node name="EndGame" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_jh3ax")
+
+[node name="ColorRect" type="ColorRect" parent="."]
+layout_mode = 0
+offset_right = 1280.0
+offset_bottom = 736.0
+color = Color(0, 0, 0, 0.392157)
+
+[node name="EndGameLabel" type="Label" parent="."]
+layout_mode = 0
+offset_right = 1280.0
+offset_bottom = 160.0
+text = "KONIEC GRY"
+label_settings = SubResource("LabelSettings_2sfk0")
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Scores" type="Control" parent="."]
+anchors_preset = 0
+offset_left = 416.0
+offset_top = 160.0
+offset_right = 864.0
+offset_bottom = 384.0
+
+[node name="ShelterLabel" type="Label" parent="Scores"]
+layout_mode = 0
+offset_right = 448.0
+offset_bottom = 32.0
+text = "0 wybudowanych schronisk"
+label_settings = SubResource("LabelSettings_axqxw")
+vertical_alignment = 1
+
+[node name="ExpansionsLabel" type="Label" parent="Scores"]
+layout_mode = 0
+offset_top = 32.0
+offset_right = 448.0
+offset_bottom = 64.0
+text = "0 wybudowanych powiększeń schronisk"
+label_settings = SubResource("LabelSettings_axqxw")
+vertical_alignment = 1
+
+[node name="FoodLabel" type="Label" parent="Scores"]
+layout_mode = 0
+offset_top = 64.0
+offset_right = 448.0
+offset_bottom = 96.0
+text = "0 wyprodukowanych racji żywnościowych"
+label_settings = SubResource("LabelSettings_axqxw")
+vertical_alignment = 1
+
+[node name="CultureLabel" type="Label" parent="Scores"]
+layout_mode = 0
+offset_top = 96.0
+offset_right = 448.0
+offset_bottom = 128.0
+text = "0 zabezpieczonych zabytków kultury"
+label_settings = SubResource("LabelSettings_axqxw")
+vertical_alignment = 1
+
+[node name="TechLabel" type="Label" parent="Scores"]
+layout_mode = 0
+offset_top = 128.0
+offset_right = 448.0
+offset_bottom = 160.0
+text = "0 zachowanych przełomów technologicznych"
+label_settings = SubResource("LabelSettings_axqxw")
+vertical_alignment = 1
+
+[node name="IdolsLabel" type="Label" parent="Scores"]
+layout_mode = 0
+offset_top = 160.0
+offset_right = 448.0
+offset_bottom = 192.0
+text = "0 ochronionych wielkich ludzi"
+label_settings = SubResource("LabelSettings_axqxw")
+vertical_alignment = 1
+
+[node name="Final" type="Control" parent="."]
+anchors_preset = 0
+offset_left = 416.0
+offset_top = 384.0
+offset_right = 864.0
+offset_bottom = 480.0
+
+[node name="PeopleLabel" type="Label" parent="Final"]
+layout_mode = 0
+offset_right = 448.0
+offset_bottom = 32.0
+text = "0 milionów uratowanych od śmierci ludzi"
+label_settings = SubResource("LabelSettings_axqxw")
+vertical_alignment = 1
+
+[node name="HeritageLabel" type="Label" parent="Final"]
+layout_mode = 0
+offset_top = 32.0
+offset_right = 448.0
+offset_bottom = 64.0
+text = "0 % ocalonego historycznego dziedzictwa ludzkości"
+label_settings = SubResource("LabelSettings_axqxw")
+vertical_alignment = 1
+
+[node name="Save" type="Control" parent="."]
+anchors_preset = 0
+offset_left = 416.0
+offset_top = 480.0
+offset_right = 864.0
+offset_bottom = 720.0
+
+[node name="NameLabel" type="Label" parent="Save"]
+layout_mode = 0
+offset_right = 416.0
+offset_bottom = 32.0
+text = "Podaj swoje imię:"
+
+[node name="NameTextEdit" type="TextEdit" parent="Save"]
+layout_mode = 0
+offset_top = 32.0
+offset_right = 448.0
+offset_bottom = 96.0
+theme_override_font_sizes/font_size = 32
+placeholder_text = "Imię..."
+
+[node name="SaveButton" type="Button" parent="Save"]
+layout_mode = 0
+offset_left = 32.0
+offset_top = 128.0
+offset_right = 192.0
+offset_bottom = 160.0
+text = "Zapisz Wynik"
+
+[node name="ExitButton" type="Button" parent="Save"]
+offset_left = 256.0
+offset_top = 128.0
+offset_right = 416.0
+offset_bottom = 160.0
+text = "Wyjdź"
+
+[connection signal="button_down" from="Save/SaveButton" to="." method="_on_save_button_button_down"]
+[connection signal="button_down" from="Save/ExitButton" to="." method="_on_exit_button_button_down"]

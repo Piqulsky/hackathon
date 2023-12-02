@@ -1,7 +1,14 @@
 extends Node2D
 
+var vBox :VBoxContainer
+const scoreScene = preload("res://GUI/score.tscn")
+
 func _ready():
-	pass
+	vBox = $ScrollContainer/VBoxContainer
+	for score in Global.stats:
+		var s = scoreScene.instantiate()
+		s.fill_with_data(score["name"], score["people"], score["heritage"])
+		vBox.add_child(s)
 
 func _process(delta):
 	pass
