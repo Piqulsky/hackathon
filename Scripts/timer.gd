@@ -14,7 +14,7 @@ func _process(delta):
 
 
 func _on_timer_timeout():
-	time -= 1
+	time -= 30
 	var minutes = int(time/60)
 	var seconds = time - minutes * 60
 	timerLabel.text = str(minutes) + ":" + str(seconds)

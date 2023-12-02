@@ -1,0 +1,258 @@
+[gd_scene load_steps=15 format=3 uid="uid://y3aitw062hal"]
+
+[ext_resource type="Texture2D" uid="uid://df6vgo1sso3p2" path="res://Textures/economybg.png" id="1_blmfb"]
+[ext_resource type="Texture2D" uid="uid://c1gs8jmprn522" path="res://Textures/triangle.png" id="2_anr81"]
+[ext_resource type="Texture2D" uid="uid://djwa3oebcxwrl" path="res://Textures/buttonredadd.png" id="3_prj46"]
+[ext_resource type="Texture2D" uid="uid://drhgjy8na2msj" path="res://Textures/buttonredaddclicked.png" id="4_uvc0x"]
+[ext_resource type="Texture2D" uid="uid://de1ad8rori2s3" path="res://Textures/buttonyellowadd.png" id="5_31ewf"]
+[ext_resource type="Texture2D" uid="uid://55tknoohxe4j" path="res://Textures/buttonyellowaddclicked.png" id="6_in7rp"]
+[ext_resource type="Texture2D" uid="uid://w81d0dh0wjk4" path="res://Textures/buttonblueadd.png" id="7_d23kv"]
+[ext_resource type="Texture2D" uid="uid://c5mtylyen10q5" path="res://Textures/buttonblueaddclicked.png" id="8_5bq45"]
+[ext_resource type="Texture2D" uid="uid://bto8manpwsg6r" path="res://Textures/progresbutton.png" id="9_igkh3"]
+
+[sub_resource type="LabelSettings" id="LabelSettings_knr7b"]
+font_size = 64
+
+[sub_resource type="LabelSettings" id="LabelSettings_11gyy"]
+font_color = Color(0, 0, 0, 1)
+
+[sub_resource type="LabelSettings" id="LabelSettings_36rpp"]
+font_size = 64
+font_color = Color(0, 0, 0, 1)
+
+[sub_resource type="LabelSettings" id="LabelSettings_h5l1t"]
+font_size = 24
+font_color = Color(0, 0, 0, 1)
+outline_size = 4
+
+[sub_resource type="LabelSettings" id="LabelSettings_cy054"]
+font_size = 30
+outline_size = 4
+outline_color = Color(0, 0, 0, 1)
+
+[node name="Tutorial5" type="Node2D"]
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(640, 360)
+texture = ExtResource("1_blmfb")
+
+[node name="Control" type="Control" parent="."]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="EconomyPanelTitle" type="Label" parent="Control"]
+offset_left = 640.0
+offset_right = 1280.0
+offset_bottom = 91.0
+text = "Ekonomia"
+label_settings = SubResource("LabelSettings_knr7b")
+horizontal_alignment = 1
+
+[node name="TriangleEconomyBackground" type="Sprite2D" parent="Control"]
+position = Vector2(960, 336)
+scale = Vector2(0.744062, 0.73125)
+texture = ExtResource("2_anr81")
+
+[node name="MaterialsUpgradeButton" type="TextureButton" parent="Control"]
+offset_left = 848.0
+offset_top = 384.0
+offset_right = 928.0
+offset_bottom = 464.0
+texture_normal = ExtResource("3_prj46")
+texture_pressed = ExtResource("4_uvc0x")
+texture_disabled = ExtResource("4_uvc0x")
+ignore_texture_size = true
+stretch_mode = 0
+
+[node name="MaterialsPriceLabel" type="Label" parent="Control/MaterialsUpgradeButton"]
+layout_mode = 0
+offset_left = 16.0
+offset_top = 80.0
+offset_right = 64.0
+offset_bottom = 112.0
+text = "0/100"
+label_settings = SubResource("LabelSettings_11gyy")
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="GoldUpgradeButton" type="TextureButton" parent="Control"]
+offset_left = 920.0
+offset_top = 248.0
+offset_right = 1000.0
+offset_bottom = 328.0
+texture_normal = ExtResource("5_31ewf")
+texture_pressed = ExtResource("6_in7rp")
+texture_disabled = ExtResource("6_in7rp")
+ignore_texture_size = true
+stretch_mode = 0
+
+[node name="GoldPriceLabel" type="Label" parent="Control/GoldUpgradeButton"]
+layout_mode = 0
+offset_left = 16.0
+offset_top = 80.0
+offset_right = 64.0
+offset_bottom = 112.0
+text = "0/100"
+label_settings = SubResource("LabelSettings_11gyy")
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="ResearchUpgradeButton" type="TextureButton" parent="Control"]
+offset_left = 992.0
+offset_top = 384.0
+offset_right = 1072.0
+offset_bottom = 464.0
+texture_normal = ExtResource("7_d23kv")
+texture_pressed = ExtResource("8_5bq45")
+texture_disabled = ExtResource("8_5bq45")
+ignore_texture_size = true
+stretch_mode = 0
+
+[node name="ResearchPriceLabel" type="Label" parent="Control/ResearchUpgradeButton"]
+layout_mode = 0
+offset_left = 16.0
+offset_top = 80.0
+offset_right = 64.0
+offset_bottom = 112.0
+text = "0/100"
+label_settings = SubResource("LabelSettings_11gyy")
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Control2" type="Control" parent="."]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="ResearchPanelTitle" type="Label" parent="Control2"]
+offset_right = 640.0
+offset_bottom = 91.0
+text = "Rozwój"
+label_settings = SubResource("LabelSettings_36rpp")
+horizontal_alignment = 1
+
+[node name="TechnologyButton1" type="TextureButton" parent="Control2"]
+offset_left = 297.0
+offset_top = 112.0
+offset_right = 361.0
+offset_bottom = 176.0
+texture_normal = ExtResource("9_igkh3")
+ignore_texture_size = true
+stretch_mode = 0
+
+[node name="TechnologyButton2" type="TextureButton" parent="Control2"]
+offset_left = 297.0
+offset_top = 224.0
+offset_right = 361.0
+offset_bottom = 288.0
+disabled = true
+texture_normal = ExtResource("9_igkh3")
+ignore_texture_size = true
+stretch_mode = 0
+
+[node name="TechnologyButton3" type="TextureButton" parent="Control2"]
+offset_left = 298.0
+offset_top = 336.0
+offset_right = 362.0
+offset_bottom = 400.0
+disabled = true
+texture_normal = ExtResource("9_igkh3")
+ignore_texture_size = true
+stretch_mode = 0
+
+[node name="TechnologyButton4" type="TextureButton" parent="Control2"]
+offset_left = 297.0
+offset_top = 464.0
+offset_right = 361.0
+offset_bottom = 528.0
+disabled = true
+texture_normal = ExtResource("9_igkh3")
+ignore_texture_size = true
+stretch_mode = 0
+
+[node name="TechnologyButton11" type="TextureButton" parent="Control2"]
+offset_left = 208.0
+offset_top = 176.0
+offset_right = 272.0
+offset_bottom = 240.0
+disabled = true
+texture_normal = ExtResource("9_igkh3")
+ignore_texture_size = true
+stretch_mode = 0
+
+[node name="TechnologyButton12" type="TextureButton" parent="Control2"]
+offset_left = 384.0
+offset_top = 176.0
+offset_right = 448.0
+offset_bottom = 240.0
+disabled = true
+texture_normal = ExtResource("9_igkh3")
+ignore_texture_size = true
+stretch_mode = 0
+
+[node name="TechnologyButton21" type="TextureButton" parent="Control2"]
+offset_left = 208.0
+offset_top = 288.0
+offset_right = 272.0
+offset_bottom = 352.0
+disabled = true
+texture_normal = ExtResource("9_igkh3")
+ignore_texture_size = true
+stretch_mode = 0
+
+[node name="TechnologyButton22" type="TextureButton" parent="Control2"]
+offset_left = 384.0
+offset_top = 288.0
+offset_right = 448.0
+offset_bottom = 352.0
+disabled = true
+texture_normal = ExtResource("9_igkh3")
+ignore_texture_size = true
+stretch_mode = 0
+
+[node name="TechnologyButton31" type="TextureButton" parent="Control2"]
+offset_left = 208.0
+offset_top = 400.0
+offset_right = 272.0
+offset_bottom = 464.0
+disabled = true
+texture_normal = ExtResource("9_igkh3")
+ignore_texture_size = true
+stretch_mode = 0
+
+[node name="TechnologyButton32" type="TextureButton" parent="Control2"]
+offset_left = 384.0
+offset_top = 400.0
+offset_right = 448.0
+offset_bottom = 464.0
+disabled = true
+texture_normal = ExtResource("9_igkh3")
+ignore_texture_size = true
+stretch_mode = 0
+
+[node name="Label" type="Label" parent="."]
+offset_top = 512.0
+offset_right = 638.0
+offset_bottom = 704.0
+text = "To jest ekran rozwoju. Rozwoj oferuje 
+nowe pasywne efekty dla ludzkości.
+Takie jak pasywny przychód, lub automatyczne 
+budowy. Nie wszystkie rozwoje można zakupić od razu, 
+najpierw należy wykupić ich poprzedników"
+label_settings = SubResource("LabelSettings_h5l1t")
+horizontal_alignment = 1
+
+[node name="Label2" type="Label" parent="."]
+offset_left = 672.0
+offset_top = 528.0
+offset_right = 1280.0
+offset_bottom = 708.0
+text = "To jest ekran ekonomii. Za duże wydatki 
+na surowce w ekonomii można
+uzyskać powiększoną ilość surowców na 
+każde naciśnięcie przyciska."
+label_settings = SubResource("LabelSettings_cy054")
+horizontal_alignment = 1

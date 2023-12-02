@@ -1,10 +1,18 @@
-[gd_scene load_steps=4 format=3 uid="uid://cljctta8stwik"]
+[gd_scene load_steps=8 format=3 uid="uid://cljctta8stwik"]
 
+[ext_resource type="Script" path="res://Scripts/Panels/general_panel.gd" id="1_8l4px"]
 [ext_resource type="Texture2D" uid="uid://ctbwfteanjiei" path="res://Textures/background_1.png" id="1_se1ur"]
 [ext_resource type="Texture2D" uid="uid://dwoc2hh6otb8w" path="res://Textures/main_land.png" id="1_yy50o"]
-[ext_resource type="PackedScene" path="res://GUI/end_timer.tscn" id="3_siqsp"]
+[ext_resource type="PackedScene" uid="uid://i3fcdwqk28sb" path="res://GUI/end_timer.tscn" id="3_siqsp"]
+[ext_resource type="Shader" path="res://Shaders/sun.gdshader" id="4_e8eqr"]
+[ext_resource type="Texture2D" uid="uid://duml7svkedug" path="res://Textures/sun.png" id="5_3d0t7"]
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_id8br"]
+shader = ExtResource("4_e8eqr")
+shader_parameter/red = 1.0
 
 [node name="GeneralPanel" type="Node2D"]
+script = ExtResource("1_8l4px")
 
 [node name="SkySprite" type="Sprite2D" parent="."]
 position = Vector2(640, 360)
@@ -19,6 +27,11 @@ visible = false
 color = Color(0.741176, 0.741176, 0.741176, 1)
 polygon = PackedVector2Array(1280, 0, 1280, 736, 0, 736, 0, 0)
 
-[node name="Timer" parent="." instance=ExtResource("3_siqsp")]
+[node name="Sun" type="Sprite2D" parent="."]
+material = SubResource("ShaderMaterial_id8br")
+position = Vector2(640, 64)
+texture = ExtResource("5_3d0t7")
+
+[node name="EndTimer" parent="." instance=ExtResource("3_siqsp")]
 offset_right = 0.0
 offset_bottom = 0.0

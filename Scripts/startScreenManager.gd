@@ -8,7 +8,7 @@ func _process(delta):
 
 
 func _on_start_game_button_down():
-	get_tree().change_scene_to_file("res://main_scene.tscn")
+	get_tree().change_scene_to_file("res://Scenes/tutorial_scene.tscn")
 
 
 func _on_score_button_down():

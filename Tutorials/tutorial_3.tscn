@@ -1,3 +1,342 @@
-[gd_scene format=3 uid="uid://u58q1xgp76tw"]
+[gd_scene load_steps=29 format=3 uid="uid://u58q1xgp76tw"]
+
+[ext_resource type="Texture2D" uid="uid://ciniv6kbafqnf" path="res://Textures/right_screen (demo).png" id="1_vvkbt"]
+[ext_resource type="Script" path="res://Scripts/Panels/buy_panel.gd" id="2_u1qbj"]
+[ext_resource type="Texture2D" uid="uid://cs2dk0kwxjnqa" path="res://Textures/button_wheat.png" id="3_mwfti"]
+[ext_resource type="Texture2D" uid="uid://xupt83l3a8a" path="res://Textures/button_wheat_clicked.png" id="4_y51q7"]
+[ext_resource type="Texture2D" uid="uid://bt1smjktp5js5" path="res://Textures/button_meat.png" id="5_s72wo"]
+[ext_resource type="Texture2D" uid="uid://61gwdfeyqy4v" path="res://Textures/button_meat_clicked.png" id="6_82f42"]
+[ext_resource type="Texture2D" uid="uid://clitxabdnrkse" path="res://Textures/button_apple.png" id="7_c3eay"]
+[ext_resource type="Texture2D" uid="uid://486j3jx552vb" path="res://Textures/button_apple_clicked.png" id="8_8seal"]
+[ext_resource type="Script" path="res://Scripts/Panels/food_value_label.gd" id="9_h8um4"]
+[ext_resource type="Script" path="res://Scripts/Panels/villagers_panel.gd" id="10_oqgdm"]
+[ext_resource type="Texture2D" uid="uid://buny6t4f5ojei" path="res://Textures/worker.png" id="11_0hmkn"]
+[ext_resource type="Texture2D" uid="uid://ig6ky02qmc7o" path="res://Textures/progress_bar_outline.png" id="13_2mufw"]
+[ext_resource type="Texture2D" uid="uid://dfdqkpsyras0l" path="res://Textures/progredd_bar_green.png" id="14_1pb7b"]
+[ext_resource type="Texture2D" uid="uid://bsp6dudeb6v7o" path="res://TMPTextures/0.png" id="15_h12dw"]
+[ext_resource type="Texture2D" uid="uid://boeui5psfp4ua" path="res://TMPTextures/0d.png" id="16_etn4y"]
+[ext_resource type="Texture2D" uid="uid://chsq7hq5o4qy7" path="res://Textures/button_hammer.png" id="17_5mmnb"]
+[ext_resource type="Texture2D" uid="uid://kxgprkw4br8p" path="res://Textures/button_hammer_clicked.png" id="18_hstmo"]
+[ext_resource type="Texture2D" uid="uid://reiggpbnpty4" path="res://Textures/progress_bar_blue.png" id="20_tt050"]
+[ext_resource type="Texture2D" uid="uid://bmisufaoncikq" path="res://Textures/button_wrench.png" id="21_frdke"]
+[ext_resource type="Texture2D" uid="uid://7q0algxfu8nu" path="res://Textures/button_wrench_clicked.png" id="22_u8fq6"]
+
+[sub_resource type="LabelSettings" id="LabelSettings_5tsgt"]
+font_size = 64
+
+[sub_resource type="LabelSettings" id="LabelSettings_s8vdu"]
+font_size = 32
+
+[sub_resource type="LabelSettings" id="LabelSettings_i78p6"]
+font_size = 64
+
+[sub_resource type="LabelSettings" id="LabelSettings_lp6rq"]
+font_size = 64
+
+[sub_resource type="LabelSettings" id="LabelSettings_66b2d"]
+
+[sub_resource type="LabelSettings" id="LabelSettings_cj2ri"]
+font_size = 32
+
+[sub_resource type="LabelSettings" id="LabelSettings_j8cvf"]
+font_size = 32
+
+[sub_resource type="LabelSettings" id="LabelSettings_xk47x"]
+outline_size = 4
+outline_color = Color(0, 0, 0, 1)
 
 [node name="Tutorial3" type="Node2D"]
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(640, 360)
+texture = ExtResource("1_vvkbt")
+
+[node name="Control" type="Control" parent="."]
+layout_mode = 3
+anchors_preset = 0
+offset_left = 640.0
+offset_right = 680.0
+offset_bottom = 40.0
+
+[node name="ResourcesLabel" type="Label" parent="Control"]
+layout_mode = 0
+offset_right = 640.0
+offset_bottom = 91.0
+text = "Zasoby"
+label_settings = SubResource("LabelSettings_5tsgt")
+horizontal_alignment = 1
+
+[node name="BuyPanel" type="Control" parent="Control"]
+layout_mode = 3
+anchors_preset = 0
+offset_top = 96.0
+offset_right = 640.0
+offset_bottom = 256.0
+script = ExtResource("2_u1qbj")
+
+[node name="GrainTextureButton" type="TextureButton" parent="Control/BuyPanel"]
+layout_mode = 0
+offset_left = 64.0
+offset_right = 192.0
+offset_bottom = 128.0
+texture_normal = ExtResource("3_mwfti")
+texture_pressed = ExtResource("4_y51q7")
+
+[node name="Cost" type="Label" parent="Control/BuyPanel/GrainTextureButton"]
+layout_mode = 0
+offset_top = 128.0
+offset_right = 128.0
+offset_bottom = 192.0
+text = "0/0"
+label_settings = SubResource("LabelSettings_s8vdu")
+horizontal_alignment = 1
+
+[node name="MeatTextureButton" type="TextureButton" parent="Control/BuyPanel"]
+layout_mode = 0
+offset_left = 256.0
+offset_right = 384.0
+offset_bottom = 128.0
+texture_normal = ExtResource("5_s72wo")
+texture_pressed = ExtResource("6_82f42")
+
+[node name="Cost" type="Label" parent="Control/BuyPanel/MeatTextureButton"]
+layout_mode = 0
+offset_top = 128.0
+offset_right = 128.0
+offset_bottom = 192.0
+text = "0/0"
+label_settings = SubResource("LabelSettings_s8vdu")
+horizontal_alignment = 1
+
+[node name="PlantsTextureButton" type="TextureButton" parent="Control/BuyPanel"]
+layout_mode = 0
+offset_left = 448.0
+offset_right = 576.0
+offset_bottom = 128.0
+texture_normal = ExtResource("7_c3eay")
+texture_pressed = ExtResource("8_8seal")
+
+[node name="Cost" type="Label" parent="Control/BuyPanel/PlantsTextureButton"]
+layout_mode = 0
+offset_top = 128.0
+offset_right = 128.0
+offset_bottom = 192.0
+text = "0/0"
+label_settings = SubResource("LabelSettings_s8vdu")
+horizontal_alignment = 1
+
+[node name="ValueLabel" type="Label" parent="Control"]
+layout_mode = 0
+offset_top = 256.0
+offset_right = 640.0
+offset_bottom = 384.0
+text = "0"
+label_settings = SubResource("LabelSettings_5tsgt")
+horizontal_alignment = 1
+vertical_alignment = 1
+script = ExtResource("9_h8um4")
+
+[node name="VillagersPanel" type="Control" parent="Control"]
+layout_mode = 3
+anchors_preset = 0
+offset_top = 384.0
+offset_right = 640.0
+offset_bottom = 544.0
+script = ExtResource("10_oqgdm")
+
+[node name="BuyTextureButton" type="TextureButton" parent="Control/VillagersPanel"]
+layout_mode = 0
+offset_left = 32.0
+offset_right = 160.0
+offset_bottom = 128.0
+texture_normal = ExtResource("11_0hmkn")
+
+[node name="Cost" type="Label" parent="Control/VillagersPanel/BuyTextureButton"]
+layout_mode = 0
+offset_top = 128.0
+offset_right = 128.0
+offset_bottom = 192.0
+text = "0/0"
+label_settings = SubResource("LabelSettings_s8vdu")
+horizontal_alignment = 1
+
+[node name="MultiplierLabel" type="Label" parent="Control/VillagersPanel"]
+layout_mode = 0
+offset_left = 192.0
+offset_right = 384.0
+offset_bottom = 128.0
+text = "0x"
+label_settings = SubResource("LabelSettings_i78p6")
+horizontal_alignment = 2
+vertical_alignment = 1
+
+[node name="GenerationBar" type="ProgressBar" parent="Control/VillagersPanel"]
+layout_mode = 0
+offset_left = 384.0
+offset_top = 32.0
+offset_right = 608.0
+offset_bottom = 128.0
+step = 0.1
+show_percentage = false
+
+[node name="Control2" type="Control" parent="."]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="Label" type="Label" parent="Control2"]
+layout_mode = 0
+offset_right = 640.0
+offset_bottom = 91.0
+text = "Schronienia"
+label_settings = SubResource("LabelSettings_lp6rq")
+horizontal_alignment = 1
+
+[node name="NewShelters" type="Control" parent="Control2"]
+layout_mode = 3
+anchors_preset = 0
+offset_top = 96.0
+offset_right = 640.0
+offset_bottom = 320.0
+
+[node name="ProgressBar" type="TextureProgressBar" parent="Control2/NewShelters"]
+layout_mode = 0
+offset_left = 64.0
+offset_top = 160.0
+offset_right = 608.0
+offset_bottom = 224.0
+step = 0.1
+texture_under = ExtResource("13_2mufw")
+texture_progress = ExtResource("14_1pb7b")
+
+[node name="BeginTextureButton" type="TextureButton" parent="Control2/NewShelters"]
+layout_mode = 0
+offset_left = 128.0
+offset_top = 32.0
+offset_right = 224.0
+offset_bottom = 128.0
+texture_normal = ExtResource("15_h12dw")
+texture_disabled = ExtResource("16_etn4y")
+
+[node name="Label" type="Label" parent="Control2/NewShelters/BeginTextureButton"]
+layout_mode = 0
+offset_top = 96.0
+offset_right = 96.0
+offset_bottom = 128.0
+text = "0/0"
+label_settings = SubResource("LabelSettings_66b2d")
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="ProgressTextureButton" type="TextureButton" parent="Control2/NewShelters"]
+layout_mode = 0
+offset_left = 448.0
+offset_top = 16.0
+offset_right = 576.0
+offset_bottom = 144.0
+disabled = true
+texture_normal = ExtResource("17_5mmnb")
+texture_pressed = ExtResource("18_hstmo")
+texture_disabled = ExtResource("18_hstmo")
+
+[node name="SheltersLabel" type="Label" parent="Control2/NewShelters"]
+layout_mode = 0
+offset_left = 256.0
+offset_top = 32.0
+offset_right = 416.0
+offset_bottom = 128.0
+text = "0"
+label_settings = SubResource("LabelSettings_cj2ri")
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="ExpandShelters" type="Control" parent="Control2"]
+layout_mode = 3
+anchors_preset = 0
+offset_top = 320.0
+offset_right = 640.0
+offset_bottom = 544.0
+
+[node name="ProgressBar" type="TextureProgressBar" parent="Control2/ExpandShelters"]
+layout_mode = 0
+offset_left = 64.0
+offset_top = 160.0
+offset_right = 608.0
+offset_bottom = 224.0
+step = 0.1
+texture_under = ExtResource("13_2mufw")
+texture_progress = ExtResource("20_tt050")
+
+[node name="BeginTextureButton" type="TextureButton" parent="Control2/ExpandShelters"]
+layout_mode = 0
+offset_left = 128.0
+offset_top = 32.0
+offset_right = 224.0
+offset_bottom = 128.0
+texture_normal = ExtResource("15_h12dw")
+texture_disabled = ExtResource("16_etn4y")
+
+[node name="Label" type="Label" parent="Control2/ExpandShelters/BeginTextureButton"]
+layout_mode = 0
+offset_top = 96.0
+offset_right = 96.0
+offset_bottom = 128.0
+text = "0/0"
+label_settings = SubResource("LabelSettings_66b2d")
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="ProgressTextureButton" type="TextureButton" parent="Control2/ExpandShelters"]
+layout_mode = 0
+offset_left = 448.0
+offset_top = 16.0
+offset_right = 576.0
+offset_bottom = 144.0
+disabled = true
+texture_normal = ExtResource("21_frdke")
+texture_pressed = ExtResource("22_u8fq6")
+texture_disabled = ExtResource("22_u8fq6")
+
+[node name="ExpansionsLabel" type="Label" parent="Control2/ExpandShelters"]
+layout_mode = 0
+offset_left = 256.0
+offset_top = 32.0
+offset_right = 416.0
+offset_bottom = 128.0
+text = "0"
+label_settings = SubResource("LabelSettings_j8cvf")
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Label" type="Label" parent="."]
+offset_top = 544.0
+offset_right = 640.0
+offset_bottom = 704.0
+text = "To jest ekran schronień. Górna część odpowiada za ich tworzenie i pozwala na
+ratowanie ludzi. Dolna część za ich powiększanie, więc powiela ilość ludzi na
+schronienie. Przyciski po lewej rozpoczynają budowę i kosztują Materiały, a
+przyciski po prawej odpowiadają za postęp budowy widoczny na pasku postępu
+pod przyciskami. Ilości schronień oraz ich powiększeń widoczne są między 
+przyciskami."
+label_settings = SubResource("LabelSettings_xk47x")
+horizontal_alignment = 1
+
+[node name="Label2" type="Label" parent="."]
+offset_left = 640.0
+offset_top = 544.0
+offset_right = 1280.0
+offset_bottom = 704.0
+text = "To jest ekran zasobów. Zasoby pozwalają ludziom na przetrwanie w Schroniskach,
+a gdy ich zabraknie, część umrze. Górna część odpowiada za ich kupno za 
+Pieniądze. Zboże jest warte 1 zasób, mięso 2, a jabłka 3. W dolnej części ekranu 
+jest możliwość wynajęcia chłopa do automatycznego zbierania zasobów. Ilość 
+zasobów zebrana przez chłopów co każde wypełnienie paska postępu jest zależna 
+od ilości chłopów."
+label_settings = SubResource("LabelSettings_xk47x")
+horizontal_alignment = 1
+
+[connection signal="button_down" from="Control/BuyPanel/GrainTextureButton" to="Control/BuyPanel" method="_on_grain_texture_button_button_down"]
+[connection signal="button_down" from="Control/BuyPanel/MeatTextureButton" to="Control/BuyPanel" method="_on_meat_texture_button_button_down"]
+[connection signal="button_down" from="Control/BuyPanel/PlantsTextureButton" to="Control/BuyPanel" method="_on_plants_texture_button_button_down"]
+[connection signal="button_down" from="Control/VillagersPanel/BuyTextureButton" to="Control/VillagersPanel" method="_on_buy_texture_button_button_down"]
