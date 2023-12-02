@@ -1,0 +1,41 @@
+[gd_scene load_steps=3 format=3 uid="uid://mvjug63dk1ao"]
+
+[ext_resource type="Script" path="res://Scripts/score_in_table.gd" id="1_qqs8o"]
+
+[sub_resource type="LabelSettings" id="LabelSettings_aivp6"]
+font_size = 32
+outline_size = 4
+outline_color = Color(0, 0, 0, 1)
+
+[node name="Score" type="Control"]
+custom_minimum_size = Vector2(720, 64)
+layout_mode = 3
+anchors_preset = 0
+offset_right = 736.0
+offset_bottom = 64.0
+script = ExtResource("1_qqs8o")
+
+[node name="NameLabel" type="Label" parent="."]
+offset_right = 384.0
+offset_bottom = 64.0
+text = "Imię:"
+label_settings = SubResource("LabelSettings_aivp6")
+vertical_alignment = 1
+
+[node name="PeopleLabel" type="Label" parent="."]
+offset_left = 384.0
+offset_right = 576.0
+offset_bottom = 64.0
+text = "Miliony:"
+label_settings = SubResource("LabelSettings_aivp6")
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="HeritageLabel" type="Label" parent="."]
+offset_left = 576.0
+offset_right = 738.0
+offset_bottom = 64.0
+text = "Procent:"
+label_settings = SubResource("LabelSettings_aivp6")
+horizontal_alignment = 1
+vertical_alignment = 1

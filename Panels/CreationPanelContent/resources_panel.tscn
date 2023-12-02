@@ -1,4 +1,4 @@
-[gd_scene load_steps=14 format=3 uid="uid://76g1h08gih8a"]
+[gd_scene load_steps=15 format=3 uid="uid://76g1h08gih8a"]
 
 [ext_resource type="Script" path="res://Scripts/Panels/buy_panel.gd" id="1_yuer2"]
 [ext_resource type="Texture2D" uid="uid://cs2dk0kwxjnqa" path="res://Textures/button_wheat.png" id="2_utma5"]
@@ -9,7 +9,8 @@
 [ext_resource type="Texture2D" uid="uid://clitxabdnrkse" path="res://Textures/button_apple.png" id="4_c6rqg"]
 [ext_resource type="Texture2D" uid="uid://61gwdfeyqy4v" path="res://Textures/button_meat_clicked.png" id="5_5otom"]
 [ext_resource type="Texture2D" uid="uid://486j3jx552vb" path="res://Textures/button_apple_clicked.png" id="7_5l503"]
-[ext_resource type="Texture2D" uid="uid://buny6t4f5ojei" path="res://Textures/worker.png" id="7_37oal"]
+[ext_resource type="Texture2D" uid="uid://bnvqewjkc3nmg" path="res://Textures/chinese_worker.png" id="10_ak6qu"]
+[ext_resource type="Texture2D" uid="uid://yxo5urdk2gn3" path="res://Textures/chinese_worker_clicked.png" id="11_io4l4"]
 
 [sub_resource type="LabelSettings" id="LabelSettings_40d3g"]
 font_size = 64
@@ -122,7 +123,8 @@ layout_mode = 0
 offset_left = 32.0
 offset_right = 160.0
 offset_bottom = 128.0
-texture_normal = ExtResource("7_37oal")
+texture_normal = ExtResource("10_ak6qu")
+texture_pressed = ExtResource("11_io4l4")
 
 [node name="Cost" type="Label" parent="VillagersPanel/BuyTextureButton"]
 layout_mode = 0
@@ -136,7 +138,8 @@ horizontal_alignment = 1
 [node name="MultiplierLabel" type="Label" parent="VillagersPanel"]
 layout_mode = 0
 offset_left = 192.0
-offset_right = 384.0
+offset_top = 32.0
+offset_right = 352.0
 offset_bottom = 128.0
 text = "0x"
 label_settings = SubResource("LabelSettings_iq8qq")
@@ -145,7 +148,7 @@ vertical_alignment = 1
 
 [node name="GenerationBar" type="ProgressBar" parent="VillagersPanel"]
 layout_mode = 0
-offset_left = 384.0
+offset_left = 352.0
 offset_top = 32.0
 offset_right = 608.0
 offset_bottom = 128.0
