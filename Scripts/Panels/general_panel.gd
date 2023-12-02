@@ -12,6 +12,6 @@ func _physics_process(delta):
 	pass
 
 func change_sun(time):
-	sun.position += Vector2(0, float(time)/25)
-	var diff = (1-float(time)/900)*0.1
-	sun.modulate = Color(sun.modulate.r, sun.modulate.g-diff, sun.modulate.b-diff)
+	sun.position = Vector2(sun.position.x, (900 - time )/3 + 96)
+	var timeVal = float(time)/900
+	sun.modulate = Color(sun.modulate.r, timeVal, timeVal)

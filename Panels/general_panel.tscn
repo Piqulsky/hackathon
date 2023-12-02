@@ -14,7 +14,7 @@ position = Vector2(640, 360)
 texture = ExtResource("1_se1ur")
 
 [node name="Sun" type="Sprite2D" parent="."]
-position = Vector2(640, 64)
+position = Vector2(640, 96)
 texture = ExtResource("5_3d0t7")
 
 [node name="LandSprite" type="Sprite2D" parent="."]
