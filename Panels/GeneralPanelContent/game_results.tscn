@@ -1,8 +1,9 @@
-[gd_scene load_steps=14 format=3 uid="uid://cocw1dfe5hbr"]
+[gd_scene load_steps=15 format=3 uid="uid://cocw1dfe5hbr"]
 
 [ext_resource type="Script" path="res://Scripts/game_results.gd" id="1_1ruo2"]
 [ext_resource type="Texture2D" uid="uid://pbuv11s8pmhh" path="res://Textures/icons/ludziki.png" id="2_7ge7n"]
 [ext_resource type="Texture2D" uid="uid://bsiaiyt3tg1wq" path="res://Textures/icons/schron.png" id="2_gjm4y"]
+[ext_resource type="FontFile" uid="uid://cpm5pbi7bdyjw" path="res://Fonts/Kanit-Regular.ttf" id="2_mmhjx"]
 [ext_resource type="Texture2D" uid="uid://d2hjr53qkuwwi" path="res://Textures/icons/schron+.png" id="3_62wfu"]
 [ext_resource type="Texture2D" uid="uid://ddqxovpbnovn" path="res://Textures/icons/chlep.png" id="3_hl6rb"]
 [ext_resource type="Texture2D" uid="uid://c3wn4ssmylmu6" path="res://Textures/icons/ludzik.png" id="4_ymrt6"]
@@ -12,16 +13,19 @@
 [ext_resource type="Texture2D" uid="uid://dcw5ewh1e651j" path="res://Textures/icons/ksiazka.png" id="9_fveb4"]
 
 [sub_resource type="LabelSettings" id="LabelSettings_13np4"]
+font = ExtResource("2_mmhjx")
 font_size = 24
 outline_size = 4
 outline_color = Color(0, 0, 0, 1)
 
 [sub_resource type="LabelSettings" id="LabelSettings_bo6rm"]
+font = ExtResource("2_mmhjx")
 font_size = 24
 outline_size = 4
 outline_color = Color(0, 0, 0, 1)
 
 [sub_resource type="LabelSettings" id="LabelSettings_5igm5"]
+font = ExtResource("2_mmhjx")
 font_size = 32
 outline_size = 4
 outline_color = Color(0, 0, 0, 1)

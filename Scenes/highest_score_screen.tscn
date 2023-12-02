@@ -1,12 +1,20 @@
-[gd_scene load_steps=6 format=3 uid="uid://bb53nt4hq5dm6"]
+[gd_scene load_steps=9 format=3 uid="uid://bb53nt4hq5dm6"]
 
 [ext_resource type="Script" path="res://Scripts/highestScoreScreenManager.gd" id="1_ehxy5"]
 [ext_resource type="Texture2D" uid="uid://bkhnqpc12x0gm" path="res://Textures/ekranstartowy1.png" id="2_hdqra"]
-[ext_resource type="Texture2D" uid="uid://cj7h63jrxqtxv" path="res://Textures/buttonstartowy.png" id="3_epey0"]
+[ext_resource type="FontFile" uid="uid://bx8olbbvgwefi" path="res://Fonts/Kanit-BoldItalic.ttf" id="3_4vw1o"]
+[ext_resource type="Texture2D" uid="uid://ds67yr3bd16oh" path="res://Textures/buttonstartowy.png" id="3_epey0"]
 [ext_resource type="PackedScene" uid="uid://mvjug63dk1ao" path="res://GUI/score.tscn" id="4_kamaq"]
+[ext_resource type="FontFile" uid="uid://c2dxgn8247omg" path="res://Fonts/Kanit-Italic.ttf" id="5_nn784"]
 
 [sub_resource type="LabelSettings" id="LabelSettings_fngd5"]
+font = ExtResource("3_4vw1o")
 font_size = 38
+
+[sub_resource type="LabelSettings" id="LabelSettings_rfrpa"]
+font = ExtResource("5_nn784")
+font_size = 24
+font_color = Color(0.282353, 0, 0, 1)
 
 [node name="ScoreScene" type="Node2D"]
 
@@ -44,6 +52,7 @@ offset_bottom = 47.0
 theme_override_colors/font_color = Color(0.282353, 0, 0, 1)
 theme_override_font_sizes/font_size = 24
 text = "Powrót"
+label_settings = SubResource("LabelSettings_rfrpa")
 horizontal_alignment = 1
 vertical_alignment = 1
 

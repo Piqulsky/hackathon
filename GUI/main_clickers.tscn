@@ -1,6 +1,6 @@
 [gd_scene load_steps=12 format=3 uid="uid://ocjtlcfvg40s"]
 
-[ext_resource type="Texture2D" uid="uid://lcjhjxwbef5t" path="res://Textures/button_panel.png" id="1_xcymm"]
+[ext_resource type="Texture2D" uid="uid://bw5uyu8na8m3l" path="res://Textures/main_panel.png" id="1_cqs52"]
 [ext_resource type="Texture2D" uid="uid://cytmnu5w7fk1v" path="res://Textures/button_red.png" id="2_tq4gy"]
 [ext_resource type="Texture2D" uid="uid://lwk2uxmo3b" path="res://Textures/button_red_clicked.png" id="3_0qanu"]
 [ext_resource type="Script" path="res://Scripts/MainClickers/materials_texture_button.gd" id="3_vbfhy"]
@@ -23,8 +23,8 @@ grow_horizontal = 2
 grow_vertical = 2
 
 [node name="ClickerBar" type="Sprite2D" parent="."]
-position = Vector2(640, 640)
-texture = ExtResource("1_xcymm")
+position = Vector2(640, 365)
+texture = ExtResource("1_cqs52")
 
 [node name="Clickers" type="Control" parent="."]
 anchors_preset = 0
@@ -47,6 +47,7 @@ offset_bottom = 128.0
 grow_horizontal = 2
 grow_vertical = 2
 pivot_offset = Vector2(32, 32)
+button_mask = 3
 texture_normal = ExtResource("2_tq4gy")
 texture_pressed = ExtResource("3_0qanu")
 script = ExtResource("3_vbfhy")
@@ -84,6 +85,7 @@ offset_bottom = 128.0
 grow_horizontal = 2
 grow_vertical = 2
 pivot_offset = Vector2(32, 32)
+button_mask = 3
 texture_normal = ExtResource("5_wstha")
 texture_pressed = ExtResource("6_pyvr3")
 script = ExtResource("5_ceo82")
@@ -121,6 +123,7 @@ offset_bottom = 128.0
 grow_horizontal = 2
 grow_vertical = 2
 pivot_offset = Vector2(32, 32)
+button_mask = 3
 texture_normal = ExtResource("8_63np4")
 texture_pressed = ExtResource("9_mf8l0")
 script = ExtResource("7_otopk")

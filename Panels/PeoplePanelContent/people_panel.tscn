@@ -1,4 +1,4 @@
-[gd_scene load_steps=20 format=3 uid="uid://c77e2dymkxoks"]
+[gd_scene load_steps=21 format=3 uid="uid://c77e2dymkxoks"]
 
 [ext_resource type="Script" path="res://Scripts/Panels/people_panel_manager.gd" id="1_jhj0a"]
 [ext_resource type="Texture2D" uid="uid://ds67yr3bd16oh" path="res://Textures/buttonstartowy.png" id="3_3h0uy"]
@@ -6,6 +6,7 @@
 [ext_resource type="Texture2D" uid="uid://bofdai358ikwm" path="res://Textures/karski.png" id="4_8cd3x"]
 [ext_resource type="Texture2D" uid="uid://3pj30lbjhf37" path="res://Textures/buttonstartowy_clicked.png" id="5_5c005"]
 [ext_resource type="Texture2D" uid="uid://c0welng44gqer" path="res://Textures/thatcher.png" id="5_s1pcn"]
+[ext_resource type="FontFile" uid="uid://cpm5pbi7bdyjw" path="res://Fonts/Kanit-Regular.ttf" id="6_uqgen"]
 [ext_resource type="Texture2D" uid="uid://c822gnlxwynqv" path="res://Textures/lem.png" id="7_0lrq8"]
 [ext_resource type="Texture2D" uid="uid://cpy86nqe1ffds" path="res://Textures/termometr/termometr4.png" id="8_m5c1y"]
 [ext_resource type="Texture2D" uid="uid://orljve75opgy" path="res://Textures/herbert.png" id="8_oa50p"]
@@ -15,27 +16,32 @@
 load_path = "res://.godot/imported/bartermometr.png-ae2c5fa377b4133afc7ffc3e5681a472.ctex"
 
 [sub_resource type="LabelSettings" id="LabelSettings_1vreb"]
+font = ExtResource("6_uqgen")
 font_size = 11
 
 [sub_resource type="LabelSettings" id="LabelSettings_3wnmt"]
+font = ExtResource("6_uqgen")
 font_size = 11
 
 [sub_resource type="CompressedTexture2D" id="CompressedTexture2D_cmvan"]
 load_path = "res://.godot/imported/termometr3.png-fc5b614bbd73a78cb147881d8d3a264a.ctex"
 
 [sub_resource type="LabelSettings" id="LabelSettings_afve0"]
+font = ExtResource("6_uqgen")
 font_size = 14
 
 [sub_resource type="CompressedTexture2D" id="CompressedTexture2D_efbjw"]
 load_path = "res://.godot/imported/termometr2.png-7bead92cc92ef4789c77659aaba24bce.ctex"
 
 [sub_resource type="LabelSettings" id="LabelSettings_sjtbn"]
+font = ExtResource("6_uqgen")
 font_size = 14
 
 [sub_resource type="CompressedTexture2D" id="CompressedTexture2D_iglvv"]
 load_path = "res://.godot/imported/termometr1.png-298d13a4eae26b89de3f7f0b6994dd05.ctex"
 
 [sub_resource type="LabelSettings" id="LabelSettings_jkelk"]
+font = ExtResource("6_uqgen")
 font_size = 14
 
 [node name="PeoplePanel" type="Control"]

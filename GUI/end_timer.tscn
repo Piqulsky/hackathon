@@ -1,8 +1,10 @@
-[gd_scene load_steps=3 format=3 uid="uid://i3fcdwqk28sb"]
+[gd_scene load_steps=4 format=3 uid="uid://i3fcdwqk28sb"]
 
 [ext_resource type="Script" path="res://Scripts/timer.gd" id="1_yofb1"]
+[ext_resource type="FontFile" uid="uid://c2dxgn8247omg" path="res://Fonts/Kanit-Italic.ttf" id="2_45pqh"]
 
 [sub_resource type="LabelSettings" id="LabelSettings_shvlp"]
+font = ExtResource("2_45pqh")
 font_size = 40
 outline_size = 4
 outline_color = Color(0, 0, 0, 1)

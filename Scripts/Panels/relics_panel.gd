@@ -44,15 +44,15 @@ func _physics_process(delta):
 	sculptureCostLabel.text = str(Global.resources.materials) + "/" +str(sculptureCost)
 	if Global.amountOfResearchDone < literatureReq:
 		literatureButton.disabled = true
-	else:
+	elif literatureCost != 100:
 		literatureButton.disabled = false
 	if Global.amountOfResearchDone < artReq:
 		artButton.disabled = true
-	else:
+	elif artCost != 100:
 		artButton.disabled = false
 	if Global.amountOfResearchDone < sculptureReq:
 		sculptureButton.disabled = true
-	else:
+	elif sculptureCost != 100:
 		sculptureButton.disabled = false
 	
 

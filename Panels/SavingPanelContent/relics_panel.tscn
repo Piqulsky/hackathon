@@ -1,21 +1,26 @@
-[gd_scene load_steps=11 format=3 uid="uid://teevk0t18di5"]
+[gd_scene load_steps=13 format=3 uid="uid://teevk0t18di5"]
 
 [ext_resource type="Script" path="res://Scripts/Panels/relics_panel.gd" id="1_1wu56"]
-[ext_resource type="Texture2D" uid="uid://cmft08wnuuc1w" path="res://Textures/bookactive.png" id="2_hcj14"]
+[ext_resource type="Texture2D" uid="uid://c4iaejg8b7r01" path="res://Textures/bookactive.png" id="2_hcj14"]
+[ext_resource type="FontFile" uid="uid://d0lblke161a6h" path="res://Fonts/Kanit-Medium.ttf" id="2_k1ke2"]
 [ext_resource type="Texture2D" uid="uid://cddufqu3ltjtk" path="res://Textures/bookoff.png" id="3_kpl5m"]
 [ext_resource type="Texture2D" uid="uid://c12qa0qhv68pe" path="res://Textures/paintingactive.png" id="4_w4rpc"]
 [ext_resource type="Texture2D" uid="uid://cxdliexkmambu" path="res://Textures/paintingoff.png" id="5_15oh8"]
-[ext_resource type="Texture2D" uid="uid://cykhptgrcjnt3" path="res://Textures/sculptureactive.png" id="6_uaiu7"]
+[ext_resource type="FontFile" uid="uid://cpm5pbi7bdyjw" path="res://Fonts/Kanit-Regular.ttf" id="5_gqo5i"]
+[ext_resource type="Texture2D" uid="uid://v06oen48frl5" path="res://Textures/sculptureactive.png" id="6_uaiu7"]
 [ext_resource type="Texture2D" uid="uid://4d1dkjebkwt2" path="res://Textures/sculptureoff.png" id="7_yb0dy"]
 
 [sub_resource type="LabelSettings" id="LabelSettings_ugsen"]
+font = ExtResource("2_k1ke2")
 font_size = 64
 outline_size = 8
 outline_color = Color(0, 0, 0, 1)
 
 [sub_resource type="LabelSettings" id="LabelSettings_3xsxs"]
+font = ExtResource("5_gqo5i")
 
 [sub_resource type="LabelSettings" id="LabelSettings_gwt8e"]
+font = ExtResource("2_k1ke2")
 font_size = 64
 
 [node name="RelicsPanel" type="Control"]

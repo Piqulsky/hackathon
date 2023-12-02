@@ -1,18 +1,22 @@
-[gd_scene load_steps=11 format=3 uid="uid://b73tnsfaykl15"]
+[gd_scene load_steps=13 format=3 uid="uid://b73tnsfaykl15"]
 
 [ext_resource type="Script" path="res://Scripts/Panels/economy_panel_manager.gd" id="1_f3k2y"]
 [ext_resource type="Texture2D" uid="uid://djwa3oebcxwrl" path="res://Textures/buttonredadd.png" id="2_aymcv"]
+[ext_resource type="FontFile" uid="uid://d0lblke161a6h" path="res://Fonts/Kanit-Medium.ttf" id="2_hllbu"]
 [ext_resource type="Texture2D" uid="uid://c1gs8jmprn522" path="res://Textures/triangle.png" id="2_wtkfc"]
 [ext_resource type="Texture2D" uid="uid://drhgjy8na2msj" path="res://Textures/buttonredaddclicked.png" id="3_2feb3"]
 [ext_resource type="Texture2D" uid="uid://de1ad8rori2s3" path="res://Textures/buttonyellowadd.png" id="3_wq4yr"]
 [ext_resource type="Texture2D" uid="uid://w81d0dh0wjk4" path="res://Textures/buttonblueadd.png" id="4_0c4ap"]
 [ext_resource type="Texture2D" uid="uid://55tknoohxe4j" path="res://Textures/buttonyellowaddclicked.png" id="4_ca8ke"]
 [ext_resource type="Texture2D" uid="uid://c5mtylyen10q5" path="res://Textures/buttonblueaddclicked.png" id="5_v2gyr"]
+[ext_resource type="FontFile" uid="uid://bqpdlhbxht2tv" path="res://Fonts/Kanit-Light.ttf" id="6_46w0l"]
 
 [sub_resource type="LabelSettings" id="LabelSettings_xusn2"]
+font = ExtResource("2_hllbu")
 font_size = 64
 
 [sub_resource type="LabelSettings" id="LabelSettings_au30e"]
+font = ExtResource("6_46w0l")
 font_color = Color(0, 0, 0, 1)
 
 [node name="EconomyPanel" type="Control"]

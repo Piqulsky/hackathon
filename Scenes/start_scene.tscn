@@ -1,33 +1,19 @@
-[gd_scene load_steps=11 format=3 uid="uid://dekyhx6dt2vf"]
+[gd_scene load_steps=9 format=3 uid="uid://dekyhx6dt2vf"]
 
 [ext_resource type="Script" path="res://Scripts/startScreenManager.gd" id="1_t5kxh"]
 [ext_resource type="Texture2D" uid="uid://bkhnqpc12x0gm" path="res://Textures/ekranstartowy1.png" id="2_cyd3u"]
 [ext_resource type="Texture2D" uid="uid://ds67yr3bd16oh" path="res://Textures/buttonstartowy.png" id="3_3yyha"]
-[ext_resource type="FontFile" uid="uid://kc4j5ea027jm" path="res://TIMESBD.TTF" id="3_v3luv"]
+[ext_resource type="FontFile" uid="uid://cotlrvu7agwoc" path="res://Fonts/Kanit-Bold.ttf" id="3_xpbb6"]
 [ext_resource type="Texture2D" uid="uid://3pj30lbjhf37" path="res://Textures/buttonstartowy_clicked.png" id="5_d1fqy"]
+[ext_resource type="FontFile" uid="uid://c2dxgn8247omg" path="res://Fonts/Kanit-Italic.ttf" id="6_h4b8h"]
 
 [sub_resource type="LabelSettings" id="LabelSettings_den0i"]
-font = ExtResource("3_v3luv")
+font = ExtResource("3_xpbb6")
 font_size = 30
 
 [sub_resource type="LabelSettings" id="LabelSettings_5qyfk"]
-font = ExtResource("3_v3luv")
-font_size = 32
-font_color = Color(0.282353, 0, 0, 1)
-
-[sub_resource type="LabelSettings" id="LabelSettings_4x8dd"]
-font = ExtResource("3_v3luv")
-font_size = 32
-font_color = Color(0.282353, 0, 0, 1)
-
-[sub_resource type="LabelSettings" id="LabelSettings_j67xt"]
-font = ExtResource("3_v3luv")
-font_size = 32
-font_color = Color(0.282353, 0, 0, 1)
-
-[sub_resource type="LabelSettings" id="LabelSettings_nwd16"]
-font = ExtResource("3_v3luv")
-font_size = 32
+font = ExtResource("6_h4b8h")
+font_size = 24
 font_color = Color(0.282353, 0, 0, 1)
 
 [node name="StartScene" type="Node2D"]
@@ -44,7 +30,7 @@ offset_top = 64.0
 offset_right = 779.0
 offset_bottom = 122.0
 scale = Vector2(1.64458, 1.66507)
-text = "Ostatni Zachód"
+text = "Gdy zmrok nadejdzie"
 label_settings = SubResource("LabelSettings_den0i")
 horizontal_alignment = 1
 vertical_alignment = 1
@@ -89,7 +75,7 @@ offset_right = 718.0
 offset_bottom = 366.0
 theme_override_font_sizes/font_size = 24
 text = "Wyniki"
-label_settings = SubResource("LabelSettings_4x8dd")
+label_settings = SubResource("LabelSettings_5qyfk")
 horizontal_alignment = 1
 vertical_alignment = 1
 
@@ -111,7 +97,7 @@ offset_right = 177.0
 offset_bottom = 47.0
 theme_override_font_sizes/font_size = 24
 text = "Ustawienia"
-label_settings = SubResource("LabelSettings_j67xt")
+label_settings = SubResource("LabelSettings_5qyfk")
 horizontal_alignment = 1
 vertical_alignment = 1
 
@@ -133,7 +119,7 @@ offset_right = 173.0
 offset_bottom = 48.0
 theme_override_font_sizes/font_size = 24
 text = "Wyjście"
-label_settings = SubResource("LabelSettings_nwd16")
+label_settings = SubResource("LabelSettings_5qyfk")
 horizontal_alignment = 1
 vertical_alignment = 1
 

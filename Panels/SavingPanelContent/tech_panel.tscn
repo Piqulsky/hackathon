@@ -1,12 +1,14 @@
-[gd_scene load_steps=15 format=3 uid="uid://dqkau74maa1du"]
+[gd_scene load_steps=18 format=3 uid="uid://dqkau74maa1du"]
 
 [ext_resource type="Script" path="res://Scripts/Panels/tech_panel.gd" id="1_v5auy"]
+[ext_resource type="FontFile" uid="uid://d0lblke161a6h" path="res://Fonts/Kanit-Medium.ttf" id="2_5qn1n"]
 [ext_resource type="Texture2D" uid="uid://brkdivii83qnx" path="res://Textures/btn_triangle_red.png" id="2_8vrn3"]
 [ext_resource type="Texture2D" uid="uid://535ty801eb8n" path="res://Textures/btn_triangle_yellow.png" id="3_cvtw5"]
 [ext_resource type="Texture2D" uid="uid://hapugumf30ac" path="res://Textures/btn_triangle_red_clicked.png" id="3_dbd0g"]
 [ext_resource type="Texture2D" uid="uid://c3431o5noqukv" path="res://Textures/btn_triangle_yellow_clicked.png" id="4_62ge7"]
 [ext_resource type="Texture2D" uid="uid://rlatq16k3ek2" path="res://Textures/button_triangle.png" id="4_rd6vl"]
 [ext_resource type="Texture2D" uid="uid://fnfx2tncgmmu" path="res://Textures/btn_triangle_orange.png" id="5_dgqaa"]
+[ext_resource type="FontFile" uid="uid://bqpdlhbxht2tv" path="res://Fonts/Kanit-Light.ttf" id="5_qcj5l"]
 [ext_resource type="Texture2D" uid="uid://dku4m2sv3y78b" path="res://Textures/btn_triangle_blue.png" id="6_4widb"]
 [ext_resource type="Texture2D" uid="uid://bms6ppgitbbf" path="res://Textures/btn_triangle_orange_clicked.png" id="6_m36mx"]
 [ext_resource type="Texture2D" uid="uid://bnn86n072wpv0" path="res://Textures/btn_triangle_blue_clicked.png" id="7_8v4xx"]
@@ -15,9 +17,13 @@
 [ext_resource type="Texture2D" uid="uid://bm68nhsiinwl" path="res://Textures/button_triangle_clicked.png" id="9_2ce1o"]
 
 [sub_resource type="LabelSettings" id="LabelSettings_b45h1"]
+font = ExtResource("2_5qn1n")
 font_size = 64
 outline_size = 8
 outline_color = Color(0, 0, 0, 1)
+
+[sub_resource type="LabelSettings" id="LabelSettings_ikvqg"]
+font = ExtResource("5_qcj5l")
 
 [node name="TechPanel" type="Control"]
 layout_mode = 3
@@ -62,6 +68,7 @@ layout_mode = 0
 offset_top = 96.0
 offset_right = 96.0
 offset_bottom = 112.0
+max_value = 40.0
 step = 1.0
 show_percentage = false
 
@@ -71,6 +78,7 @@ offset_left = -32.0
 offset_top = -32.0
 offset_right = 128.0
 text = "0/0"
+label_settings = SubResource("LabelSettings_ikvqg")
 horizontal_alignment = 1
 vertical_alignment = 2
 
@@ -89,6 +97,7 @@ layout_mode = 0
 offset_top = 96.0
 offset_right = 96.0
 offset_bottom = 112.0
+max_value = 40.0
 step = 1.0
 show_percentage = false
 
@@ -98,6 +107,7 @@ offset_left = -16.0
 offset_top = -32.0
 offset_right = 112.0
 text = "0/0"
+label_settings = SubResource("LabelSettings_ikvqg")
 horizontal_alignment = 1
 vertical_alignment = 2
 
@@ -116,6 +126,7 @@ layout_mode = 0
 offset_top = 96.0
 offset_right = 96.0
 offset_bottom = 112.0
+max_value = 40.0
 step = 1.0
 show_percentage = false
 
@@ -125,6 +136,7 @@ offset_left = -32.0
 offset_top = -32.0
 offset_right = 128.0
 text = "0/0"
+label_settings = SubResource("LabelSettings_ikvqg")
 horizontal_alignment = 1
 vertical_alignment = 2
 
@@ -149,6 +161,7 @@ layout_mode = 0
 offset_top = 96.0
 offset_right = 96.0
 offset_bottom = 112.0
+max_value = 40.0
 step = 1.0
 show_percentage = false
 
@@ -158,6 +171,7 @@ offset_left = -32.0
 offset_top = -32.0
 offset_right = 128.0
 text = "0/0"
+label_settings = SubResource("LabelSettings_ikvqg")
 horizontal_alignment = 1
 vertical_alignment = 2
 
@@ -176,6 +190,7 @@ layout_mode = 0
 offset_top = 96.0
 offset_right = 96.0
 offset_bottom = 112.0
+max_value = 40.0
 step = 1.0
 show_percentage = false
 
@@ -185,6 +200,7 @@ offset_left = -32.0
 offset_top = -32.0
 offset_right = 128.0
 text = "0/0"
+label_settings = SubResource("LabelSettings_ikvqg")
 horizontal_alignment = 1
 vertical_alignment = 2
 
@@ -210,6 +226,7 @@ layout_mode = 0
 offset_top = 96.0
 offset_right = 96.0
 offset_bottom = 112.0
+max_value = 40.0
 step = 1.0
 show_percentage = false
 
@@ -219,6 +236,7 @@ offset_left = -80.0
 offset_top = -32.0
 offset_right = 176.0
 text = "0/0"
+label_settings = SubResource("LabelSettings_ikvqg")
 horizontal_alignment = 1
 vertical_alignment = 2
 

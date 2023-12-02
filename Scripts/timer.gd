@@ -22,4 +22,5 @@ func _on_timer_timeout():
 	if time == 898:
 		visible = true
 	if time == 0:
+		get_node("/root/MainScene").end_game()
 		$EndTimer.stop()

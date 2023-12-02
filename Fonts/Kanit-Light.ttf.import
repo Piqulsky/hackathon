@@ -2,13 +2,13 @@
 
 importer="font_data_dynamic"
 type="FontFile"
-uid="uid://c6283dinsvnxn"
-path="res://.godot/imported/TIMES.TTF-d5714593b69d7b2d3b1bc78be13d7ef3.fontdata"
+uid="uid://bqpdlhbxht2tv"
+path="res://.godot/imported/Kanit-Light.ttf-7d1cf456699aed97ceda636d9658bd2e.fontdata"
 
 [deps]
 
-source_file="res://TIMES.TTF"
-dest_files=["res://.godot/imported/TIMES.TTF-d5714593b69d7b2d3b1bc78be13d7ef3.fontdata"]
+source_file="res://Fonts/Kanit-Light.ttf"
+dest_files=["res://.godot/imported/Kanit-Light.ttf-7d1cf456699aed97ceda636d9658bd2e.fontdata"]
 
 [params]
 

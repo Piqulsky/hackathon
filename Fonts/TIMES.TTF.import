@@ -2,13 +2,13 @@
 
 importer="font_data_dynamic"
 type="FontFile"
-uid="uid://1mmlcwqc8bfu"
-path="res://.godot/imported/TIMESBI.TTF-f6efa71a7da8b0447fb31d1be4e25b71.fontdata"
+uid="uid://b4kp1bdw4pwg"
+path="res://.godot/imported/TIMES.TTF-27984555e9baf137fe723a85dd020962.fontdata"
 
 [deps]
 
-source_file="res://TIMESBI.TTF"
-dest_files=["res://.godot/imported/TIMESBI.TTF-f6efa71a7da8b0447fb31d1be4e25b71.fontdata"]
+source_file="res://Fonts/TIMES.TTF"
+dest_files=["res://.godot/imported/TIMES.TTF-27984555e9baf137fe723a85dd020962.fontdata"]
 
 [params]
 

@@ -60,7 +60,7 @@ func _on_save_button_button_down():
 			"people": people,
 			"heritage": heritage
 		})
-
+		get_tree().change_scene_to_file("res://Scenes/start_scene.tscn")
 
 func _on_exit_button_button_down():
 	get_tree().change_scene_to_file("res://Scenes/start_scene.tscn")

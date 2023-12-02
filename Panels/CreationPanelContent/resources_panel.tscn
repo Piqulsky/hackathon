@@ -1,5 +1,6 @@
-[gd_scene load_steps=17 format=3 uid="uid://fku6u6do3edr"]
+[gd_scene load_steps=18 format=3 uid="uid://fku6u6do3edr"]
 
+[ext_resource type="FontFile" uid="uid://cpm5pbi7bdyjw" path="res://Fonts/Kanit-Regular.ttf" id="1_fp8tw"]
 [ext_resource type="Script" path="res://Scripts/Panels/buy_panel.gd" id="1_yuer2"]
 [ext_resource type="Texture2D" uid="uid://cs2dk0kwxjnqa" path="res://Textures/button_wheat.png" id="2_utma5"]
 [ext_resource type="Texture2D" uid="uid://xupt83l3a8a" path="res://Textures/button_wheat_clicked.png" id="3_5k3p0"]
@@ -15,12 +16,15 @@
 [ext_resource type="Texture2D" uid="uid://c38i737bvh3ha" path="res://Textures/czingcziong_progressbar_kurwa.png" id="12_3o3q4"]
 
 [sub_resource type="LabelSettings" id="LabelSettings_40d3g"]
+font = ExtResource("1_fp8tw")
 font_size = 64
 
 [sub_resource type="LabelSettings" id="LabelSettings_vewfn"]
+font = ExtResource("1_fp8tw")
 font_size = 32
 
 [sub_resource type="LabelSettings" id="LabelSettings_iq8qq"]
+font = ExtResource("1_fp8tw")
 font_size = 64
 
 [node name="ResourcesPanel" type="Control"]
