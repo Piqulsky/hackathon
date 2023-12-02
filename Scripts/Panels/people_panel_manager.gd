@@ -80,8 +80,7 @@ func _on_great_person_progress_button_1_down():
 		ProgressBar1.value += ProgressBar1.step
 		Global.resources.science -= levelCost
 		if ProgressBar1.value == 99:
-			Global.passiveMaterialsIncome -= 3
-			Global.passiveScienceIncome += 3
+			Global.passiveScienceIncome += 4
 			ProgressBar1.texture_over = load("res://Textures/termometr/termometr1glow.png")
 			Global.completedIdols += 1
 			Button1.disabled = true
@@ -89,21 +88,19 @@ func _on_great_person_progress_button_1_down():
 		ProgressBar1.value += ProgressBar1.step
 		Global.resources.materials -= levelCost
 		if ProgressBar1.value == 60:
-			Global.passiveGoldIncome -= 3
-			Global.passiveMaterialsIncome += 3
+			Global.passiveMaterialsIncome += 4
 	elif ProgressBar1.value < 30 and Global.resources.gold >= 50:
 		ProgressBar1.value += ProgressBar1.step
 		Global.resources.gold -= levelCost
 		if ProgressBar1.value == 30:
-			Global.passiveGoldIncome += 3
+			Global.passiveGoldIncome += 4
 
 func _on_great_person_progress_button_2_down():
 	if ProgressBar2.value < 99 and ProgressBar2.value >= 60  and Global.resources.materials >= 50:
 		ProgressBar2.value += ProgressBar2.step
 		Global.resources.materials -= levelCost
 		if ProgressBar2.value == 99:
-			Global.passiveGoldIncome -= 3
-			Global.passiveMaterialsIncome += 3
+			Global.passiveMaterialsIncome += 4
 			ProgressBar2.texture_over = load("res://Textures/termometr/termometr2glow.png")
 			Global.completedIdols += 1
 			Button2.disabled = true
@@ -111,21 +108,19 @@ func _on_great_person_progress_button_2_down():
 		ProgressBar2.value += ProgressBar2.step
 		Global.resources.gold -= levelCost
 		if ProgressBar2.value == 60:
-			Global.passiveScienceIncome -= 3
-			Global.passiveGoldIncome += 3
+			Global.passiveGoldIncome += 4
 	elif ProgressBar2.value < 30 and Global.resources.science >= 50:
 		ProgressBar2.value += ProgressBar2.step
 		Global.resources.science -= levelCost
 		if ProgressBar2.value == 30:
-			Global.passiveScienceIncome += 3
+			Global.passiveScienceIncome += 4
 
 func _on_great_person_progress_button_3_down():
 	if ProgressBar3.value < 99 and ProgressBar3.value >= 60  and Global.resources.gold >= 50:
 		ProgressBar3.value += ProgressBar3.step
 		Global.resources.gold -= levelCost
 		if ProgressBar3.value == 99:
-			Global.passiveScienceIncome -= 3
-			Global.passiveGoldIncome += 3
+			Global.passiveGoldIncome += 4
 			ProgressBar3.texture_over = load("res://Textures/termometr/termometr3glow.png")
 			Global.completedIdols += 1
 			Button3.disabled = true
@@ -133,13 +128,12 @@ func _on_great_person_progress_button_3_down():
 		ProgressBar3.value += ProgressBar3.step
 		Global.resources.science -= levelCost
 		if ProgressBar3.value == 60:
-			Global.passiveMaterialsIncome -= 3
-			Global.passiveScienceIncome += 3
+			Global.passiveScienceIncome += 4
 	elif ProgressBar3.value < 30 and Global.resources.materials >= 50:
 		ProgressBar3.value += ProgressBar3.step
 		Global.resources.materials -= levelCost
 		if ProgressBar3.value == 30:
-			Global.passiveMaterialsIncome += 3
+			Global.passiveMaterialsIncome += 4
 
 func _on_great_person_progress_button_4_down():
 	if ProgressBar4.value < 99 and Global.resources.materials >= 50 and Global.resources.science >= 50 and Global.resources.gold >= 50:

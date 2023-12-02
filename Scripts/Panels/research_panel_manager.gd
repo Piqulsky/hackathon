@@ -18,17 +18,6 @@ var TechnologyButton22 :TextureButton
 var TechnologyButton31 :TextureButton
 var TechnologyButton32 :TextureButton
 
-var Label1 :Label
-var Label2 :Label
-var Label3 :Label
-var Label4 :Label
-var Label5 :Label
-var Label6 :Label
-var Label7 :Label
-var Label8 :Label
-var Label9 :Label
-var Label10 :Label
-
 var MoneyCost1 :Label
 var MoneyCost11 :Label
 var MoneyCost12 :Label
@@ -51,16 +40,6 @@ func _ready():
 	TechnologyButton22 = $TechnologyButton22
 	TechnologyButton31 = $TechnologyButton31
 	TechnologyButton32 = $TechnologyButton32
-	Label1 = $TechnologyButton1/Label1
-	Label2 = $TechnologyButton2/Label2
-	Label3 = $TechnologyButton3/Label3
-	Label4 = $TechnologyButton4/Label4
-	Label5 = $TechnologyButton11/Label5
-	Label6 = $TechnologyButton12/Label6
-	Label7 = $TechnologyButton21/Label7
-	Label8 = $TechnologyButton22/Label8
-	Label9 = $TechnologyButton31/Label9
-	Label10 = $TechnologyButton32/Label10
 	MoneyCost1 = $TechnologyButton1/MoneyCost1
 	MoneyCost11 = $TechnologyButton11/MoneyCost1
 	MoneyCost12 = $TechnologyButton12/MoneyCost1
@@ -96,6 +75,7 @@ func _on_technology_button_1_down():
 		TechnologyButton1.disabled = true
 		TechnologyButton1.texture_disabled = load("res://Textures/ballsbuy/ballwork1buy.png")
 		Global.villagerWorkMultiplier += 0.5
+		MoneyCost1.visible = false
 
 #village workforce enrollment 2
 func _on_technology_button_2_down():
@@ -109,6 +89,7 @@ func _on_technology_button_2_down():
 		TechnologyButton2.disabled = true
 		TechnologyButton2.texture_disabled = load("res://Textures/ballsbuy/ballwork2buy.png")
 		Global.villagerWorkMultiplier += 1
+		MoneyCost2.visible = false
 
 #village workforce enrollment 3
 func _on_technology_button_3_down():
@@ -122,6 +103,7 @@ func _on_technology_button_3_down():
 		TechnologyButton3.disabled = true
 		TechnologyButton3.texture_disabled = load("res://Textures/ballsbuy/ballwork3buy.png")
 		Global.villagerWorkMultiplier += 1
+		MoneyCost3.visible = false
 		if unlockingTech4 == 3:
 			TechnologyButton4.disabled = false
 
@@ -134,6 +116,7 @@ func _on_technology_button_4_down():
 		TechnologyButton4.disabled = true
 		TechnologyButton4.texture_disabled = load("res://Textures/ballsbuy/ballwork4buy.png")
 		Global.villagerWorkMultiplier += 2
+		MoneyCost4.visible = false
 
 #Taxes
 func _on_technology_button_11_down():
@@ -143,7 +126,8 @@ func _on_technology_button_11_down():
 		Global.resources.science -= costOfLevel1Tech
 		TechnologyButton11.disabled = true
 		TechnologyButton11.texture_disabled = load("res://Textures/ballsbuy/balltaxbuy.png")
-		Global.passiveGoldIncome += 5
+		Global.passiveGoldIncome += 8
+		MoneyCost12.visible = false
 
 #Mandatory Free of pay work
 func _on_technology_button_12_down():
@@ -153,7 +137,8 @@ func _on_technology_button_12_down():
 		Global.resources.science -= costOfLevel1Tech
 		TechnologyButton12.disabled = true
 		TechnologyButton12.texture_disabled = load("res://Textures/ballsbuy/ballslavebuy.png")
-		Global.passiveMaterialsIncome += 5
+		Global.passiveMaterialsIncome += 8
+		MoneyCost11.visible = false
 
 #Preserving Art
 func _on_technology_button_21_down():
@@ -164,6 +149,7 @@ func _on_technology_button_21_down():
 		TechnologyButton21.disabled = true
 		TechnologyButton21.texture_disabled = load("res://Textures/ballsbuy/ballartbuy.png")
 		Global.savedRelictsMultiplier += 0.25
+		MoneyCost22.visible = false
 
 #Recruitment of Scientists
 func _on_technology_button_22_down():
@@ -173,7 +159,8 @@ func _on_technology_button_22_down():
 		Global.resources.science -= costOfLevel2Tech
 		TechnologyButton22.disabled = true
 		TechnologyButton22.texture_disabled = load("res://Textures/ballsbuy/ballsciencebuy.png")
-		Global.passiveScienceIncome += 10
+		Global.passiveScienceIncome += 15
+		MoneyCost21.visible = false
 
 #Automatic Shelter Builder
 func _on_technology_button_31_down():
@@ -185,6 +172,7 @@ func _on_technology_button_31_down():
 		TechnologyButton31.texture_disabled = load("res://Textures/ballsbuy/ballschron1buy.png")
 		unlockingTech4 += 1
 		Global.automaticShelterBuilder = true
+		MoneyCost32.visible = false
 		if unlockingTech4 == 3:
 			TechnologyButton4.disabled = false
 
@@ -197,6 +185,7 @@ func _on_technology_button_32_down():
 		TechnologyButton32.disabled = true
 		TechnologyButton32.texture_disabled = load("res://Textures/ballsbuy/ballschron2buy.png")
 		unlockingTech4 += 1
+		MoneyCost31.visible = false
 		Global.automaticShelterImprover = true
 		if unlockingTech4 == 3:
 			TechnologyButton4.disabled = false
