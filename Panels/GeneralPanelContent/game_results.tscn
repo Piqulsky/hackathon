@@ -1,0 +1,279 @@
+[gd_scene load_steps=7 format=3 uid="uid://cocw1dfe5hbr"]
+
+[ext_resource type="Script" path="res://Scripts/game_results.gd" id="1_1ruo2"]
+
+[sub_resource type="LabelSettings" id="LabelSettings_vkqtd"]
+font_size = 32
+outline_size = 4
+outline_color = Color(0, 0, 0, 1)
+
+[sub_resource type="LabelSettings" id="LabelSettings_13np4"]
+font_size = 32
+outline_size = 4
+outline_color = Color(0, 0, 0, 1)
+
+[sub_resource type="LabelSettings" id="LabelSettings_j1hc6"]
+font_size = 32
+outline_size = 4
+outline_color = Color(0, 0, 0, 1)
+
+[sub_resource type="LabelSettings" id="LabelSettings_bo6rm"]
+font_size = 32
+outline_size = 4
+outline_color = Color(0, 0, 0, 1)
+
+[sub_resource type="LabelSettings" id="LabelSettings_5igm5"]
+font_size = 40
+outline_size = 4
+outline_color = Color(0, 0, 0, 1)
+
+[node name="GameResults" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_bottom = -144.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_1ruo2")
+
+[node name="ShelterStats" type="Control" parent="."]
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="ShelterLabel" type="Label" parent="ShelterStats"]
+layout_mode = 1
+anchors_preset = 1
+anchor_left = 1.0
+anchor_right = 1.0
+offset_left = 1048.0
+offset_top = 32.0
+offset_right = 1208.0
+offset_bottom = 80.0
+grow_horizontal = 0
+text = "schronów"
+label_settings = SubResource("LabelSettings_vkqtd")
+horizontal_alignment = 2
+
+[node name="ExpansionLabel" type="Label" parent="ShelterStats"]
+layout_mode = 1
+anchors_preset = 1
+anchor_left = 1.0
+anchor_right = 1.0
+offset_left = 1028.0
+offset_top = 80.0
+offset_right = 1208.0
+offset_bottom = 128.0
+grow_horizontal = 0
+text = "powiększeń"
+label_settings = SubResource("LabelSettings_vkqtd")
+horizontal_alignment = 2
+
+[node name="PeopleLabel" type="Label" parent="ShelterStats"]
+layout_mode = 1
+anchors_preset = 1
+anchor_left = 1.0
+anchor_right = 1.0
+offset_left = 1021.0
+offset_top = 128.0
+offset_right = 1208.0
+offset_bottom = 176.0
+grow_horizontal = 0
+text = "tysięcy ludzi"
+label_settings = SubResource("LabelSettings_vkqtd")
+horizontal_alignment = 2
+
+[node name="ShelterCountLabel" type="Label" parent="ShelterStats"]
+layout_mode = 0
+offset_left = 992.0
+offset_top = 32.0
+offset_right = 1088.0
+offset_bottom = 80.0
+text = "0"
+label_settings = SubResource("LabelSettings_13np4")
+horizontal_alignment = 2
+
+[node name="ExpansionCountLabel" type="Label" parent="ShelterStats"]
+layout_mode = 0
+offset_left = 960.0
+offset_top = 80.0
+offset_right = 1056.0
+offset_bottom = 128.0
+text = "0"
+label_settings = SubResource("LabelSettings_13np4")
+horizontal_alignment = 2
+
+[node name="PeopleCountLabel" type="Label" parent="ShelterStats"]
+layout_mode = 0
+offset_left = 928.0
+offset_top = 128.0
+offset_right = 1056.0
+offset_bottom = 176.0
+text = "0"
+label_settings = SubResource("LabelSettings_13np4")
+horizontal_alignment = 2
+
+[node name="FoodStats" type="Control" parent="."]
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="RationsLabel" type="Label" parent="FoodStats"]
+layout_mode = 1
+anchors_preset = 1
+anchor_left = 1.0
+anchor_right = 1.0
+offset_left = 1028.0
+offset_top = 192.0
+offset_right = 1208.0
+offset_bottom = 240.0
+grow_horizontal = 0
+text = "tysięcy racji"
+label_settings = SubResource("LabelSettings_vkqtd")
+horizontal_alignment = 2
+
+[node name="PeopleLabel" type="Label" parent="FoodStats"]
+layout_mode = 1
+anchors_preset = 1
+anchor_left = 1.0
+anchor_right = 1.0
+offset_left = 1021.0
+offset_top = 240.0
+offset_right = 1208.0
+offset_bottom = 288.0
+grow_horizontal = 0
+text = "tysięcy ludzi głodnych"
+label_settings = SubResource("LabelSettings_vkqtd")
+horizontal_alignment = 2
+
+[node name="RationsCountLabel" type="Label" parent="FoodStats"]
+offset_left = 960.0
+offset_top = 192.0
+offset_right = 1056.0
+offset_bottom = 240.0
+text = "0"
+label_settings = SubResource("LabelSettings_13np4")
+horizontal_alignment = 2
+
+[node name="PeopleCountLabel" type="Label" parent="FoodStats"]
+offset_left = 768.0
+offset_top = 240.0
+offset_right = 896.0
+offset_bottom = 288.0
+text = "0"
+label_settings = SubResource("LabelSettings_13np4")
+horizontal_alignment = 2
+
+[node name="HeritageStats" type="Control" parent="."]
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="CultureLabel" type="Label" parent="HeritageStats"]
+layout_mode = 1
+anchors_preset = 1
+anchor_left = 1.0
+anchor_right = 1.0
+offset_left = -8.0
+offset_top = 240.0
+offset_right = 291.0
+offset_bottom = 288.0
+grow_horizontal = 0
+text = "Zachowanych dzieł:"
+label_settings = SubResource("LabelSettings_vkqtd")
+horizontal_alignment = 2
+
+[node name="PeopleLabel" type="Label" parent="HeritageStats"]
+layout_mode = 1
+anchors_preset = 1
+anchor_left = 1.0
+anchor_right = 1.0
+offset_left = -8.0
+offset_top = 192.0
+offset_right = 358.0
+offset_bottom = 240.0
+grow_horizontal = 0
+text = "Przełomów naukowych:"
+label_settings = SubResource("LabelSettings_vkqtd")
+horizontal_alignment = 2
+
+[node name="CultureCountLabel" type="Label" parent="HeritageStats"]
+offset_left = 352.0
+offset_top = 240.0
+offset_right = 448.0
+offset_bottom = 288.0
+text = "0"
+label_settings = SubResource("LabelSettings_13np4")
+
+[node name="PeopleCountLabel" type="Label" parent="HeritageStats"]
+offset_left = 416.0
+offset_top = 192.0
+offset_right = 544.0
+offset_bottom = 240.0
+text = "0"
+label_settings = SubResource("LabelSettings_13np4")
+
+[node name="ResearchStats" type="Control" parent="."]
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="IdolsLabel" type="Label" parent="ResearchStats"]
+offset_left = 32.0
+offset_top = 112.0
+offset_right = 239.0
+offset_bottom = 176.0
+text = "Wielcy ludzie:"
+label_settings = SubResource("LabelSettings_j1hc6")
+
+[node name="IdolsLevels" type="Label" parent="ResearchStats"]
+offset_left = 256.0
+offset_top = 112.0
+offset_right = 296.0
+offset_bottom = 160.0
+text = "0"
+label_settings = SubResource("LabelSettings_bo6rm")
+
+[node name="ResearchLabel" type="Label" parent="ResearchStats"]
+layout_mode = 0
+offset_left = 32.0
+offset_top = 64.0
+offset_right = 334.0
+offset_bottom = 128.0
+text = "Poziomów rozwoju:"
+label_settings = SubResource("LabelSettings_j1hc6")
+
+[node name="ResearchLevels" type="Label" parent="ResearchStats"]
+layout_mode = 0
+offset_left = 352.0
+offset_top = 64.0
+offset_right = 392.0
+offset_bottom = 112.0
+text = "0"
+label_settings = SubResource("LabelSettings_bo6rm")
+
+[node name="MasterStats" type="Control" parent="."]
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="SavedLabel" type="Label" parent="MasterStats"]
+layout_mode = 0
+offset_left = 32.0
+offset_top = 448.0
+offset_right = 1248.0
+offset_bottom = 512.0
+text = "0 tysięcy uratowanych ludzi"
+label_settings = SubResource("LabelSettings_5igm5")
+horizontal_alignment = 1
+
+[node name="HeritageLabel" type="Label" parent="MasterStats"]
+layout_mode = 0
+offset_left = 32.0
+offset_top = 512.0
+offset_right = 1248.0
+offset_bottom = 576.0
+text = "0% ocalonego dziedzictwa"
+label_settings = SubResource("LabelSettings_5igm5")
+horizontal_alignment = 1

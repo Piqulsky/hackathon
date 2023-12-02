@@ -38,10 +38,6 @@ var shelters := 0
 var shelterExpansions := 0
 var savedRelics := 0.0
 var savedRelictsMultiplier := 1.0
-var savedTech = 0
+var savedTech := 0.0
+var completedIdols := 0.0
 
-func _ready():
-	pass 
-
-func _process(delta):
-	pass
