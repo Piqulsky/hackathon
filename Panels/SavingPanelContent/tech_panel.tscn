@@ -18,6 +18,7 @@ grow_vertical = 2
 script = ExtResource("1_v5auy")
 
 [node name="Polygon2D" type="Polygon2D" parent="."]
+visible = false
 color = Color(1, 0.603922, 0.721569, 0.392157)
 polygon = PackedVector2Array(640, 0, 640, 576, 0, 576, 0, 0)
 

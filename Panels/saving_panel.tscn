@@ -1,13 +1,18 @@
-[gd_scene load_steps=3 format=3 uid="uid://pjcbs2uotd2y"]
+[gd_scene load_steps=4 format=3 uid="uid://pjcbs2uotd2y"]
 
+[ext_resource type="Texture2D" uid="uid://ciniv6kbafqnf" path="res://Textures/right_screen (demo).png" id="1_2ekl0"]
 [ext_resource type="PackedScene" uid="uid://teevk0t18di5" path="res://Panels/SavingPanelContent/relics_panel.tscn" id="1_6ifp8"]
 [ext_resource type="PackedScene" uid="uid://dqkau74maa1du" path="res://Panels/SavingPanelContent/tech_panel.tscn" id="2_5j2q7"]
 
 [node name="SavingPanel" type="Node2D"]
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
+visible = false
+position = Vector2(640, 360)
+texture = ExtResource("1_2ekl0")
 
 [node name="Polygon2D" type="Polygon2D" parent="."]
+visible = false
 color = Color(0, 0.823529, 0.996078, 1)
 polygon = PackedVector2Array(1280, 0, 1280, 736, 0, 736, 0, 0)
 

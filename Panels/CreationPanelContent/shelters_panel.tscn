@@ -27,6 +27,7 @@ grow_horizontal = 2
 grow_vertical = 2
 
 [node name="Polygon2D" type="Polygon2D" parent="."]
+visible = false
 color = Color(1, 0.607843, 0.713726, 0.392157)
 polygon = PackedVector2Array(640, 0, 640, 576, 0, 576, 0, 0)
 
