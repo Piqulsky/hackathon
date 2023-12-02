@@ -1,25 +1,36 @@
-[gd_scene load_steps=12 format=3 uid="uid://dl0pbhjjpq7i5"]
+[gd_scene load_steps=30 format=3 uid="uid://dl0pbhjjpq7i5"]
 
 [ext_resource type="Texture2D" uid="uid://bgcrod7j3lsb5" path="res://Textures/bgmagnusopum.png" id="1_qt6hr"]
-[ext_resource type="Texture2D" uid="uid://k45lnqhehp0f" path="res://TMPTextures/11.png" id="2_51yt4"]
-[ext_resource type="Texture2D" uid="uid://ds7wnuyi7kkda" path="res://TMPTextures/1.png" id="3_cqla0"]
-[ext_resource type="Texture2D" uid="uid://cwclw3njmwnbj" path="res://TMPTextures/5.png" id="4_18fr1"]
-[ext_resource type="Texture2D" uid="uid://bfgtcq67jpe28" path="res://TMPTextures/9.png" id="5_gwjkq"]
+[ext_resource type="FontFile" uid="uid://d0lblke161a6h" path="res://Fonts/Kanit-Medium.ttf" id="2_0hqwd"]
+[ext_resource type="Texture2D" uid="uid://brkdivii83qnx" path="res://Textures/btn_triangle_red.png" id="3_edwlt"]
+[ext_resource type="Texture2D" uid="uid://hapugumf30ac" path="res://Textures/btn_triangle_red_clicked.png" id="4_vrhp7"]
+[ext_resource type="FontFile" uid="uid://bqpdlhbxht2tv" path="res://Fonts/Kanit-Light.ttf" id="5_75yuj"]
+[ext_resource type="Texture2D" uid="uid://535ty801eb8n" path="res://Textures/btn_triangle_yellow.png" id="6_72xng"]
+[ext_resource type="Texture2D" uid="uid://c3431o5noqukv" path="res://Textures/btn_triangle_yellow_clicked.png" id="7_o2yr7"]
+[ext_resource type="Texture2D" uid="uid://dku4m2sv3y78b" path="res://Textures/btn_triangle_blue.png" id="8_qxkv6"]
+[ext_resource type="Texture2D" uid="uid://bnn86n072wpv0" path="res://Textures/btn_triangle_blue_clicked.png" id="9_l8q2k"]
+[ext_resource type="Texture2D" uid="uid://fnfx2tncgmmu" path="res://Textures/btn_triangle_orange.png" id="10_ajswa"]
+[ext_resource type="Texture2D" uid="uid://bms6ppgitbbf" path="res://Textures/btn_triangle_orange_clicked.png" id="11_c8moj"]
+[ext_resource type="Texture2D" uid="uid://dd66xiwvhhgkc" path="res://Textures/button_triangle_green.png" id="12_jd5se"]
+[ext_resource type="Texture2D" uid="uid://517xvg351r7r" path="res://Textures/btn_triangle_green_clicked.png" id="13_5mat5"]
+[ext_resource type="Texture2D" uid="uid://rlatq16k3ek2" path="res://Textures/button_triangle.png" id="14_7ub7h"]
+[ext_resource type="Texture2D" uid="uid://bm68nhsiinwl" path="res://Textures/button_triangle_clicked.png" id="15_5gfj6"]
+[ext_resource type="Texture2D" uid="uid://c4iaejg8b7r01" path="res://Textures/bookactive.png" id="16_1tef3"]
+[ext_resource type="Texture2D" uid="uid://cddufqu3ltjtk" path="res://Textures/bookoff.png" id="17_ejccd"]
+[ext_resource type="FontFile" uid="uid://cpm5pbi7bdyjw" path="res://Fonts/Kanit-Regular.ttf" id="18_ji37q"]
+[ext_resource type="Texture2D" uid="uid://c12qa0qhv68pe" path="res://Textures/paintingactive.png" id="19_5yjwa"]
+[ext_resource type="Texture2D" uid="uid://cxdliexkmambu" path="res://Textures/paintingoff.png" id="20_swkey"]
+[ext_resource type="Texture2D" uid="uid://v06oen48frl5" path="res://Textures/sculptureactive.png" id="21_8v64h"]
+[ext_resource type="Texture2D" uid="uid://4d1dkjebkwt2" path="res://Textures/sculptureoff.png" id="22_gtrxs"]
 
-[sub_resource type="LabelSettings" id="LabelSettings_38gpq"]
+[sub_resource type="LabelSettings" id="LabelSettings_brjkg"]
+font = ExtResource("2_0hqwd")
 font_size = 64
 outline_size = 8
 outline_color = Color(0, 0, 0, 1)
 
-[sub_resource type="LabelSettings" id="LabelSettings_o5xd2"]
-
-[sub_resource type="LabelSettings" id="LabelSettings_2r3st"]
-font_size = 64
-
-[sub_resource type="LabelSettings" id="LabelSettings_her0g"]
-font_size = 64
-outline_size = 8
-outline_color = Color(0, 0, 0, 1)
+[sub_resource type="LabelSettings" id="LabelSettings_08m2g"]
+font = ExtResource("5_75yuj")
 
 [sub_resource type="LabelSettings" id="LabelSettings_hdg77"]
 outline_size = 4
@@ -28,6 +39,19 @@ outline_color = Color(0, 0, 0, 1)
 [sub_resource type="LabelSettings" id="LabelSettings_ok1rx"]
 outline_size = 4
 outline_color = Color(0, 0, 0, 1)
+
+[sub_resource type="LabelSettings" id="LabelSettings_o4ihg"]
+font = ExtResource("2_0hqwd")
+font_size = 64
+outline_size = 8
+outline_color = Color(0, 0, 0, 1)
+
+[sub_resource type="LabelSettings" id="LabelSettings_mq73r"]
+font = ExtResource("18_ji37q")
+
+[sub_resource type="LabelSettings" id="LabelSettings_k4bth"]
+font = ExtResource("2_0hqwd")
+font_size = 64
 
 [node name="Tutorial4" type="Node2D"]
 
@@ -41,100 +65,6 @@ anchors_preset = 0
 offset_right = 40.0
 offset_bottom = 40.0
 
-[node name="RelicsLabel" type="Label" parent="Control"]
-offset_right = 640.0
-offset_bottom = 96.0
-text = "Zabytki"
-label_settings = SubResource("LabelSettings_38gpq")
-horizontal_alignment = 1
-
-[node name="LiteratureTextureButton" type="TextureButton" parent="Control"]
-offset_left = 96.0
-offset_top = 128.0
-offset_right = 224.0
-offset_bottom = 256.0
-texture_normal = ExtResource("2_51yt4")
-
-[node name="CostLabel" type="Label" parent="Control/LiteratureTextureButton"]
-layout_mode = 0
-offset_right = 128.0
-offset_bottom = 32.0
-text = "10"
-label_settings = SubResource("LabelSettings_o5xd2")
-horizontal_alignment = 1
-vertical_alignment = 1
-
-[node name="RequirmentLabel" type="Label" parent="Control/LiteratureTextureButton"]
-layout_mode = 0
-offset_top = 96.0
-offset_right = 128.0
-offset_bottom = 128.0
-text = "1 rozwój"
-label_settings = SubResource("LabelSettings_o5xd2")
-horizontal_alignment = 1
-vertical_alignment = 1
-
-[node name="ArtTextureButton" type="TextureButton" parent="Control"]
-offset_left = 416.0
-offset_top = 128.0
-offset_right = 544.0
-offset_bottom = 256.0
-texture_normal = ExtResource("2_51yt4")
-
-[node name="CostLabel" type="Label" parent="Control/ArtTextureButton"]
-layout_mode = 0
-offset_right = 128.0
-offset_bottom = 32.0
-text = "20"
-label_settings = SubResource("LabelSettings_o5xd2")
-horizontal_alignment = 1
-vertical_alignment = 1
-
-[node name="RequirmentLabel" type="Label" parent="Control/ArtTextureButton"]
-layout_mode = 0
-offset_top = 96.0
-offset_right = 128.0
-offset_bottom = 128.0
-text = "2 rozwoje"
-label_settings = SubResource("LabelSettings_o5xd2")
-horizontal_alignment = 1
-vertical_alignment = 1
-
-[node name="SculptureTextureButton" type="TextureButton" parent="Control"]
-offset_left = 256.0
-offset_top = 352.0
-offset_right = 384.0
-offset_bottom = 480.0
-texture_normal = ExtResource("2_51yt4")
-
-[node name="CostLabel" type="Label" parent="Control/SculptureTextureButton"]
-layout_mode = 0
-offset_right = 128.0
-offset_bottom = 32.0
-text = "30"
-label_settings = SubResource("LabelSettings_o5xd2")
-horizontal_alignment = 1
-vertical_alignment = 1
-
-[node name="RequirmentLabel" type="Label" parent="Control/SculptureTextureButton"]
-layout_mode = 0
-offset_top = 96.0
-offset_right = 128.0
-offset_bottom = 128.0
-text = "3 rozwoje"
-label_settings = SubResource("LabelSettings_o5xd2")
-horizontal_alignment = 1
-vertical_alignment = 1
-
-[node name="ValueLabel" type="Label" parent="Control"]
-offset_top = 256.0
-offset_right = 640.0
-offset_bottom = 352.0
-text = "0"
-label_settings = SubResource("LabelSettings_2r3st")
-horizontal_alignment = 1
-vertical_alignment = 1
-
 [node name="Control2" type="Control" parent="."]
 layout_mode = 3
 anchors_preset = 0
@@ -142,183 +72,211 @@ offset_left = 640.0
 offset_right = 680.0
 offset_bottom = 40.0
 
-[node name="TechLabel" type="Label" parent="Control2"]
+[node name="TechLabel2" type="Label" parent="Control2"]
+offset_top = -18.0
 offset_right = 640.0
-offset_bottom = 96.0
+offset_bottom = 79.0
 text = "Technologia"
-label_settings = SubResource("LabelSettings_her0g")
+label_settings = SubResource("LabelSettings_brjkg")
 horizontal_alignment = 1
 
-[node name="BasicTech" type="Control" parent="Control2"]
+[node name="BasicTech2" type="Control" parent="Control2"]
 layout_mode = 3
 anchors_preset = 0
-offset_top = 416.0
-offset_right = 640.0
-offset_bottom = 544.0
+offset_left = 508.0
+offset_top = 544.0
+offset_right = 1148.0
+offset_bottom = 672.0
 
-[node name="MaterialsTechButton" type="TextureButton" parent="Control2/BasicTech"]
+[node name="MaterialsTechButton" type="TextureButton" parent="Control2/BasicTech2"]
 layout_mode = 0
-offset_left = 96.0
-offset_top = 32.0
-offset_right = 160.0
-offset_bottom = 96.0
-texture_normal = ExtResource("3_cqla0")
+offset_left = -444.0
+offset_top = -114.0
+offset_right = -348.0
+offset_bottom = -18.0
+texture_normal = ExtResource("3_edwlt")
+texture_pressed = ExtResource("4_vrhp7")
+texture_disabled = ExtResource("4_vrhp7")
 
-[node name="TechBar" type="ProgressBar" parent="Control2/BasicTech/MaterialsTechButton"]
+[node name="TechBar" type="ProgressBar" parent="Control2/BasicTech2/MaterialsTechButton"]
 layout_mode = 0
-offset_top = -32.0
-offset_right = 64.0
-max_value = 10.0
-step = 1.0
-show_percentage = false
-
-[node name="CostLabel" type="Label" parent="Control2/BasicTech/MaterialsTechButton"]
-layout_mode = 0
-offset_left = -32.0
-offset_top = 64.0
-offset_right = 96.0
-offset_bottom = 96.0
-text = "0/0"
-horizontal_alignment = 1
-
-[node name="GoldTechButton" type="TextureButton" parent="Control2/BasicTech"]
-layout_mode = 0
-offset_left = 288.0
-offset_top = 32.0
-offset_right = 352.0
-offset_bottom = 96.0
-texture_normal = ExtResource("3_cqla0")
-
-[node name="TechBar" type="ProgressBar" parent="Control2/BasicTech/GoldTechButton"]
-layout_mode = 0
-offset_top = -32.0
-offset_right = 64.0
-max_value = 10.0
-step = 1.0
-show_percentage = false
-
-[node name="CostLabel" type="Label" parent="Control2/BasicTech/GoldTechButton"]
-layout_mode = 0
-offset_left = -32.0
-offset_top = 64.0
-offset_right = 96.0
-offset_bottom = 96.0
-text = "0/0"
-horizontal_alignment = 1
-
-[node name="ScienceTechButton" type="TextureButton" parent="Control2/BasicTech"]
-layout_mode = 0
-offset_left = 480.0
-offset_top = 32.0
-offset_right = 544.0
-offset_bottom = 96.0
-texture_normal = ExtResource("3_cqla0")
-
-[node name="TechBar" type="ProgressBar" parent="Control2/BasicTech/ScienceTechButton"]
-layout_mode = 0
-offset_top = -32.0
-offset_right = 64.0
-max_value = 10.0
-step = 1.0
-show_percentage = false
-
-[node name="CostLabel" type="Label" parent="Control2/BasicTech/ScienceTechButton"]
-layout_mode = 0
-offset_left = -32.0
-offset_top = 64.0
-offset_right = 96.0
-offset_bottom = 96.0
-text = "0/0"
-horizontal_alignment = 1
-
-[node name="AdvancedTech" type="Control" parent="Control2"]
-layout_mode = 3
-anchors_preset = 0
-offset_top = 256.0
-offset_right = 640.0
-offset_bottom = 384.0
-
-[node name="MaterialsGoldTechButton" type="TextureButton" parent="Control2/AdvancedTech"]
-layout_mode = 0
-offset_left = 192.0
-offset_top = 32.0
-offset_right = 256.0
-offset_bottom = 96.0
-texture_normal = ExtResource("4_18fr1")
-
-[node name="TechBar" type="ProgressBar" parent="Control2/AdvancedTech/MaterialsGoldTechButton"]
-layout_mode = 0
-offset_top = -32.0
-offset_right = 64.0
-max_value = 10.0
-step = 1.0
-show_percentage = false
-
-[node name="CostLabel" type="Label" parent="Control2/AdvancedTech/MaterialsGoldTechButton"]
-layout_mode = 0
-offset_left = -32.0
-offset_top = 64.0
-offset_right = 96.0
-offset_bottom = 96.0
-text = "0/0"
-horizontal_alignment = 1
-
-[node name="GoldScienceTechButton" type="TextureButton" parent="Control2/AdvancedTech"]
-layout_mode = 0
-offset_left = 384.0
-offset_top = 32.0
-offset_right = 448.0
-offset_bottom = 96.0
-texture_normal = ExtResource("4_18fr1")
-
-[node name="TechBar" type="ProgressBar" parent="Control2/AdvancedTech/GoldScienceTechButton"]
-layout_mode = 0
-offset_top = -32.0
-offset_right = 64.0
-max_value = 10.0
-step = 1.0
-show_percentage = false
-
-[node name="CostLabel" type="Label" parent="Control2/AdvancedTech/GoldScienceTechButton"]
-layout_mode = 0
-offset_left = -32.0
-offset_top = 64.0
-offset_right = 96.0
-offset_bottom = 96.0
-text = "0/0"
-horizontal_alignment = 1
-
-[node name="MasterTech" type="Control" parent="Control2"]
-layout_mode = 3
-anchors_preset = 0
 offset_top = 96.0
-offset_right = 640.0
-offset_bottom = 224.0
-
-[node name="MasterButton" type="TextureButton" parent="Control2/MasterTech"]
-layout_mode = 0
-offset_left = 288.0
-offset_top = 64.0
-offset_right = 352.0
-offset_bottom = 128.0
-texture_normal = ExtResource("5_gwjkq")
-
-[node name="TechBar" type="ProgressBar" parent="Control2/MasterTech/MasterButton"]
-layout_mode = 0
-offset_top = -32.0
-offset_right = 64.0
-max_value = 10.0
+offset_right = 96.0
+offset_bottom = 112.0
+max_value = 40.0
 step = 1.0
 show_percentage = false
 
-[node name="CostLabel" type="Label" parent="Control2/MasterTech/MasterButton"]
+[node name="CostLabel" type="Label" parent="Control2/BasicTech2/MaterialsTechButton"]
 layout_mode = 0
-offset_left = -96.0
-offset_top = 64.0
-offset_right = 160.0
-offset_bottom = 96.0
+offset_left = -32.0
+offset_top = -32.0
+offset_right = 128.0
 text = "0/0"
+label_settings = SubResource("LabelSettings_08m2g")
 horizontal_alignment = 1
+vertical_alignment = 2
+
+[node name="GoldTechButton" type="TextureButton" parent="Control2/BasicTech2"]
+layout_mode = 0
+offset_left = -236.0
+offset_top = -114.0
+offset_right = -140.0
+offset_bottom = -18.0
+texture_normal = ExtResource("6_72xng")
+texture_pressed = ExtResource("7_o2yr7")
+texture_disabled = ExtResource("7_o2yr7")
+
+[node name="TechBar" type="ProgressBar" parent="Control2/BasicTech2/GoldTechButton"]
+layout_mode = 0
+offset_top = 96.0
+offset_right = 96.0
+offset_bottom = 112.0
+max_value = 40.0
+step = 1.0
+show_percentage = false
+
+[node name="CostLabel" type="Label" parent="Control2/BasicTech2/GoldTechButton"]
+layout_mode = 0
+offset_left = -16.0
+offset_top = -32.0
+offset_right = 112.0
+text = "0/0"
+label_settings = SubResource("LabelSettings_08m2g")
+horizontal_alignment = 1
+vertical_alignment = 2
+
+[node name="ScienceTechButton" type="TextureButton" parent="Control2/BasicTech2"]
+layout_mode = 0
+offset_left = -28.0
+offset_top = -114.0
+offset_right = 68.0
+offset_bottom = -18.0
+texture_normal = ExtResource("8_qxkv6")
+texture_pressed = ExtResource("9_l8q2k")
+texture_disabled = ExtResource("9_l8q2k")
+
+[node name="TechBar" type="ProgressBar" parent="Control2/BasicTech2/ScienceTechButton"]
+layout_mode = 0
+offset_top = 96.0
+offset_right = 96.0
+offset_bottom = 112.0
+max_value = 40.0
+step = 1.0
+show_percentage = false
+
+[node name="CostLabel" type="Label" parent="Control2/BasicTech2/ScienceTechButton"]
+layout_mode = 0
+offset_left = -32.0
+offset_top = -32.0
+offset_right = 128.0
+text = "0/0"
+label_settings = SubResource("LabelSettings_08m2g")
+horizontal_alignment = 1
+vertical_alignment = 2
+
+[node name="AdvancedTech2" type="Control" parent="Control2"]
+layout_mode = 3
+anchors_preset = 0
+offset_left = 508.0
+offset_top = 384.0
+offset_right = 1148.0
+offset_bottom = 512.0
+
+[node name="MaterialsGoldTechButton" type="TextureButton" parent="Control2/AdvancedTech2"]
+layout_mode = 0
+offset_left = -316.0
+offset_top = -114.0
+offset_right = -220.0
+offset_bottom = -18.0
+texture_normal = ExtResource("10_ajswa")
+texture_pressed = ExtResource("11_c8moj")
+texture_disabled = ExtResource("11_c8moj")
+
+[node name="TechBar" type="ProgressBar" parent="Control2/AdvancedTech2/MaterialsGoldTechButton"]
+layout_mode = 0
+offset_top = 96.0
+offset_right = 96.0
+offset_bottom = 112.0
+max_value = 40.0
+step = 1.0
+show_percentage = false
+
+[node name="CostLabel" type="Label" parent="Control2/AdvancedTech2/MaterialsGoldTechButton"]
+layout_mode = 0
+offset_left = -32.0
+offset_top = -32.0
+offset_right = 128.0
+text = "0/0"
+label_settings = SubResource("LabelSettings_08m2g")
+horizontal_alignment = 1
+vertical_alignment = 2
+
+[node name="GoldScienceTechButton" type="TextureButton" parent="Control2/AdvancedTech2"]
+layout_mode = 0
+offset_left = -156.0
+offset_top = -114.0
+offset_right = -60.0
+offset_bottom = -18.0
+texture_normal = ExtResource("12_jd5se")
+texture_pressed = ExtResource("13_5mat5")
+texture_disabled = ExtResource("13_5mat5")
+
+[node name="TechBar" type="ProgressBar" parent="Control2/AdvancedTech2/GoldScienceTechButton"]
+layout_mode = 0
+offset_top = 96.0
+offset_right = 96.0
+offset_bottom = 112.0
+max_value = 40.0
+step = 1.0
+show_percentage = false
+
+[node name="CostLabel" type="Label" parent="Control2/AdvancedTech2/GoldScienceTechButton"]
+layout_mode = 0
+offset_left = -32.0
+offset_top = -32.0
+offset_right = 128.0
+text = "0/0"
+label_settings = SubResource("LabelSettings_08m2g")
+horizontal_alignment = 1
+vertical_alignment = 2
+
+[node name="MasterTech2" type="Control" parent="Control2"]
+layout_mode = 3
+anchors_preset = 0
+offset_left = 508.0
+offset_top = 224.0
+offset_right = 1148.0
+offset_bottom = 352.0
+
+[node name="MasterButton" type="TextureButton" parent="Control2/MasterTech2"]
+layout_mode = 0
+offset_left = -236.0
+offset_top = -114.0
+offset_right = -140.0
+offset_bottom = -18.0
+texture_normal = ExtResource("14_7ub7h")
+texture_pressed = ExtResource("15_5gfj6")
+texture_disabled = ExtResource("15_5gfj6")
+
+[node name="TechBar" type="ProgressBar" parent="Control2/MasterTech2/MasterButton"]
+layout_mode = 0
+offset_top = 96.0
+offset_right = 96.0
+offset_bottom = 112.0
+max_value = 40.0
+step = 1.0
+show_percentage = false
+
+[node name="CostLabel" type="Label" parent="Control2/MasterTech2/MasterButton"]
+layout_mode = 0
+offset_left = -80.0
+offset_top = -32.0
+offset_right = 176.0
+text = "0/0"
+label_settings = SubResource("LabelSettings_08m2g")
+horizontal_alignment = 1
+vertical_alignment = 2
 
 [node name="Label" type="Label" parent="."]
 offset_top = 512.0
@@ -347,3 +305,110 @@ wytworzeniu całego elementu, odpowiadający/-e surowce zaczynają być
 dostarczane automatycznie."
 label_settings = SubResource("LabelSettings_ok1rx")
 horizontal_alignment = 1
+
+[node name="RelicsLabel" type="Label" parent="."]
+offset_top = -18.0
+offset_right = 640.0
+offset_bottom = 79.0
+text = "Zabytki"
+label_settings = SubResource("LabelSettings_o4ihg")
+horizontal_alignment = 1
+
+[node name="LiteratureTextureButton" type="TextureButton" parent="."]
+offset_left = 32.0
+offset_top = 78.0
+offset_right = 245.0
+offset_bottom = 251.0
+texture_normal = ExtResource("16_1tef3")
+texture_pressed = ExtResource("17_ejccd")
+texture_disabled = ExtResource("17_ejccd")
+
+[node name="CostLabel" type="Label" parent="LiteratureTextureButton"]
+layout_mode = 0
+offset_left = 32.0
+offset_top = -32.0
+offset_right = 160.0
+text = "0/10"
+label_settings = SubResource("LabelSettings_mq73r")
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="RequirmentLabel" type="Label" parent="LiteratureTextureButton"]
+layout_mode = 0
+offset_top = 160.0
+offset_right = 192.0
+offset_bottom = 192.0
+text = "1 poziom rozwoju"
+label_settings = SubResource("LabelSettings_mq73r")
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="ArtTextureButton" type="TextureButton" parent="."]
+offset_left = 416.0
+offset_top = 78.0
+offset_right = 571.0
+offset_bottom = 240.0
+texture_normal = ExtResource("19_5yjwa")
+texture_pressed = ExtResource("20_swkey")
+texture_disabled = ExtResource("20_swkey")
+
+[node name="CostLabel" type="Label" parent="ArtTextureButton"]
+layout_mode = 0
+offset_left = 32.0
+offset_top = -32.0
+offset_right = 160.0
+text = "0/20"
+label_settings = SubResource("LabelSettings_mq73r")
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="RequirmentLabel" type="Label" parent="ArtTextureButton"]
+layout_mode = 0
+offset_left = -32.0
+offset_top = 160.0
+offset_right = 192.0
+offset_bottom = 192.0
+text = "2 poziomy rozwoju"
+label_settings = SubResource("LabelSettings_mq73r")
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="SculptureTextureButton" type="TextureButton" parent="."]
+offset_left = 224.0
+offset_top = 262.0
+offset_right = 417.0
+offset_bottom = 501.0
+texture_normal = ExtResource("21_8v64h")
+texture_pressed = ExtResource("22_gtrxs")
+texture_disabled = ExtResource("22_gtrxs")
+
+[node name="CostLabel" type="Label" parent="SculptureTextureButton"]
+layout_mode = 0
+offset_left = 32.0
+offset_top = -34.0
+offset_right = 160.0
+offset_bottom = -2.0
+text = "0/30"
+label_settings = SubResource("LabelSettings_mq73r")
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="RequirmentLabel" type="Label" parent="SculptureTextureButton"]
+layout_mode = 0
+offset_top = 222.0
+offset_right = 193.0
+offset_bottom = 254.0
+text = "3 poziomy rozwoju"
+label_settings = SubResource("LabelSettings_mq73r")
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="ValueLabel" type="Label" parent="."]
+offset_left = 256.0
+offset_top = 78.0
+offset_right = 384.0
+offset_bottom = 175.0
+text = "0"
+label_settings = SubResource("LabelSettings_k4bth")
+horizontal_alignment = 1
+vertical_alignment = 1
