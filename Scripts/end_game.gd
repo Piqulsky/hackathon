@@ -13,6 +13,11 @@ var nameTextEdit :TextEdit
 var people := 0
 var heritage := 0
 
+var hospital :Sprite2D
+var bank :Sprite2D
+var factory :Sprite2D
+
+
 # Called when the node enters the scene tree for the first time.
 func _ready():
 	sheltersLabel = $Scores/ShelterLabel
