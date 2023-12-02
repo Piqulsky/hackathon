@@ -1,9 +1,11 @@
-[gd_scene load_steps=3 format=3 uid="uid://c18bsoevfjb3u"]
+[gd_scene load_steps=3 format=3 uid="uid://i3fcdwqk28sb"]
 
 [ext_resource type="Script" path="res://Scripts/timer.gd" id="1_yofb1"]
 
 [sub_resource type="LabelSettings" id="LabelSettings_shvlp"]
 font_size = 40
+outline_size = 4
+outline_color = Color(0, 0, 0, 1)
 
 [node name="EndTimer" type="Control"]
 layout_mode = 3
