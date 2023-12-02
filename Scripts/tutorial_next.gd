@@ -15,7 +15,7 @@ func _process(delta):
 
 func _on_button_down():
 	if text == "Start Game":
-		get_tree().change_scene_to_file("res://main_scene.tscn")
+		get_tree().change_scene_to_file("res://Scenes/main_scene.tscn")
 	animPlay.play(str(animIndex))
 	animIndex += 1
 	if animIndex == 4:
@@ -23,4 +23,4 @@ func _on_button_down():
 
 
 func _on_skip_button_button_down():
-	get_tree().change_scene_to_file("res://main_scene.tscn")
+	get_tree().change_scene_to_file("res://Scenes/main_scene.tscn")
