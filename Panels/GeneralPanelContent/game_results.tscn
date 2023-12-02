@@ -1,18 +1,9 @@
-[gd_scene load_steps=7 format=3 uid="uid://cocw1dfe5hbr"]
+[gd_scene load_steps=6 format=3 uid="uid://cocw1dfe5hbr"]
 
 [ext_resource type="Script" path="res://Scripts/game_results.gd" id="1_1ruo2"]
+[ext_resource type="Texture2D" uid="uid://pbuv11s8pmhh" path="res://Textures/icons/ludziki.png" id="2_7ge7n"]
 
 [sub_resource type="LabelSettings" id="LabelSettings_13np4"]
-font_size = 24
-outline_size = 4
-outline_color = Color(0, 0, 0, 1)
-
-[sub_resource type="LabelSettings" id="LabelSettings_vkqtd"]
-font_size = 24
-outline_size = 4
-outline_color = Color(0, 0, 0, 1)
-
-[sub_resource type="LabelSettings" id="LabelSettings_j1hc6"]
 font_size = 24
 outline_size = 4
 outline_color = Color(0, 0, 0, 1)
@@ -39,10 +30,10 @@ script = ExtResource("1_1ruo2")
 
 [node name="RightStats" type="GridContainer" parent="."]
 layout_mode = 0
-offset_left = 928.0
-offset_top = 32.0
-offset_right = 1227.0
-offset_bottom = 288.0
+offset_left = 1152.0
+offset_top = 16.0
+offset_right = 1248.0
+offset_bottom = 352.0
 columns = 2
 
 [node name="ShelterCountLabel" type="Label" parent="RightStats"]
@@ -51,11 +42,10 @@ text = "0"
 label_settings = SubResource("LabelSettings_13np4")
 horizontal_alignment = 2
 
-[node name="ShelterLabel" type="Label" parent="RightStats"]
+[node name="ShelterLabel" type="TextureButton" parent="RightStats"]
 layout_mode = 2
-text = "schronów"
-label_settings = SubResource("LabelSettings_vkqtd")
-horizontal_alignment = 2
+tooltip_text = "Ilość schronisk"
+texture_normal = ExtResource("2_7ge7n")
 
 [node name="ExpansionCountLabel" type="Label" parent="RightStats"]
 layout_mode = 2
@@ -63,11 +53,10 @@ text = "0"
 label_settings = SubResource("LabelSettings_13np4")
 horizontal_alignment = 2
 
-[node name="ExpansionLabel" type="Label" parent="RightStats"]
+[node name="ExpansionLabel" type="TextureButton" parent="RightStats"]
 layout_mode = 2
-text = "powiększeń"
-label_settings = SubResource("LabelSettings_vkqtd")
-horizontal_alignment = 2
+tooltip_text = "Ilość powiększczeń"
+texture_normal = ExtResource("2_7ge7n")
 
 [node name="PeopleCountLabel" type="Label" parent="RightStats"]
 layout_mode = 2
@@ -75,11 +64,10 @@ text = "0"
 label_settings = SubResource("LabelSettings_13np4")
 horizontal_alignment = 2
 
-[node name="PeopleLabel" type="Label" parent="RightStats"]
+[node name="PeopleLabel" type="TextureButton" parent="RightStats"]
 layout_mode = 2
-text = "milionów ludzi"
-label_settings = SubResource("LabelSettings_vkqtd")
-horizontal_alignment = 2
+tooltip_text = "Ludzie w schronach"
+texture_normal = ExtResource("2_7ge7n")
 
 [node name="RationsCountLabel" type="Label" parent="RightStats"]
 layout_mode = 2
@@ -87,11 +75,10 @@ text = "0"
 label_settings = SubResource("LabelSettings_13np4")
 horizontal_alignment = 2
 
-[node name="RationsLabel" type="Label" parent="RightStats"]
+[node name="RationsLabel" type="TextureButton" parent="RightStats"]
 layout_mode = 2
-text = "milionów racji"
-label_settings = SubResource("LabelSettings_vkqtd")
-horizontal_alignment = 2
+tooltip_text = "Ilość racji"
+texture_normal = ExtResource("2_7ge7n")
 
 [node name="HungryCountLabel" type="Label" parent="RightStats"]
 layout_mode = 2
@@ -99,56 +86,55 @@ text = "0"
 label_settings = SubResource("LabelSettings_13np4")
 horizontal_alignment = 2
 
-[node name="HungryCount" type="Label" parent="RightStats"]
+[node name="HungryCount" type="TextureButton" parent="RightStats"]
 layout_mode = 2
-text = "milionów ludzi głodnych"
-label_settings = SubResource("LabelSettings_vkqtd")
-horizontal_alignment = 2
+tooltip_text = "Ludzie głodni"
+texture_normal = ExtResource("2_7ge7n")
 
 [node name="LeftStats" type="GridContainer" parent="."]
 layout_mode = 0
 offset_left = 32.0
-offset_top = 96.0
-offset_right = 326.0
-offset_bottom = 288.0
+offset_top = 80.0
+offset_right = 160.0
+offset_bottom = 352.0
 columns = 2
 
-[node name="IdolsLabel" type="Label" parent="LeftStats"]
+[node name="IdolsLabel" type="TextureButton" parent="LeftStats"]
 layout_mode = 2
-text = "Wielcy ludzie:"
-label_settings = SubResource("LabelSettings_j1hc6")
+tooltip_text = "Wielcy ludzie"
+texture_normal = ExtResource("2_7ge7n")
 
-[node name="IdolsLevels" type="Label" parent="LeftStats"]
+[node name="IdolsCountLabel" type="Label" parent="LeftStats"]
 layout_mode = 2
 text = "0"
 label_settings = SubResource("LabelSettings_bo6rm")
 
-[node name="ResearchLabel" type="Label" parent="LeftStats"]
+[node name="ResearchLabel" type="TextureButton" parent="LeftStats"]
 layout_mode = 2
-text = "Poziomów rozwoju:"
-label_settings = SubResource("LabelSettings_j1hc6")
+tooltip_text = "Poziomy rozwoju"
+texture_normal = ExtResource("2_7ge7n")
 
-[node name="ResearchLevels" type="Label" parent="LeftStats"]
+[node name="ResearchCountLabel" type="Label" parent="LeftStats"]
 layout_mode = 2
 text = "0"
 label_settings = SubResource("LabelSettings_bo6rm")
 
-[node name="CultureLabel" type="Label" parent="LeftStats"]
+[node name="CultureLabel" type="TextureButton" parent="LeftStats"]
 layout_mode = 2
-text = "Zachowanych dzieł:"
-label_settings = SubResource("LabelSettings_vkqtd")
+tooltip_text = "Pozyskane zabytki"
+texture_normal = ExtResource("2_7ge7n")
 
 [node name="CultureCountLabel" type="Label" parent="LeftStats"]
 layout_mode = 2
 text = "0"
 label_settings = SubResource("LabelSettings_13np4")
 
-[node name="PeopleLabel" type="Label" parent="LeftStats"]
+[node name="TechLabel" type="TextureButton" parent="LeftStats"]
 layout_mode = 2
-text = "Przełomów naukowych:"
-label_settings = SubResource("LabelSettings_vkqtd")
+tooltip_text = "Przełomy technologiczne"
+texture_normal = ExtResource("2_7ge7n")
 
-[node name="PeopleCountLabel" type="Label" parent="LeftStats"]
+[node name="TechCountLabel" type="Label" parent="LeftStats"]
 layout_mode = 2
 text = "0"
 label_settings = SubResource("LabelSettings_13np4")
@@ -164,7 +150,7 @@ offset_left = 32.0
 offset_top = 464.0
 offset_right = 1248.0
 offset_bottom = 512.0
-text = "0 tysięcy uratowanych ludzi"
+text = "0 milionów uratowanych ludzi"
 label_settings = SubResource("LabelSettings_5igm5")
 horizontal_alignment = 1
 

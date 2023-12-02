@@ -1,29 +1,29 @@
 extends Control
 
-var sheltersLabel :Label
-var expansionsLabel :Label
-var peopleLabel :Label
-var foodLabel :Label
-var hungryLabel :Label
-var researchLabel :Label
-var idolsLabel :Label
-var cultureLabel :Label
-var techLabel :Label
+var sheltersCount :Label
+var expansionsCount :Label
+var peopleCount :Label
+var foodCount :Label
+var hungryCount :Label
+var researchCount :Label
+var idolsCount :Label
+var cultureCount :Label
+var techCount :Label
 
 var savedLabel :Label
 var heritageLabel :Label
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
-	sheltersLabel = $ShelterStats/PeopleCountLabel
-	expansionsLabel = $ShelterStats/ExpansionCountLabel
-	peopleLabel = $ShelterStats/PeopleCountLabel
-	foodLabel = $FoodStats/RationsCountLabel
-	hungryLabel = $FoodStats/PeopleCountLabel
-	researchLabel = $ResearchStats/ResearchLevels
-	idolsLabel = $ResearchStats/IdolsLevels
-	cultureLabel = $HeritageStats/CultureCountLabel
-	techLabel = $HeritageStats/PeopleCountLabel
+	sheltersCount = $RightStats/ShelterCountLabel
+	expansionsCount = $RightStats/ExpansionCountLabel
+	peopleCount = $RightStats/PeopleCountLabel
+	foodCount = $RightStats/RationsCountLabel
+	hungryCount = $RightStats/HungryCountLabel
+	researchCount = $LeftStats/ResearchCountLabel
+	idolsCount = $LeftStats/IdolsCountLabel
+	cultureCount = $LeftStats/CultureCountLabel
+	techCount = $LeftStats/TechCountLabel
 	savedLabel = $MasterStats/SavedLabel
 	heritageLabel = $MasterStats/HeritageLabel
 
@@ -31,18 +31,18 @@ func _ready():
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _physics_process(delta):
 	var people = Global.shelters * 1.5 * (Global.shelterExpansions+1)
-	sheltersLabel.text = str(Global.shelters)
-	expansionsLabel.text = str(Global.shelterExpansions)
-	peopleLabel.text = str(people)
-	foodLabel.text = str(Global.food)
-	var hungry = people - Global.food * 0.2
+	sheltersCount.text = str(Global.shelters)
+	expansionsCount.text = str(Global.shelterExpansions)
+	peopleCount.text = str(people) + "mln"
+	foodCount.text = str(Global.food) + "mln"
+	var hungry = people - Global.food * 0.2 
 	if hungry < 0:
 		hungry = 0
-	hungryLabel.text = str(hungry)
-	researchLabel.text = str(Global.amountOfResearchDone)
-	idolsLabel.text = str(Global.completedIdols)
-	cultureLabel.text = str(Global.savedRelics)
-	techLabel.text = str(Global.savedTech)
+	hungryCount.text = str(hungry) + "mln"
+	researchCount.text = str(Global.amountOfResearchDone)
+	idolsCount.text = str(Global.completedIdols)
+	cultureCount.text = str(Global.savedRelics)
+	techCount.text = str(Global.savedTech)
 	savedLabel.text = str(people - hungry) + " milionów uratowanych ludzi"
 	var heritage = int((Global.completedIdols/5 + Global.savedRelics/150 + Global.savedTech/6)/3 * 100)
 	heritageLabel.text = str(heritage) + "% ocalonego dziedzictwa"
