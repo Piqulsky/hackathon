@@ -30,9 +30,9 @@ script = ExtResource("1_1ruo2")
 
 [node name="RightStats" type="GridContainer" parent="."]
 layout_mode = 0
-offset_left = 1152.0
+offset_left = 1120.0
 offset_top = 16.0
-offset_right = 1248.0
+offset_right = 1216.0
 offset_bottom = 352.0
 columns = 2
 
