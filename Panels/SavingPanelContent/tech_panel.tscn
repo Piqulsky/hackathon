@@ -1,9 +1,7 @@
-[gd_scene load_steps=6 format=3 uid="uid://dqkau74maa1du"]
+[gd_scene load_steps=4 format=3 uid="uid://dqkau74maa1du"]
 
-[ext_resource type="Texture2D" uid="uid://ds7wnuyi7kkda" path="res://TMPTextures/1.png" id="1_p0xdy"]
 [ext_resource type="Script" path="res://Scripts/Panels/tech_panel.gd" id="1_v5auy"]
-[ext_resource type="Texture2D" uid="uid://cwclw3njmwnbj" path="res://TMPTextures/5.png" id="2_2g3gn"]
-[ext_resource type="Texture2D" uid="uid://bfgtcq67jpe28" path="res://TMPTextures/9.png" id="3_8j85c"]
+[ext_resource type="Texture2D" uid="uid://rlatq16k3ek2" path="res://Textures/button_triangle.png" id="4_rd6vl"]
 
 [sub_resource type="LabelSettings" id="LabelSettings_b45h1"]
 font_size = 64
@@ -40,51 +38,53 @@ offset_bottom = 544.0
 
 [node name="MaterialsTechButton" type="TextureButton" parent="BasicTech"]
 layout_mode = 0
-offset_left = 96.0
+offset_left = 64.0
 offset_top = 32.0
 offset_right = 160.0
-offset_bottom = 96.0
-texture_normal = ExtResource("1_p0xdy")
+offset_bottom = 128.0
+texture_normal = ExtResource("4_rd6vl")
 
 [node name="TechBar" type="ProgressBar" parent="BasicTech/MaterialsTechButton"]
 layout_mode = 0
-offset_top = -32.0
-offset_right = 64.0
+offset_top = 96.0
+offset_right = 96.0
+offset_bottom = 112.0
 step = 1.0
 show_percentage = false
 
 [node name="CostLabel" type="Label" parent="BasicTech/MaterialsTechButton"]
 layout_mode = 0
 offset_left = -32.0
-offset_top = 64.0
-offset_right = 96.0
-offset_bottom = 96.0
+offset_top = -32.0
+offset_right = 128.0
 text = "0/0"
 horizontal_alignment = 1
+vertical_alignment = 2
 
 [node name="GoldTechButton" type="TextureButton" parent="BasicTech"]
 layout_mode = 0
-offset_left = 288.0
+offset_left = 272.0
 offset_top = 32.0
-offset_right = 352.0
-offset_bottom = 96.0
-texture_normal = ExtResource("1_p0xdy")
+offset_right = 368.0
+offset_bottom = 128.0
+texture_normal = ExtResource("4_rd6vl")
 
 [node name="TechBar" type="ProgressBar" parent="BasicTech/GoldTechButton"]
 layout_mode = 0
-offset_top = -32.0
-offset_right = 64.0
+offset_top = 96.0
+offset_right = 96.0
+offset_bottom = 112.0
 step = 1.0
 show_percentage = false
 
 [node name="CostLabel" type="Label" parent="BasicTech/GoldTechButton"]
 layout_mode = 0
-offset_left = -32.0
-offset_top = 64.0
-offset_right = 96.0
-offset_bottom = 96.0
+offset_left = -16.0
+offset_top = -32.0
+offset_right = 112.0
 text = "0/0"
 horizontal_alignment = 1
+vertical_alignment = 2
 
 [node name="ScienceTechButton" type="TextureButton" parent="BasicTech"]
 layout_mode = 0
@@ -92,23 +92,24 @@ offset_left = 480.0
 offset_top = 32.0
 offset_right = 544.0
 offset_bottom = 96.0
-texture_normal = ExtResource("1_p0xdy")
+texture_normal = ExtResource("4_rd6vl")
 
 [node name="TechBar" type="ProgressBar" parent="BasicTech/ScienceTechButton"]
 layout_mode = 0
-offset_top = -32.0
-offset_right = 64.0
+offset_top = 96.0
+offset_right = 96.0
+offset_bottom = 112.0
 step = 1.0
 show_percentage = false
 
 [node name="CostLabel" type="Label" parent="BasicTech/ScienceTechButton"]
 layout_mode = 0
 offset_left = -32.0
-offset_top = 64.0
-offset_right = 96.0
-offset_bottom = 96.0
+offset_top = -32.0
+offset_right = 128.0
 text = "0/0"
 horizontal_alignment = 1
+vertical_alignment = 2
 
 [node name="AdvancedTech" type="Control" parent="."]
 anchors_preset = 0
@@ -122,47 +123,49 @@ offset_left = 192.0
 offset_top = 32.0
 offset_right = 256.0
 offset_bottom = 96.0
-texture_normal = ExtResource("2_2g3gn")
+texture_normal = ExtResource("4_rd6vl")
 
 [node name="TechBar" type="ProgressBar" parent="AdvancedTech/MaterialsGoldTechButton"]
 layout_mode = 0
-offset_top = -32.0
-offset_right = 64.0
+offset_top = 96.0
+offset_right = 96.0
+offset_bottom = 112.0
 step = 1.0
 show_percentage = false
 
 [node name="CostLabel" type="Label" parent="AdvancedTech/MaterialsGoldTechButton"]
 layout_mode = 0
 offset_left = -32.0
-offset_top = 64.0
-offset_right = 96.0
-offset_bottom = 96.0
+offset_top = -32.0
+offset_right = 128.0
 text = "0/0"
 horizontal_alignment = 1
+vertical_alignment = 2
 
 [node name="GoldScienceTechButton" type="TextureButton" parent="AdvancedTech"]
 layout_mode = 0
-offset_left = 384.0
+offset_left = 352.0
 offset_top = 32.0
 offset_right = 448.0
-offset_bottom = 96.0
-texture_normal = ExtResource("2_2g3gn")
+offset_bottom = 128.0
+texture_normal = ExtResource("4_rd6vl")
 
 [node name="TechBar" type="ProgressBar" parent="AdvancedTech/GoldScienceTechButton"]
 layout_mode = 0
-offset_top = -32.0
-offset_right = 64.0
+offset_top = 96.0
+offset_right = 96.0
+offset_bottom = 112.0
 step = 1.0
 show_percentage = false
 
 [node name="CostLabel" type="Label" parent="AdvancedTech/GoldScienceTechButton"]
 layout_mode = 0
 offset_left = -32.0
-offset_top = 64.0
-offset_right = 96.0
-offset_bottom = 96.0
+offset_top = -32.0
+offset_right = 128.0
 text = "0/0"
 horizontal_alignment = 1
+vertical_alignment = 2
 
 [node name="MasterTech" type="Control" parent="."]
 layout_mode = 3
@@ -173,27 +176,28 @@ offset_bottom = 224.0
 
 [node name="MasterButton" type="TextureButton" parent="MasterTech"]
 layout_mode = 0
-offset_left = 288.0
-offset_top = 64.0
-offset_right = 352.0
+offset_left = 272.0
+offset_top = 32.0
+offset_right = 368.0
 offset_bottom = 128.0
-texture_normal = ExtResource("3_8j85c")
+texture_normal = ExtResource("4_rd6vl")
 
 [node name="TechBar" type="ProgressBar" parent="MasterTech/MasterButton"]
 layout_mode = 0
-offset_top = -32.0
-offset_right = 64.0
+offset_top = 96.0
+offset_right = 96.0
+offset_bottom = 112.0
 step = 1.0
 show_percentage = false
 
 [node name="CostLabel" type="Label" parent="MasterTech/MasterButton"]
 layout_mode = 0
-offset_left = -96.0
-offset_top = 64.0
-offset_right = 160.0
-offset_bottom = 96.0
+offset_left = -80.0
+offset_top = -32.0
+offset_right = 176.0
 text = "0/0"
 horizontal_alignment = 1
+vertical_alignment = 2
 
 [connection signal="button_down" from="BasicTech/MaterialsTechButton" to="." method="_on_tech_button_down" binds= [0]]
 [connection signal="button_down" from="BasicTech/GoldTechButton" to="." method="_on_tech_button_down" binds= [1]]

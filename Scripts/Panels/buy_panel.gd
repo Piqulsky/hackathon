@@ -39,7 +39,7 @@ func _on_meat_texture_button_button_down():
 	if Global.resources.gold >= meatCost:
 		Global.resources.gold -= meatCost
 		meatCost *= Global.MEAT_INCREASE
-		Global.food += MGlobal.EAT_VALUE
+		Global.food += Global.MEAT_VALUE
 
 
 func _on_plants_texture_button_button_down():
