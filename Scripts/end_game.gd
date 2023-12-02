@@ -18,8 +18,8 @@ func _ready():
 	sheltersLabel = $Scores/ShelterLabel
 	expansionsLabel = $Scores/ExpansionsLabel
 	foodLabel = $Scores/FoodLabel
-	cultureLabel = $cultureLabel
-	techLabel = $techLabel
+	cultureLabel = $Scores/CultureLabel
+	techLabel = $Scores/TechLabel
 	idolsLabel = $Scores/IdolsLabel
 	peopleLabel = $Final/PeopleLabel
 	heritageLabel = $Final/HeritageLabel
@@ -32,6 +32,7 @@ func _process(delta):
 
 
 func end_game():
+	visible = true
 	people = Global.shelters * 1.5 * (Global.shelterExpansions+1)
 	sheltersLabel.text = str(Global.shelters) + " wybudowanych schronisk"
 	expansionsLabel.text = str(Global.shelterExpansions) + " wybudowanych powiększeń schronisk"

@@ -1,4 +1,4 @@
-[gd_scene load_steps=10 format=3 uid="uid://bin16ivvd78ph"]
+[gd_scene load_steps=11 format=3 uid="uid://bin16ivvd78ph"]
 
 [ext_resource type="Script" path="res://Scripts/game_manager.gd" id="1_gsqg8"]
 [ext_resource type="PackedScene" uid="uid://cljctta8stwik" path="res://Panels/general_panel.tscn" id="1_m6mal"]
@@ -9,6 +9,7 @@
 [ext_resource type="PackedScene" uid="uid://dag0y1sdg6m76" path="res://Panels/people_panel.tscn" id="5_ctdjd"]
 [ext_resource type="PackedScene" uid="uid://pjcbs2uotd2y" path="res://Panels/saving_panel.tscn" id="6_81lbp"]
 [ext_resource type="Texture2D" uid="uid://cveskudhloqtg" path="res://Textures/arrow.png" id="9_s2pts"]
+[ext_resource type="PackedScene" uid="uid://cd211bmsufwj4" path="res://GUI/end_game.tscn" id="10_jr15s"]
 
 [node name="MainScene" type="Node2D"]
 script = ExtResource("1_gsqg8")
@@ -73,6 +74,9 @@ pivot_offset = Vector2(64, 32)
 texture_normal = ExtResource("9_s2pts")
 ignore_texture_size = true
 stretch_mode = 0
+
+[node name="EndGame" parent="." instance=ExtResource("10_jr15s")]
+visible = false
 
 [connection signal="button_down" from="ArrowsButtons/LeftArrow" to="Panels" method="_on_left_arrow_button_down"]
 [connection signal="button_down" from="ArrowsButtons/RightArrow" to="Panels" method="_on_right_arrow_button_down"]
