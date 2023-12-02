@@ -1,0 +1,29 @@
+[gd_scene load_steps=3 format=3 uid="uid://dwtbfk1qlf5ay"]
+
+[ext_resource type="PackedScene" uid="uid://bdlc2tnny2o8w" path="res://Tutorials/tutorial_0.tscn" id="1_3ko0d"]
+[ext_resource type="PackedScene" uid="uid://cupbpxgbvqw20" path="res://Tutorials/tutorial_1.tscn" id="1_a7l42"]
+
+[node name="TutorialScene" type="Node2D"]
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
+
+[node name="Tutorials" type="Node2D" parent="."]
+
+[node name="Tutorial0" parent="Tutorials" instance=ExtResource("1_3ko0d")]
+
+[node name="Tutorial1" parent="Tutorials" instance=ExtResource("1_a7l42")]
+position = Vector2(1280, 0)
+
+[node name="SkipButton" type="Button" parent="."]
+offset_left = 32.0
+offset_top = 640.0
+offset_right = 192.0
+offset_bottom = 704.0
+text = "Skip Tutorial"
+
+[node name="NextButton" type="Button" parent="."]
+offset_left = 1152.0
+offset_top = 640.0
+offset_right = 1248.0
+offset_bottom = 704.0
+text = "Next"

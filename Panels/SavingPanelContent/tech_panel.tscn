@@ -23,9 +23,10 @@ color = Color(1, 0.603922, 0.721569, 0.392157)
 polygon = PackedVector2Array(640, 0, 640, 576, 0, 576, 0, 0)
 
 [node name="TechLabel" type="Label" parent="."]
+layout_mode = 0
 offset_right = 640.0
 offset_bottom = 96.0
-text = "Opus Magnum"
+text = "Technologia"
 label_settings = SubResource("LabelSettings_b45h1")
 horizontal_alignment = 1
 
@@ -69,12 +70,15 @@ offset_bottom = 96.0
 texture_normal = ExtResource("1_p0xdy")
 
 [node name="TechBar" type="ProgressBar" parent="BasicTech/GoldTechButton"]
+layout_mode = 0
 offset_top = -32.0
 offset_right = 64.0
+max_value = 10.0
 step = 1.0
 show_percentage = false
 
 [node name="CostLabel" type="Label" parent="BasicTech/GoldTechButton"]
+layout_mode = 0
 offset_left = -32.0
 offset_top = 64.0
 offset_right = 96.0
@@ -91,12 +95,15 @@ offset_bottom = 96.0
 texture_normal = ExtResource("1_p0xdy")
 
 [node name="TechBar" type="ProgressBar" parent="BasicTech/ScienceTechButton"]
+layout_mode = 0
 offset_top = -32.0
 offset_right = 64.0
+max_value = 10.0
 step = 1.0
 show_percentage = false
 
 [node name="CostLabel" type="Label" parent="BasicTech/ScienceTechButton"]
+layout_mode = 0
 offset_left = -32.0
 offset_top = 64.0
 offset_right = 96.0
@@ -119,12 +126,15 @@ offset_bottom = 96.0
 texture_normal = ExtResource("2_2g3gn")
 
 [node name="TechBar" type="ProgressBar" parent="AdvancedTech/MaterialsGoldTechButton"]
+layout_mode = 0
 offset_top = -32.0
 offset_right = 64.0
+max_value = 10.0
 step = 1.0
 show_percentage = false
 
 [node name="CostLabel" type="Label" parent="AdvancedTech/MaterialsGoldTechButton"]
+layout_mode = 0
 offset_left = -32.0
 offset_top = 64.0
 offset_right = 96.0
@@ -141,12 +151,15 @@ offset_bottom = 96.0
 texture_normal = ExtResource("2_2g3gn")
 
 [node name="TechBar" type="ProgressBar" parent="AdvancedTech/GoldScienceTechButton"]
+layout_mode = 0
 offset_top = -32.0
 offset_right = 64.0
+max_value = 10.0
 step = 1.0
 show_percentage = false
 
 [node name="CostLabel" type="Label" parent="AdvancedTech/GoldScienceTechButton"]
+layout_mode = 0
 offset_left = -32.0
 offset_top = 64.0
 offset_right = 96.0
@@ -170,12 +183,15 @@ offset_bottom = 128.0
 texture_normal = ExtResource("3_8j85c")
 
 [node name="TechBar" type="ProgressBar" parent="MasterTech/MasterButton"]
+layout_mode = 0
 offset_top = -32.0
 offset_right = 64.0
+max_value = 10.0
 step = 1.0
 show_percentage = false
 
 [node name="CostLabel" type="Label" parent="MasterTech/MasterButton"]
+layout_mode = 0
 offset_left = -96.0
 offset_top = 64.0
 offset_right = 160.0

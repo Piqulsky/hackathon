@@ -1,0 +1,24 @@
+[gd_scene load_steps=2 format=3 uid="uid://bdlc2tnny2o8w"]
+
+[sub_resource type="LabelSettings" id="LabelSettings_ilkq4"]
+font_size = 32
+
+[node name="Tutorial0" type="Node2D"]
+
+[node name="Polygon2D" type="Polygon2D" parent="."]
+color = Color(0, 0, 0, 1)
+polygon = PackedVector2Array(0, 0, 1280, 0, 1280, 736, 0, 736)
+
+[node name="Label" type="Label" parent="."]
+offset_left = 256.0
+offset_top = 224.0
+offset_right = 1024.0
+offset_bottom = 512.0
+text = "Jest rok 2000.
+Witaj w świecie, na którym zaraz zajdzie ostatni 
+zachód słońca. To właśnie Tobie powierzono
+zadanie ocalenia jak największej ilości osób oraz
+uratowania dziedzictwa kulturowego jakie 
+utworzyła ludzkość."
+label_settings = SubResource("LabelSettings_ilkq4")
+horizontal_alignment = 1

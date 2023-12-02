@@ -144,6 +144,12 @@ label_settings = SubResource("LabelSettings_r8j10")
 horizontal_alignment = 2
 vertical_alignment = 1
 
+[node name="Timer" type="Timer" parent="."]
+autostart = true
+
 [connection signal="button_down" from="Clickers/MaterialsTextureButton" to="Clickers/MaterialsTextureButton" method="_on_button_down"]
 [connection signal="button_down" from="Clickers/GoldTextureButton" to="Clickers/GoldTextureButton" method="_on_button_down"]
 [connection signal="button_down" from="Clickers/ScienceTextureButton" to="Clickers/ScienceTextureButton" method="_on_button_down"]
+[connection signal="timeout" from="Timer" to="Clickers/MaterialsTextureButton" method="_on_timer_timeout"]
+[connection signal="timeout" from="Timer" to="Clickers/GoldTextureButton" method="_on_timer_timeout"]
+[connection signal="timeout" from="Timer" to="Clickers/ScienceTextureButton" method="_on_timer_timeout"]

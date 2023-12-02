@@ -3,7 +3,7 @@ extends Control
 var cost := 2
 const INCREASE = 2
 var beginButton :TextureButton
-var pgBar :ProgressBar
+var pgBar :TextureProgressBar
 var pgButton :TextureButton
 var costLabel :Label
 var sheltersLabel :Label

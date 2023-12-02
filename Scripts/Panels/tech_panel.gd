@@ -58,6 +58,22 @@ func _on_tech_button_down(index):
 	techBar.value += techBar.step
 	if techBar.value >= techBar.max_value:
 			buttons[index].disabled = true
-			# ADD PASSIVE INCOME
+			match index:
+				0:
+					Global.passiveMaterialsIncome += 3
+				1:
+					Global.passiveGoldIncome += 3
+				2:
+					Global.passiveScienceIncome += 3
+				3:
+					Global.passiveMaterialsIncome += 4
+					Global.passiveGoldIncome += 4
+				4:
+					Global.passiveGoldIncome += 4
+					Global.passiveScienceIncome += 4
+				5:
+					Global.passiveMaterialsIncome += 5
+					Global.passiveGoldIncome += 5
+					Global.passiveScienceIncome += 5
 			Global.savedTech += 1
 	

@@ -1,11 +1,14 @@
-[gd_scene load_steps=11 format=3 uid="uid://76g1h08gih8a"]
+[gd_scene load_steps=14 format=3 uid="uid://76g1h08gih8a"]
 
 [ext_resource type="Script" path="res://Scripts/Panels/buy_panel.gd" id="1_yuer2"]
-[ext_resource type="Texture2D" uid="uid://ckdagteid3vnw" path="res://Textures/wheat_icon.png" id="2_xfu3d"]
+[ext_resource type="Texture2D" uid="uid://cs2dk0kwxjnqa" path="res://Textures/button_wheat.png" id="2_utma5"]
+[ext_resource type="Texture2D" uid="uid://xupt83l3a8a" path="res://Textures/button_wheat_clicked.png" id="3_5k3p0"]
+[ext_resource type="Texture2D" uid="uid://bt1smjktp5js5" path="res://Textures/button_meat.png" id="3_6k4nx"]
 [ext_resource type="Script" path="res://Scripts/Panels/villagers_panel.gd" id="3_7tm6c"]
-[ext_resource type="Texture2D" uid="uid://br8yinab34w6j" path="res://Textures/meat_icon.png" id="3_8r6kj"]
 [ext_resource type="Script" path="res://Scripts/Panels/food_value_label.gd" id="3_hopb7"]
-[ext_resource type="Texture2D" uid="uid://yh7m4npnl7fg" path="res://Textures/apple_icon.png" id="4_hay74"]
+[ext_resource type="Texture2D" uid="uid://clitxabdnrkse" path="res://Textures/button_apple.png" id="4_c6rqg"]
+[ext_resource type="Texture2D" uid="uid://61gwdfeyqy4v" path="res://Textures/button_meat_clicked.png" id="5_5otom"]
+[ext_resource type="Texture2D" uid="uid://486j3jx552vb" path="res://Textures/button_apple_clicked.png" id="7_5l503"]
 [ext_resource type="Texture2D" uid="uid://buny6t4f5ojei" path="res://Textures/worker.png" id="7_37oal"]
 
 [sub_resource type="LabelSettings" id="LabelSettings_40d3g"]
@@ -50,7 +53,8 @@ layout_mode = 0
 offset_left = 64.0
 offset_right = 192.0
 offset_bottom = 128.0
-texture_normal = ExtResource("2_xfu3d")
+texture_normal = ExtResource("2_utma5")
+texture_pressed = ExtResource("3_5k3p0")
 
 [node name="Cost" type="Label" parent="BuyPanel/GrainTextureButton"]
 layout_mode = 0
@@ -66,7 +70,8 @@ layout_mode = 0
 offset_left = 256.0
 offset_right = 384.0
 offset_bottom = 128.0
-texture_normal = ExtResource("3_8r6kj")
+texture_normal = ExtResource("3_6k4nx")
+texture_pressed = ExtResource("5_5otom")
 
 [node name="Cost" type="Label" parent="BuyPanel/MeatTextureButton"]
 layout_mode = 0
@@ -82,7 +87,8 @@ layout_mode = 0
 offset_left = 448.0
 offset_right = 576.0
 offset_bottom = 128.0
-texture_normal = ExtResource("4_hay74")
+texture_normal = ExtResource("4_c6rqg")
+texture_pressed = ExtResource("7_5l503")
 
 [node name="Cost" type="Label" parent="BuyPanel/PlantsTextureButton"]
 layout_mode = 0

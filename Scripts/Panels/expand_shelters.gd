@@ -3,7 +3,7 @@ extends Control
 var cost := 2
 const INCREASE = 3
 var beginButton :TextureButton
-var pgBar :ProgressBar
+var pgBar :TextureProgressBar
 var pgButton :TextureButton
 var costLabel :Label
 var expansionsLabel :Label
@@ -38,7 +38,7 @@ func _on_begin_texture_button_button_down():
 
 
 func _on_progress_texture_button_button_down():
-	pgBar.value += pgBar.step * 4
+	pgBar.value += pgBar.step * 40
 	if pgBar.value >= pgBar.max_value:
 		pgBar.value = 0
 		pgButton.disabled = true

@@ -1,0 +1,169 @@
+[gd_scene load_steps=12 format=3 uid="uid://cupbpxgbvqw20"]
+
+[ext_resource type="Texture2D" uid="uid://ctbwfteanjiei" path="res://Textures/background_1.png" id="1_odi66"]
+[ext_resource type="Texture2D" uid="uid://lcjhjxwbef5t" path="res://Textures/button_panel.png" id="1_rlkp8"]
+[ext_resource type="Texture2D" uid="uid://dwoc2hh6otb8w" path="res://Textures/main_land.png" id="2_iu12w"]
+[ext_resource type="Texture2D" uid="uid://cytmnu5w7fk1v" path="res://Textures/button_red.png" id="2_m3hgo"]
+[ext_resource type="Texture2D" uid="uid://lwk2uxmo3b" path="res://Textures/button_red_clicked.png" id="3_n8p6r"]
+[ext_resource type="Texture2D" uid="uid://ww8mpdq8lnjq" path="res://Textures/button_yellow.png" id="4_jib4o"]
+[ext_resource type="Texture2D" uid="uid://ypdf5s4yjymb" path="res://Textures/button_yellow_clicked.png" id="5_wd7cm"]
+[ext_resource type="Texture2D" uid="uid://dgrhwgxc1yuhr" path="res://Textures/button_blue.png" id="6_xbxna"]
+[ext_resource type="Texture2D" uid="uid://dpjhws3fp5eyw" path="res://Textures/button_blue_clicked.png" id="7_urwxe"]
+
+[sub_resource type="LabelSettings" id="LabelSettings_iu0ws"]
+font_size = 32
+
+[sub_resource type="LabelSettings" id="LabelSettings_ygt6h"]
+font_size = 32
+
+[node name="Tutorial1" type="Node2D"]
+
+[node name="SkySprite" type="Sprite2D" parent="."]
+position = Vector2(640, 360)
+texture = ExtResource("1_odi66")
+
+[node name="LandSprite" type="Sprite2D" parent="."]
+position = Vector2(640, 360)
+texture = ExtResource("2_iu12w")
+
+[node name="ClickerBar" type="Sprite2D" parent="."]
+position = Vector2(640, 640)
+texture = ExtResource("1_rlkp8")
+
+[node name="Clickers" type="Control" parent="."]
+layout_mode = 3
+anchors_preset = 0
+offset_left = 640.0
+offset_top = 544.0
+offset_right = 640.0
+offset_bottom = 544.0
+
+[node name="MaterialsTextureButton" type="TextureButton" parent="Clickers"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -384.0
+offset_top = 64.0
+offset_right = -320.0
+offset_bottom = 128.0
+grow_horizontal = 2
+grow_vertical = 2
+pivot_offset = Vector2(32, 32)
+texture_normal = ExtResource("2_m3hgo")
+texture_pressed = ExtResource("3_n8p6r")
+
+[node name="MaterialsValue" type="Label" parent="Clickers/MaterialsTextureButton"]
+layout_mode = 1
+anchors_preset = 6
+anchor_left = 1.0
+anchor_top = 0.5
+anchor_right = 1.0
+anchor_bottom = 0.5
+offset_left = -284.0
+offset_top = -32.0
+offset_right = -124.0
+offset_bottom = 32.0
+grow_horizontal = 0
+grow_vertical = 2
+pivot_offset = Vector2(96, 0)
+text = "0"
+label_settings = SubResource("LabelSettings_iu0ws")
+horizontal_alignment = 2
+vertical_alignment = 1
+
+[node name="GoldTextureButton" type="TextureButton" parent="Clickers"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -32.0
+offset_top = 64.0
+offset_right = 32.0
+offset_bottom = 128.0
+grow_horizontal = 2
+grow_vertical = 2
+pivot_offset = Vector2(32, 32)
+texture_normal = ExtResource("4_jib4o")
+texture_pressed = ExtResource("5_wd7cm")
+
+[node name="GoldValue" type="Label" parent="Clickers/GoldTextureButton"]
+layout_mode = 1
+anchors_preset = 6
+anchor_left = 1.0
+anchor_top = 0.5
+anchor_right = 1.0
+anchor_bottom = 0.5
+offset_left = -284.0
+offset_top = -32.0
+offset_right = -124.0
+offset_bottom = 32.0
+grow_horizontal = 0
+grow_vertical = 2
+pivot_offset = Vector2(96, 0)
+text = "0"
+label_settings = SubResource("LabelSettings_iu0ws")
+horizontal_alignment = 2
+vertical_alignment = 1
+
+[node name="ScienceTextureButton" type="TextureButton" parent="Clickers"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = 384.0
+offset_top = 64.0
+offset_right = 448.0
+offset_bottom = 128.0
+grow_horizontal = 2
+grow_vertical = 2
+pivot_offset = Vector2(32, 32)
+texture_normal = ExtResource("6_xbxna")
+texture_pressed = ExtResource("7_urwxe")
+
+[node name="ScienceValue" type="Label" parent="Clickers/ScienceTextureButton"]
+layout_mode = 1
+anchors_preset = 6
+anchor_left = 1.0
+anchor_top = 0.5
+anchor_right = 1.0
+anchor_bottom = 0.5
+offset_left = -284.0
+offset_top = -32.0
+offset_right = -124.0
+offset_bottom = 32.0
+grow_horizontal = 0
+grow_vertical = 2
+pivot_offset = Vector2(96, 0)
+text = "0"
+label_settings = SubResource("LabelSettings_iu0ws")
+horizontal_alignment = 2
+vertical_alignment = 1
+
+[node name="Label" type="Label" parent="."]
+offset_left = 256.0
+offset_top = 192.0
+offset_right = 1024.0
+offset_bottom = 288.0
+text = "To jest ekran stanu świata. Na nim zobaczysz 
+postęp ratowania ludzkości."
+label_settings = SubResource("LabelSettings_ygt6h")
+horizontal_alignment = 1
+
+[node name="Label2" type="Label" parent="."]
+offset_left = 160.0
+offset_top = 352.0
+offset_right = 1120.0
+offset_bottom = 544.0
+text = "Te trzy przyciski odpowiadają za surowce, które
+są konieczne do uratowania ludzi:
+Materiały(czerwone), Pieniądze(żółte) i Nauka(niebieskie).
+Wciskając je zdobędziesz jednostki surowców."
+label_settings = SubResource("LabelSettings_ygt6h")
+horizontal_alignment = 1
