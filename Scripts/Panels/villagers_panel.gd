@@ -18,7 +18,7 @@ func _ready():
 func _physics_process(delta):
 	villagerCost.text = str(Global.resources.gold) + "/" + str(cost)
 	if villagers > 0:
-		genBar.value += genBar.step
+		genBar.value += genBar.step * Global.villagerWorkMultiplier
 		if genBar.value >= 100:
 			genBar.value = 0
 			Global.food += villagers

@@ -25,10 +25,18 @@ var researchProgress = {
 	"res32" = false,
 }
 
+var passiveScienceIncome := 0
+var passiveGoldIncome := 0
+var passiveMaterialsIncome := 0
+var automaticShelterBuilder := false
+var automaticShelterImprover := false
+var villagerWorkMultiplier := 1.0
+var amountOfResearchDone := 0
 var food := 0
 var shelters := 0
 var shelterExpansions := 0
 var savedRelics := 0
+var savedRelictsMultiplier := 1.0
 var savedTech = 0
 
 func _ready():

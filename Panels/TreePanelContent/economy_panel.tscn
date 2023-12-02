@@ -1,12 +1,19 @@
-[gd_scene load_steps=6 format=3 uid="uid://b73tnsfaykl15"]
+[gd_scene load_steps=11 format=3 uid="uid://b73tnsfaykl15"]
 
-[ext_resource type="Texture2D" uid="uid://dbv0rxf35jiaa" path="res://TMPTextures/2.png" id="1_55u8s"]
-[ext_resource type="Script" path="res://economy_panel_manager.gd" id="1_f3k2y"]
-[ext_resource type="Texture2D" uid="uid://ds7wnuyi7kkda" path="res://TMPTextures/1.png" id="2_2653u"]
-[ext_resource type="Texture2D" uid="uid://diwhctx81rgik" path="res://TMPTextures/3.png" id="3_u2ao3"]
+[ext_resource type="Script" path="res://Scripts/Panels/economy_panel_manager.gd" id="1_f3k2y"]
+[ext_resource type="Texture2D" uid="uid://djwa3oebcxwrl" path="res://Textures/buttonredadd.png" id="2_aymcv"]
+[ext_resource type="Texture2D" uid="uid://c1gs8jmprn522" path="res://Textures/triangle.png" id="2_wtkfc"]
+[ext_resource type="Texture2D" uid="uid://drhgjy8na2msj" path="res://Textures/buttonredaddclicked.png" id="3_2feb3"]
+[ext_resource type="Texture2D" uid="uid://de1ad8rori2s3" path="res://Textures/buttonyellowadd.png" id="3_wq4yr"]
+[ext_resource type="Texture2D" uid="uid://w81d0dh0wjk4" path="res://Textures/buttonblueadd.png" id="4_0c4ap"]
+[ext_resource type="Texture2D" uid="uid://55tknoohxe4j" path="res://Textures/buttonyellowaddclicked.png" id="4_ca8ke"]
+[ext_resource type="Texture2D" uid="uid://c5mtylyen10q5" path="res://Textures/buttonblueaddclicked.png" id="5_v2gyr"]
 
 [sub_resource type="LabelSettings" id="LabelSettings_xusn2"]
 font_size = 64
+
+[sub_resource type="LabelSettings" id="LabelSettings_au30e"]
+font_color = Color(0, 0, 0, 1)
 
 [node name="EconomyPanel" type="Control"]
 layout_mode = 3
@@ -26,11 +33,10 @@ text = "Ekonomia"
 label_settings = SubResource("LabelSettings_xusn2")
 horizontal_alignment = 1
 
-[node name="TriangleEconomyBackground" type="Polygon2D" parent="."]
-position = Vector2(-2160, -304)
-scale = Vector2(1.875, 1.625)
-color = Color(1, 1, 0, 1)
-polygon = PackedVector2Array(1664, 256, 1792, 512, 1536, 512)
+[node name="TriangleEconomyBackground" type="Sprite2D" parent="."]
+position = Vector2(960, 336)
+scale = Vector2(0.744062, 0.73125)
+texture = ExtResource("2_wtkfc")
 
 [node name="MaterialsUpgradeButton" type="TextureButton" parent="."]
 layout_mode = 0
@@ -38,9 +44,22 @@ offset_left = 848.0
 offset_top = 384.0
 offset_right = 928.0
 offset_bottom = 464.0
-texture_normal = ExtResource("1_55u8s")
+texture_normal = ExtResource("2_aymcv")
+texture_pressed = ExtResource("3_2feb3")
+texture_disabled = ExtResource("3_2feb3")
 ignore_texture_size = true
 stretch_mode = 0
+
+[node name="MaterialsPriceLabel" type="Label" parent="MaterialsUpgradeButton"]
+layout_mode = 0
+offset_left = 16.0
+offset_top = 80.0
+offset_right = 64.0
+offset_bottom = 112.0
+text = "0/100"
+label_settings = SubResource("LabelSettings_au30e")
+horizontal_alignment = 1
+vertical_alignment = 1
 
 [node name="GoldUpgradeButton" type="TextureButton" parent="."]
 layout_mode = 0
@@ -48,9 +67,22 @@ offset_left = 920.0
 offset_top = 248.0
 offset_right = 1000.0
 offset_bottom = 328.0
-texture_normal = ExtResource("2_2653u")
+texture_normal = ExtResource("3_wq4yr")
+texture_pressed = ExtResource("4_ca8ke")
+texture_disabled = ExtResource("4_ca8ke")
 ignore_texture_size = true
 stretch_mode = 0
+
+[node name="GoldPriceLabel" type="Label" parent="GoldUpgradeButton"]
+layout_mode = 0
+offset_left = 16.0
+offset_top = 80.0
+offset_right = 64.0
+offset_bottom = 112.0
+text = "0/100"
+label_settings = SubResource("LabelSettings_au30e")
+horizontal_alignment = 1
+vertical_alignment = 1
 
 [node name="ResearchUpgradeButton" type="TextureButton" parent="."]
 layout_mode = 0
@@ -58,9 +90,22 @@ offset_left = 992.0
 offset_top = 384.0
 offset_right = 1072.0
 offset_bottom = 464.0
-texture_normal = ExtResource("3_u2ao3")
+texture_normal = ExtResource("4_0c4ap")
+texture_pressed = ExtResource("5_v2gyr")
+texture_disabled = ExtResource("5_v2gyr")
 ignore_texture_size = true
 stretch_mode = 0
+
+[node name="ResearchPriceLabel" type="Label" parent="ResearchUpgradeButton"]
+layout_mode = 0
+offset_left = 16.0
+offset_top = 80.0
+offset_right = 64.0
+offset_bottom = 112.0
+text = "0/100"
+label_settings = SubResource("LabelSettings_au30e")
+horizontal_alignment = 1
+vertical_alignment = 1
 
 [connection signal="button_down" from="MaterialsUpgradeButton" to="." method="_on_materials_upgrade_button_down"]
 [connection signal="button_down" from="GoldUpgradeButton" to="." method="_on_gold_upgrade_button_down"]

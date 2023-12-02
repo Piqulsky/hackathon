@@ -1,6 +1,6 @@
 [gd_scene load_steps=5 format=3 uid="uid://dekyhx6dt2vf"]
 
-[ext_resource type="Script" path="res://startScreenManager.gd" id="1_t5kxh"]
+[ext_resource type="Script" path="res://Scripts/startScreenManager.gd" id="1_t5kxh"]
 [ext_resource type="Texture2D" uid="uid://bkhnqpc12x0gm" path="res://Textures/ekranstartowy1.png" id="2_cyd3u"]
 [ext_resource type="Texture2D" uid="uid://cj7h63jrxqtxv" path="res://Textures/buttonstartowy.png" id="3_3yyha"]
 
