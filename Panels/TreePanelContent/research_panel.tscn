@@ -52,22 +52,11 @@ offset_left = 335.0
 offset_top = 112.0
 offset_right = 399.0
 offset_bottom = 176.0
+tooltip_text = "Zwiększa prędkość pracy chłopów"
 texture_normal = ExtResource("2_powhb")
 texture_disabled = ExtResource("2_t6xqm")
 ignore_texture_size = true
 stretch_mode = 0
-
-[node name="Label1" type="Label" parent="TechnologyButton1"]
-visible = false
-layout_mode = 0
-offset_left = 61.0
-offset_top = -6.0
-offset_right = 221.0
-offset_bottom = 43.0
-theme_override_colors/font_color = Color(0.941176, 0, 0.215686, 1)
-text = "Zwiększa Prędkość
-Pracy chłopów"
-vertical_alignment = 1
 
 [node name="MoneyCost1" type="Label" parent="TechnologyButton1"]
 layout_mode = 0
@@ -85,23 +74,12 @@ offset_left = 335.0
 offset_top = 224.0
 offset_right = 399.0
 offset_bottom = 288.0
+tooltip_text = "Zwiększa prędkość pracy chłopów"
 disabled = true
 texture_normal = ExtResource("4_6o8b7")
 texture_disabled = ExtResource("3_kn268")
 ignore_texture_size = true
 stretch_mode = 0
-
-[node name="Label2" type="Label" parent="TechnologyButton2"]
-visible = false
-layout_mode = 0
-offset_left = 61.0
-offset_top = 4.0
-offset_right = 206.0
-offset_bottom = 53.0
-theme_override_colors/font_color = Color(0.941176, 0, 0.215686, 1)
-text = "Zwiększa Prędkość
-Pracy chłopów"
-vertical_alignment = 1
 
 [node name="MoneyCost2" type="Label" parent="TechnologyButton2"]
 layout_mode = 0
@@ -119,6 +97,7 @@ offset_left = 336.0
 offset_top = 336.0
 offset_right = 400.0
 offset_bottom = 400.0
+tooltip_text = "Zwiększa prędkość pracy chłopów"
 disabled = true
 texture_normal = ExtResource("6_2vkdn")
 texture_disabled = ExtResource("4_4b5vn")
@@ -135,41 +114,18 @@ theme_override_colors/font_color = Color(0, 0, 0, 1)
 horizontal_alignment = 1
 vertical_alignment = 1
 
-[node name="Label3" type="Label" parent="TechnologyButton3"]
-visible = false
-layout_mode = 0
-offset_left = 61.0
-offset_top = 21.0
-offset_right = 206.0
-offset_bottom = 70.0
-theme_override_colors/font_color = Color(0.941176, 0, 0.215686, 1)
-text = "Zwiększa Prędkość
-Pracy chłopów"
-vertical_alignment = 1
-
 [node name="TechnologyButton4" type="TextureButton" parent="."]
 layout_mode = 0
 offset_left = 335.0
 offset_top = 464.0
 offset_right = 399.0
 offset_bottom = 528.0
+tooltip_text = "Zwiększa prędkość pracy chłopów"
 disabled = true
 texture_normal = ExtResource("8_hvir2")
 texture_disabled = ExtResource("5_2kitq")
 ignore_texture_size = true
 stretch_mode = 0
-
-[node name="Label4" type="Label" parent="TechnologyButton4"]
-visible = false
-layout_mode = 0
-offset_left = 63.0
-offset_top = 7.0
-offset_right = 208.0
-offset_bottom = 56.0
-theme_override_colors/font_color = Color(0.941176, 0, 0.215686, 1)
-text = "Zwiększa Prędkość
-Pracy chłopów"
-vertical_alignment = 1
 
 [node name="MoneyCost4" type="Label" parent="TechnologyButton4"]
 layout_mode = 0
@@ -187,22 +143,12 @@ offset_left = 246.0
 offset_top = 176.0
 offset_right = 310.0
 offset_bottom = 240.0
+tooltip_text = "Pasywny przychód złota"
 disabled = true
 texture_normal = ExtResource("10_2k4up")
 texture_disabled = ExtResource("6_hmjfw")
 ignore_texture_size = true
 stretch_mode = 0
-
-[node name="Label5" type="Label" parent="TechnologyButton11"]
-visible = false
-layout_mode = 0
-offset_left = -189.0
-offset_top = 8.0
-offset_right = -4.0
-offset_bottom = 47.0
-theme_override_colors/font_color = Color(0.941176, 0, 0.215686, 1)
-text = "Pasywny przychód złota"
-vertical_alignment = 1
 
 [node name="MoneyCost1" type="Label" parent="TechnologyButton11"]
 layout_mode = 0
@@ -220,23 +166,13 @@ offset_left = 422.0
 offset_top = 176.0
 offset_right = 486.0
 offset_bottom = 240.0
+tooltip_text = "Pasywny przychód 
+materiałów"
 disabled = true
 texture_normal = ExtResource("12_3gwiu")
 texture_disabled = ExtResource("7_epr84")
 ignore_texture_size = true
 stretch_mode = 0
-
-[node name="Label6" type="Label" parent="TechnologyButton12"]
-visible = false
-layout_mode = 0
-offset_left = 58.0
-offset_top = 5.0
-offset_right = 218.0
-offset_bottom = 54.0
-theme_override_colors/font_color = Color(0.941176, 0, 0.215686, 1)
-text = "Pasywny przychód 
-materiałów"
-vertical_alignment = 1
 
 [node name="MoneyCost1" type="Label" parent="TechnologyButton12"]
 layout_mode = 0
@@ -254,6 +190,8 @@ offset_left = 246.0
 offset_top = 288.0
 offset_right = 310.0
 offset_bottom = 352.0
+tooltip_text = "Zwiększa twój zdobywany
+Wynik za relikty"
 disabled = true
 texture_normal = ExtResource("14_moyaf")
 texture_disabled = ExtResource("8_i0nk6")
@@ -270,41 +208,19 @@ theme_override_colors/font_color = Color(0, 0, 0, 1)
 horizontal_alignment = 1
 vertical_alignment = 1
 
-[node name="Label7" type="Label" parent="TechnologyButton21"]
-visible = false
-layout_mode = 0
-offset_left = -204.0
-offset_top = 2.0
-offset_right = -5.0
-offset_bottom = 51.0
-theme_override_colors/font_color = Color(0.941176, 0, 0.215686, 1)
-text = "Zwiększa twój zdobywany
-Wynik za relikty"
-vertical_alignment = 1
-
 [node name="TechnologyButton22" type="TextureButton" parent="."]
 layout_mode = 0
 offset_left = 422.0
 offset_top = 288.0
 offset_right = 486.0
 offset_bottom = 352.0
+tooltip_text = "Dodaje ci pasywny
+dochód nauki"
 disabled = true
 texture_normal = ExtResource("16_e1p55")
 texture_disabled = ExtResource("9_r8l20")
 ignore_texture_size = true
 stretch_mode = 0
-
-[node name="Label8" type="Label" parent="TechnologyButton22"]
-visible = false
-layout_mode = 0
-offset_left = 63.0
-offset_top = 7.0
-offset_right = 207.0
-offset_bottom = 56.0
-theme_override_colors/font_color = Color(0.941176, 0, 0.215686, 1)
-text = "Dodaje ci pasywny
-dochód nauki"
-vertical_alignment = 1
 
 [node name="MoneyCost2" type="Label" parent="TechnologyButton22"]
 layout_mode = 0
@@ -322,23 +238,12 @@ offset_left = 246.0
 offset_top = 400.0
 offset_right = 310.0
 offset_bottom = 464.0
+tooltip_text = "Automatyzuje tworzenie schronów"
 disabled = true
 texture_normal = ExtResource("18_10x6x")
 texture_disabled = ExtResource("10_hj7cq")
 ignore_texture_size = true
 stretch_mode = 0
-
-[node name="Label9" type="Label" parent="TechnologyButton31"]
-visible = false
-layout_mode = 0
-offset_left = -159.0
-offset_top = 1.0
-offset_right = -2.0
-offset_bottom = 50.0
-theme_override_colors/font_color = Color(0.941176, 0, 0.215686, 1)
-text = "            Automatyzuje
-tworzenie schronów"
-vertical_alignment = 1
 
 [node name="MoneyCost3" type="Label" parent="TechnologyButton31"]
 layout_mode = 0
@@ -356,23 +261,12 @@ offset_left = 422.0
 offset_top = 400.0
 offset_right = 486.0
 offset_bottom = 464.0
+tooltip_text = "Automatyzuje ulepszanie schronów"
 disabled = true
 texture_normal = ExtResource("4_cxp53")
 texture_disabled = ExtResource("11_yrp20")
 ignore_texture_size = true
 stretch_mode = 0
-
-[node name="Label10" type="Label" parent="TechnologyButton32"]
-visible = false
-layout_mode = 0
-offset_left = 63.0
-offset_top = 11.0
-offset_right = 227.0
-offset_bottom = 60.0
-theme_override_colors/font_color = Color(0.941176, 0, 0.215686, 1)
-text = "Automatyzuje
-Ulepszanie schronów"
-vertical_alignment = 1
 
 [node name="MoneyCost3" type="Label" parent="TechnologyButton32"]
 layout_mode = 0
@@ -385,32 +279,12 @@ horizontal_alignment = 1
 vertical_alignment = 1
 
 [connection signal="button_down" from="TechnologyButton1" to="." method="_on_technology_button_1_down"]
-[connection signal="mouse_entered" from="TechnologyButton1" to="." method="_on_technology_button_1_mouse_entered"]
-[connection signal="mouse_exited" from="TechnologyButton1" to="." method="_on_technology_button_1_mouse_exited"]
 [connection signal="button_down" from="TechnologyButton2" to="." method="_on_technology_button_2_down"]
-[connection signal="mouse_entered" from="TechnologyButton2" to="." method="_on_technology_button_2_mouse_entered"]
-[connection signal="mouse_exited" from="TechnologyButton2" to="." method="_on_technology_button_2_mouse_exited"]
 [connection signal="button_down" from="TechnologyButton3" to="." method="_on_technology_button_3_down"]
-[connection signal="mouse_entered" from="TechnologyButton3" to="." method="_on_technology_button_3_mouse_entered"]
-[connection signal="mouse_exited" from="TechnologyButton3" to="." method="_on_technology_button_3_mouse_exited"]
 [connection signal="button_down" from="TechnologyButton4" to="." method="_on_technology_button_4_down"]
-[connection signal="mouse_entered" from="TechnologyButton4" to="." method="_on_technology_button_4_mouse_entered"]
-[connection signal="mouse_exited" from="TechnologyButton4" to="." method="_on_technology_button_4_mouse_exited"]
 [connection signal="button_down" from="TechnologyButton11" to="." method="_on_technology_button_11_down"]
-[connection signal="mouse_entered" from="TechnologyButton11" to="." method="_on_technology_button_11_mouse_entered"]
-[connection signal="mouse_exited" from="TechnologyButton11" to="." method="_on_technology_button_11_mouse_exited"]
 [connection signal="button_down" from="TechnologyButton12" to="." method="_on_technology_button_12_down"]
-[connection signal="mouse_entered" from="TechnologyButton12" to="." method="_on_technology_button_12_mouse_entered"]
-[connection signal="mouse_exited" from="TechnologyButton12" to="." method="_on_technology_button_12_mouse_exited"]
 [connection signal="button_down" from="TechnologyButton21" to="." method="_on_technology_button_21_down"]
-[connection signal="mouse_entered" from="TechnologyButton21" to="." method="_on_technology_button_21_mouse_entered"]
-[connection signal="mouse_exited" from="TechnologyButton21" to="." method="_on_technology_button_21_mouse_exited"]
 [connection signal="button_down" from="TechnologyButton22" to="." method="_on_technology_button_22_down"]
-[connection signal="mouse_entered" from="TechnologyButton22" to="." method="_on_technology_button_22_mouse_entered"]
-[connection signal="mouse_exited" from="TechnologyButton22" to="." method="_on_technology_button_22_mouse_exited"]
 [connection signal="button_down" from="TechnologyButton31" to="." method="_on_technology_button_31_down"]
-[connection signal="mouse_entered" from="TechnologyButton31" to="." method="_on_technology_button_31_mouse_entered"]
-[connection signal="mouse_exited" from="TechnologyButton31" to="." method="_on_technology_button_31_mouse_exited"]
 [connection signal="button_down" from="TechnologyButton32" to="." method="_on_technology_button_32_down"]
-[connection signal="mouse_entered" from="TechnologyButton32" to="." method="_on_technology_button_32_mouse_entered"]
-[connection signal="mouse_exited" from="TechnologyButton32" to="." method="_on_technology_button_32_mouse_exited"]
