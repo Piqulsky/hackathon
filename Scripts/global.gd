@@ -1,9 +1,9 @@
 extends Node
 
 var resources = {
-	"materials": 0,
-	"gold": 0,
-	"science": 0
+	"materials": 100,
+	"gold": 100,
+	"science": 100
 }
 
 var resourcesMultiplier = {
@@ -32,6 +32,7 @@ var automaticShelterBuilder := false
 var automaticShelterImprover := false
 var villagerWorkMultiplier := 1.0
 var amountOfResearchDone := 0
+
 var food := 0
 var shelters := 0
 var shelterExpansions := 0

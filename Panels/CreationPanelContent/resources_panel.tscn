@@ -14,7 +14,7 @@ font_size = 32
 [sub_resource type="LabelSettings" id="LabelSettings_iq8qq"]
 font_size = 64
 
-[node name="resources_panel" type="Control"]
+[node name="ResourcesPanel" type="Control"]
 layout_mode = 3
 anchors_preset = 15
 anchor_right = 1.0
@@ -136,6 +136,7 @@ vertical_alignment = 1
 [node name="GenerationBar" type="ProgressBar" parent="VillagersPanel"]
 layout_mode = 0
 offset_left = 384.0
+offset_top = 32.0
 offset_right = 608.0
 offset_bottom = 128.0
 step = 0.1

@@ -1,4 +1,7 @@
-[gd_scene format=3 uid="uid://pjcbs2uotd2y"]
+[gd_scene load_steps=3 format=3 uid="uid://pjcbs2uotd2y"]
+
+[ext_resource type="PackedScene" uid="uid://teevk0t18di5" path="res://Panels/SavingPanelContent/relics_panel.tscn" id="1_6ifp8"]
+[ext_resource type="PackedScene" uid="uid://dqkau74maa1du" path="res://Panels/SavingPanelContent/tech_panel.tscn" id="2_5j2q7"]
 
 [node name="SavingPanel" type="Node2D"]
 
@@ -7,3 +10,9 @@
 [node name="Polygon2D" type="Polygon2D" parent="."]
 color = Color(0, 0.823529, 0.996078, 1)
 polygon = PackedVector2Array(1280, 0, 1280, 736, 0, 736, 0, 0)
+
+[node name="RelicsPanel" parent="." instance=ExtResource("1_6ifp8")]
+
+[node name="TechPanel" parent="." instance=ExtResource("2_5j2q7")]
+offset_left = 640.0
+offset_right = 640.0

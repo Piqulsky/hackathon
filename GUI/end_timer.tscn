@@ -5,7 +5,7 @@
 [sub_resource type="LabelSettings" id="LabelSettings_shvlp"]
 font_size = 40
 
-[node name="Timer" type="Control"]
+[node name="EndTimer" type="Control"]
 visible = false
 layout_mode = 3
 anchors_preset = 15
@@ -17,7 +17,7 @@ grow_horizontal = 2
 grow_vertical = 2
 script = ExtResource("1_yofb1")
 
-[node name="Timer" type="Timer" parent="."]
+[node name="EndTimer" type="Timer" parent="."]
 autostart = true
 
 [node name="TimeLabel" type="Label" parent="."]
@@ -28,4 +28,4 @@ text = "15:00"
 label_settings = SubResource("LabelSettings_shvlp")
 horizontal_alignment = 1
 
-[connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]
+[connection signal="timeout" from="EndTimer" to="." method="_on_timer_timeout"]
