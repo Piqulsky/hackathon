@@ -9,3 +9,7 @@ func _ready():
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _physics_process(delta):
 	text = str(Global.food)
+
+
+func _on_timer_timeout():
+	Global.food += Global.passiveFoodIncome

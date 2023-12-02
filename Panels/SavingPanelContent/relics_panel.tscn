@@ -1,7 +1,12 @@
-[gd_scene load_steps=6 format=3 uid="uid://teevk0t18di5"]
+[gd_scene load_steps=11 format=3 uid="uid://teevk0t18di5"]
 
 [ext_resource type="Script" path="res://Scripts/Panels/relics_panel.gd" id="1_1wu56"]
-[ext_resource type="Texture2D" uid="uid://k45lnqhehp0f" path="res://TMPTextures/11.png" id="1_ylrbd"]
+[ext_resource type="Texture2D" uid="uid://cmft08wnuuc1w" path="res://Textures/bookactive.png" id="2_hcj14"]
+[ext_resource type="Texture2D" uid="uid://cddufqu3ltjtk" path="res://Textures/bookoff.png" id="3_kpl5m"]
+[ext_resource type="Texture2D" uid="uid://c12qa0qhv68pe" path="res://Textures/paintingactive.png" id="4_w4rpc"]
+[ext_resource type="Texture2D" uid="uid://cxdliexkmambu" path="res://Textures/paintingoff.png" id="5_15oh8"]
+[ext_resource type="Texture2D" uid="uid://cykhptgrcjnt3" path="res://Textures/sculptureactive.png" id="6_uaiu7"]
+[ext_resource type="Texture2D" uid="uid://4d1dkjebkwt2" path="res://Textures/sculptureoff.png" id="7_yb0dy"]
 
 [sub_resource type="LabelSettings" id="LabelSettings_ugsen"]
 font_size = 64
@@ -37,27 +42,30 @@ horizontal_alignment = 1
 
 [node name="LiteratureTextureButton" type="TextureButton" parent="."]
 layout_mode = 0
-offset_left = 96.0
-offset_top = 128.0
-offset_right = 224.0
-offset_bottom = 256.0
-texture_normal = ExtResource("1_ylrbd")
+offset_left = 32.0
+offset_top = 96.0
+offset_right = 245.0
+offset_bottom = 269.0
+texture_normal = ExtResource("2_hcj14")
+texture_pressed = ExtResource("3_kpl5m")
+texture_disabled = ExtResource("3_kpl5m")
 
 [node name="CostLabel" type="Label" parent="LiteratureTextureButton"]
 layout_mode = 0
-offset_right = 128.0
-offset_bottom = 32.0
-text = "10"
+offset_left = 32.0
+offset_top = -32.0
+offset_right = 160.0
+text = "0/10"
 label_settings = SubResource("LabelSettings_3xsxs")
 horizontal_alignment = 1
 vertical_alignment = 1
 
 [node name="RequirmentLabel" type="Label" parent="LiteratureTextureButton"]
 layout_mode = 0
-offset_top = 96.0
-offset_right = 128.0
-offset_bottom = 128.0
-text = "1 rozwój"
+offset_top = 160.0
+offset_right = 192.0
+offset_bottom = 192.0
+text = "1 poziom rozwoju"
 label_settings = SubResource("LabelSettings_3xsxs")
 horizontal_alignment = 1
 vertical_alignment = 1
@@ -65,67 +73,80 @@ vertical_alignment = 1
 [node name="ArtTextureButton" type="TextureButton" parent="."]
 layout_mode = 0
 offset_left = 416.0
-offset_top = 128.0
-offset_right = 544.0
-offset_bottom = 256.0
-texture_normal = ExtResource("1_ylrbd")
+offset_top = 96.0
+offset_right = 571.0
+offset_bottom = 258.0
+texture_normal = ExtResource("4_w4rpc")
+texture_pressed = ExtResource("5_15oh8")
+texture_disabled = ExtResource("5_15oh8")
 
 [node name="CostLabel" type="Label" parent="ArtTextureButton"]
 layout_mode = 0
-offset_right = 128.0
-offset_bottom = 32.0
-text = "20"
+offset_left = 32.0
+offset_top = -32.0
+offset_right = 160.0
+text = "0/20"
 label_settings = SubResource("LabelSettings_3xsxs")
 horizontal_alignment = 1
 vertical_alignment = 1
 
 [node name="RequirmentLabel" type="Label" parent="ArtTextureButton"]
 layout_mode = 0
-offset_top = 96.0
-offset_right = 128.0
-offset_bottom = 128.0
-text = "2 rozwoje"
+offset_left = -32.0
+offset_top = 160.0
+offset_right = 192.0
+offset_bottom = 192.0
+text = "2 poziomy rozwoju"
 label_settings = SubResource("LabelSettings_3xsxs")
 horizontal_alignment = 1
 vertical_alignment = 1
 
 [node name="SculptureTextureButton" type="TextureButton" parent="."]
 layout_mode = 0
-offset_left = 256.0
-offset_top = 352.0
-offset_right = 384.0
-offset_bottom = 480.0
-texture_normal = ExtResource("1_ylrbd")
+offset_left = 224.0
+offset_top = 290.0
+offset_right = 417.0
+offset_bottom = 529.0
+texture_normal = ExtResource("6_uaiu7")
+texture_pressed = ExtResource("7_yb0dy")
+texture_disabled = ExtResource("7_yb0dy")
 
 [node name="CostLabel" type="Label" parent="SculptureTextureButton"]
 layout_mode = 0
-offset_right = 128.0
-offset_bottom = 32.0
-text = "30"
+offset_left = 32.0
+offset_top = -34.0
+offset_right = 160.0
+offset_bottom = -2.0
+text = "0/30"
 label_settings = SubResource("LabelSettings_3xsxs")
 horizontal_alignment = 1
 vertical_alignment = 1
 
 [node name="RequirmentLabel" type="Label" parent="SculptureTextureButton"]
 layout_mode = 0
-offset_top = 96.0
-offset_right = 128.0
-offset_bottom = 128.0
-text = "3 rozwoje"
+offset_top = 222.0
+offset_right = 193.0
+offset_bottom = 254.0
+text = "3 poziomy rozwoju"
 label_settings = SubResource("LabelSettings_3xsxs")
 horizontal_alignment = 1
 vertical_alignment = 1
 
 [node name="ValueLabel" type="Label" parent="."]
 layout_mode = 0
-offset_top = 256.0
-offset_right = 640.0
-offset_bottom = 352.0
+offset_left = 256.0
+offset_top = 96.0
+offset_right = 384.0
+offset_bottom = 192.0
 text = "0"
 label_settings = SubResource("LabelSettings_gwt8e")
 horizontal_alignment = 1
 vertical_alignment = 1
 
+[node name="Timer" type="Timer" parent="."]
+autostart = true
+
 [connection signal="button_down" from="LiteratureTextureButton" to="." method="_on_literature_texture_button_button_down"]
 [connection signal="button_down" from="ArtTextureButton" to="." method="_on_art_texture_button_button_down"]
 [connection signal="button_down" from="SculptureTextureButton" to="." method="_on_sculpture_texture_button_button_down"]
+[connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]

@@ -152,7 +152,11 @@ offset_bottom = 128.0
 step = 0.1
 show_percentage = false
 
+[node name="Timer" type="Timer" parent="."]
+autostart = true
+
 [connection signal="button_down" from="BuyPanel/GrainTextureButton" to="BuyPanel" method="_on_grain_texture_button_button_down"]
 [connection signal="button_down" from="BuyPanel/MeatTextureButton" to="BuyPanel" method="_on_meat_texture_button_button_down"]
 [connection signal="button_down" from="BuyPanel/PlantsTextureButton" to="BuyPanel" method="_on_plants_texture_button_button_down"]
 [connection signal="button_down" from="VillagersPanel/BuyTextureButton" to="VillagersPanel" method="_on_buy_texture_button_button_down"]
+[connection signal="timeout" from="Timer" to="ValueLabel" method="_on_timer_timeout"]

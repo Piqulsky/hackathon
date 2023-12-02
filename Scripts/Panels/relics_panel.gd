@@ -40,8 +40,24 @@ func _ready():
 
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
-func _process(delta):
-	pass
+func _physics_process(delta):
+	valueLabel.text = str(Global.savedRelics)
+	literatureCostLabel.text = str(Global.resources.gold) + "/" + str(literatureCost)
+	artCostLabel.text = str(Global.resources.science) + "/" +str(artCost)
+	sculptureCostLabel.text = str(Global.resources.materials) + "/" +str(sculptureCost)
+	if Global.amountOfResearchDone < literatureReq:
+		literatureButton.disabled = true
+	else:
+		literatureButton.disabled = false
+	if Global.amountOfResearchDone < artReq:
+		artButton.disabled = true
+	else:
+		artButton.disabled = false
+	if Global.amountOfResearchDone < sculptureReq:
+		sculptureButton.disabled = true
+	else:
+		sculptureButton.disabled = false
+	
 
 
 func _on_literature_texture_button_button_down():
@@ -49,20 +65,18 @@ func _on_literature_texture_button_button_down():
 		Global.resources.gold -= literatureCost
 		literatureCount += 1
 		Global.savedRelics += LITERATURE_INCREASE*Global.savedRelictsMultiplier
-		valueLabel.text = str(Global.savedRelics)
 		if literatureCount == 5:
 			if literatureCost == 100:
 				literatureButton.disabled = true
 				return
 			literatureCount = 0
 			literatureCost += LITERATURE_INCREASE*10
-			literatureCostLabel.text = str(literatureCost)
 			literatureReq += LITERATURE_INCREASE
 			var tmpText = ""
 			if literatureReq < 5:
-				tmpText = " rozwoje"
+				tmpText = " poziomy rozwoju"
 			else:
-				tmpText = " rozwojów" 
+				tmpText = " poziomów rozwojów" 
 			literatureReqLabel.text = str(literatureReq) + tmpText
 
 
@@ -71,20 +85,18 @@ func _on_art_texture_button_button_down():
 		Global.resources.gold -= artCost
 		artCount += 1
 		Global.savedRelics += ART_INCREASE*Global.savedRelictsMultiplier
-		valueLabel.text = str(Global.savedRelics)
 		if artCount == 5:
 			if artCost == 100:
 				artButton.disabled = true
 				return
 			artCount = 0
 			artCost += ART_INCREASE*10
-			artCostLabel.text = str(artCost)
 			artReq += ART_INCREASE
 			var tmpText = ""
 			if artReq < 5:
-				tmpText = " rozwoje"
+				tmpText = " poziomy rozwoju"
 			else:
-				tmpText = " rozwojów" 
+				tmpText = " poziomów rozwojów" 
 			artReqLabel.text = str(artReq) + tmpText
 
 
@@ -93,20 +105,22 @@ func _on_sculpture_texture_button_button_down():
 		Global.resources.gold -= sculptureCost
 		sculptureCount += 1
 		Global.savedRelics += SCULPTURE_INCREASE*Global.savedRelictsMultiplier
-		valueLabel.text = str(Global.savedRelics)
 		if sculptureCount == 5:
 			if sculptureCost >= 100:
 				sculptureButton.disabled = true
 				return
 			sculptureCount = 0
 			sculptureCost += SCULPTURE_INCREASE*10
-			sculptureCostLabel.text = str(sculptureCost)
 			sculptureReq += SCULPTURE_INCREASE
 			if sculptureReq == 12:
 				sculptureReq = 10
 			var tmpText = ""
 			if sculptureReq < 5:
-				tmpText = " rozwoje"
+				tmpText = " poziomy rozwoju"
 			else:
-				tmpText = " rozwojów" 
+				tmpText = " poziomów rozwojów" 
 			sculptureReqLabel.text = str(sculptureReq) + tmpText
+
+
+func _on_timer_timeout():
+	Global.savedRelics += Global.passiveSavedRelics

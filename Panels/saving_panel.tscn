@@ -16,6 +16,7 @@ color = Color(0, 0.823529, 0.996078, 1)
 polygon = PackedVector2Array(1280, 0, 1280, 736, 0, 736, 0, 0)
 
 [node name="RelicsPanel" parent="." instance=ExtResource("1_6ifp8")]
+offset_bottom = 0.0
 
 [node name="TechPanel" parent="." instance=ExtResource("2_5j2q7")]
 offset_left = 640.0
