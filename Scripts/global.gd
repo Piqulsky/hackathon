@@ -1,9 +1,9 @@
 extends Node
 
 var resources = {
-	"materials": 0,
-	"gold": 0,
-	"science": 0
+	"materials": 2789,
+	"gold": 165,
+	"science": 1896
 }
 
 var resourcesMultiplier = {
@@ -39,13 +39,13 @@ var factoryVisible = false
 var hospitalVisible = false
 var bankVisibile = false
 
-var food := 0.0
-var shelters := 0
-var shelterExpansions := 0
-var savedRelics := 0.0
+var food := 289.0
+var shelters := 23
+var shelterExpansions := 25
+var savedRelics := 95.0
 var savedRelictsMultiplier := 1.0
-var savedTech := 0.0
-var completedIdols := 0.0
+var savedTech := 6.0
+var completedIdols := 4.0
 
 const GRAIN_INCREASE = 2
 const MEAT_INCREASE = 3
