@@ -26,7 +26,9 @@ func _physics_process(delta):
 func _on_buy_texture_button_button_down():
 	if Global.resources.gold >= cost:
 		Global.resources.gold -= cost
-		cost *= Global.VILLAGERS_INCREASE
-		
+		if cost != 16000:
+			cost *= Global.VILLAGERS_INCREASE
+		if cost > 16000:
+			cost = 16000
 		villagers += 1
 		multiplierLabel.text = str(villagers) + "x"

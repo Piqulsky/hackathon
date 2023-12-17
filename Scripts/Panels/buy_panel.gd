@@ -31,19 +31,28 @@ func _physics_process(delta):
 func _on_grain_texture_button_button_down():
 	if Global.resources.gold >= grainCost:
 		Global.resources.gold -= grainCost
-		grainCost *= Global.GRAIN_INCREASE
+		if grainCost != 333:
+			grainCost *= Global.GRAIN_INCREASE
+		if grainCost > 333:
+			grainCost = 333
 		Global.food += Global.GRAIN_VALUE
 
 
 func _on_meat_texture_button_button_down():
 	if Global.resources.gold >= meatCost:
 		Global.resources.gold -= meatCost
-		meatCost *= Global.MEAT_INCREASE
+		if meatCost != 666:
+			meatCost *= Global.MEAT_INCREASE
+		if meatCost > 666:
+			meatCost = 666
 		Global.food += Global.MEAT_VALUE
 
 
 func _on_plants_texture_button_button_down():
 	if Global.resources.gold >= plantsCost:
 		Global.resources.gold -= plantsCost
-		plantsCost *= Global.PLANTS_INCREASE
+		if plantsCost != 1000:
+			plantsCost *= Global.PLANTS_INCREASE
+		if plantsCost > 1000:
+			plantsCost = 1000
 		Global.food += Global.PLANTS_VALUE

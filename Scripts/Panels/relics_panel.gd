@@ -42,17 +42,26 @@ func _physics_process(delta):
 	literatureCostLabel.text = str(Global.resources.gold) + "/" + str(literatureCost)
 	artCostLabel.text = str(Global.resources.science) + "/" +str(artCost)
 	sculptureCostLabel.text = str(Global.resources.materials) + "/" +str(sculptureCost)
-	if Global.amountOfResearchDone < literatureReq:
+	if Global.amountOfResearchDone < literatureReq and literatureReq < 11:
 		literatureButton.disabled = true
-	elif literatureCost != 100:
+	elif literatureCost > 100:
 		literatureButton.disabled = false
-	if Global.amountOfResearchDone < artReq:
+		literatureCostLabel.text = "MAKS."
+	else:
+		literatureButton.disabled = false
+	if Global.amountOfResearchDone < artReq and artReq < 11:
 		artButton.disabled = true
-	elif artCost != 100:
+	elif artCost > 100:
 		artButton.disabled = false
-	if Global.amountOfResearchDone < sculptureReq:
+		artCostLabel.text = "MAKS."
+	else:
+		artButton.disabled = false
+	if Global.amountOfResearchDone < sculptureReq and sculptureReq < 11:
 		sculptureButton.disabled = true
-	elif sculptureCost != 100:
+	elif sculptureCost > 120:
+		sculptureButton.disabled = false
+		sculptureCostLabel.text = "MAKS."
+	else:
 		sculptureButton.disabled = false
 	
 
@@ -63,12 +72,12 @@ func _on_literature_texture_button_button_down():
 		literatureCount += 1
 		Global.savedRelics += Global.LITERATURE_INCREASE*Global.savedRelictsMultiplier
 		if literatureCount == 5:
-			if literatureCost == 100:
-				literatureButton.disabled = true
-				return
 			literatureCount = 0
 			literatureCost += Global.LITERATURE_INCREASE*10
 			literatureReq += Global.LITERATURE_INCREASE
+			if literatureReq > 10:
+				literatureReqLabel.text = ""
+				return
 			var tmpText = ""
 			if literatureReq < 5:
 				tmpText = " poziomy rozwoju"
@@ -83,12 +92,12 @@ func _on_art_texture_button_button_down():
 		artCount += 1
 		Global.savedRelics += Global.ART_INCREASE*Global.savedRelictsMultiplier
 		if artCount == 5:
-			if artCost == 100:
-				artButton.disabled = true
-				return
 			artCount = 0
 			artCost += Global.ART_INCREASE*10
 			artReq += Global.ART_INCREASE
+			if artReq > 10:
+				artReqLabel.text = ""
+				return
 			var tmpText = ""
 			if artReq < 5:
 				tmpText = " poziomy rozwoju"
@@ -103,14 +112,16 @@ func _on_sculpture_texture_button_button_down():
 		sculptureCount += 1
 		Global.savedRelics += Global.SCULPTURE_INCREASE*Global.savedRelictsMultiplier
 		if sculptureCount == 5:
-			if sculptureCost >= 100:
-				sculptureButton.disabled = true
-				return
 			sculptureCount = 0
 			sculptureCost += Global.SCULPTURE_INCREASE*10
 			sculptureReq += Global.SCULPTURE_INCREASE
 			if sculptureReq == 12:
 				sculptureReq = 10
+			if sculptureReq > 10:
+				print(Global.amountOfResearchDone)
+				print(sculptureReq)
+				sculptureReqLabel.text = ""
+				return
 			var tmpText = ""
 			if sculptureReq < 5:
 				tmpText = " poziomy rozwoju"

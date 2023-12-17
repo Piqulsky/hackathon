@@ -35,7 +35,10 @@ func _on_begin_texture_button_button_down():
 		Global.resources.materials -= cost
 		pgButton.disabled = false
 		beginButton.disabled = true
-		cost *= Global.SHELTER_INCREASE
+		if cost != 15000:
+			cost *= Global.SHELTER_INCREASE
+		if cost > 15000:
+			cost = 15000
 
 
 func _on_progress_texture_button_button_down():

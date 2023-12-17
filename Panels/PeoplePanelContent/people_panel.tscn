@@ -1,4 +1,4 @@
-[gd_scene load_steps=21 format=3 uid="uid://c77e2dymkxoks"]
+[gd_scene load_steps=23 format=3 uid="uid://c77e2dymkxoks"]
 
 [ext_resource type="Script" path="res://Scripts/Panels/people_panel_manager.gd" id="1_jhj0a"]
 [ext_resource type="Texture2D" uid="uid://ds67yr3bd16oh" path="res://Textures/buttonstartowy.png" id="3_3h0uy"]
@@ -11,6 +11,7 @@
 [ext_resource type="Texture2D" uid="uid://cpy86nqe1ffds" path="res://Textures/termometr/termometr4.png" id="8_m5c1y"]
 [ext_resource type="Texture2D" uid="uid://orljve75opgy" path="res://Textures/herbert.png" id="8_oa50p"]
 [ext_resource type="Texture2D" uid="uid://diauljsp3droo" path="res://Textures/termometr/termometr5.png" id="9_bel0c"]
+[ext_resource type="FontFile" uid="uid://d0lblke161a6h" path="res://Fonts/Kanit-Medium.ttf" id="12_l03wv"]
 
 [sub_resource type="CompressedTexture2D" id="CompressedTexture2D_2ohs1"]
 load_path = "res://.godot/imported/bartermometr.png-ae2c5fa377b4133afc7ffc3e5681a472.ctex"
@@ -44,6 +45,10 @@ load_path = "res://.godot/imported/termometr1.png-298d13a4eae26b89de3f7f0b6994dd
 font = ExtResource("6_uqgen")
 font_size = 14
 
+[sub_resource type="LabelSettings" id="LabelSettings_rr11i"]
+font = ExtResource("12_l03wv")
+font_size = 64
+
 [node name="PeoplePanel" type="Control"]
 layout_mode = 3
 anchors_preset = 15
@@ -56,9 +61,9 @@ script = ExtResource("1_jhj0a")
 [node name="Group5" type="Control" parent="."]
 anchors_preset = 0
 offset_left = 1024.0
-offset_top = 64.0
+offset_top = 128.0
 offset_right = 1154.0
-offset_bottom = 512.0
+offset_bottom = 576.0
 
 [node name="GreatPersonProgressBar5" type="TextureProgressBar" parent="Group5"]
 layout_mode = 0
@@ -78,9 +83,9 @@ texture = ExtResource("8_oa50p")
 [node name="GreatPersonProgressButton5" type="TextureButton" parent="Group5"]
 layout_mode = 0
 offset_left = -24.0
-offset_top = 392.0
+offset_top = 384.0
 offset_right = 144.0
-offset_bottom = 440.0
+offset_bottom = 432.0
 texture_normal = ExtResource("3_3h0uy")
 texture_pressed = ExtResource("5_5c005")
 ignore_texture_size = true
@@ -100,9 +105,9 @@ vertical_alignment = 1
 [node name="Group4" type="Control" parent="."]
 anchors_preset = 0
 offset_left = 800.0
-offset_top = 64.0
+offset_top = 128.0
 offset_right = 930.0
-offset_bottom = 512.0
+offset_bottom = 576.0
 
 [node name="GreatPersonProgressBar4" type="TextureProgressBar" parent="Group4"]
 layout_mode = 0
@@ -122,9 +127,9 @@ texture = ExtResource("7_0lrq8")
 [node name="GreatPersonProgressButton4" type="TextureButton" parent="Group4"]
 layout_mode = 0
 offset_left = -16.0
-offset_top = 392.0
+offset_top = 384.0
 offset_right = 152.0
-offset_bottom = 440.0
+offset_bottom = 432.0
 texture_normal = ExtResource("3_3h0uy")
 texture_pressed = ExtResource("5_5c005")
 ignore_texture_size = true
@@ -144,9 +149,9 @@ vertical_alignment = 1
 [node name="Group3" type="Control" parent="."]
 anchors_preset = 0
 offset_left = 576.0
-offset_top = 64.0
+offset_top = 128.0
 offset_right = 703.0
-offset_bottom = 512.0
+offset_bottom = 576.0
 
 [node name="GreatPersonProgressBar3" type="TextureProgressBar" parent="Group3"]
 layout_mode = 0
@@ -166,9 +171,9 @@ texture = ExtResource("5_s1pcn")
 [node name="GreatPersonProgressButton3" type="TextureButton" parent="Group3"]
 layout_mode = 0
 offset_left = 16.0
-offset_top = 392.0
+offset_top = 384.0
 offset_right = 112.0
-offset_bottom = 440.0
+offset_bottom = 432.0
 texture_normal = ExtResource("3_3h0uy")
 texture_pressed = ExtResource("5_5c005")
 ignore_texture_size = true
@@ -188,9 +193,9 @@ vertical_alignment = 1
 [node name="Group2" type="Control" parent="."]
 anchors_preset = 0
 offset_left = 352.0
-offset_top = 64.0
+offset_top = 128.0
 offset_right = 480.0
-offset_bottom = 512.0
+offset_bottom = 576.0
 
 [node name="Jan Karski" type="Sprite2D" parent="Group2"]
 position = Vector2(64, 64)
@@ -210,9 +215,9 @@ texture_progress = SubResource("CompressedTexture2D_2ohs1")
 [node name="GreatPersonProgressButton2" type="TextureButton" parent="Group2"]
 layout_mode = 0
 offset_left = 16.0
-offset_top = 392.0
+offset_top = 384.0
 offset_right = 112.0
-offset_bottom = 440.0
+offset_bottom = 432.0
 texture_normal = ExtResource("3_3h0uy")
 texture_pressed = ExtResource("5_5c005")
 ignore_texture_size = true
@@ -232,9 +237,9 @@ vertical_alignment = 1
 [node name="Group1" type="Control" parent="."]
 anchors_preset = 0
 offset_left = 129.0
-offset_top = 64.0
+offset_top = 128.0
 offset_right = 257.0
-offset_bottom = 512.0
+offset_bottom = 576.0
 
 [node name="GreatPersonProgressBar1" type="TextureProgressBar" parent="Group1"]
 layout_mode = 0
@@ -254,9 +259,9 @@ texture = ExtResource("3_5v28j")
 [node name="GreatPersonProgressButton1" type="TextureButton" parent="Group1"]
 layout_mode = 0
 offset_left = 16.0
-offset_top = 392.0
+offset_top = 384.0
 offset_right = 112.0
-offset_bottom = 440.0
+offset_bottom = 432.0
 texture_normal = ExtResource("3_3h0uy")
 texture_pressed = ExtResource("5_5c005")
 ignore_texture_size = true
@@ -272,6 +277,14 @@ text = "0/50"
 label_settings = SubResource("LabelSettings_jkelk")
 horizontal_alignment = 1
 vertical_alignment = 1
+
+[node name="Label" type="Label" parent="."]
+layout_mode = 0
+offset_right = 1280.0
+offset_bottom = 100.0
+text = "Wielcy Ludzie"
+label_settings = SubResource("LabelSettings_rr11i")
+horizontal_alignment = 1
 
 [connection signal="button_down" from="Group5/GreatPersonProgressButton5" to="." method="_on_great_person_progress_button_5_down"]
 [connection signal="button_down" from="Group4/GreatPersonProgressButton4" to="." method="_on_great_person_progress_button_4_down"]

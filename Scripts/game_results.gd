@@ -38,7 +38,7 @@ func _physics_process(delta):
 	var hungry = people - Global.food * 0.2 
 	if hungry < 0:
 		hungry = 0
-	hungryCount.text = str(hungry) + "mln"
+	hungryCount.text = str(int(hungry)) + "mln"
 	researchCount.text = str(Global.amountOfResearchDone)
 	idolsCount.text = str(Global.completedIdols)
 	cultureCount.text = str(Global.savedRelics)
