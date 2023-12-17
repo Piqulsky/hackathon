@@ -21,7 +21,6 @@ grow_vertical = 2
 script = ExtResource("1_yofb1")
 
 [node name="EndTimer" type="Timer" parent="."]
-wait_time = 0.1
 autostart = true
 
 [node name="TimeLabel" type="Label" parent="."]
