@@ -58,7 +58,6 @@ texture_normal = ExtResource("2_gjm4y")
 layout_mode = 2
 text = "0"
 label_settings = SubResource("LabelSettings_13np4")
-horizontal_alignment = 2
 
 [node name="ExpansionLabel" type="TextureButton" parent="RightStats"]
 layout_mode = 2
@@ -69,7 +68,6 @@ texture_normal = ExtResource("3_62wfu")
 layout_mode = 2
 text = "0"
 label_settings = SubResource("LabelSettings_13np4")
-horizontal_alignment = 2
 
 [node name="PeopleLabel" type="TextureButton" parent="RightStats"]
 layout_mode = 2
@@ -78,9 +76,9 @@ texture_normal = ExtResource("2_7ge7n")
 
 [node name="PeopleCountLabel" type="Label" parent="RightStats"]
 layout_mode = 2
-text = "0"
+text = "0
+"
 label_settings = SubResource("LabelSettings_13np4")
-horizontal_alignment = 2
 
 [node name="RationsLabel" type="TextureButton" parent="RightStats"]
 layout_mode = 2
@@ -91,7 +89,6 @@ texture_normal = ExtResource("3_hl6rb")
 layout_mode = 2
 text = "0"
 label_settings = SubResource("LabelSettings_13np4")
-horizontal_alignment = 2
 
 [node name="HungryCount" type="TextureButton" parent="RightStats"]
 layout_mode = 2
@@ -102,7 +99,6 @@ texture_normal = ExtResource("6_a4m58")
 layout_mode = 2
 text = "0"
 label_settings = SubResource("LabelSettings_13np4")
-horizontal_alignment = 2
 
 [node name="LeftStats" type="GridContainer" parent="."]
 layout_mode = 0
