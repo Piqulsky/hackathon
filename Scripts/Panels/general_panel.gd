@@ -23,7 +23,6 @@ func _ready():
 	hospital = $Hospital
 	bank = $Bank
 
-
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _physics_process(delta):
 	if Global.factoryVisible:

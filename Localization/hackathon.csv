@@ -1,0 +1,56 @@
+,pl,en
+TITLE,Gdy nadejdzie zmrok,When the dusk comes
+BUTTON_START,Start,Start
+BUTTON_SCORES,Wyniki,Scores
+BUTTON_SETTINGS,Ustawienia,Settings
+BUTTON_EXIT,Wyjście,Exit
+HIGH_SCORES,TABLICA WYNIKÓW,HIGH SCORES
+SCORE_NAME,Imię:,Name:
+SCORE_MLN,Miliony:,Millions:
+SCORE_PERCENT,Procent:,Percent:
+BUTTON_RETURN,Powrót,Return
+FILL_SAVED_MLN, milionów uratowanych ludzi, millions saved people
+FILL_SAVED_HERITAGE,% ocalonego dziedzictwa,% saved heritage
+TOOLTIP_SHELTERS,Ilość schronisk,Number of shelters
+TOOLTIP_EXPANSIONS,Ilość powiększczeń,Number of expansions
+TOOLTIP_SHELTERED,Ludzie w schronach,People in shelters
+TOOLTIP_RATIONS,Ilość racji,Number of rations
+TOOLTIP_HUNGRY,Ludzie głodni,Number of hungry
+TOOLTIP_GREAT,Wielcy ludzie,Great people
+TOOLTIP_RESEARCH,Poziomy rozwoju,Research levels
+TOOLTIP_RELICS,Pozyskane zabytki,Recovered relics
+TOOLTIP_TECHNOLOGY,Przełomy technologiczne,Technological breakthroughs
+SHELTERS_TITLE,Schronienia,Shelters
+SHELTERS_SHELTERS,schronisk,shelters
+SHELTERS_EXPANSIONS,powiększeń,expansions
+RESOURCES_TITLE,Zasoby,Resources
+PEOPLE_TITLE,Wielcy Ludzie,Great People
+RELICS_TITLE,Zabytki,Relics
+RELICS_FILL, poziom rozwoju, research levels
+RELICS_FILL_NUMCASE, poziomy rozwoju, research levels
+RELICS_FILL_MULTCASE, poziomów rozwoju, research levels
+TECHNOLOGY_TITLE,Technologia,Technology
+ECONOMY_TITLE,Ekonomia,Economy
+RESEARCH_TITLE,Rozwój,Research
+RESEARCH_1234,Zwiększa prędkość pracy chłopów,Increases work speed of villagers
+RESEARCH_11,Pasywny przychód złota,Passive gold income
+RESEARCH_12,Pasywny przychód materiałów,Passive materials income
+RESEARCH_21,"Zwiększa twój zdobywany
+wynik za relikty","Increases your score for
+for relics"
+RESEARCH_22,Pasywny przychód nauki,"Passive
+learning income"
+RESEARCH_31,Automatyzacja tworzenia schronów,Automation of shelter creation
+RESEARCH_32,Automatyzacja powiększania schronów,Automation of shelter expansion
+END_TITLE,KONIEC GRY,GAME OVER
+END_SHELTERS, wybudowanych schronisk, built shelters
+END_EXPANSIONS, powiększonych schronisk, expanded shelters
+END_RATIONS, wyprodukowanych racji żywnościowych, produces rations
+END_RELICS, zabezpieczonych zabytków kultury, cultural relics secured
+END_TECHNOLOGY, zachowanych przełomów technologicznych, preserved technological breakthroughs
+END_GREAT, ochronionych wielkich ludzi, protected great people
+END_SAVED, milionów uratowanych od śmierci ludzi, millions of people saved from death
+END_HERITAGE, % ocalonego historycznego dziedzictwa ludzkości, % of the historical heritage of humanity saved
+END_NAME,Podaj swoje imię:,Give your name:
+END_SCORE,Zapisz Wynik,Save Score
+END_EXIT,Wyjdź,Exit

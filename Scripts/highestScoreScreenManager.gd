@@ -9,6 +9,14 @@ func _ready():
 		var s = scoreScene.instantiate()
 		s.fill_with_data(score["name"], score["people"], score["heritage"])
 		vBox.add_child(s)
+	_update_local()
+
+func _update_local():
+	$TitleScoreScreen.text = tr("HIGH_SCORES")
+	$ExitScoreScreenButton/ExitButtonText.text = tr("BUTTON_RETURN")
+	$ScrollContainer/VBoxContainer/Score/NameLabel.text = tr("SCORE_NAME")
+	$ScrollContainer/VBoxContainer/Score/PeopleLabel.text = tr("SCORE_MLN")
+	$ScrollContainer/VBoxContainer/Score/HeritageLabel.text = tr("SCORE_PERCENT")
 
 func _process(delta):
 	pass

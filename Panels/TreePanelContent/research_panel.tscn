@@ -1,4 +1,4 @@
-[gd_scene load_steps=26 format=3 uid="uid://b8kxcigghsv1c"]
+[gd_scene load_steps=27 format=3 uid="uid://b8kxcigghsv1c"]
 
 [ext_resource type="Script" path="res://Scripts/Panels/research_panel_manager.gd" id="1_aj253"]
 [ext_resource type="FontFile" uid="uid://d0lblke161a6h" path="res://Fonts/Kanit-Medium.ttf" id="2_0hprf"]
@@ -204,7 +204,7 @@ offset_top = 288.0
 offset_right = 310.0
 offset_bottom = 352.0
 tooltip_text = "Zwiększa twój zdobywany
-Wynik za relikty"
+wynik za relikty"
 disabled = true
 texture_normal = ExtResource("14_moyaf")
 texture_disabled = ExtResource("8_i0nk6")

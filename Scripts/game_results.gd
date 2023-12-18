@@ -26,6 +26,21 @@ func _ready():
 	techCount = $LeftStats/TechCountLabel
 	savedLabel = $MasterStats/SavedLabel
 	heritageLabel = $MasterStats/HeritageLabel
+	_update_local()
+
+func _update_local():
+	savedLabel.text = "0"+tr("FILL_SAVED_MLN")
+	heritageLabel.text = "0"+tr("FILL_SAVED_HERITAGE")
+	$RightStats/ShelterLabel.tooltip_text = tr("TOOLTIP_SHELTERS")
+	$RightStats/ExpansionLabel.tooltip_text = tr("TOOLTIP_EXPANSIONS")
+	$RightStats/PeopleLabel.tooltip_text = tr("TOOLTIP_SHELTERED")
+	$RightStats/RationsLabel.tooltip_text = tr("TOOLTIP_RATIONS")
+	$RightStats/HungryCount.tooltip_text = tr("TOOLTIP_HUNGRY")
+	
+	$LeftStats/IdolsLabel.tooltip_text = tr("TOOLTIP_GREAT")
+	$LeftStats/ResearchLabel.tooltip_text = tr("TOOLTIP_RESEARCH")
+	$LeftStats/CultureLabel.tooltip_text = tr("TOOLTIP_RELICS")
+	$LeftStats/TechLabel.tooltip_text = tr("TOOLTIP_TECHNOLOGY")
 
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
@@ -43,6 +58,6 @@ func _physics_process(delta):
 	idolsCount.text = str(Global.completedIdols)
 	cultureCount.text = str(Global.savedRelics)
 	techCount.text = str(Global.savedTech)
-	savedLabel.text = str(people - hungry) + " milionów uratowanych ludzi"
+	savedLabel.text = str(people - hungry) + tr("FILL_SAVED_MLN")
 	var heritage = int((Global.completedIdols/5 + Global.savedRelics/150 + Global.savedTech/6)/3 * 100)
-	heritageLabel.text = str(heritage) + "% ocalonego dziedzictwa"
+	heritageLabel.text = str(heritage) + tr("FILL_SAVED_HERITAGE")

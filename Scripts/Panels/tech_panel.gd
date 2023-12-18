@@ -11,6 +11,10 @@ func _ready():
 	buttons.append_array([$BasicTech/MaterialsTechButton, $BasicTech/GoldTechButton, $BasicTech/ScienceTechButton, $AdvancedTech/MaterialsGoldTechButton, $AdvancedTech/GoldScienceTechButton, $MasterTech/MasterButton])
 	pgBars.append_array([$BasicTech/MaterialsTechButton/TechBar, $BasicTech/GoldTechButton/TechBar, $BasicTech/ScienceTechButton/TechBar, $AdvancedTech/MaterialsGoldTechButton/TechBar, $AdvancedTech/GoldScienceTechButton/TechBar, $MasterTech/MasterButton/TechBar])
 	costLabels.append_array([$BasicTech/MaterialsTechButton/CostLabel, $BasicTech/GoldTechButton/CostLabel, $BasicTech/ScienceTechButton/CostLabel, $AdvancedTech/MaterialsGoldTechButton/CostLabel, $AdvancedTech/GoldScienceTechButton/CostLabel, $MasterTech/MasterButton/CostLabel])
+	_update_local()
+
+func _update_local():
+	$TechLabel.text = tr("TECHNOLOGY_TITLE")
 
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.

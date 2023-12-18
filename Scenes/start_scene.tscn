@@ -1,4 +1,4 @@
-[gd_scene load_steps=9 format=3 uid="uid://dekyhx6dt2vf"]
+[gd_scene load_steps=11 format=3 uid="uid://dekyhx6dt2vf"]
 
 [ext_resource type="Script" path="res://Scripts/startScreenManager.gd" id="1_t5kxh"]
 [ext_resource type="Texture2D" uid="uid://bkhnqpc12x0gm" path="res://Textures/ekranstartowy1.png" id="2_cyd3u"]
@@ -6,6 +6,8 @@
 [ext_resource type="FontFile" uid="uid://cotlrvu7agwoc" path="res://Fonts/Kanit-Bold.ttf" id="3_xpbb6"]
 [ext_resource type="Texture2D" uid="uid://3pj30lbjhf37" path="res://Textures/buttonstartowy_clicked.png" id="5_d1fqy"]
 [ext_resource type="FontFile" uid="uid://c2dxgn8247omg" path="res://Fonts/Kanit-Italic.ttf" id="6_h4b8h"]
+[ext_resource type="Texture2D" uid="uid://c3vdav76kgier" path="res://Textures/pl.png" id="7_v5bja"]
+[ext_resource type="Texture2D" uid="uid://ciwpfxb0v7kv1" path="res://Textures/uk.png" id="8_v35ir"]
 
 [sub_resource type="LabelSettings" id="LabelSettings_den0i"]
 font = ExtResource("3_xpbb6")
@@ -68,11 +70,12 @@ texture_pressed = ExtResource("5_d1fqy")
 ignore_texture_size = true
 stretch_mode = 0
 
-[node name="ScoreButtonText" type="Label" parent="StartingScreen"]
-offset_left = 574.0
-offset_top = 332.0
-offset_right = 718.0
-offset_bottom = 366.0
+[node name="ScoreButtonText" type="Label" parent="StartingScreen/ScoreButton"]
+layout_mode = 0
+offset_left = 30.0
+offset_top = 12.0
+offset_right = 174.0
+offset_bottom = 52.0
 theme_override_font_sizes/font_size = 24
 text = "Wyniki"
 label_settings = SubResource("LabelSettings_5qyfk")
@@ -123,6 +126,24 @@ label_settings = SubResource("LabelSettings_5qyfk")
 horizontal_alignment = 1
 vertical_alignment = 1
 
+[node name="Pl" type="TextureButton" parent="StartingScreen"]
+offset_left = 32.0
+offset_top = 628.0
+offset_right = 1312.0
+offset_bottom = 1380.0
+scale = Vector2(0.1, 0.1)
+texture_normal = ExtResource("7_v5bja")
+
+[node name="Uk" type="TextureButton" parent="StartingScreen"]
+offset_left = 192.0
+offset_top = 628.0
+offset_right = 1472.0
+offset_bottom = 1388.0
+scale = Vector2(0.1, 0.1)
+texture_normal = ExtResource("8_v35ir")
+
 [connection signal="button_down" from="StartingScreen/StartGameButton" to="StartingScreen" method="_on_start_game_button_down"]
 [connection signal="button_down" from="StartingScreen/ScoreButton" to="StartingScreen" method="_on_score_button_down"]
 [connection signal="button_down" from="StartingScreen/ExitButton" to="StartingScreen" method="_on_exit_button_down"]
+[connection signal="button_down" from="StartingScreen/Pl" to="StartingScreen" method="_on_pl_button_down"]
+[connection signal="button_down" from="StartingScreen/Uk" to="StartingScreen" method="_on_uk_button_down"]

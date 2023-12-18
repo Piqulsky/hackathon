@@ -34,7 +34,13 @@ func _ready():
 	literatureCostLabel = $LiteratureTextureButton/CostLabel
 	artCostLabel = $ArtTextureButton/CostLabel
 	sculptureCostLabel = $SculptureTextureButton/CostLabel
+	_update_local()
 
+func _update_local():
+	$RelicsLabel.text = tr("RELICS_TITLE")
+	$LiteratureTextureButton/RequirmentLabel.text = "1"+tr("RELICS_FILL")
+	$ArtTextureButton/RequirmentLabel.text = "2"+tr("RELICS_FILL_NUMCASE")
+	$SculptureTextureButton/RequirmentLabel.text = "3"+tr("RELICS_FILL_NUMCASE")
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _physics_process(delta):
@@ -46,21 +52,21 @@ func _physics_process(delta):
 		literatureButton.disabled = true
 	elif literatureCost > 100:
 		literatureButton.disabled = false
-		literatureCostLabel.text = "MAKS."
+		literatureCostLabel.text = "Max."
 	else:
 		literatureButton.disabled = false
 	if Global.amountOfResearchDone < artReq and artReq < 11:
 		artButton.disabled = true
 	elif artCost > 100:
 		artButton.disabled = false
-		artCostLabel.text = "MAKS."
+		artCostLabel.text = "Max."
 	else:
 		artButton.disabled = false
 	if Global.amountOfResearchDone < sculptureReq and sculptureReq < 11:
 		sculptureButton.disabled = true
 	elif sculptureCost > 120:
 		sculptureButton.disabled = false
-		sculptureCostLabel.text = "MAKS."
+		sculptureCostLabel.text = "Max."
 	else:
 		sculptureButton.disabled = false
 	
@@ -80,9 +86,9 @@ func _on_literature_texture_button_button_down():
 				return
 			var tmpText = ""
 			if literatureReq < 5:
-				tmpText = " poziomy rozwoju"
+				tmpText = tr("RELICS_FILL_NUMCASE")
 			else:
-				tmpText = " poziomów rozwojów" 
+				tmpText = tr("RELICS_FILL_MULTCASE")
 			literatureReqLabel.text = str(literatureReq) + tmpText
 
 
@@ -100,9 +106,9 @@ func _on_art_texture_button_button_down():
 				return
 			var tmpText = ""
 			if artReq < 5:
-				tmpText = " poziomy rozwoju"
+				tmpText = tr("RELICS_FILL_NUMCASE")
 			else:
-				tmpText = " poziomów rozwojów" 
+				tmpText = tr("RELICS_FILL_MULTCASE")
 			artReqLabel.text = str(artReq) + tmpText
 
 
@@ -124,9 +130,9 @@ func _on_sculpture_texture_button_button_down():
 				return
 			var tmpText = ""
 			if sculptureReq < 5:
-				tmpText = " poziomy rozwoju"
+				tmpText = tr("RELICS_FILL_NUMCASE")
 			else:
-				tmpText = " poziomów rozwojów" 
+				tmpText = tr("RELICS_FILL_MULTCASE")
 			sculptureReqLabel.text = str(sculptureReq) + tmpText
 
 

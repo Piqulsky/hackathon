@@ -10,7 +10,11 @@ config_version=5
 
 [application]
 
-config/name="Hackathon"
+config/name="WhenTheDuskComes"
+config/name_localized={
+"en": "WhenTheDuskComes",
+"pl": "GdyNadejdzieZmrok"
+}
 run/main_scene="res://Scenes/start_scene.tscn"
 config/features=PackedStringArray("4.1", "Forward Plus")
 config/icon="res://TMPTextures/icon.svg"
@@ -24,3 +28,8 @@ Global="*res://Scripts/global.gd"
 window/size/viewport_width=1280
 window/size/viewport_height=720
 window/stretch/mode="canvas_items"
+
+[internationalization]
+
+locale/translations=PackedStringArray("res://Localization/hackathon.en.translation", "res://Localization/hackathon.pl.translation")
+locale/locale_filter_mode=0

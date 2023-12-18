@@ -50,6 +50,20 @@ func _ready():
 	MoneyCost31 = $TechnologyButton31/MoneyCost3
 	MoneyCost32 = $TechnologyButton32/MoneyCost3
 	MoneyCost4 = $TechnologyButton4/MoneyCost4
+	_update_local()
+
+func _update_local():
+	$ResearchPanelTitle.text = tr("RESEARCH_TITLE")
+	TechnologyButton1.tooltip_text = tr("RESEARCH_1234")
+	TechnologyButton2.tooltip_text = tr("RESEARCH_1234")
+	TechnologyButton3.tooltip_text = tr("RESEARCH_1234")
+	TechnologyButton4.tooltip_text = tr("RESEARCH_1234")
+	TechnologyButton11.tooltip_text = tr("RESEARCH_11")
+	TechnologyButton12.tooltip_text = tr("RESEARCH_12")
+	TechnologyButton21.tooltip_text = tr("RESEARCH_21")
+	TechnologyButton22.tooltip_text = tr("RESEARCH_22")
+	TechnologyButton31.tooltip_text = tr("RESEARCH_31")
+	TechnologyButton32.tooltip_text = tr("RESEARCH_32")
 
 func _physics_process(delta):
 	MoneyCost1.text = str(Global.resources.science)+"/"+str(costOfLevel1Tech)
@@ -172,7 +186,7 @@ func _on_technology_button_31_down():
 		TechnologyButton31.texture_disabled = load("res://Textures/ballsbuy/ballschron1buy.png")
 		unlockingTech4 += 1
 		Global.automaticShelterBuilder = true
-		MoneyCost32.visible = false
+		MoneyCost31.visible = false
 		if unlockingTech4 == 3:
 			TechnologyButton4.disabled = false
 
@@ -185,7 +199,7 @@ func _on_technology_button_32_down():
 		TechnologyButton32.disabled = true
 		TechnologyButton32.texture_disabled = load("res://Textures/ballsbuy/ballschron2buy.png")
 		unlockingTech4 += 1
-		MoneyCost31.visible = false
+		MoneyCost32.visible = false
 		Global.automaticShelterImprover = true
 		if unlockingTech4 == 3:
 			TechnologyButton4.disabled = false

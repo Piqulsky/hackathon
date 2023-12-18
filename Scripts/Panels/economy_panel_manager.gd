@@ -28,6 +28,10 @@ func _ready():
 	MaterialsPriceLabel.text = "0/100"
 	GoldPriceLabel.text = "0/100"
 	ResearchPriceLabel.text = "0/100"
+	_update_local()
+
+func _update_local():
+	$EconomyPanelTitle.text = tr("ECONOMY_TITLE")
 
 func _physics_process(delta):
 	if amountOfMaterialUpgrades < 5:

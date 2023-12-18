@@ -29,7 +29,22 @@ func _ready():
 	peopleLabel = $Final/PeopleLabel
 	heritageLabel = $Final/HeritageLabel
 	nameTextEdit = $Save/NameTextEdit
+	_update_local()
 
+func _update_local():
+	$EndGameLabel.text = tr("END_TITLE")
+	sheltersLabel.text = "0" + tr("END_SHELTERS")
+	expansionsLabel.text = "0" + tr("END_EXPANSIONS")
+	foodLabel.text = "0" + tr("END_RATIONS")
+	idolsLabel.text = "0" + tr("END_RELICS")
+	cultureLabel.text = "0" + tr("END_TECHNOLOGY")
+	techLabel.text = "0" + tr("END_GREAT")
+	peopleLabel.text = "0" + tr("END_SAVED")
+	heritageLabel.text = "0" + tr("END_HERITAGE")
+	$Save/NameLabel.text = tr("END_NAME")
+	$Save/NameTextEdit.placeholder_text = tr("SCORE_NAME") + "..."
+	$Save/SaveButton.text = tr("END_SCORE")
+	$Save/ExitButton.text = tr("END_EXIT")
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta):
@@ -39,18 +54,18 @@ func _process(delta):
 func end_game():
 	visible = true
 	people = Global.shelters * 1.5 * (Global.shelterExpansions+1)
-	sheltersLabel.text = str(Global.shelters) + " wybudowanych schronisk"
-	expansionsLabel.text = str(Global.shelterExpansions) + " wybudowanych powiększeń schronisk"
-	foodLabel.text = str(Global.food) + " wyprodukowanych racji żywnościowych"
-	idolsLabel.text = str(Global.completedIdols) + " zabezpieczonych zabytków kultury"
-	cultureLabel.text = str(Global.savedRelics) + " zachowanych przełomów technologicznych"
-	techLabel.text = str(Global.savedTech) + " ochronionych wielkich ludzi"
+	sheltersLabel.text = str(Global.shelters) + tr("END_SHELTERS")
+	expansionsLabel.text = str(Global.shelterExpansions) + tr("END_EXPANSIONS")
+	foodLabel.text = str(Global.food) + tr("END_RATIONS")
+	idolsLabel.text = str(Global.completedIdols) + tr("END_RELICS")
+	cultureLabel.text = str(Global.savedRelics) + tr("END_TECHNOLOGY")
+	techLabel.text = str(Global.savedTech) + tr("END_GREAT")
 	var hungry = people - Global.food * 0.2
 	if hungry < 0:
 		hungry = 0
-	peopleLabel.text = str(people - hungry) + " milionów uratowanych od śmierci ludzi"
+	peopleLabel.text = str(people - hungry) + tr("END_SAVED")
 	heritage = int((Global.completedIdols/5 + Global.savedRelics/150 + Global.savedTech/6)/3 * 100)
-	heritageLabel.text = str(heritage) + " % ocalonego historycznego dziedzictwa ludzkości"
+	heritageLabel.text = str(heritage) + tr("END_HERITAGE")
 
 
 func _on_save_button_button_down():

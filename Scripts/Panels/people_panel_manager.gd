@@ -36,10 +36,14 @@ func _ready():
 	Label3 = $Group3/GreatPersonProgressButton3/Label3
 	Label4 = $Group4/GreatPersonProgressButton4/Label4
 	Label5 = $Group5/GreatPersonProgressButton5/Label5
+	_update_local()
 
+func _update_local():
+	$Label.text = tr("PEOPLE_TITLE")
+	
 func _physics_process(delta):
 	if ProgressBar1.value == 99:
-		Label1.text = "Maks."
+		Label1.text = "Max."
 	elif ProgressBar1.value < 99 and ProgressBar1.value >= 60:
 		Label1.text = str(Global.resources.science)+"/50"
 	elif ProgressBar1.value < 60 and ProgressBar1.value >= 30:
@@ -48,7 +52,7 @@ func _physics_process(delta):
 		Label1.text = str(Global.resources.gold)+"/50"
 	
 	if ProgressBar2.value == 99:
-		Label2.text = "Maks."
+		Label2.text = "Max."
 	elif ProgressBar2.value < 99 and ProgressBar2.value >= 60:
 		Label2.text = str(Global.resources.materials)+"/50"
 	elif ProgressBar2.value < 60 and ProgressBar2.value >= 30:
@@ -57,7 +61,7 @@ func _physics_process(delta):
 		Label2.text = str(Global.resources.science)+"/50"
 	
 	if ProgressBar3.value == 99:
-		Label3.text = "Maks."
+		Label3.text = "Max."
 	elif ProgressBar3.value < 99 and ProgressBar3.value >= 60:
 		Label3.text = str(Global.resources.gold)+"/50"
 	elif ProgressBar3.value < 60 and ProgressBar3.value >= 30:
@@ -66,12 +70,12 @@ func _physics_process(delta):
 		Label3.text = str(Global.resources.materials)+"/50"
 	
 	if ProgressBar4.value == 99:
-		Label4.text = "Maks."
+		Label4.text = "Max."
 	elif ProgressBar4.value < 99:
 		Label4.text = str(Global.resources.materials)+"/50" + " " + str(Global.resources.gold)+"/50" + " " +  str(Global.resources.science)+"/50"
 	
 	if ProgressBar5.value == 99:
-		Label5.text = "Maks."
+		Label5.text = "Max."
 	elif ProgressBar5.value < 99:
 		Label5.text = str(Global.resources.materials)+"/50" + " " + str(Global.resources.gold)+"/50" + " " +  str(Global.resources.science)+"/50"
 

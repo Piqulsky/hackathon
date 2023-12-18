@@ -1,6 +1,7 @@
-[gd_scene load_steps=22 format=3 uid="uid://4vkh4uhwbe4j"]
+[gd_scene load_steps=23 format=3 uid="uid://4vkh4uhwbe4j"]
 
 [ext_resource type="Script" path="res://Scripts/Panels/new_shelters.gd" id="1_81scs"]
+[ext_resource type="Script" path="res://Scripts/Panels/shelters_panel.gd" id="1_l4734"]
 [ext_resource type="FontFile" uid="uid://d0lblke161a6h" path="res://Fonts/Kanit-Medium.ttf" id="1_urtuu"]
 [ext_resource type="Texture2D" uid="uid://ig6ky02qmc7o" path="res://Textures/progress_bar_outline.png" id="2_cnyb7"]
 [ext_resource type="Texture2D" uid="uid://ww8mpdq8lnjq" path="res://Textures/button_yellow.png" id="2_jfyob"]
@@ -45,6 +46,7 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
+script = ExtResource("1_l4734")
 metadata/_edit_vertical_guides_ = [1024.0]
 
 [node name="Polygon2D" type="Polygon2D" parent="."]
