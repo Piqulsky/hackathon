@@ -56,7 +56,7 @@ func end_game():
 	people = Global.shelters * 1.5 * (Global.shelterExpansions+1)
 	sheltersLabel.text = str(Global.shelters) + tr("END_SHELTERS")
 	expansionsLabel.text = str(Global.shelterExpansions) + tr("END_EXPANSIONS")
-	foodLabel.text = str(Global.food) + tr("END_RATIONS")
+	foodLabel.text = str(int(Global.food)) + tr("END_RATIONS")
 	idolsLabel.text = str(Global.completedIdols) + tr("END_RELICS")
 	cultureLabel.text = str(Global.savedRelics) + tr("END_TECHNOLOGY")
 	techLabel.text = str(Global.savedTech) + tr("END_GREAT")

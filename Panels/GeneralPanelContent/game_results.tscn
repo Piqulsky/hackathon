@@ -41,25 +41,20 @@ grow_vertical = 2
 script = ExtResource("1_1ruo2")
 
 [node name="RightStats" type="GridContainer" parent="."]
+layout_direction = 3
 layout_mode = 0
-offset_left = 1120.0
+offset_left = 64.0
 offset_top = 16.0
-offset_right = 1216.0
+offset_right = 160.0
 offset_bottom = 352.0
 columns = 2
-
-[node name="ShelterCountLabel" type="Label" parent="RightStats"]
-layout_mode = 2
-text = "0"
-label_settings = SubResource("LabelSettings_13np4")
-horizontal_alignment = 2
 
 [node name="ShelterLabel" type="TextureButton" parent="RightStats"]
 layout_mode = 2
 tooltip_text = "Ilość schronisk"
 texture_normal = ExtResource("2_gjm4y")
 
-[node name="ExpansionCountLabel" type="Label" parent="RightStats"]
+[node name="ShelterCountLabel" type="Label" parent="RightStats"]
 layout_mode = 2
 text = "0"
 label_settings = SubResource("LabelSettings_13np4")
@@ -70,7 +65,7 @@ layout_mode = 2
 tooltip_text = "Ilość powiększczeń"
 texture_normal = ExtResource("3_62wfu")
 
-[node name="PeopleCountLabel" type="Label" parent="RightStats"]
+[node name="ExpansionCountLabel" type="Label" parent="RightStats"]
 layout_mode = 2
 text = "0"
 label_settings = SubResource("LabelSettings_13np4")
@@ -81,7 +76,7 @@ layout_mode = 2
 tooltip_text = "Ludzie w schronach"
 texture_normal = ExtResource("2_7ge7n")
 
-[node name="RationsCountLabel" type="Label" parent="RightStats"]
+[node name="PeopleCountLabel" type="Label" parent="RightStats"]
 layout_mode = 2
 text = "0"
 label_settings = SubResource("LabelSettings_13np4")
@@ -92,7 +87,7 @@ layout_mode = 2
 tooltip_text = "Ilość racji"
 texture_normal = ExtResource("3_hl6rb")
 
-[node name="HungryCountLabel" type="Label" parent="RightStats"]
+[node name="RationsCountLabel" type="Label" parent="RightStats"]
 layout_mode = 2
 text = "0"
 label_settings = SubResource("LabelSettings_13np4")
@@ -102,6 +97,12 @@ horizontal_alignment = 2
 layout_mode = 2
 tooltip_text = "Ludzie głodni"
 texture_normal = ExtResource("6_a4m58")
+
+[node name="HungryCountLabel" type="Label" parent="RightStats"]
+layout_mode = 2
+text = "0"
+label_settings = SubResource("LabelSettings_13np4")
+horizontal_alignment = 2
 
 [node name="LeftStats" type="GridContainer" parent="."]
 layout_mode = 0
