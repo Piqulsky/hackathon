@@ -75,6 +75,11 @@ func _on_save_button_button_down():
 			"people": people,
 			"heritage": heritage
 		})
+		
+		var save_game = FileAccess.open("user://score.save", FileAccess.WRITE)
+		save_game.store_line(JSON.stringify(Global.stats))
+		print(JSON.stringify(Global.stats))
+		
 		get_tree().change_scene_to_file("res://Scenes/start_scene.tscn")
 
 func _on_exit_button_button_down():

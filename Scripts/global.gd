@@ -63,8 +63,4 @@ const SCULPTURE_INCREASE := 3
 
 const VILLAGERS_INCREASE := 8
 
-var stats = [{
-	"name": "beatme",
-	"people": 24,
-	"heritage": 68
-}]
+var stats := []

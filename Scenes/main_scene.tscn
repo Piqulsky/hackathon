@@ -76,7 +76,6 @@ ignore_texture_size = true
 stretch_mode = 0
 
 [node name="EndGame" parent="." instance=ExtResource("10_jr15s")]
-visible = false
 
 [connection signal="button_down" from="ArrowsButtons/LeftArrow" to="Panels" method="_on_left_arrow_button_down"]
 [connection signal="button_down" from="ArrowsButtons/RightArrow" to="Panels" method="_on_right_arrow_button_down"]
