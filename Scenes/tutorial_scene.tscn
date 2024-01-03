@@ -1,12 +1,14 @@
-[gd_scene load_steps=15 format=3 uid="uid://dwtbfk1qlf5ay"]
+[gd_scene load_steps=18 format=3 uid="uid://dwtbfk1qlf5ay"]
 
 [ext_resource type="PackedScene" uid="uid://bdlc2tnny2o8w" path="res://Tutorials/tutorial_0.tscn" id="1_3ko0d"]
 [ext_resource type="PackedScene" uid="uid://cupbpxgbvqw20" path="res://Tutorials/tutorial_1.tscn" id="1_a7l42"]
+[ext_resource type="Script" path="res://Scripts/tutorial_scene.gd" id="1_vkhmx"]
 [ext_resource type="PackedScene" uid="uid://du272bar33vm3" path="res://Tutorials/tutorial_2.tscn" id="3_u7bey"]
 [ext_resource type="PackedScene" uid="uid://u58q1xgp76tw" path="res://Tutorials/tutorial_3.tscn" id="4_4kgtd"]
 [ext_resource type="PackedScene" uid="uid://dl0pbhjjpq7i5" path="res://Tutorials/tutorial_4.tscn" id="5_0wc6c"]
 [ext_resource type="PackedScene" uid="uid://y3aitw062hal" path="res://Tutorials/tutorial_5.tscn" id="6_uyv0q"]
 [ext_resource type="Script" path="res://Scripts/tutorial_next.gd" id="7_hqrmj"]
+[ext_resource type="PackedScene" uid="uid://b8a3j6stlx8dm" path="res://Tutorials/tutorial_6.tscn" id="8_fshj2"]
 
 [sub_resource type="Animation" id="Animation_iem4d"]
 resource_name = "0"
@@ -174,6 +176,34 @@ tracks/5/keys = {
 "update": 0,
 "values": [Vector2(0, -720)]
 }
+tracks/6/type = "value"
+tracks/6/imported = false
+tracks/6/enabled = true
+tracks/6/path = NodePath("Tutorials/Tutorial6:position")
+tracks/6/interp = 1
+tracks/6/loop_wrap = true
+tracks/6/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(2560, 0)]
+}
+
+[sub_resource type="Animation" id="Animation_0peat"]
+resource_name = "5"
+length = 0.5
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Tutorials/Tutorial6:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.5),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector2(2560, 0), Vector2(0, 0)]
+}
 
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_l8f66"]
 _data = {
@@ -182,10 +212,12 @@ _data = {
 "2": SubResource("Animation_hboq0"),
 "3": SubResource("Animation_jp1s6"),
 "4": SubResource("Animation_1g5ct"),
+"5": SubResource("Animation_0peat"),
 "RESET": SubResource("Animation_b0ujw")
 }
 
 [node name="TutorialScene" type="Node2D"]
+script = ExtResource("1_vkhmx")
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="."]
 libraries = {
@@ -211,6 +243,9 @@ position = Vector2(-1280, 0)
 
 [node name="Tutorial5" parent="Tutorials" instance=ExtResource("6_uyv0q")]
 position = Vector2(0, -720)
+
+[node name="Tutorial6" parent="Tutorials" instance=ExtResource("8_fshj2")]
+position = Vector2(2560, 0)
 
 [node name="SkipButton" type="Button" parent="."]
 offset_left = 32.0

@@ -10,10 +10,10 @@ color = Color(0, 0, 0, 1)
 polygon = PackedVector2Array(0, 0, 1280, 0, 1280, 736, 0, 736)
 
 [node name="Label" type="Label" parent="."]
-offset_left = 128.0
-offset_top = 96.0
-offset_right = 1152.0
-offset_bottom = 608.0
+offset_left = 96.0
+offset_top = 128.0
+offset_right = 1184.0
+offset_bottom = 672.0
 text = "Jest rok 2000.
 Naukowcy zapowiedzieli, że następny zachód słońca będzie
 ostatnim. Zmiana klimatu zmieniła orbitę ziemską i skierowała
@@ -26,3 +26,4 @@ dziedzictwo ludzkości. Czas jest ograniczony. Ktokolwiek
 pozostanie na powierzchni zamarźnie z całą resztą życia na Ziemi."
 label_settings = SubResource("LabelSettings_ilkq4")
 horizontal_alignment = 1
+autowrap_mode = 2

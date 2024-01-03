@@ -277,6 +277,7 @@ pod przyciskami. Ilości schronień oraz ich powiększeń widoczne są między
 przyciskami."
 label_settings = SubResource("LabelSettings_xk47x")
 horizontal_alignment = 1
+autowrap_mode = 2
 
 [node name="Label2" type="Label" parent="."]
 offset_left = 640.0
@@ -291,6 +292,7 @@ zasobów zebrana przez chłopów co każde wypełnienie paska postępu jest zale
 od ilości chłopów."
 label_settings = SubResource("LabelSettings_xk47x")
 horizontal_alignment = 1
+autowrap_mode = 2
 
 [node name="BeginTextureButton" type="TextureButton" parent="."]
 offset_left = 118.0

@@ -14,12 +14,12 @@ func _process(delta):
 
 
 func _on_button_down():
-	if text == "Zacznij Grę":
+	if text == tr("TUTORIAL_PLAY"):
 		get_tree().change_scene_to_file("res://Scenes/main_scene.tscn")
 	animPlay.play(str(animIndex))
 	animIndex += 1
-	if animIndex == 5:
-		text = "Zacznij Grę"
+	if animIndex == 6:
+		text = tr("TUTORIAL_PLAY")
 
 
 func _on_skip_button_button_down():

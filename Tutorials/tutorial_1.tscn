@@ -162,6 +162,7 @@ text = "To jest ekran stanu świata. Na nim zobaczysz
 postęp ratowania ludzkości."
 label_settings = SubResource("LabelSettings_j0bal")
 horizontal_alignment = 1
+autowrap_mode = 2
 
 [node name="Label2" type="Label" parent="."]
 offset_left = 160.0
@@ -174,3 +175,4 @@ Materiały(czerwone), Pieniądze(żółte) i Nauka(niebieskie).
 Wciskając je zdobędziesz jednostki surowców."
 label_settings = SubResource("LabelSettings_3rxdf")
 horizontal_alignment = 1
+autowrap_mode = 2
