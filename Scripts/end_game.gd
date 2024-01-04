@@ -66,7 +66,7 @@ func end_game():
 	peopleLabel.text = str(people - hungry) + tr("END_SAVED")
 	heritage = int((Global.completedIdols/5 + Global.savedRelics/150 + Global.savedTech/6)/3 * 100)
 	heritageLabel.text = str(heritage) + tr("END_HERITAGE")
-
+	Global.reset()
 
 func _on_save_button_button_down():
 	if not nameTextEdit.text.is_empty():
