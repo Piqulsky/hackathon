@@ -1,7 +1,7 @@
 extends Control
 
 var timerLabel :Label
-var time = 900
+var time = 60
 
 # Called when the node enters the scene tree for the first time.
 func _ready():

@@ -37,14 +37,17 @@ position = Vector2(640, 360)
 texture = ExtResource("2_d0d7c")
 
 [node name="Bankend" type="Sprite2D" parent="."]
+visible = false
 position = Vector2(640, 360)
 texture = ExtResource("3_d5pt5")
 
 [node name="Hospitalend" type="Sprite2D" parent="."]
+visible = false
 position = Vector2(640, 356)
 texture = ExtResource("4_jxhad")
 
 [node name="Fabrykaend" type="Sprite2D" parent="."]
+visible = false
 position = Vector2(640, 360)
 texture = ExtResource("5_3mgb6")
 
@@ -175,7 +178,7 @@ layout_mode = 0
 offset_left = 32.0
 offset_top = 128.0
 offset_right = 192.0
-offset_bottom = 160.0
+offset_bottom = 161.0
 theme_override_fonts/font = ExtResource("10_xgqt8")
 text = "Zapisz Wynik"
 
@@ -184,7 +187,7 @@ layout_mode = 0
 offset_left = 256.0
 offset_top = 128.0
 offset_right = 416.0
-offset_bottom = 160.0
+offset_bottom = 161.0
 theme_override_fonts/font = ExtResource("10_xgqt8")
 text = "Wyjdź"
 

@@ -17,9 +17,9 @@ const SCULPTURE_INCREASE := 3
 const VILLAGERS_INCREASE := 8
 
 var resources = {
-	"materials": 0,
-	"gold": 0,
-	"science": 0
+	"materials": 100000,
+	"gold": 100000,
+	"science": 100000
 }
 
 var resourcesMultiplier = {
@@ -45,6 +45,7 @@ var passiveScienceIncome := 0
 var passiveGoldIncome := 0
 var passiveMaterialsIncome := 0
 var passiveSavedRelics := 0.0
+var passivlySavedRelics := 0.0
 var passiveFoodIncome := 0.0
 var automaticShelterBuilder := false
 var automaticShelterImprover := false

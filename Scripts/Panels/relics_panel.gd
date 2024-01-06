@@ -137,4 +137,10 @@ func _on_sculpture_texture_button_button_down():
 
 
 func _on_timer_timeout():
-	Global.savedRelics += Global.passiveSavedRelics
+	if Global.passivlySavedRelics < 50:
+		Global.savedRelics += Global.passiveSavedRelics
+		Global.passivlySavedRelics += Global.passiveSavedRelics
+		if Global.passivlySavedRelics > 50:
+			Global.passiveSavedRelics = 0.0
+			Global.savedRelics = Global.savedRelics - (Global.passivlySavedRelics - 50)
+			Global.passivlySavedRelics = 50

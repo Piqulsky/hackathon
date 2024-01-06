@@ -27,7 +27,7 @@ func _physics_process(delta):
 			pgButton.disabled = true
 			beginButton.disabled = false
 			Global.shelters += 1
-			sheltersLabel.text = str(Global.shelterExpansions)
+			sheltersLabel.text = str(Global.shelters)
 
 
 func _on_begin_texture_button_button_down():

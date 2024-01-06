@@ -28,7 +28,11 @@ func _ready():
 	idolsLabel = $Scores/IdolsLabel
 	peopleLabel = $Final/PeopleLabel
 	heritageLabel = $Final/HeritageLabel
+	scoreLabel = $Final/ScoreLabel
 	nameTextEdit = $Save/NameTextEdit
+	hospital = $Hospitalend
+	bank = $Bankend
+	factory = $Fabrykaend
 	_update_local()
 
 func _update_local():
@@ -46,10 +50,13 @@ func _update_local():
 	$Save/SaveButton.text = tr("END_SCORE")
 	$Save/ExitButton.text = tr("END_EXIT")
 
-# Called every frame. 'delta' is the elapsed time since the previous frame.
-func _process(delta):
-	pass
-
+func _physics_process(delta):
+	if(Global.factoryVisible):
+		factory.visible = true
+	if(Global.hospitalVisible):
+		hospital.visible = true
+	if(Global.bankVisibile):
+		bank.visible = true
 
 func end_game():
 	visible = true
@@ -57,14 +64,14 @@ func end_game():
 	sheltersLabel.text = str(Global.shelters) + tr("END_SHELTERS")
 	expansionsLabel.text = str(Global.shelterExpansions) + tr("END_EXPANSIONS")
 	foodLabel.text = str(int(Global.food)) + tr("END_RATIONS")
-	idolsLabel.text = str(Global.completedIdols) + tr("END_RELICS")
+	idolsLabel.text = str(Global.completedIdols) + tr("END_GREAT")
 	cultureLabel.text = str(Global.savedRelics) + tr("END_TECHNOLOGY")
-	techLabel.text = str(Global.savedTech) + tr("END_GREAT")
-	var hungry = people - Global.food * 0.2
+	techLabel.text = str(Global.savedTech) + tr("END_RELICS")
+	var hungry = people - Global.food * 0.3
 	if hungry < 0:
 		hungry = 0
 	peopleLabel.text = str(people - hungry) + tr("END_SAVED")
-	heritage = int((Global.completedIdols/5 + Global.savedRelics/150 + Global.savedTech/6)/3 * 100)
+	var heritage = int((Global.completedIdols * 4) + (Global.savedRelics/5) + (Global.savedTech * 5))
 	heritageLabel.text = str(heritage) + tr("END_HERITAGE")
 	Global.reset()
 

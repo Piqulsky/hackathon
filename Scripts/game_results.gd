@@ -50,14 +50,16 @@ func _physics_process(delta):
 	expansionsCount.text = str(Global.shelterExpansions)
 	peopleCount.text = str(people) + "mln"
 	foodCount.text = str(Global.food) + "mln"
-	var hungry = people - Global.food * 0.2 
+	var hungry = people - Global.food * 0.3 
 	if hungry < 0:
 		hungry = 0
 	hungryCount.text = str(int(hungry)) + "mln"
+	if hungry > 0 and hungry < 1:
+		hungryCount.text = "~1mln"
 	researchCount.text = str(Global.amountOfResearchDone)
 	idolsCount.text = str(Global.completedIdols)
 	cultureCount.text = str(Global.savedRelics)
 	techCount.text = str(Global.savedTech)
 	savedLabel.text = str(people - hungry) + tr("FILL_SAVED_MLN")
-	var heritage = int((Global.completedIdols/5 + Global.savedRelics/150 + Global.savedTech/6)/3 * 100)
+	var heritage = int((Global.completedIdols * 4) + (Global.savedRelics/5) + (Global.savedTech * 5))
 	heritageLabel.text = str(heritage) + tr("FILL_SAVED_HERITAGE")
