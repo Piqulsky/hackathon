@@ -16,7 +16,7 @@ config/name_localized={
 "pl": "GdyNadejdzieZmrok"
 }
 run/main_scene="res://Scenes/start_scene.tscn"
-config/features=PackedStringArray("4.2", "Forward Plus")
+config/features=PackedStringArray("4.1", "Forward Plus")
 config/icon="res://TMPTextures/icon.svg"
 
 [autoload]

@@ -17,9 +17,9 @@ const SCULPTURE_INCREASE := 3
 const VILLAGERS_INCREASE := 8
 
 var resources = {
-	"materials": 100000,
-	"gold": 100000,
-	"science": 100000
+	"materials": 0,
+	"gold": 0,
+	"science": 0
 }
 
 var resourcesMultiplier = {

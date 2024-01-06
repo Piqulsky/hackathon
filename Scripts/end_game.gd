@@ -28,7 +28,6 @@ func _ready():
 	idolsLabel = $Scores/IdolsLabel
 	peopleLabel = $Final/PeopleLabel
 	heritageLabel = $Final/HeritageLabel
-	scoreLabel = $Final/ScoreLabel
 	nameTextEdit = $Save/NameTextEdit
 	hospital = $Hospitalend
 	bank = $Bankend
